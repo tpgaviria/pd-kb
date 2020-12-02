@@ -1,0 +1,169 @@
+/* Global Footer start */
+
+#page-footer{
+    padding-top: 0px !important;
+}
+.footer-link{
+    color: #f9f9f9;
+    cursor: pointer!important;
+    display: inline-block;
+}
+
+.footer-link:hover {
+    color: #06ac38;
+    text-decoration: none;
+}
+
+.footer-header{
+    color: #fff;
+    font-weight: 400;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: .85em;
+}
+
+.pd-footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #4c555a;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pd-footer-inner{
+    max-width: 1127px;
+    margin: auto;
+}
+
+.pd-footer .footer-links{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pd-footer li{
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: calc(1rem / 2);
+}
+
+.footer-logo-wrapper{
+    padding: 5px 10px 0 30px;
+}
+
+.footer-logo{
+    height: 150px;
+}
+
+.status-dot {
+    border-radius:99px;
+    display:inline-block;
+    width:8px;
+    height:8px;
+    margin-right:5px;
+  }
+  .status-dot.critical {
+      background-color:#e74c3c;
+  }
+  .status-dot.major {
+      background-color:#e67e22;
+  }
+  .status-dot.minor {
+      background-color:#f1c40f;
+  }
+  .status-dot.none {
+      background-color:#25c151;
+  } 
+
+/* Global Footer end */
+
+/* Landing Footer start */
+
+.landing-footer{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stevie-logo{
+    max-width: 100%;
+    max-height: 500px;
+    width: 130px;
+}
+
+.landing-footer-header{
+    font-size: .95em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.landing-footer-blurb{
+    font-size: 14px;
+}
+
+.support-hours{
+    font-size: 14px;
+    margin-bottom: none !important;
+}
+
+.contact-bar{
+    width: 100%;
+    margin-bottom: 70px;
+    background: #4c555a;
+    padding: 20px;
+    color: #f4f4f4;
+}
+
+.contact-bar p{
+    font-size: 13px;
+}
+
+.landing-footer a{
+    color: #06ac38;
+}
+
+.csat-blurb{
+    margin-bottom: 70px;
+}
+
+.support-hours{
+    margin-bottom: 0;
+}
+
+.contact-details .row div{
+    padding: 0 5px 0 5px;
+}
+
+.contact-bar .col-xs-7{
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+}
+
+
+@media only screen and (min-width: 64em){
+.contact-bar .col-md-3 {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+}
+}
+
+.zd-rating-number{
+    font-size: 45px;
+    font-family: helvetica neue;
+    padding-left: 20px;
+    width: 120px;
+}
+
+.contact-support p{
+    margin-bottom: 0;
+}
+
+.contact-bar a:hover{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.csat-blurb a:hover{
+    color: #212529;
+    text-decoration: none;
+}
+/*Landing Footer end */

@@ -1,0 +1,149 @@
+.jumbotron {
+    background-image: url('https://iqm7l1pa7bn3d42rc278rat5-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/img-shipping-containers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.search-bar button, .search-bar button:focus{
+    background-color:#496559;
+    color: #d0ddd7;
+    font-weight: 500;
+    border-radius: 0px;
+    border: 0px;
+    height: 100%;
+    box-shadow: 6px 6px 7px 2px rgba(0, 0, 0, 0.4);
+}
+
+.search-bar button:hover {
+    background-color: hsl(154, 16%, 30%);
+}
+
+.search-input {
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: 6px 6px 7px 2px rgba(0, 0, 0, 0.4);
+}
+
+.search-input:focus {
+    border: 0px;
+    box-shadow: 6px 6px 7px 2px rgba(0, 0, 0, 0.4);
+}
+
+.list-group {
+    border-radius: 0;
+}
+
+.landing-articles a:hover {
+    text-decoration: none;
+}
+
+.landing-articles h6 a {
+    color: #4b4f4f;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+#browse-all-link {
+    color: #4b4f4f;
+}
+
+#browse-all-link:hover {
+    color: #262929;
+}
+
+.landing-articles .list-group-item {
+    border: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: #636969;
+}
+
+.landing-articles .list-group-item:hover {
+    background-color: hsla(0, 0%, 0%, 0.021);
+    color: #252929;
+}
+
+.landing-page-cards * {
+    border-radius: 0px;
+}
+
+.card {
+    transition: .25s all ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: .25s all ease-in-out;
+    box-shadow: 6px 6px 7px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card1 {
+    background-color: #d2e4dc;
+}
+
+.card2 {
+    background-color: #a5c6de;
+}
+
+.card3 {
+    background-color: #94b2a5;
+}
+
+.card4 {
+    background-color: #00607f;
+    color: white;
+}
+
+.landing-page-cards .card {
+    position: relative;
+}
+
+.card:hover > .card-overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    color: inherit;
+    background-color:inherit;
+}
+
+.landing-page-cards .card-title {
+    font-weight: 300;
+    line-height: 1.0;
+    font-size: 1.6rem;
+}
+
+.landing-page-cards .card-text {
+    font-size: .8em;
+    line-height: 1.3rem;
+}
+
+.landing-page-cards .card-footer {
+    background-color: transparent;
+    border-top: 0px;
+    padding-top: 0px;
+}
+
+.landing-page-cards a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: transparent;
+}
+
+.landing-page-cards .btn {
+    border-radius: 0px;
+    width: 100%;
+    transition: .25s all ease-in-out;
+    background-color: white;
+    background-color: white;
+    border-color: rgba(75, 75, 75, 0.479);
+}
+
+.landing-page-cards .btn:hover {
+    background-color: rgba(255, 255, 255, 0.651);
+}
