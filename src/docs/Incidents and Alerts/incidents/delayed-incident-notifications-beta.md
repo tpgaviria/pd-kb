@@ -10,9 +10,10 @@ As a new [Rulesets](doc:rulesets) feature, paused incident notifications allows 
 {
   "type": "info",
   "title": "Beta",
-  "body": "This feature is currently in Beta, with features and documentation subject to change as it is developed."
-}
-[/block]
+  "body": "This feature is currently in Beta, with features and documentation subject to change as it is developed.
+</Callout>
+
+
 ## Configure Paused Incident Notifications
 
 1. To configure paused incident notifications:

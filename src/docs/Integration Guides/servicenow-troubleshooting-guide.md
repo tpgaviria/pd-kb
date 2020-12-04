@@ -6,11 +6,8 @@ hidden: false
 createdAt: "2017-09-22T20:27:15.584Z"
 updatedAt: "2019-09-05T17:24:51.470Z"
 ---
-[block:api-header]
-{
-  "title": "Common Issues and Resolution"
-}
-[/block]
+## Common Issues and Resolution
+
 ## I cannot find the PagerDuty app in the system menu
 
 * Make sure the PagerDuty app has been added to your current instance from the [ServiceNow store](https://store.servicenow.com).

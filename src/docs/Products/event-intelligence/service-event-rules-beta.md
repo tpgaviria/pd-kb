@@ -13,11 +13,8 @@ updatedAt: "2020-10-09T22:40:43.143Z"
 }
 [/block]
 Service Event Rules define automated actions to take on alerts created by services, based on the inbound events' payloads. All events that are sent to a Service, either via Global Event Routing or directly integrated with a Service Integration, are filtered through Service Event Rules. These rules perform actions on events and dictate how they turn into incidents on a service.
-[block:api-header]
-{
-  "title": "Service Event Rule Actions"
-}
-[/block]
+## Service Event Rule Actions
+
 - Tailoring event actions as trigger / resolve
 - Field extraction for the duplication key, summary or description
 - [Changing the severity](https://support.pagerduty.com/docs/dynamic-notifications) of the resulting alert.
@@ -28,11 +25,8 @@ Service Event Rules define automated actions to take on alerts created by servic
   * Changing the priority of the incident.
 
 Service Event Rules can be scheduled for a specific time or on a recurring schedule with the [Event Intelligence](https://support.pagerduty.com/docs/event-intelligence) package. They can also be used on services that use vendor-specific and API-based integrations with JSON/[PD-CEF](https://support.pagerduty.com/docs/pd-cef) fields. For email integrations, we recommend utilizing [email management rules](https://support.pagerduty.com/docs/email-management-filters-and-rules#section-trigger-and-resolve-alerts-with-email-management-rules). 
-[block:api-header]
-{
-  "title": "Creating and Formatting Service Event Rules"
-}
-[/block]
+## Creating and Formatting Service Event Rules
+
 To use event rules on a service, that service must first be set to create [alerts and incidents](https://support.pagerduty.com/docs/alerts#section-getting-started-with-alerts-and-incidents) for inbound events. To do this, go to **Services**, select **Service Directory** and then select the **service** where you would like to configure event rules. Click **Edit Service**, locate the **Incident Behavior** section at the bottom of the screen and select **Create alerts and incidents**.
 [block:image]
 {
@@ -109,11 +103,8 @@ For example, when all conditions are true:
 Note that you must select that all conditions must be true for the rule to match.
 
 
-[block:api-header]
-{
-  "title": "FAQ"
-}
-[/block]
+## FAQ
+
 ##When should I use Service Rules vs Global Event Routing? 
 PagerDuty Event Rules can be applied either globally or on individual services. This allows rules to affect different scopes of control without interfering with each other. Note that event routing can only be performed at the global rules level.
 

@@ -7,21 +7,15 @@ createdAt: "2017-05-10T17:28:08.625Z"
 updatedAt: "2020-10-09T21:14:09.446Z"
 ---
 An incident represents a problem or an issue that needs to be addressed and resolved. Incidents trigger on a service, which prompts notifications to go out to on-call responders per the service's escalation policy.
-[block:api-header]
-{
-  "title": "Incident States"
-}
-[/block]
+## Incident States
+
 * **Triggered** - An active service — meaning someone is on-call and the service is not disabled or in maintenance mode — will trigger an incident when it receives an event. The incident will escalate according to the service's escalation policy. By default, PagerDuty sends notifications when an incident is triggered, but not when it is acknowledged or resolved. Users create their own rules — or can use webhooks — to receive notifications when an incident is acknowledged or resolved.
 
 * **Acknowledged** - An acknowledged incident is being worked on, but is not yet resolved. The user that acks an incident claims ownership of the issue, and halts the escalation process. Once an incident is acknowledged, the assignee will not receive notifications unless the [Incident Ack Timeout](https://support.pagerduty.com/docs/service-settings#section-acknowledgement-timeouts) is reached. Once the Incident Ack Timeout is reached, the incident returns to a **triggered** state and notifications are sent again. The escalation process also resumes.
 
 * **Resolved** - A resolved incident has been fixed. Once an incident is resolved, no additional notifications are sent and the incident cannot be triggered again.
-[block:api-header]
-{
-  "title": "Incident Lifecycle"
-}
-[/block]
+## Incident Lifecycle
+
 ##1. Received through Services
 PagerDuty receives events from monitoring systems via integrations. An event creates an alert and an associated incident in PagerDuty.
 [block:callout]
@@ -89,11 +83,8 @@ Unacknowledging an incident brings the incident back to a **Triggered** state, a
 
 Unacknowledging an incident can only be done from the web UI.
 
-[block:api-header]
-{
-  "title": "Incident Redaction"
-}
-[/block]
+## Incident Redaction
+
 
 [block:callout]
 {
@@ -119,11 +110,8 @@ In the event that an incident contains sensitive information, the **Account Owne
 }
 [/block]
 After confirming that you would like to redact an incident’s name and details, it will be updated to show who redacted the data and when.
-[block:api-header]
-{
-  "title": "Triggering an Incident via Web UI, API or Email"
-}
-[/block]
+## Triggering an Incident via Web UI, API or Email
+
 There is more than one way to trigger an incident. In the PagerDuty web UI, you can trigger an incident on any service's page or on the **Incidents** page. There are two integration types — API and email — and each can be used to trigger an incident as well.
 [block:callout]
 {
@@ -209,9 +197,6 @@ If a service has an email integration, you can trigger an incident by sending an
 }
 [/block]
 When you send an email to the integration email address, an incident will trigger on that service. The incident will appear in the **Incidents** tab.
-[block:api-header]
-{
-  "title": "Where is incident number ___?"
-}
-[/block]
+## Where is incident number ___?
+
 In the past, we made sure that incidents started at #1 and never skipped a number. There can be cases, however, where we're unable to create incidents fast enough. To address this, you might notice "missing" incident numbers. We don't delete your incident numbers, so if you see a skipped number, this means it was skipped when the incident was created. You should not see this often, and it does not indicate a problem.

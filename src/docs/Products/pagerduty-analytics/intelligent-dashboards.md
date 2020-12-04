@@ -26,9 +26,10 @@ Intelligent Dashboards measure the impact of real-time work on teams and busines
 {
   "type": "info",
   "title": "Note",
-  "body": "Intelligent Dashboards is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription."
-}
-[/block]
+  "body": "Intelligent Dashboards is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription.
+</Callout>
+
+
 #Product Capabilities 
 
 ##Spotlight Recommendations

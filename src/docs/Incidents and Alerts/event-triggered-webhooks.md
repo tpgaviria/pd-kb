@@ -7,13 +7,13 @@ updatedAt: "2020-10-13T22:23:27.650Z"
 ---
 Event Triggered Webhooks allow response teams to easily define a dynamic webhook using event rules, sending a custom payload to a specified endpoint. This enables responders to automate actions like restarting a server, clearing logs, and reverting bad deploys. The payload can be set using a combination of several predefined variables, created using [Dynamic Field Enrichment and Extraction](https://support.pagerduty.com/docs/dynamic-field-enrichment-extraction). Event Triggered Webhooks can be created using both global event rules and service level event rules.
 
-[block:callout]
-{
-  "type": "info",
-  "body": "This capability is currently in Beta for Event Intelligence & Digital Operations customers, with features and documentation subject to change. Please [reach out to our Support team](https://www.pagerduty.com/contact-us/) to enroll in the Beta program.",
-  "title": "Beta"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This capability is currently in Beta for Event Intelligence & Digital Operations customers, with features and documentation subject to change. Please [reach out to our Support team](https://www.pagerduty.com/contact-us/) to enroll in the Beta program.",
+  "title": "Beta
+</Callout>
+
+
 # Configure an Event Triggered Webhook
 
 1. Navigate to **Services** :fa-arrow-right: **Event Rules**

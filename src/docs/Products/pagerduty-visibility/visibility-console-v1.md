@@ -47,11 +47,8 @@ The Service Health and Major Incidents applications let you quickly filter out i
 
 ##Customization
 You can adjust the layout of the console, as well as the applications you want to appear. Application layout can be changed by clicking the **Console Settings** (gear) button in the upper right hand corner of the page. A single application can also be expanded to encompass the entire screen by clicking the maximize button in the upper right hand corner of any application. Display customization is per-user, so go ahead and set things ups how you like without fear that your changes will impact anybody else on your team.
-[block:api-header]
-{
-  "title": "Infrastructure Health Application"
-}
-[/block]
+## Infrastructure Health Application
+
 The Infrastructure Health Application allows a view all of your events and alerts across your entire infrastructure in a single view. This holistic view empowers you to understand the complexities of your infrastructure and ultimately improve event management throughout your organization.
 
 The Infrastructure Health Application aggregates the linear data from the Alerts Tab and Incident Dashboard to offer a visual timeline of events and alerts across your PagerDuty services. Users can identify noisy low value alerts, uncover patterns in data, and juxtapose contextual events.

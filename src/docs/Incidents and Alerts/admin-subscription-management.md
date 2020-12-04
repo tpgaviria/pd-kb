@@ -6,13 +6,13 @@ createdAt: "2020-09-21T18:26:29.398Z"
 updatedAt: "2020-10-07T18:31:36.403Z"
 ---
 Admin Subscription Management is a feature that allows Admins to opt-in all employees, or specific employees, to automatically receive Business Service incident updates. Admins may choose to subscribe all users to Business Services as part of their PagerDuty account setup, making users aware of Business Service subscription capabilities. Increase the number of users subscribed to Business Services and incidents to keep stakeholder users engaged with PagerDuty incidents.
-[block:callout]
-{
-  "type": "info",
-  "body": "Admin Subscription Management is currently in Early Access with features and documentation subject to change.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+Admin Subscription Management is currently in Early Access with features and documentation subject to change.",
+  "title": "Note
+</Callout>
+
+
 
 [block:image]
 {
@@ -34,9 +34,10 @@ Admin Subscription Management is a feature that allows Admins to opt-in all empl
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Admins and Account Owners can use Admin Subscription Management."
-}
-[/block]
+  "body": "Admins and Account Owners can use Admin Subscription Management.
+</Callout>
+
+
 There are two options to subscribe users to Business Services:
 
 * [You may opt to automatically subscribe all users to a Business Service](https://support.pagerduty.com/docs/admin-subscription-management#subscribe-all-users-to-a-business-services)

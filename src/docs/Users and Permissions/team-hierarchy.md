@@ -29,11 +29,8 @@ updatedAt: "2020-10-09T20:13:40.156Z"
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Creating and Managing a Team Hierarchy"
-}
-[/block]
+## Creating and Managing a Team Hierarchy
+
 Team hierarchies are built using existing [teams](https://support.pagerduty.com/docs/teams). To prepare for configuring a hierarchy, make sure you have created the teams that will be involved, and have decided upon a structure for your team hierarchy.
 
 The following considerations should be made:
@@ -69,11 +66,8 @@ This action will create a subteam of a parent team.
 ##Deleting a Parent Team
 
 To delete a team, you must disassociate all of its subteams first by reassigning the subteams to a different parent, or have no parent team set for them.
-[block:api-header]
-{
-  "title": "Access and Permissions Management in Hierarchies"
-}
-[/block]
+## Access and Permissions Management in Hierarchies
+
 User roles in a hierarchical parent team will also have hierarchical access to all of its subteams, with the role in their parent team applying to objects and actions in the subteams. This rule also applies to users with a Restricted Access base role. For example, if a user with a Restricted Access base role is added to a parent team, then they will be able to view and access all subteams below the parent based on their role at the parent team level.  
 
 Any role explicitly granted to a user in a subteam will take precedence over the role they have in a parent team, and any role inherited by a user in a subteam will be derived from the nearest parent in the hierarchy in which a role is explicitly granted to them.

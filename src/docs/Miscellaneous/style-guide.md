@@ -6,11 +6,8 @@ hidden: true
 createdAt: "2017-05-11T19:30:12.576Z"
 updatedAt: "2019-03-01T23:26:14.892Z"
 ---
-[block:api-header]
-{
-  "title": "Review Process"
-}
-[/block]
+## Review Process
+
 ## Creating New Articles, Sections, & Major Rewrites
 
 If you're creating a new article, or making major changes to an existing one:
@@ -97,11 +94,8 @@ No one is going to throw out your full article and ask you to start from scratch
 * **Kat Gaines** - Senior Manager, Customer Support. :fa-slack: @kat, :fa-envelope-square: kat@pagerduty.com
 
 New articles and those with major rewrites should be reviewed by one of these people before being made public or shared with Early Access users. To request a review, join the [#kb](https://pagerduty.slack.com/messages/C2J67096G/) channel in Slack and mention **@screamingsuns**. One of us will pick it up and let you know if we have any suggestions for improvement and/or when your article can be made public.
-[block:api-header]
-{
-  "title": "Guidelines for Creating & Rewriting Articles"
-}
-[/block]
+## Guidelines for Creating & Rewriting Articles
+
 ## Don't Repeat Yourself
 
 ### Redundant Content & Locations
@@ -170,11 +164,8 @@ No questions, no how-to statements, no abbreviations. Be clear and concise when 
 Summaries before and after your content may work when giving a talk or presenting to a targeted crowd, but not in documentation that users are more likely to skim hoping for quick answers.
 
 TL;DR: Don't include sentences that just state what you plan on writing about it (i.e. "This article will discuss," "This section is about," etc.)
-[block:api-header]
-{
-  "title": "Formatting"
-}
-[/block]
+## Formatting
+
 [ReadMe supports some Markdown](https://readme.readme.io/docs/markdown-options), just like Discourse and Zendesk, and has a few [widgets](https://readme.readme.io/docs/widgets) to help out with formatting as well.
 
 ## Section Titles and Text
@@ -342,11 +333,8 @@ Use single [backticks](https://en.wikipedia.org/wiki/Grave_accent) around any co
 >"Set `"event_type": "resolve"` to resolve an incident with Events API v1"
 
 Use three backticks (```) around any code spanning more than a single line, and for template text that needs to be copied and pasted (i.e. JSON template for an integration).
-[block:api-header]
-{
-  "title": "Screenshots & Videos"
-}
-[/block]
+## Screenshots & Videos
+
 **Screenshots are not necessary** for every step of every process. Only attach screenshots of items that may not be immediately discoverable. For example, the **New Integration** button is easily discoverable since it's at the top of the page and has a primary button style (meaning it's green), whereas the **Test**, edit and delete options for user contact methods are far away from the actual data shown.
 
 Ask yourself the tough easy questions before you even take your screenshots:

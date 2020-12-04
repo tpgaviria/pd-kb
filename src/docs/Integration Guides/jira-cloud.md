@@ -26,9 +26,10 @@ Before you can start adding the extension to your services, your JIRA admin must
 {
   "type": "warning",
   "body": "You will need `admin` or `account owner` user permission in PagerDuty to create the Jira authentication token.",
-  "title": "Note"
-}
-[/block]
+  "title": "Note
+</Callout>
+
+
 1. Go to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions.**
 2. Once you are on the **Extensions** page, click the **Jira Cloud** tile.
 3. Your Jira admin should have already added the PagerDuty Add-on in Jira following the instructions above. Paste in your **Jira key** found in Step 3 above and click the **Connect Jira Account** button.

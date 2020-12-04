@@ -9,9 +9,10 @@ updatedAt: "2020-11-13T21:23:37.293Z"
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Only Account Owners can cancel accounts."
-}
-[/block]
+  "body": "Only Account Owners can cancel accounts.
+</Callout>
+
+
 To cancel your account:
 
 1. Navigate to **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Account Settings** tab.

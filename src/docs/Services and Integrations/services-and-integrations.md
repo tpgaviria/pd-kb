@@ -11,17 +11,19 @@ A service may represent an application, component, or team that you wish to open
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "When creating new services, we highly recommend reading our [Service Configuration Guide](https://community.pagerduty.com/forum/t/service-configuration-guide/1660), which includes best practices and common use cases."
-}
-[/block]
+  "body": "When creating new services, we highly recommend reading our [Service Configuration Guide](https://community.pagerduty.com/forum/t/service-configuration-guide/1660), which includes best practices and common use cases.
+</Callout>
+
+
 #Create a New Service
 [block:callout]
 {
   "type": "warning",
   "body": "User, Admin, Manager, Global Admin or Account Owner roles can create services.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 1. Navigate to **Services** :fa-arrow-right: **Service Directory** and click the **+New Service** button on the right side of the screen.
 2. Under General Settings, enter a **Name** that represents the application, component or team that you wish to open incidents against (examples: "MobileApp", "Shopping Cart" or "BizOps"). Please note that when an incident is triggered, this is the service name it will be associated with. 
 3. Add a **Description** of what this service represents in your infrastructure. 
@@ -58,9 +60,10 @@ You can add more than one integration on a service, which allows you to represen
 {
   "type": "success",
   "body": "For additional tips on how to use multiple integrations to represent your systems, please check out [our best practices article here](https://community.pagerduty.com/t/integrations-using-multiple-integrations-per-service-to-represent-your-systems/446).",
-  "title": "Best Practices"
-}
-[/block]
+  "title": "Best Practices
+</Callout>
+
+
 For information on how to add extensions to a service, please visit our section on [Extensions](https://support.pagerduty.com/docs/extensions-add-ons#section-extensions).
 
 ##Move an Integration to Another Service
@@ -70,9 +73,10 @@ You have the ability to move an integration from one service to another if need 
 {
   "type": "info",
   "title": "Note",
-  "body": "Your integration key will *not* change after moving the integration from one service to another."
-}
-[/block]
+  "body": "Your integration key will *not* change after moving the integration from one service to another.
+</Callout>
+
+
 1. Navigate to **Services** :fa-arrow-right: **Service Directory**.
 2. Click the **name** of the service which contains the integration you would like to move.
 3. Go to the **Integrations** tab on the service's page and click the **name** of the integration that you wish to move. 
@@ -81,9 +85,10 @@ You have the ability to move an integration from one service to another if need 
 {
   "type": "warning",
   "title": "Note",
-  "body": "If the settings on the service you are moving an integration to differ from the current service, you'll receive a warning message with the option to proceed or cancel."
-}
-[/block]
+  "body": "If the settings on the service you are moving an integration to differ from the current service, you'll receive a warning message with the option to proceed or cancel.
+</Callout>
+
+
 4. Select the **Destination Service** where you would like the Integration to move to, and click **Move Integration**.
 
 ##Delete an Integration From a Service
@@ -96,9 +101,10 @@ If an integration is no longer needed, it can be deleted. A deleted integration 
 {
   "type": "info",
   "title": "Note",
-  "body": "* If you'd like to temporarily deactivate an integration instead, you can either place the service in maintenance mode, or temporarily move the integration to an inactive service.\n* When an integration is deleted, we do not remove the incidents. There are no changes to the open or resolved incidents."
-}
-[/block]
+  "body": "* If you'd like to temporarily deactivate an integration instead, you can either place the service in maintenance mode, or temporarily move the integration to an inactive service.\n* When an integration is deleted, we do not remove the incidents. There are no changes to the open or resolved incidents.
+</Callout>
+
+
 #Disabling and Re-Enabling Services
 
 Disabling a service is a good choice in the following cases:
@@ -131,9 +137,10 @@ If there is not an out-of-the-box integration for your tool, you can create an E
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Manager**, Admin, Global Admin or Account Owner roles can add integrations. \n\n**Permissions for adding integrations may vary. Please check for notes on requirements in the intro of the Integration Guide.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles)."
-}
-[/block]
+  "body": "Manager**, Admin, Global Admin or Account Owner roles can add integrations. \n\n**Permissions for adding integrations may vary. Please check for notes on requirements in the intro of the Integration Guide.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).
+</Callout>
+
+
 To add a generic integration:
 
 1. Navigate to **Services** :fa-arrow-right: **Service Directory**.

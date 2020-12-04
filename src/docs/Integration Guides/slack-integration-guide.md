@@ -28,9 +28,10 @@ updatedAt: "2020-11-23T23:46:16.019Z"
 {
   "type": "info",
   "title": "Looking for Another Version?",
-  "body": "The [Slack V1 integration guide](https://www.pagerduty.com/docs/guides/slack-v1-integration-guide/) is also available."
-}
-[/block]
+  "body": "The [Slack V1 integration guide](https://www.pagerduty.com/docs/guides/slack-v1-integration-guide/) is also available.
+</Callout>
+
+
 #Integration Walkthrough
 ##Initial Configuration
 To begin the integration, you will need to map your PagerDuty account to your Slack Workspace. If this has already been performed, please skip ahead to the [Add the Slack Extension to a Service](https://support.pagerduty.com/docs/slack-integration-guide#section-add-the-slack-extension-to-a-service) section.
@@ -38,9 +39,10 @@ To begin the integration, you will need to map your PagerDuty account to your Sl
 {
   "type": "info",
   "title": "Note",
-  "body": "* Multiple Slack workspaces can be mapped to a single PagerDuty account by repeating the below steps for each workspace.\n* At this time, mapping multiple PagerDuty accounts to a single Slack workspace is not supported."
-}
-[/block]
+  "body": "* Multiple Slack workspaces can be mapped to a single PagerDuty account by repeating the below steps for each workspace.\n* At this time, mapping multiple PagerDuty accounts to a single Slack workspace is not supported.
+</Callout>
+
+
 1. Navigate to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions**.
 2. Select **Slack**.
 3. On the Slack Workspace Mapping screen, click the **Install App into Workspace** button to connect your PagerDuty account to your Slack workspace. Connecting your PagerDuty account to your Slack workspace ensures that the PagerDuty bot is present and that PagerDuty slash commands can be executed from any Slack channel.
@@ -110,18 +112,20 @@ Once the updated integration has been installed, new slash commands will be avai
 {
   "type": "warning",
   "body": "`/pd oncall` requires channel-specific permissions. You must invite `@PagerDuty` to private Slack channels in order to use this Slack Slash Command.\n\nIt is not possible to use this command in other direct messages outside of a direct message with `@PagerDuty`.",
-  "title": "Required Permissions"
-}
-[/block]
+  "title": "Required Permissions
+</Callout>
+
+
 #Creating On-Demand Slack Channels
 With the updated Slack integration, PagerDuty users can create on-demand Slack channels within PagerDuty. These can be created on the Incident Details screen in the web application by clicking **Set Channel**. You will have the ability to create new public or private channels or associate an existing channel to an incident. 
 [block:callout]
 {
   "type": "warning",
   "title": "User Permission Notes",
-  "body": "* When you click **Set Channel** you may be prompted to authorize the connection between your PagerDuty and Slack accounts again, as PagerDuty will now be creating a channel behalf of your individual Slack user account.\n* You will only be able to view channels that you have permission in Slack to access. \n* If you do not have permission in Slack to create channels, you will not be able to create them from the **Set Channel** link in a PagerDuty incident. \n* If your PagerDuty account has multiple Slack workspaces connected, you will have the option to pick which workspace to use."
-}
-[/block]
+  "body": "* When you click **Set Channel** you may be prompted to authorize the connection between your PagerDuty and Slack accounts again, as PagerDuty will now be creating a channel behalf of your individual Slack user account.\n* You will only be able to view channels that you have permission in Slack to access. \n* If you do not have permission in Slack to create channels, you will not be able to create them from the **Set Channel** link in a PagerDuty incident. \n* If your PagerDuty account has multiple Slack workspaces connected, you will have the option to pick which workspace to use.
+</Callout>
+
+
 If you would like to use this feature and don’t see it in your PagerDuty account, please [reach out to our Support team](https://www.pagerduty.com/contact-us/). 
 [block:image]
 {

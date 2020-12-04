@@ -5,11 +5,8 @@ hidden: true
 createdAt: "2017-05-10T18:06:29.667Z"
 updatedAt: "2018-12-20T00:37:07.939Z"
 ---
-[block:api-header]
-{
-  "title": "Add and Notify Subscribers"
-}
-[/block]
+## Add and Notify Subscribers
+
 
 [block:callout]
 {
@@ -150,11 +147,8 @@ Subscribers can unsubscribe by:
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Add Responders"
-}
-[/block]
+## Add Responders
+
 
 [block:callout]
 {
@@ -269,11 +263,8 @@ If there are stakeholders in your business who need to understand what is happen
 
 
 
-[block:api-header]
-{
-  "title": "Reassign or Delegate an Incident"
-}
-[/block]
+## Reassign or Delegate an Incident
+
 Escalating an incident to the next user on-call from your phone will immediately reassign the incident to that user.  The original on-call user will no longer receive notifications.
 
 ##Escalate an Incident via SMS

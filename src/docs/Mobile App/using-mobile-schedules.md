@@ -6,11 +6,8 @@ createdAt: "2018-11-02T20:27:39.469Z"
 updatedAt: "2020-10-09T22:20:57.601Z"
 ---
 The mobile app is designed with a responder's experience in mind — you can easily access schedules, book an override when you need to take over, and view previous shifts and overrides. For any questions or issues pertaining to mobile schedules, feel free to [reach out to the Support Team](https://www.pagerduty.com/contact-us/).
-[block:api-header]
-{
-  "title": "Schedules"
-}
-[/block]
+## Schedules
+
 
 [block:callout]
 {
@@ -64,11 +61,8 @@ Regular shifts will be shown using a solid color, whereas overrides will have a 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Overrides"
-}
-[/block]
+## Overrides
+
 There are two different options you can use to set the duration of the override:
 
 First, select the shift you'd like to override. 

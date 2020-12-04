@@ -9,16 +9,18 @@ updatedAt: "2020-11-02T18:30:58.900Z"
 [block:callout]
 {
   "type": "danger",
-  "body": "This app is currently not available in the ServiceNow store as we currently do not have up to date support for Change Requests. Please [reach out to our Support team](https://www.pagerduty.com/contact-us/)  if you are interested in using the ServiceNow integration for Change Requests."
-}
-[/block]
+  "body": "This app is currently not available in the ServiceNow store as we currently do not have up to date support for Change Requests. Please [reach out to our Support team](https://www.pagerduty.com/contact-us/)  if you are interested in using the ServiceNow integration for Change Requests.
+</Callout>
+
+
 
 [block:callout]
 {
   "type": "warning",
-  "body": "The ServiceNow Change Request Integration is **only** available on version 5 of our ServiceNow integration"
-}
-[/block]
+  "body": "The ServiceNow Change Request Integration is **only** available on version 5 of our ServiceNow integration
+</Callout>
+
+
 
 PagerDuty enhances ServiceNow effectiveness by allowing customers to quickly add real-time response capabilities to their critical change management process. PagerDuty’s Change Request Integration will notify the right team or individuals when a critical or emergency change request is opened, including important details like priority and risk.
 

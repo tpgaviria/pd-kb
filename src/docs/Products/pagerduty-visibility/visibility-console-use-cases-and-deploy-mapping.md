@@ -5,11 +5,8 @@ hidden: true
 createdAt: "2019-05-30T16:14:05.625Z"
 updatedAt: "2019-10-30T17:42:30.890Z"
 ---
-[block:api-header]
-{
-  "title": "Example Use Case for the Infrastructure Health Application"
-}
-[/block]
+## Example Use Case for the Infrastructure Health Application
+
 Integrating inbound tweets into your PagerDuty [Infrastructure Health Application](#section-infrastructure-health-application) is a great way to track user responses to deploys and outages. Twitter does not support webhooks, so an intermediary tool is necessary in order to send events from Twitter to PagerDuty. You can use a tool like Zapier or Microsoft Flow. The following guide provides an example of how to integrate Twitter with the Infrastructure Health Application using Zapier.
 
 ##Integration Instructions
@@ -80,11 +77,8 @@ Integrating inbound tweets into your PagerDuty [Infrastructure Health Applicatio
 15. Paste the PagerDuty URL into Zapier on the **Set up Webhooks by Zapier POST** page.
 16. Test, and select field.
 17. Click **Finish**.
-[block:api-header]
-{
-  "title": "Mapping Deploys to the Infrastructure Health Application"
-}
-[/block]
+## Mapping Deploys to the Infrastructure Health Application
+
 Including deploys in your PagerDuty [Infrastructure Health Application](https://support.pagerduty.com/docs/visibility-console#section-infrastructure-health-application) can help you determine if a code rollback could help you in the event of a service degradation. Using PagerDuty’s Custom Event Transformer, you can track these deploys by sending an event to a specific service anytime a deploy is rolled out.
 
 ##Integration Instructions
@@ -124,11 +118,8 @@ You are now going to replace the dummy JavaScript that was in the **The code you
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Formatting an event to send to your deploy service"
-}
-[/block]
+## Formatting an event to send to your deploy service
+
 Here is an example event that will trigger an event to this service, and map a deploy to your Infrastructure Health Application:
 [block:code]
 {

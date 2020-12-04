@@ -50,9 +50,10 @@ The Communication Channel field allows you to configure a link back to your pref
 {
   "type": "info",
   "title": "Note",
-  "body": "The Communication Channel added here is for your Teams’ internal use, and doesn’t impact any webhooks you may have configured."
-}
-[/block]
+  "body": "The Communication Channel added here is for your Teams’ internal use, and doesn’t impact any webhooks you may have configured.
+</Callout>
+
+
 #Activity Tab
 The Activity tab shows a timeline with current and recent activity for your service. 
 

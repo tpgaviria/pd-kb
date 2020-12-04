@@ -224,13 +224,13 @@ To edit an incident's priority after it has been triggered:
 In addition to the features available within the PagerDuty web app, incident priority can also be used in automated systems. The incident REST API can be used to specify the priority for an incident when it is created, and all relevant priority details are included with incident objects returned from the API. You can learn more about how to [retrieve the configured incident priority scheme](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Priorities/get_priorities) and [create incidents with priority](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Incidents/post_incidents) in our developer documentation.
 
 Additionally, incident webhooks include full information about that incident’s priority; details are available [here](https://v2.developer.pagerduty.com/docs/webhooks-v2-overview).
-[block:callout]
-{
-  "type": "info",
-  "body": "Priority cannot be set from the Events API at this time.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+Priority cannot be set from the Events API at this time.",
+  "title": "Note
+</Callout>
+
+
 ##Add Priority Using Event Rules
 
 You can also configure event rules to automatically add priority to an incident when it is created. Please read [Setting Priority with Event Rules](https://support.pagerduty.com/docs/global-event-rules#section-setting-priority-with-event-rules) for instructions and more information.

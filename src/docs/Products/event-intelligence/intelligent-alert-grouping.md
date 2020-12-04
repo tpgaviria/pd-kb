@@ -7,13 +7,13 @@ createdAt: "2017-11-10T21:08:38.297Z"
 updatedAt: "2020-10-08T23:25:03.086Z"
 ---
 When enabled on a service, Intelligent Alert Grouping will automatically add incoming alerts to related open incidents on that service to help keep responders focused on the problem at hand. Once enabled, the first new incoming alert will create a new incident on that service. The underlying algorithm will then determine which, if any, subsequent alerts should be grouped into existing incidents.  Once an incident is closed, no new alerts will be added to it. This algorithm includes a real-time, machine-learning-based model that is designed to quickly and accurately process and cluster machine-generated data on each service. The algorithm will adapt over time to understand new types of alerts and react to human response behavior. 
-[block:callout]
-{
-  "type": "info",
-  "body": "This feature is available as part of the [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) package or on Digital Operations plans. If you would like to sign up for a trial of Intelligent Alert Grouping and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This feature is available as part of the [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) package or on Digital Operations plans. If you would like to sign up for a trial of Intelligent Alert Grouping and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
+  "title": "Note
+</Callout>
+
+
 # How to Tell When an Incident is Grouping Alerts
 
 When enabled, you can see Intelligent Alert Grouping actively grouping alerts on the details page of a specific incident. Grouped alerts will appear under the Alerts tab.
@@ -91,9 +91,10 @@ The best way for the algorithm to learn and adapt to new grouping behaviors is t
 {
   "type": "info",
   "title": "Notes",
-  "body": "Merging/unmerging alerts through the API will **not** factor in to the Intelligent Alert Grouping algorithm. Only manual merges and unmerges influence the algorithm."
-}
-[/block]
+  "body": "Merging/unmerging alerts through the API will **not** factor in to the Intelligent Alert Grouping algorithm. Only manual merges and unmerges influence the algorithm.
+</Callout>
+
+
 The algorithm interprets and adjusts to new alert data or behavior on a service quickly. We strongly recommend **against** sending in test data to try and influence the algorithm, as this can result in unpredictable behavior.
 
 # Options

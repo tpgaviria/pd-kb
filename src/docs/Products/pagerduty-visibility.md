@@ -30,11 +30,8 @@ PagerDuty Visibility provides technical responders, business responders and lead
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Product Capabilities"
-}
-[/block]
+## Product Capabilities
+
 ##Business Services
 [Business Services](doc:business-services) provide a way to model capabilities that span multiple technical services and that may be owned by several different teams. Mapping technical services to the Business Services they support lets responders see the Business Services that an incident could be affecting and, with PagerDuty Visibility, it lets others in the business see when there is an incident affecting one of the Business Services they care about.
 
@@ -52,11 +49,8 @@ PagerDuty Visibility provides technical responders, business responders and lead
 Designed for situational awareness in a technical context, the [Visibility Console](doc:visibility-console) is a customizable framework that provides complete operational awareness of the critical elements of your IT infrastructure. This allows you to gain enhanced insights to accelerate incident response.
 
 
-[block:api-header]
-{
-  "title": "Using PagerDuty Visibility"
-}
-[/block]
+## Using PagerDuty Visibility
+
 To set up PagerDuty Visibility, the first step is to configure [Business Services](doc:business-services). While it is possible to configure multiple levels of business service dependencies, note that only the top level business services will appear in the Visibility console in the web app. 
 
 The next step is to set up your [Impact Metrics](doc:impact-metrics). You are not required to have impact metrics for every business service, but the dashboard is most useful when each business service has between 1 and 5 metrics associated with it. **Note** that an impact metric can be associated with multiple business services if desired.

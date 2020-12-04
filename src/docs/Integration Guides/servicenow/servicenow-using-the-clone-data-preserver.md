@@ -20,21 +20,15 @@ When you clone your environment, you also clone the PagerDuty integration. When 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Creating the Clone Data Preservers by Importing an Update Set"
-}
-[/block]
+## Creating the Clone Data Preservers by Importing an Update Set
+
 As an alternative to creating the Clone Data Preservers manually, you can import one of the following update sets to the origin ServiceNow instance. In keeping with our prod to dev example, you would import the appropriate update set onto your prod instance before cloning over to your new dev instance. 
 
 [This update set](https://github.com/PagerDuty/servicenow-updatesets) will work for both v5 and v6 of the PagerDuty integration.
 
 Note that this update set only preserves the PagerDuty Settings configuration. To preserve the mappings for Users, Assignment Groups, and Configuration Items, a ServiceNow administrator can follow the instructions below to manually preserve those records. 
-[block:api-header]
-{
-  "title": "Creating the Clone Data Preservers Manually"
-}
-[/block]
+## Creating the Clone Data Preservers Manually
+
 To begin, navigate to System Clone :fa-arrow-right: Preserve Data, and select New. We'll begin by addressing the PagerDuty fields in the sys_properties table. In total, we will make 4 separate Clone Data Preservers.
 
 Once you've created a new record for the Clone Data Preserver, select the **sys_properties** table, as shown in the below screenshot. Try to make the name of the Clone Data Preserver as descriptive as possible for your own reference later.

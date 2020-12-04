@@ -9,9 +9,10 @@ updatedAt: "2020-10-09T23:16:29.880Z"
 [block:callout]
 {
   "type": "danger",
-  "body": "The following article illustrates ways you may choose to customize workflows in the ServiceNow integration. Please note, however, that any customizations which alter the integration’s out-of-the-box behavior will not be supported by the PagerDuty Support team."
-}
-[/block]
+  "body": "The following article illustrates ways you may choose to customize workflows in the ServiceNow integration. Please note, however, that any customizations which alter the integration’s out-of-the-box behavior will not be supported by the PagerDuty Support team.
+</Callout>
+
+
 ServiceNow is a complex enterprise integration that allows for versatile configurations with your PagerDuty account to meet the specific criteria of your unique business. Below are some guidelines for customizing your ServiceNow integration with advanced configurations.
 
 # Best Practices for Automation
@@ -110,9 +111,10 @@ When changing the priority on a PagerDuty incident, the change will be reflected
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "Should the priority of an incident need to change, it is best practice to leave a text note as soon as it has been changed to inform all of the relevant stakeholders."
-}
-[/block]
+  "body": "Should the priority of an incident need to change, it is best practice to leave a text note as soon as it has been changed to inform all of the relevant stakeholders.
+</Callout>
+
+
 ## Importing PagerDuty Priorities
 
 The first step is to define some incident priorities in your PagerDuty account, by going to **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Incident Priorities.**

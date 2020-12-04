@@ -14,11 +14,8 @@ updatedAt: "2020-11-02T16:42:52.155Z"
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "User Roles in Your Account"
-}
-[/block]
+## User Roles in Your Account
+
 
 [block:html]
 {
@@ -57,19 +54,13 @@ To set up a Limited Stakeholder user:
 Stakeholder users are available by default on Digital Operations plans, and can [purchased as add-on users](https://www.pagerduty.com/pricing/) on Team and Business plans. Stakeholders can view objects in an account, but cannot make modifications. The intended use case for a Stakeholder is to be added as a [Subscriber](doc:adding-users-to-existing-incidents#section-add-and-notify-subscribers) to an incident — they will receive updates about the incident, but cannot take any action. Subscriptions to incidents are only available for Stakeholders with our Modern Incident Response package. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.
 
 Stakeholder licenses are not billed the same as full users. Please contact your Account Manager for more information.
-[block:api-header]
-{
-  "title": "Checking Your User Role"
-}
-[/block]
+## Checking Your User Role
+
 To check what role you have, click the **User Icon** in the upper right of the web app and select **My Profile**. Depending on your account's plan, your user role information will be found in the following tabs:
 - Free, Professional, as well as our legacy Starter and Team plans, will only have a **User Settings** tab, and you will find your **Role** information there. These role types are standard [User Roles](https://support.pagerduty.com/docs/user-roles#section-user-roles-in-your-account).
 - Business and Digital Operations plans will have an additional **Permissions & Teams** tab where you can find information about your [Base Role](https://support.pagerduty.com/docs/advanced-permissions#section-base-roles) and any [Team Role(s)](https://support.pagerduty.com/docs/advanced-permissions#section-team-roles) or [Object Role(s)](https://support.pagerduty.com/docs/advanced-permissions#section-object-roles) that you may have. These role types are [Advanced Permissions](https://support.pagerduty.com/docs/advanced-permissions).
-[block:api-header]
-{
-  "title": "Changing User Roles"
-}
-[/block]
+## Changing User Roles
+
 
 [block:callout]
 {

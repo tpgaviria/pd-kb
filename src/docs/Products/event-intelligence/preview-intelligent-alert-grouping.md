@@ -17,11 +17,8 @@ Preview Intelligent Alert Grouping does not change how alerts are actually group
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "How to Access the Preview"
-}
-[/block]
+## How to Access the Preview
+
 At the moment, Intelligent Alert Grouping can only be configured at the service level, so to preview Intelligent Alert Grouping, first select an appropriate service. One of the main benefits of Intelligent Alert Grouping is reducing alert noise, so services with interesting and meaningful previews tend to be services with a high volume of incidents with some variance in their incident titles.
 
 Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: select your preferred **service** :fa-arrow-right: **Response** tab :fa-arrow-right: **Edit** to the right of the Alert Grouping section. Select **Intelligent** and then click **Preview IAG** to access the preview. 
@@ -49,11 +46,8 @@ Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right:
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Viewing Groups in Detail"
-}
-[/block]
+## Viewing Groups in Detail
+
 The preview modal provides a rich view of how alerts would have been grouped into incidents on your service over a given period of time. Previews are generated once a day and are based on alerts from the past 45 days before the date the preview was generated.
 
 At a high level, you can start to understand the value of enabling Intelligent Alert Grouping on your service in terms of the number of incidents that would have triggered without any alert grouping, and how many fewer incidents your team would have been notified for, had Intelligent Alert Grouping been enabled. To learn more about how the Intelligent Alert Grouping algorithm works, please see [this article](https://support.pagerduty.com/docs/intelligent-alert-grouping#section-how-does-intelligent-alert-grouping-decide-which-alerts-to-group).
@@ -82,11 +76,8 @@ You will see metrics at the top of the preview, which are all calculated based o
 You can expand each potential alert group to see how many and which alerts would have been grouped together into a potential incident. The date and time listed reflect when the first incoming alert was triggered. Please note that the title of the potential incident is derived from the first incoming alert.
 
 Some services may have a lot of alert groups  in this list. We recommend looking at some of the larger groups to get a sense of the grouping behavior of the algorithm.
-[block:api-header]
-{
-  "title": "FAQ"
-}
-[/block]
+## FAQ
+
 ###I just triggered an incident/alert, why is it not appearing in the preview?
 
 Previews are not generated in real time, they are generated once a day. If you have new alert data that you’d like the preview to take into account, we recommend checking back in 24 hours to see if a preview has been regenerated.

@@ -27,12 +27,12 @@ Escalating via SMS assigns an incident to the next user on-call in the escalatio
 }
 [/block]
 
-[block:callout]
-{
-  "type": "info",
-  "body": "The response numbers to acknowledge, resolve and escalate incidents via SMS will change depending on the number of incidents on your account and notifications sent to you already. Check the SMS for the correct response numbers for your incidents, as it is not safe to assume that the response number used in the example screen shot will be valid for your incidents."
-}
-[/block]
+
+<Callout type="info" title="Info">
+The response numbers to acknowledge, resolve and escalate incidents via SMS will change depending on the number of incidents on your account and notifications sent to you already. Check the SMS for the correct response numbers for your incidents, as it is not safe to assume that the response number used in the example screen shot will be valid for your incidents.
+</Callout>
+
+
 ##Reassign an Incident from PagerDuty
 
 When reassigning an incident from the PagerDuty mobile app or site, you can escalate to either the next user on call, anyone within the escalation policy, or any user in your account. When you reassign the incident to an on-call user (any user in the escalation policy), the incident will continue to follow the escalation policy. However, if you assign the incident to a user listed under the Other user (all users in your account) section, the escalation will halt.

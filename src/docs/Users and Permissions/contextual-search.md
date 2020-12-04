@@ -15,11 +15,8 @@ Contextual Search uses tags to enable faster searches for objects such as teams,
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Create and Add Tags"
-}
-[/block]
+## Create and Add Tags
+
 Tags should be created for each object category (i.e. teams, escalation policies and users) that you would like them applied to, as they are siloed separately and do not transfer. For example, if you add a “Payments” tag to a team, this will not appear as an escalation policy tag, and it will not transfer to any individual user on that team. If you would like a “Payments” tag available for all objects, you will need to add it to a team, escalation policy and a user.
 [block:callout]
 {
@@ -85,25 +82,16 @@ To Create or Add a Tag:
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Filter Objects by Tag"
-}
-[/block]
+## Filter Objects by Tag
+
 1. Navigate to **People** and select **Teams**, **Escalation Policies** or **Users** depending on which object you would like to filter.
 2. Next to the search bar, click the :fa-filter: **Filter By Tags** button and search for your tag or browse the dropdown for it. 
-[block:api-header]
-{
-  "title": "Reassign an Incident Using Tags"
-}
-[/block]
+## Reassign an Incident Using Tags
+
 1. On an incident, click the **Reassign** button. 
 2. On the **Reassigning incident to…** screen, enter the tag name or browse tags in the Choose tags field. This will filter escalation policies, users and escalation levels that have this tag applied. Select your desired escalation policy, user or escalation level and then click **Reassign**. 
-[block:api-header]
-{
-  "title": "FAQ"
-}
-[/block]
+## FAQ
+
 ## Can a space be added to a tag?
 
 No, adding a space creates the tag with whatever you have typed to that point. You may use a hyphen or an underscore to replace spaces.

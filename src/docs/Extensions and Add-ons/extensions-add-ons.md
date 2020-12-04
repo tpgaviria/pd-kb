@@ -5,11 +5,8 @@ hidden: false
 createdAt: "2017-05-10T19:31:42.308Z"
 updatedAt: "2020-10-08T22:35:28.225Z"
 ---
-[block:api-header]
-{
-  "title": "Extensions"
-}
-[/block]
+## Extensions
+
 Extensions are additional features that help streamline your incident response and communication. Based on your user permissions, there are two ways to manage service extensions: via the Service Details page or the Extensions page.
 
 ##Managing Extensions on the Service Details Page
@@ -41,11 +38,8 @@ To manage your Extensions, go to **Apps & Add-Ons** :fa-th-large: :fa-arrow-righ
 To add an extension, click on the **+New Extension** button. From there, select the **Extension Type**, **Name**, and **Service** that you want to add the Extension to, as well as the Extension URL in the **Details** section. 
 
 Additionally, you can **edit**, **copy an extension to another service**, and **delete** extensions on this page by clicking on the settings gear. 
-[block:api-header]
-{
-  "title": "Add-ons"
-}
-[/block]
+## Add-ons
+
 Add-ons are a way to enhance your ability to manage the full incident lifecycle. Add-ons can add functionality to your PagerDuty experience with apps hosted outside of the core PagerDuty product, but are still accessible within the PagerDuty web UI. This means that you now have the power to add your own scripts and web pages to your PagerDuty environment.
 
 Add-ons provide you with the ability to embed web apps to your PagerDuty incidents or a dedicated dashboard. These web apps can interact with our APIs, which means you can customize the PagerDuty web UI to provide additional functionality that is not yet available within our UI, provide interactive reports on your infrastructure and incident response, and more.

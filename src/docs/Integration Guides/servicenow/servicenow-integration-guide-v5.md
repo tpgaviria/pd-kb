@@ -13,9 +13,10 @@ This article details installing the latest version 5 of our ServiceNow integrati
 {
   "type": "info",
   "title": "Looking for another version?",
-  "body": "Our [v4 of our ServiceNow Enterprise integration](https://www.pagerduty.com/docs/guides/servicenow-integration-guide-v4/) and [ServiceNow Express](https://www.pagerduty.com/docs/guides/servicenow-express-integration-guide/) are also available."
-}
-[/block]
+  "body": "Our [v4 of our ServiceNow Enterprise integration](https://www.pagerduty.com/docs/guides/servicenow-integration-guide-v4/) and [ServiceNow Express](https://www.pagerduty.com/docs/guides/servicenow-express-integration-guide/) are also available.
+</Callout>
+
+
 # Quick Links
 
 * [What’s New in ServiceNow v5 Integration](https://community.pagerduty.com/t/whats-new-servicenow-v5-integration/)
@@ -213,9 +214,10 @@ The integration requires a ServiceNow user account under which to operate when p
 {
   "type": "warning",
   "title": "Madrid and later ServiceNow versions",
-  "body": "If you are installing the PagerDuty integration for the first time in the Madrid platform version, add the role `snc_platform_rest_api_access` in place of `rest_service`. If you installed the PagerDuty integration while on a version earlier than Madrid, you should not need to make any changes."
-}
-[/block]
+  "body": "If you are installing the PagerDuty integration for the first time in the Madrid platform version, add the role `snc_platform_rest_api_access` in place of `rest_service`. If you installed the PagerDuty integration while on a version earlier than Madrid, you should not need to make any changes.
+</Callout>
+
+
 5. Go to **PagerDuty → Configuration → PagerDuty Settings** in the ServiceNow system menu, and enter the user ID and password of the new user into the **ServiceNow user for authentication** and **ServiceNow user password for authentication** fields.
 6. Validate that basic authentication is working by clicking on **Test ServiceNow User Authentication**. You should get a `ServiceNow user authentication test successful (200)` response if everything is working properly:
 [block:image]
@@ -259,9 +261,10 @@ Go to **PagerDuty → Configuration → PagerDuty Settings** in the ServiceNow s
 {
   "type": "danger",
   "body": "**If you do not have auto-provisioning enabled, the default user ID is required** and should be set properly, or many aspects of the integration will not work.\n\nThe default PagerDuty ID **must be a PagerDuty user ID, not a ServiceNow user ID or email address.** A PagerDuty user’s ID can be found at the end of the user's PagerDuty profile page URL. It is an alphanumeric code beginning with `P`.\n\nMoreover, **the PagerDuty user's default role must be at least \"Responder\"**.\n\nFinally, **if there is a user in ServiceNow who has that PagerDuty user ID in their \"PagerDuty ID\" field, that user's email address must exactly match the login email of the user in PagerDuty.** \n\nIf not all of these conditions are met, the integration will be unable to reassign or resolve incidents in PagerDuty when they are reassigned or resolved by a user in ServiceNow who does not have any corresponding PagerDuty account.",
-  "title": "Setting the default user, and doing so correctly, is important"
-}
-[/block]
+  "title": "Setting the default user, and doing so correctly, is important
+</Callout>
+
+
 ## Additional Properties to Review
 Once you’ve downloaded and configured the integration, check out the [Advanced Configuration](https://support.pagerduty.com/docs/advanced-configurations) article for more information on configuring [Priority Sync](https://support.pagerduty.com/docs/advanced-configurations#section-priority-synchronization), [Inbound Field Rules](https://support.pagerduty.com/docs/advanced-configurations#section-inbound-field-rules) and other optional configurations
 

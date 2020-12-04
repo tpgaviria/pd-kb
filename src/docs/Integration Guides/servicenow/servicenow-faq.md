@@ -24,9 +24,10 @@ The service and escalation policy are determined as follows:
 {
   "type": "info",
   "title": "In versions 3.5 and earlier:",
-  "body": "The PagerDuty escalation policy is not required when creating the incident, but only assignment groups can be associated with PagerDuty services."
-}
-[/block]
+  "body": "The PagerDuty escalation policy is not required when creating the incident, but only assignment groups can be associated with PagerDuty services.
+</Callout>
+
+
 ## How can I see the PagerDuty fields in ServiceNow?
 
 As of version 4.0, there are three fields for PagerDuty on the group form: 

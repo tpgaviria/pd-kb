@@ -6,11 +6,8 @@ hidden: false
 createdAt: "2017-05-18T15:08:33.167Z"
 updatedAt: "2020-10-09T20:46:27.695Z"
 ---
-[block:api-header]
-{
-  "title": "Example 1: Complex Irregular Schedules"
-}
-[/block]
+## Example 1: Complex Irregular Schedules
+
 This schedule is for teams that rotate 12-hour shifts, on for one week and then off for a few.
 - [Ex1. Schedule Requirements](/docs/schedule-examples#section-ex1-schedule-requirements)
 - [Ex1. Schedule Configuration](/docs/schedule-examples#section-ex1-schedule-configuration)
@@ -71,11 +68,8 @@ Layer 2 rotates weekly with a handoff time at the beginning of its first time re
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 2: Complex Schedule for 2 Users on a 2-Day Rotation with Separate Weekends"
-}
-[/block]
+## Example 2: Complex Schedule for 2 Users on a 2-Day Rotation with Separate Weekends
+
 The example below shows a complex schedule for two users that are on a two-day rotation. They are on call in the evenings from 17:00 till 8:00 in the morning. On Saturday and Sunday, responders are on-call for 24 hours from 08:00 – 08:00 the next day.
 - [Ex2. Schedule Requirements](/docs/schedule-examples#section-ex2-schedule-requirements)
 - [Ex2. Configuration](/docs/schedule-examples#section-ex2-configuration)
@@ -173,11 +167,8 @@ The handoff time should be the day and time that the first restriction begins. T
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 3: Complex Split Shift Rotation"
-}
-[/block]
+## Example 3: Complex Split Shift Rotation
+
 This example shows how to create a time-restricted 4-person rotation. Two users split each shift.
 - [Ex3. Schedule Requirements](/docs/schedule-examples#section-ex3-schedule-requirements)
 - [Ex3. Configuration](/docs/schedule-examples#section-ex3-configuration)
@@ -237,11 +228,8 @@ These users are on-call between 00:00-10:00 with a shift length of 5 hours. Afte
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 4: Complex Schedule with Restrictions"
-}
-[/block]
+## Example 4: Complex Schedule with Restrictions
+
 In this example, User 5 and User 6 trade off the early morning shift, User 3 takes the morning, and User 4 takes the evening shift during a four day week. User 1 and User 2 take shifts on the elongated weekend:
 
 - Monday: User 5 for 7 hours, then User 3 for 6 hours, then User 4 for 11 hours.
@@ -379,11 +367,8 @@ You can overlap layers to make the schedule simpler. If you put the original Use
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 5: Create Primary and Secondary On-Call Schedules"
-}
-[/block]
+## Example 5: Create Primary and Secondary On-Call Schedules
+
 Creating primary and secondary schedules is helpful if the primary responder misses a notification. In this example we are using a primary and secondary schedule.  You may add more backup schedules to an escalation policy as needed.
 
 - [Create a Primary On-Call Schedule](/docs/schedule-examples#section-create-a-primary-on-call-schedule)
@@ -458,11 +443,8 @@ Creating primary and secondary schedules is helpful if the primary responder mis
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 6: Follow-the-Sun Schedule"
-}
-[/block]
+## Example 6: Follow-the-Sun Schedule
+
 The "follow-the-sun" schedule is commonly used for international teams in different timezones and ensures 24/7 coverage. This  schedule has three different sets of users on-call at different times of the day and the week. In this example we have a US team and an India team.
 - [Ex6. Schedule Requirements](/docs/schedule-examples#section-ex6-schedule-requirements)
 - [Base Schedule](/docs/schedule-examples#section-base-schedule)
@@ -616,11 +598,8 @@ In the upper-right corner, click **Create Schedule** to create the schedule.
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 7: Inverse Schedules on an Escalation Policy"
-}
-[/block]
+## Example 7: Inverse Schedules on an Escalation Policy
+
 If you have 2 or more users that rotate primary and secondary on-call shifts, you will want to create two on-call schedules and add each schedule to a separate level of an escalation policy.
 
 Schedule example articles:
@@ -692,11 +671,8 @@ Go to **People** :fa-arrow-right: **Escalation Policies** and either create a **
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 8: Schedule Users On-call Every Other Week"
-}
-[/block]
+## Example 8: Schedule Users On-call Every Other Week
+
 If you have a schedule where users are on-call every other week, you will need to create a layer within your schedule that reflects this type of rotation.
 - [Ex8. Schedule Requirements](/docs/schedule-examples#section-ex8-schedule-requirements)
 - [Ex8. Configuration](/docs/schedule-examples#section-ex8-configuration)
@@ -755,11 +731,8 @@ Click **Add Another Layer** to create a second layer for the weekend. Layer 2 ha
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Example 9: Weekday — Weekend Schedule"
-}
-[/block]
+## Example 9: Weekday — Weekend Schedule
+
 A weekend/weekday schedule is any schedule which requires one rotation for the working week and another for the weekend. In this case, we use one layer for each group, respectively.
 
 To get started, navigate to **People** :fa-arrow-right: **Schedules** and click **New On-Call Schedule**. Give your schedule a name.

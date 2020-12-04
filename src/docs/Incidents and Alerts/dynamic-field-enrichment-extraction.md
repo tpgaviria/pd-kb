@@ -31,9 +31,10 @@ Dynamic Field Enrichment & Extraction is available with both Global Event Rules 
 {
   "type": "info",
   "title": "Early Access",
-  "body": "This capability is currently in Early Access and is available to all Event Intelligence & Digital Operations customers. Its features and documentation are subject to change."
-}
-[/block]
+  "body": "This capability is currently in Early Access and is available to all Event Intelligence & Digital Operations customers. Its features and documentation are subject to change.
+</Callout>
+
+
 # Configure Dynamic Field Enrichment & Extraction
 
 1. In the **Customize Event Fields** section of your event rule, under **Define Custom Variable**, create a variable from event fields by entering a **Name**. Use a short descriptive name to represent the value that you will use later on to define a CEF field. Then enter a **Value** for the variable and the origin **Source**. Values are defined using valid RE2 regular expression syntax, and you can add as much complexity as you want with Regex to customize what part of each field you capture into a variable. You may also use **Sample Events** on the right as a reference for variables by clicking **Show Details**. You may add multiple variables by clicking **Add Variable** in the upper right of the Customize Event Fields panel, or delete variables by clicking the trashcan icon directly to the right of the variable.

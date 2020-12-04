@@ -9,9 +9,10 @@ updatedAt: "2020-10-09T21:12:41.484Z"
 {
   "type": "info",
   "title": "Early Access",
-  "body": "This feature is currently in development, and documentation is subject to change."
-}
-[/block]
+  "body": "This feature is currently in development, and documentation is subject to change.
+</Callout>
+
+
 Maintenance windows temporarily disable a service, including all of the integrations for the service, for a set period of time. No new incidents will be triggered while a service is in a maintenance window. Existing incidents will not resolve; they will remain open and continue to notify users on the expected escalation policy until manually resolved. When a maintenance window ends, the service will reactivate and incidents can start triggering again.
 
 #View Maintenance Windows

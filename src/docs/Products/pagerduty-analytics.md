@@ -6,13 +6,13 @@ createdAt: "2019-01-31T22:34:43.532Z"
 updatedAt: "2020-09-20T21:14:21.593Z"
 ---
 PagerDuty Analytics uses human and machine response data to create modern operational insights that can be used to drive process maturity and better business outcomes. Business and operational leaders can make smarter, real-time decisions with a holistic view of machine data, services, teams, and corresponding incident actions. With data perspectives unique to a digital operations platform, PagerDuty Analytics surfaces modern digital metrics that go far beyond MTTA and MTTR. These metrics will help you understand how your digital operations impact your people, your business, and your customers.
-[block:callout]
-{
-  "type": "info",
-  "body": "PagerDuty Analytics is included in our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature suite.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+PagerDuty Analytics is included in our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature suite.",
+  "title": "Note
+</Callout>
+
+
 # Product Capabilities
 
 PagerDuty Analytics is currently made up of Operational Reviews and Intelligent Dashboards, with other capabilities on the roadmap. 
@@ -68,6 +68,6 @@ Intelligent Dashboards are made up of the following features:
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "Please visit our article on [PagerDuty Analytics Best Practices](https://community.pagerduty.com/t/pagerduty-analytics-best-practices/3381) for more information on the configuration and proper use of core features supporting this add-on product."
-}
-[/block]
+  "body": "Please visit our article on [PagerDuty Analytics Best Practices](https://community.pagerduty.com/t/pagerduty-analytics-best-practices/3381) for more information on the configuration and proper use of core features supporting this add-on product.
+</Callout>
+

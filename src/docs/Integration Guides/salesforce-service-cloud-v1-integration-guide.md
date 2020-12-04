@@ -154,13 +154,13 @@ Click **Save** to continue.
 [/block]
 Click **Save** to continue.
 7. Next, select the **RULESETS** tab. This is where you will build the rules that apply to your business. Click the **Add Ruleset** button on the right, enter a **Ruleset Name** and click **Save**. Click the ruleset name and click the **Add Rules** button. Enter a **Rule Name**, click **Save** and then click the name of the rule. Each rule will ask for conditions that should be met prior to performing the actions specified in the latter part of the rule definition. 
-[block:callout]
-{
-  "type": "info",
-  "body": "**By default, Rulesets are disabled upon creation**. You will need to enable this ruleset once you're ready to test and use it.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+**By default, Rulesets are disabled upon creation**. You will need to enable this ruleset once you're ready to test and use it.",
+  "title": "Note
+</Callout>
+
+
    **Run rule on** selections: 
    * **Case create or update**: Define the Salesforce Service Cloud field conditions that need to be satisfied for the PagerDuty package to run and perform the specified action.
    * **PagerDuty incident create or update**: Define when PagerDuty should send updates to Salesforce Service Cloud about incident changes made by other sources such as an acknowledge, resolve, reassignment, etc. This option will need additional configuration within PagerDuty to be able to authenticate and send updates to Salesforce Service Cloud. Steps are outlined in the next section.

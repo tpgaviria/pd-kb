@@ -12,9 +12,10 @@ Custom incident actions provide a user assigned to an incident with a quick way 
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Observers, Responders, Managers, Global Admins and Account Owners can create custom incident actions. \n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles)."
-}
-[/block]
+  "body": "Observers, Responders, Managers, Global Admins and Account Owners can create custom incident actions. \n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).
+</Callout>
+
+
 1. Go to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions**.
 2. Click **+ New Extension** in the **Service Extensions tab** and search for ‘Custom Incident Action’, as the **Extension Type**. 
 3. From here you will be taken to the **Custom Incident Action** extension page. If you have not yet created any custom actions, the page will display a message with information about custom incident actions. On this page, select **New Action** to create your new action.
@@ -58,9 +59,10 @@ When a user clicks on this button, it will fire an HTTP POST request with data o
 {
   "type": "info",
   "title": "Note",
-  "body": "There is a maximum of three custom incident actions per service."
-}
-[/block]
+  "body": "There is a maximum of three custom incident actions per service.
+</Callout>
+
+
 ##Common Use Cases
 ###Restart Server
 Create a **Restart Server** button on your incidents that, when selected, restarts the server associated with the incident. The custom action POST request will include details on the incident that would allow a single script to dynamically determine the server in need of a restart.

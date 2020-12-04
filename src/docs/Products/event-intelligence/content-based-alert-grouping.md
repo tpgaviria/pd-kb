@@ -6,29 +6,31 @@ createdAt: "2020-07-08T23:56:42.721Z"
 updatedAt: "2020-11-24T23:58:09.050Z"
 ---
 Content Based Alert Grouping enables services with predictable, homogenous alert data to have customized alert grouping without training an algorithm. With Content Based Alert Grouping, alerts that share an exact match on a set of chosen fields will be grouped together into the most recent open incident. If an incident remains open for 24 hours, grouping stops and any future alerts will trigger a new incident. Similar to other alert grouping mechanisms, Content Based Alert Grouping will only group alerts on the same service.
-[block:callout]
-{
-  "type": "info",
-  "body": "This feature is available as part of the [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) package or on Digital Operations plans. If you would like to sign up for a trial of Intelligent Alert Grouping and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This feature is available as part of the [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) package or on Digital Operations plans. If you would like to sign up for a trial of Intelligent Alert Grouping and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
+  "title": "Note
+</Callout>
+
+
 # Configure Content Based Alert Grouping
 [block:callout]
 {
   "type": "warning",
   "body": "User, Admin, Manager, Global Admin or Account Owner roles can configure Content Based Alert Grouping.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 
 [block:callout]
 {
   "type": "info",
   "title": "Important Notes",
-  "body": "* Content Based Alert Grouping requires data to be formatted in [Common Event Format (PD-CEF)](https://support.pagerduty.com/docs/pd-cef).\n* Alerts will only be grouped on exact matches for the entire selected fields."
-}
-[/block]
+  "body": "* Content Based Alert Grouping requires data to be formatted in [Common Event Format (PD-CEF)](https://support.pagerduty.com/docs/pd-cef).\n* Alerts will only be grouped on exact matches for the entire selected fields.
+</Callout>
+
+
 1. Select **Services** :fa-arrow-right: **Service Directory** and click the **name** of the service where you would like to use Content Based Alert Grouping.
 2. Select the **Response** tab and click **Edit** under the **Alert Grouping** section.
 [block:image]

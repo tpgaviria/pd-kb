@@ -27,9 +27,10 @@ You can edit your **Name**, **Title**, **Bio**, and set the **Time Zone** that s
 {
   "type": "warning",
   "title": "User Permissions",
-  "body": "* All users can create, edit and delete their own contact information.\n* Admins and Global Admins can create, edit and delete contact information of all users with the exception of the Account Owner. Account Owners can create, edit and delete contact information of all users."
-}
-[/block]
+  "body": "* All users can create, edit and delete their own contact information.\n* Admins and Global Admins can create, edit and delete contact information of all users with the exception of the Account Owner. Account Owners can create, edit and delete contact information of all users.
+</Callout>
+
+
 ##Add a Contact Method
 1. Click **Add Phone Number**, **Add SMS Number**, and/or **Add Email Address**. You're able to include up to 10 different contact methods.
 2. Enter contact information into the field. You have the option to configure a [phone number with an extension](/docs/notification-settings#section-dialing-extensions-and-introducing-a-delay-before-voicemail), if needed.
@@ -74,17 +75,19 @@ The **Notification Rules** tab, **User Icon** :fa-arrow-right: **My Profile** :f
 {
   "type": "warning",
   "title": "User Permissions",
-  "body": "* All users can create, edit and delete their own notification rules.\n* Admins and Global Admins can create, edit and delete notification rules of all users with the exception of the Account Owner. Account Owners can create, edit and delete notification rules of all users."
-}
-[/block]
+  "body": "* All users can create, edit and delete their own notification rules.\n* Admins and Global Admins can create, edit and delete notification rules of all users with the exception of the Account Owner. Account Owners can create, edit and delete notification rules of all users.
+</Callout>
+
+
 ##Configure Notification Rules
 [block:callout]
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "We recommend setting up a delay between your notification rules to ensure that you are not notified at the same time per contact method. For example, in the image below showing a user's high-urgency notification rules, they have set a phone notification **immediately** (0 minutes) after assignment, a SMS notification after **1 minute**, another phone notification after **3 minutes** and an email notification after **5 minutes**."
-}
-[/block]
+  "body": "We recommend setting up a delay between your notification rules to ensure that you are not notified at the same time per contact method. For example, in the image below showing a user's high-urgency notification rules, they have set a phone notification **immediately** (0 minutes) after assignment, a SMS notification after **1 minute**, another phone notification after **3 minutes** and an email notification after **5 minutes**.
+</Callout>
+
+
 1. Select **Add Notification Rule**.
 2. Enter the number of minutes you would like to pass between the moment an incident is assigned to you and when PagerDuty sends the notification. This defaults to 0 minutes, which will notify you immediately.
 3. Select the [contact method](https://support.pagerduty.com/docs/configuring-a-user-profile) that you would like to be notified on. You can use the same contact method with multiple notification rules.
@@ -158,9 +161,10 @@ On-call hand off notifications (OCHONs) can notify you up to 48 hours before you
 {
   "type": "warning",
   "title": "Requirements",
-  "body": "To send OCHONs, the following three conditions must be met:\n\n1 . You must have on call handoff notifications configured in your User Profile (instructions below). \n2. You must be a [target](https://support.pagerduty.com/docs/escalation-policies#section-escalation-targets-and-limitations) on an escalation policy.\n3. The escalation policy must have OCHONs turned on. If the escalation policy is attached to a service, the OCHONs will always be turned on. If it is not attached to a service, follow instructions to turn them on in our [Escalation Policy Basics](https://support.pagerduty.com/docs/escalation-policies#section-on-call-handoff-notification-settings) article."
-}
-[/block]
+  "body": "To send OCHONs, the following three conditions must be met:\n\n1 . You must have on call handoff notifications configured in your User Profile (instructions below). \n2. You must be a [target](https://support.pagerduty.com/docs/escalation-policies#section-escalation-targets-and-limitations) on an escalation policy.\n3. The escalation policy must have OCHONs turned on. If the escalation policy is attached to a service, the OCHONs will always be turned on. If it is not attached to a service, follow instructions to turn them on in our [Escalation Policy Basics](https://support.pagerduty.com/docs/escalation-policies#section-on-call-handoff-notification-settings) article.
+</Callout>
+
+
 To configure on-call handoff notifications in your User Profile:
 
 1. Under the section titled **Before I go on-call or off-call...** click **Add On-Call Handoff Notification Rule**
@@ -216,9 +220,10 @@ To do this:
 {
   "type": "info",
   "title": "Note",
-  "body": "Removing notification rules does NOT mean that incidents cannot be assigned to you. Incidents can still be assigned and [delegated](/docs/adding-users-to-existing-incidents#section-reassign-or-delegate-an-incident) to you even if you do not have any notification rules as long as you are still on-call on a schedule or included in an escalation policy. By deleting your Notification Rules, you will simply avoid being notified for these incidents.\n\nAlso note that removing your notification rules will NOT remove your contact methods. When you would like to receive PagerDuty notifications again, you can go back to your profile page and re-add your notification rules."
-}
-[/block]
+  "body": "Removing notification rules does NOT mean that incidents cannot be assigned to you. Incidents can still be assigned and [delegated](/docs/adding-users-to-existing-incidents#section-reassign-or-delegate-an-incident) to you even if you do not have any notification rules as long as you are still on-call on a schedule or included in an escalation policy. By deleting your Notification Rules, you will simply avoid being notified for these incidents.\n\nAlso note that removing your notification rules will NOT remove your contact methods. When you would like to receive PagerDuty notifications again, you can go back to your profile page and re-add your notification rules.
+</Callout>
+
+
 #User Settings
 
 The User Settings tab, **User Icon** :fa-arrow-right: **My Profile** :fa-arrow-right: **User Settings** tab, is where you can configure the following:
@@ -229,9 +234,10 @@ The User Settings tab, **User Icon** :fa-arrow-right: **My Profile** :fa-arrow-r
 {
   "type": "info",
   "title": "Note",
-  "body": "If you are an Account Owner or Admin, you can [change another user's password](/docs/configuring-a-user-profile#section-change-another-user-s-password) here."
-}
-[/block]
+  "body": "If you are an Account Owner or Admin, you can [change another user's password](/docs/configuring-a-user-profile#section-change-another-user-s-password) here.
+</Callout>
+
+
 - **Role** — This is the user role associated with your user profile. You can read more about [user roles](/docs/user-roles#section-user-roles-in-your-account). Only the account owner or an admin on the account can update this.
 - **Schedule Color** — Each user has a color associated with their profile which is used in the on-call schedule to quickly recognize the user. You can change this by clicking the edit button to the left.
 - **Calendar** — This is for syncing your on-call schedules to calendar applications like Google Calendar, Apple Calendar, etc. We have instructions on [exporting your on-call schedules to your calendar application](/docs/schedules-and-exterior-tools#section-exporting-on-call-schedules-to-a-calendar-app).
@@ -282,31 +288,31 @@ The page will refresh and you will see a banner confirming the application’s a
 ###Reset Password
 
 If you forgot your password, you can reset it by sending yourself a password reset email.
-[block:callout]
-{
-  "type": "info",
-  "body": "You must be logged out to reset your password.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+You must be logged out to reset your password.",
+  "title": "Note
+</Callout>
+
+
 1. Access your account's login page (i.e. https://subdomain.pagerduty.com) and click **Forgot your password?**.
 
 2. Enter your email address and click **Reset Password**.
-[block:callout]
-{
-  "type": "info",
-  "body": "If using SSO, you will need to contact your account owner to reset your password with your identity provider.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+If using SSO, you will need to contact your account owner to reset your password with your identity provider.",
+  "title": "Note
+</Callout>
+
+
 3. You will receive an email containing a link to reset your password.
-[block:callout]
-{
-  "type": "info",
-  "body": "The password reset URL expires 2 hours after it is sent out.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+The password reset URL expires 2 hours after it is sent out.",
+  "title": "Note
+</Callout>
+
+
 4. Follow the on-screen instructions to reset your password.
 
 ###Change Password

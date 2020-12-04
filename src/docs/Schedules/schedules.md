@@ -7,11 +7,8 @@ createdAt: "2017-05-16T16:02:58.570Z"
 updatedAt: "2020-10-09T20:19:16.124Z"
 ---
 On-call schedules are used to map out your coverage needs, and determine who will be notified when an incident is triggered. Only one user per schedule can be on-call at a time, and when an incident is impacting a service, notifications are sent to that user on the [service's associated escalation policy](https://support.pagerduty.com/docs/escalation-policies). 
-[block:api-header]
-{
-  "title": "Create a Schedule"
-}
-[/block]
+## Create a Schedule
+
 Basic schedules are most often comprised of a single layer that allows you to add users to a schedule on a daily or weekly rotation.  You can use layers to clearly organize shifts visually, so that you can tell at-a-glance what days and hours a shift covers. A schedule layer is the foundation for more [complex schedules](doc:schedule-examples) that you can tailor to your team’s needs. 
 
 To create a new schedule layer: 
@@ -174,11 +171,8 @@ Schedules are also designed to be associated with [teams](https://support.pagerd
 This being said, it is true that you can attach a team to a schedule when *creating* the schedule but not while editing it. This is to accommodate the following use case:
 
 With [advanced permissions](https://support.pagerduty.com/v1/docs/advanced-permissions), some users are only allowed to edit their team's objects (schedules, services, escalation policies). If one of these users wishes to create a new schedule and put it inside their team's escalation policy, they can only do so if that schedule is assigned to their team.
-[block:api-header]
-{
-  "title": "Optional Schedule Components"
-}
-[/block]
+## Optional Schedule Components
+
 
 ##Schedule Restrictions
 

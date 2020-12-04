@@ -10,13 +10,13 @@ updatedAt: "2020-11-13T19:43:36.557Z"
 Amazon CloudWatch provides monitoring for AWS resources and customer-run applications. The service can collect data, gain insight, and alert users to fix problems within applications and organizations. Amazon CloudWatch gives system-wide visibility into resource utilization and notifications can be set for when any metrics cross a specified threshold. These alarms can be automatically sent to PagerDuty, which then reliably alerts the correct on-call person through their preferred contact methods. 
 
 Follow the instructions below to configure Amazon CloudWatch with PagerDuty. Note that this integration expects to find in the `Message` property a nested JSON-encoded object; if this is not received, no alert will trigger. If you have any questions or need any assistance, please [contact our Support team](https://www.pagerduty.com/contact-us/).
-[block:callout]
-{
-  "type": "info",
-  "body": "This integration is available for Amazon CloudWatch on AWS Cloud or AWS Outpost.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This integration is available for Amazon CloudWatch on AWS Cloud or AWS Outpost.",
+  "title": "Note
+</Callout>
+
+
 # In PagerDuty 
 
 There are two ways that Amazon CloudWatch can be integrated with PagerDuty: via Event Rules or through an integration on a PagerDuty Service.

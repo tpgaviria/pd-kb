@@ -7,11 +7,8 @@ createdAt: "2017-06-01T15:48:45.746Z"
 updatedAt: "2020-10-09T21:40:52.845Z"
 ---
 When a service sends an event to PagerDuty, an alert and corresponding incident is triggered in PagerDuty. Unless the alert has been suppressed, each alert initially has a corresponding incident. Multiple alerts can be aggregated into a single incident for triage, functioning to streamline incident handoff between teams, centralize critical information, and reduce notification fatigue. 
-[block:api-header]
-{
-  "title": "Using alerts in PagerDuty"
-}
-[/block]
+## Using alerts in PagerDuty
+
 When a third party monitoring tool has an event, an alert is created in PagerDuty. That alert’s incident is what notifies users so that the right person can acknowledge and resolve the incident. By consolidating these alerts into a single incident, you can provide a central incident for your team to respond to and resolve.
 
 Excluding a small handful of exceptions, you can set up alerts for any service that integrates with a third party monitoring tool. Enabling this feature will allow you to merge incidents together to create transparency and clarity when attempting to resolve an incident.
@@ -71,11 +68,8 @@ Alerts are only created for inbound events submitted via one of our events APIs 
 * Email integrations
 * Incident creation via web UI ("New Incident" button)
 * [Incident Creation via REST API](https://v2.developer.pagerduty.com/docs/incident-creation-api)
-[block:api-header]
-{
-  "title": "Enabling Alerts"
-}
-[/block]
+## Enabling Alerts
+
 
 [block:callout]
 {
@@ -107,11 +101,8 @@ When enabled, the `incident_key` is deprecated and becomes `null`. De-duplicatio
 Once alerts are enabled and for a service, you can review our knowledge base article on merging alerts into a single incident.
 
 
-[block:api-header]
-{
-  "title": "Alerts Table"
-}
-[/block]
+## Alerts Table
+
 
 [block:callout]
 {
@@ -175,11 +166,8 @@ Table filters can be cleared from within the Active Filters Bar by clicking the 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Bi-Directional Integration Limitations"
-}
-[/block]
+## Bi-Directional Integration Limitations
+
 With PagerDuty’s new alerts and incidents functionality, most services can be migrated to create alerts and incidents. However, bi-directional integrations that allow PagerDuty to send information back out to a tool cannot support alerts and incidents.
 
 Bi-directional integrations help keep outside monitoring tools in sync with PagerDuty acknowledge or resolve actions by sending a webhook when an incident’s state is updated. These third-party tools depend on `incident_key` being present in the webhook payload to update events on their end. With the release of alerts and incidents, webhook payloads will no longer contain `incident_key` when the incident contains an alert; instead the field will show as null.

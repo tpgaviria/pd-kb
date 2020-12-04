@@ -14,11 +14,8 @@ PagerDuty Modern Incident Response is a suite of capabilities that drive fast an
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Product Capabilities"
-}
-[/block]
+## Product Capabilities
+
 
 [block:image]
 {

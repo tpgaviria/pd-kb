@@ -9,11 +9,8 @@ updatedAt: "2020-01-09T20:50:38.124Z"
 Global event rules allow you to route events to a single endpoint and write rules to define which team receives alerts based on content in those events.
 
 API-based events with JSON/[PD-CEF fields](doc:pd-cef) and email-based events are both supported.
-[block:api-header]
-{
-  "title": "Configuring Global Event Rules"
-}
-[/block]
+## Configuring Global Event Rules
+
 To access global event rules, navigate to the **Configuration** menu and select **Event Rules**. 
 [block:callout]
 {
@@ -167,11 +164,8 @@ You can use the [V1](https://v2.developer.pagerduty.com/docs/events-api) or [V2]
 If using the [V1 events API](https://v2.developer.pagerduty.com/docs/events-api), use your routing integration key as your `service_key` value in your event JSON.
 
 If using the [V2 events API](https://v2.developer.pagerduty.com/docs/events-api-v2), use your routing integration key as your `routing_key` value in your event JSON.
-[block:api-header]
-{
-  "title": "Troubleshooting Global Event Rules"
-}
-[/block]
+## Troubleshooting Global Event Rules
+
 ###If None of Your Rules Are Working
 This may be because you have not set up the integration key correctly in your monitoring tool. For event rules to work, you must use the integration key found to the right of your rules list under Integration Settings. If you are sending events through the Events API, use this integration key in the `service_key` field ([Events API V1](https://v2.developer.pagerduty.com/docs/events-api)) or the `routing_key` field ([Events API V2](https://v2.developer.pagerduty.com/docs/events-api-v2)).
 
@@ -193,11 +187,8 @@ For nested fields, format the field name with periods separating each level of t
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Adding Notes With Event Rules"
-}
-[/block]
+## Adding Notes With Event Rules
+
 [Notes](https://support.pagerduty.com/docs/editing-incidents#section-add-a-note-to-an-incident) can be used to help responders resolve incidents quicker by including information or links related to the system that the event comes from.
 
 Notes via global event rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
@@ -250,11 +241,8 @@ To configure an event rule to set incident priority:
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Scheduled Event Rules"
-}
-[/block]
+## Scheduled Event Rules
+
 You can gain a greater degree of control over your event rules by detailing a single specific time in the future in which they will be active. This can be useful for testing rules and for planned maintenance. 
 
 Scheduled Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
@@ -292,11 +280,8 @@ Users can then specify what actions are to be performed within this time window.
 }
 [/block]
 In the above example, alerts will be suppressed unless 6+ alerts come in within a 10 minute window. If alerts surpass that threshold, then an incident will be triggered. 
-[block:api-header]
-{
-  "title": "Recurring Event Rules"
-}
-[/block]
+## Recurring Event Rules
+
 If there are specific hours of the day or day(s) within a week when you would like an event to follow a particular rule, you can set its activity on an automatic, weekly recurring schedule. This feature is specific to each individual event rule and you can make additional changes, such as changing severity/priority, based on time of day. 
 
 The Recurring Event Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
@@ -318,11 +303,8 @@ To set a recurring schedule for an event rule, go to **Configuration** :fa-arrow
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Disable Event Rules"
-}
-[/block]
+## Disable Event Rules
+
 If you would like to pause an event rule’s activity, you can disable and re-enable it at a later time. This feature allows you to manually initiate integration-specific disablement during maintenance or testing on a tool. 
 
 The Disable Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
@@ -378,11 +360,8 @@ If you would like to enable the rule again, click the :fa-cog: dropdown and clic
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Threshold Alerts"
-}
-[/block]
+## Threshold Alerts
+
 Receive PagerDuty notifications only when your customized alert conditions breach your specified limits. In this way, responders effectively reduce alert noise without missing critical issues. 
 
 The Threshold Alerts functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
@@ -460,11 +439,8 @@ The current alert grouping options that are included with the Event Intelligence
 Users can view all alerts, including those that do not breach the set thresholds, in the Alerts table. Alerts not breaching the thresholds will appear in the table with a status of `Triggered (Suppressed)`. When the threshold is breached, the alert that exceeded the threshold will appear with a `Triggered` status. 
 
 This alert will also create an incident, which can be viewed in the Incidents Table.
-[block:api-header]
-{
-  "title": "FAQ"
-}
-[/block]
+## FAQ
+
 ###Are email integration filters/rules, or event transformers supported?
 For events routed by the routing engine, service-level logic applies. Event transformers are currently not supported.
 

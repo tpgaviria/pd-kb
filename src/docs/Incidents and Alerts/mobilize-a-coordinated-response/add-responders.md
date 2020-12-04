@@ -7,13 +7,13 @@ createdAt: "2018-06-06T19:54:39.215Z"
 updatedAt: "2020-11-19T22:48:38.425Z"
 ---
 Adding responders allows you to receive assistance from additional users with an incident response. Typical reasons for adding responders include SEV-1/P1 responses, critical incident responses, and mobilizing teams. 
-[block:callout]
-{
-  "type": "info",
-  "body": "This feature is available on Business and Digital Operations plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan featuring Add Responders.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This feature is available on Business and Digital Operations plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan featuring Add Responders.",
+  "title": "Note
+</Callout>
+
+
 #Add Responders to an Incident
 
 You can request **individual users** or [**escalation policies**](https://support.pagerduty.com/docs/add-responders#section-escalation-policy-responder-notifications) as responders, with a limit of 300 Responders per incident. The requested users will receive notifications to **accept** or **decline** the request to respond to the incident. 
@@ -88,12 +88,12 @@ Response plays can satisfy the following use cases:
 
 * [Add Responders Automatically During an Ongoing Incident](https://support.pagerduty.com/docs/add-responders#section-add-responders-automatically-during-an-ongoing-incident)
 * [Add Responders Automatically at Incident Creation](https://support.pagerduty.com/docs/add-responders#section-add-responders-automatically-at-incident-creation)
-[block:callout]
-{
-  "type": "info",
-  "body": "Response Plays are available on our Digital Operations plan and as part of our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) package. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature."
-}
-[/block]
+
+<Callout type="info" title="Info">
+Response Plays are available on our Digital Operations plan and as part of our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) package. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.
+</Callout>
+
+
 ###Add Responders Automatically During an Ongoing Incident
 
 From the PagerDuty mobile app, a play can be run on the incident like this:

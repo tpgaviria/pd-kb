@@ -27,11 +27,8 @@ Advanced Permissions allow you to specify the team-wide role that a user has on 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Overview"
-}
-[/block]
+## Overview
+
 With advanced permissions, there are three different types of roles: base roles, team roles and object roles. Each role is unique and dictates what a user has access to. 
 
 ##Base Roles
@@ -152,11 +149,8 @@ Base roles establish the level of access that a user has to everything across th
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Managing Roles"
-}
-[/block]
+## Managing Roles
+
 Base, team, and object roles can be managed by different users on the account based on their level of permissions. 
 [block:parameters]
 {
@@ -267,11 +261,8 @@ Under **Additional Permissions**, assign an object role to a specific schedule, 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Team Privacy"
-}
-[/block]
+## Team Privacy
+
 With advanced permissions, teams have the option to be set to **Private** or **Public**. By default, all teams are public.
 
 - **Public** teams can be viewed and accessed by users outside of those teams.
@@ -316,11 +307,8 @@ To update a team’s privacy, navigate to the **People** menu, select **Teams** 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Responding to Incidents From Other Teams"
-}
-[/block]
+## Responding to Incidents From Other Teams
+
 The team that an incident is associated with is based on the [service](https://support.pagerduty.com/docs/services-and-integrations#section-configuring-services-and-integrations) where the incident was triggered. For example, if an incident is triggered on a service associated with the Network Operations team, then the incident is associated with the Network Operations team. If the incident is reassigned to an escalation policy or user that belongs to a different team, then the incident will still be associated with the Network Operations team.
 
 At this point, any users who are assigned to the incident will be able to respond to it, even if they are not associated with the Network Operations team.* However, they won’t see the incident on their incidents dashboard if filtering by My Teams. Any users who are *not* assigned to the incident AND who don’t have access to respond to incidents associated with the Network Operations team** will not be able to respond to the incident.
@@ -334,21 +322,15 @@ With that being said, if there is a user who needs to be able to respond to inci
 - A **Responder** base role - this will allow them to respond to incidents associated with any team
 - A **Responder** or **Manager** role on any team for which they need to respond to incidents
 - A **Responder** or **Manager** object role on any service for which they need to respond to incidents
-[block:api-header]
-{
-  "title": "Rest API Access"
-}
-[/block]
+## Rest API Access
+
 All users can create personal REST API keys or tokens on the **User Icon** :fa-arrow-right: **My Profile** :fa-arrow-right: **User Settings** page of their user profile. Keys or tokens created this way will provide access to the REST API that matches the user’s permissions.
  
 For example, a user with the base role of **Manager** can create a personal API key that will allow them to edit a schedule. However, they will not be able to add new users to the account because their level of access dictates that they cannot do this. 
  
 [Global API access keys](https://support.pagerduty.com/v1/docs/using-the-api) (which can be either full access or read only) can be created and managed by users with a Global Admin or Account Owner base role.
-[block:api-header]
-{
-  "title": "Migrating From Basic to Advanced Permission Roles"
-}
-[/block]
+## Migrating From Basic to Advanced Permission Roles
+
 When an account migrates from Basic to Advanced Permissions, most basic user roles are automatically mapped to advanced permissions base roles.
 [block:parameters]
 {
@@ -380,11 +362,8 @@ When an account migrates from Basic to Advanced Permissions, most basic user rol
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Roles in the REST API and SAML"
-}
-[/block]
+## Roles in the REST API and SAML
+
 When provisioning a user through the REST API or SAML, the user will by default be given the **Manager** (a.k.a. **User**) role, unless specified in the user's `role` property. The value set for it must be one of a set of fixed values that is recognized by our internal APIs, or our web services will respond with status `400 Invalid Request`.
 
 The values of the `role` field of user records, and also the permissions system, are as follows:

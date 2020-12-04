@@ -33,9 +33,10 @@ Use the Service Directory to [save your favorite questions](https://support.page
 {
   "type": "info",
   "title": "Note",
-  "body": "The Service Directory is generally available on all PagerDuty plans and replaces the old Services list view. If you have any feedback regarding this feature, please [contact PagerDuty Support](mailto:support@pagerduty.com)."
-}
-[/block]
+  "body": "The Service Directory is generally available on all PagerDuty plans and replaces the old Services list view. If you have any feedback regarding this feature, please [contact PagerDuty Support](mailto:support@pagerduty.com).
+</Callout>
+
+
 #Navigating to the Service Directory
 
 In your PagerDuty account, navigate to **Services** :fa-arrow-right: **Service Directory**. You can still access the old Services list view by clicking on the **Return to previous version of Service list** link on the top of the page.

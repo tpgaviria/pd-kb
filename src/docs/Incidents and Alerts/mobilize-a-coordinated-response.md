@@ -7,13 +7,13 @@ createdAt: "2018-06-28T11:48:25.302Z"
 updatedAt: "2020-09-18T23:29:07.078Z"
 ---
 A coordinated response is a cross-functional team of incident responders whose primary goal is to efficiently restore service for those impacted. Preparing for an effective coordinated response is essential for efficient operations management, whether your organization is handling a major incident that requires multiple responders to drive fast resolution, or navigating a complex, lower-impact situation that needs input from multiple parties.
-[block:callout]
-{
-  "type": "info",
-  "body": "Many of the PagerDuty capabilities referenced in this article are only available to customers on Business, Digital Operations, and Team (legacy) plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with these capabilities.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+Many of the PagerDuty capabilities referenced in this article are only available to customers on Business, Digital Operations, and Team (legacy) plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with these capabilities.",
+  "title": "Note
+</Callout>
+
+
 #Preparing for a Coordinated Response
 
 The following steps and PagerDuty features are recommended for an effective coordinated response:
@@ -64,6 +64,6 @@ Instead of adding responders for additional assistance to the incident at hand, 
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "For a detailed overview on establishing best practices, as well as more examples on how you can leverage PagerDuty’s capabilities, please refer to our [Incident Response Guide](http://response.pagerduty.com/)."
-}
-[/block]
+  "body": "For a detailed overview on establishing best practices, as well as more examples on how you can leverage PagerDuty’s capabilities, please refer to our [Incident Response Guide](http://response.pagerduty.com/).
+</Callout>
+

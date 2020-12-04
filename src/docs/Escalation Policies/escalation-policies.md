@@ -61,11 +61,8 @@ In the example below, if an on-call user in the **Primary On-Call Schedule** sch
 ##Add an Escalation Policy to a Team 
 
 If your account has access to the Teams feature, escalation policies are designed to connect other core PagerDuty objects to your Teams. When you add an escalation policy to a Team, all of the escalation policy's associated users, schedules and services will be assigned to that Team. For more information, please check out our [Teams](https://support.pagerduty.com/docs/teams) article.
-[block:api-header]
-{
-  "title": "Escalation Targets and Limitations"
-}
-[/block]
+## Escalation Targets and Limitations
+
 You can select users or schedules as targets on an escalation policy:  
 
 * **User Targets**: Select users as targets if you always want a specific person/persons to be notified when an incident is assigned and/or escalated to an escalation level.
@@ -87,11 +84,8 @@ If nobody is on-call in the first level, we will assign the incident to the next
   * You have the option to repeat an escalation policy 9 times. Once an escalation policy reaches the amount of loops configured, the incident will stay assigned to the last user and will not continue to notify once it has cycled through all of the responder's contact methods.
   * Notifying too many users at once runs the risk of creating confusion about who owns an incident. With this is mind, [multi-user notifications](https://support.pagerduty.com/docs/escalation-policies#section-notify-multiple-users-at-once) on each escalation rule are limited to 50 users on schedules on Digital Operations and Business plans and 5 on Professional and Free plans. [This topic](https://community.pagerduty.com/t/notifications-suggestions-on-when-to-notify-one-vs-many/1646) addresses best practices about when to notify one user vs. many users.
   * The minimum escalation timeout is 1 minute if there is a single target on an escalation rule. Alternatively, if there is more than one target in an escalation level the minimum escalation timeout is 5 minutes. These restrictions are displayed in the web UI.
-[block:api-header]
-{
-  "title": "Escalation Levels"
-}
-[/block]
+## Escalation Levels
+
 Escalation policies are made up of levels that allow you to escalate incident notifications to different users and/or on-call schedules in the case that no one responds. An escalation policy should have at least two levels, with the option of adding more. Escalation levels can also be used to achieve more [complex use cases involving schedules](https://support.pagerduty.com/docs/escalation-policies-and-schedules#section-escalation-policy-and-schedule-use-cases). 
 [block:image]
 {
@@ -109,11 +103,8 @@ Escalation policies are made up of levels that allow you to escalate incident no
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Notify Multiple Users at Once"
-}
-[/block]
+## Notify Multiple Users at Once
+
 An escalation policy is designed to engage one person in incident response, and it will escalate until one person has responded. Once one person has responded, the escalation policy will stop escalating, and no further notifications will be sent. 
 
 Multi-user notifications can notify multiple users at once when an incident is triggered or escalated, and can be configured within an escalation policy. There are three methods of configuring multi-user notifications based on your intended use-case:

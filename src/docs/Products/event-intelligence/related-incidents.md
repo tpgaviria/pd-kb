@@ -16,13 +16,13 @@ createdAt: "2020-04-21T21:16:46.446Z"
 updatedAt: "2020-07-31T21:58:44.082Z"
 ---
 The Related Incidents feature provides incident responders with the suggested 20 most recent Related Incidents that are impacting other responders and PagerDuty services. This feature uses a completely online and real-time machine learning algorithm as well as your service dependency data to provide these insights, giving responders an at-a-glance-view of the full breadth and scope of incident impact. Related Incidents extends our machine learning capabilities beyond noise reduction, enriching incidents with deep contextual insights to help responders coordinate an effective team response and mitigate business disruption.
-[block:callout]
-{
-  "type": "info",
-  "body": "This feature is currently available as part of our [Digital Operations plan](https://www.pagerduty.com/pricing/) or can be purchased via [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence), an add-on to our Platform Team or Platform Business plans. If you would like to sign up for a trial of this and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This feature is currently available as part of our [Digital Operations plan](https://www.pagerduty.com/pricing/) or can be purchased via [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence), an add-on to our Platform Team or Platform Business plans. If you would like to sign up for a trial of this and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
+  "title": "Note
+</Callout>
+
+
 # View Related Incidents in the Web App
 
 To view Related Incidents, click your desired incident’s **Title** to see the incident details page, and then select the **Related Incidents** tab. The Related Incidents tab uses Event Intelligence to display a list of incidents on your PagerDuty account that are potentially related to the incident you are currently investigating.

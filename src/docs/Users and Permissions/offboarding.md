@@ -13,9 +13,10 @@ The offboarding feature allows administrators to easily deprovision users from t
 {
   "type": "warning",
   "title": "Requirements",
-  "body": "PagerDuty accounts with [Advanced Permissions](https://support.pagerduty.com/docs/advanced-permissions), which come standard with Business and Digital Operations plans, have access to the offboarding feature."
-}
-[/block]
+  "body": "PagerDuty accounts with [Advanced Permissions](https://support.pagerduty.com/docs/advanced-permissions), which come standard with Business and Digital Operations plans, have access to the offboarding feature.
+</Callout>
+
+
 
 [block:image]
 {
@@ -46,9 +47,10 @@ To enable incident reassignment:
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Global Admins and the Account Owner can offboard a user."
-}
-[/block]
+  "body": "Global Admins and the Account Owner can offboard a user.
+</Callout>
+
+
 1. Navigate to **People** :fa-arrow-right: **Users**.
 2. Search for/locate the user that you wish to offboard and click **Delete** on the right hand side under Actions. 
 3. On the next screen, depending on whether the user has any open incidents assigned to them, you will need to either **Reassign to EP** or **Resolve** their incidents. We recommend reassigning these incidents to their associated escalation policy, which will send a notification to a different user on that escalation policy. 
@@ -56,9 +58,10 @@ To enable incident reassignment:
 {
   "type": "info",
   "title": "Note",
-  "body": "If you choose to reassign and the offboarded user is the _only_ person on an escalation policy, the incident will be reassigned to the Account Owner."
-}
-[/block]
+  "body": "If you choose to reassign and the offboarded user is the _only_ person on an escalation policy, the incident will be reassigned to the Account Owner.
+</Callout>
+
+
 If the user does not have any open incidents assigned to them, you will not see this screen and you can continue to step 4.
 4. On the next screen, you will be able to review the user’s associated escalation policies and schedules. You may proactively remove the user from these objects yourself, or, if you click **Next** it will send an email notification to Team Managers assigned to those escalation policies and schedules that they need to be replaced by another user on these objects. **Note**: If the user is not associated with any Team, or if they are on a Team without an assigned Manager, this notification email will be sent to Global Admins and the Account Owner. 
 5. Once the above details have been reviewed, click **Delete User**. See our [Post-Offboarding](https://support.pagerduty.com/docs/offboarding#section-post-offboarding) section below for more details on the post-offboarding flow for Team Managers (or Global Admins and the Account Owner, if not applicable).
@@ -68,9 +71,10 @@ If the user does not have any open incidents assigned to them, you will not see 
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Team Managers associated with the offboarded user will need to take actions in their PagerDuty account in the post-offboarding flow by default. However, if the user is not associated with any Team, or if they are on a Team without an assigned Manager, Global Admins and the Account Owner will receive these prompts and will need to take action."
-}
-[/block]
+  "body": "Team Managers associated with the offboarded user will need to take actions in their PagerDuty account in the post-offboarding flow by default. However, if the user is not associated with any Team, or if they are on a Team without an assigned Manager, Global Admins and the Account Owner will receive these prompts and will need to take action.
+</Callout>
+
+
 Once the user has been offboarded by a Global Admin or Account Owner, the following changes will be visible in your PagerDuty account, prompting Team Managers (default) or Global Admins and Account Owners (see Required User Permissions callout, above) to take action:
 
 * Any incidents formerly assigned to the offboarded user will now either be resolved or reassigned to a different user based on the selections made in the [offboarding flow](https://support.pagerduty.com/docs/offboarding#section-offboard-a-user).

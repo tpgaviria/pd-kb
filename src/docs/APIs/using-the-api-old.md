@@ -5,11 +5,8 @@ hidden: true
 createdAt: "2017-05-11T23:26:07.267Z"
 updatedAt: "2020-10-09T22:35:28.399Z"
 ---
-[block:api-header]
-{
-  "title": "Generating a General Access REST API Key"
-}
-[/block]
+## Generating a General Access REST API Key
+
 For more information about authenticating using an API key, please consult the [related documentation](https://v2.developer.pagerduty.com/docs/authentication).
 
 For more information on the differences between the APIs, check out our article on the differences between our [REST and Events APIs](https://support.pagerduty.com/v1/docs/events-and-rest-apis). 
@@ -73,19 +70,13 @@ Once created, you will see your key appear in the list of keys on the API Access
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "OpenAPI Spec"
-}
-[/block]
+## OpenAPI Spec
+
 One can access and download the [OpenAPI](https://github.com/OAI/OpenAPI-Specification) JSON specification for the PagerDuty REST API at the following URL:
 
 https://api-reference.pagerduty.com/output.json
-[block:api-header]
-{
-  "title": "Integrations that Require REST API Access"
-}
-[/block]
+## Integrations that Require REST API Access
+
 The following integrations require the generation of a REST API key for setup:
 - [Ansible](https://www.pagerduty.com/docs/guides/ansible-integration-guide/)
 - [AppFirst](https://www.pagerduty.com/docs/guides/appfirst-integration-guide/)
@@ -119,11 +110,8 @@ The following integrations require the generation of a REST API key for setup:
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Generating a Personal REST API key"
-}
-[/block]
+## Generating a Personal REST API key
+
 If your account has [Advanced Permissions](doc:advanced-permissions) enabled, users can create personal REST API keys on the **User Settings** tab of their user profile. Requests made using personal REST API keys will be restricted to the user's permissions.
 [block:image]
 {
@@ -141,11 +129,8 @@ If your account has [Advanced Permissions](doc:advanced-permissions) enabled, us
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Getting Started with the REST API"
-}
-[/block]
+## Getting Started with the REST API
+
 The best place to start your API journey is with our [blog post introducing the API](https://www.pagerduty.com/blog/you-have-the-power/) for suggestions and examples of what other customers have done.
 
 When you're ready for more, head over to the [PagerDuty Developer](https://v2.developer.pagerduty.com/) site for detailed documentation on our API endpoints.

@@ -39,9 +39,8 @@ Bob Dobbs,bd@example.com,admin,Director of Engineering,86,15555555554,Engineerin
 ## Have PagerDuty Import Users for You
 
 Create a CSV file according to the above example, populate it with your users' data, and [send the file to our support team](mailto:support@pagerduty.com).
-[block:callout]
-{
-  "type": "info",
-  "body": "As with running the the Ruby script yourself, you can only include one phone number in addition to email."
-}
-[/block]
+
+<Callout type="info" title="Info">
+As with running the the Ruby script yourself, you can only include one phone number in addition to email.
+</Callout>
+

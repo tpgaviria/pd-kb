@@ -15,13 +15,13 @@ There are several aspects to preparing for effective stakeholder communications:
  * Establishing who to inform during an incident.
  * Understanding the various methods of adding stakeholders as subscribers to incidents.
  * Understanding how to send status updates to stakeholders.
-[block:callout]
-{
-  "type": "info",
-  "body": "This feature is available to customers on our new Business plan and Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This feature is available to customers on our new Business plan and Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.",
+  "title": "Note
+</Callout>
+
+
 ##Who to Inform During an Incident
 
 For any given incident, there are usually two factors to consider when deciding which stakeholders to inform:
@@ -45,9 +45,10 @@ When it comes time to subscribe stakeholders to an incident, you can now pick fr
 {
   "type": "info",
   "title": "Stakeholder Users",
-  "body": "Any kind of PagerDuty user can be added as an incident subscriber: the account owner, managers, responders, etc. There are also special [Full Stakeholder](https://support.pagerduty.com/docs/user-roles#stakeholder-users) and [Limited Stakeholder](https://support.pagerduty.com/docs/status-dashboard#section-limited-stakeholder-access-level) user licenses available; these users can be subscribed to incidents and receive incident status updates. Full Stakeholders have read-only access to other data in your PagerDuty account, while Limited Stakeholders only have access to view and subscribe to the status dashboard, and do not see any other parts of PagerDuty. Full Stakeholders and Limited Stakeholders cannot add, edit or delete any objects in the account. Both Stakeholder user licenses are available at a reduced price and are ideal for employees that need to be involved in internal incident communications but won't be actively participating in the resolution effort. Please contact our sales team for more information about both types of Stakeholder users."
-}
-[/block]
+  "body": "Any kind of PagerDuty user can be added as an incident subscriber: the account owner, managers, responders, etc. There are also special [Full Stakeholder](https://support.pagerduty.com/docs/user-roles#stakeholder-users) and [Limited Stakeholder](https://support.pagerduty.com/docs/status-dashboard#section-limited-stakeholder-access-level) user licenses available; these users can be subscribed to incidents and receive incident status updates. Full Stakeholders have read-only access to other data in your PagerDuty account, while Limited Stakeholders only have access to view and subscribe to the status dashboard, and do not see any other parts of PagerDuty. Full Stakeholders and Limited Stakeholders cannot add, edit or delete any objects in the account. Both Stakeholder user licenses are available at a reduced price and are ideal for employees that need to be involved in internal incident communications but won't be actively participating in the resolution effort. Please contact our sales team for more information about both types of Stakeholder users.
+</Callout>
+
+
 ##Add Subscribers to an Incident
 
 ###Automatically Adding Subscribers at Incident Creation
@@ -103,13 +104,13 @@ This is also easily done in the mobile app:
 }
 [/block]
 This will ensure that every new incident created on the service will run the response play, which will subscribe it’s stakeholders to receive all status updates subsequently published for that incident. 
-[block:callout]
-{
-  "type": "info",
-  "body": "The act of subscribing stakeholders to an incident does not cause them to receive a notification. This “silent subscription” allows you to subscribe stakeholders to an incident at any time (for example, at incident creation) and then explicitly choose to publish a status update if and when there is something noteworthy to report. Thus, stakeholders receive only curated updates, which helps avoid notification fatigue.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+The act of subscribing stakeholders to an incident does not cause them to receive a notification. This “silent subscription” allows you to subscribe stakeholders to an incident at any time (for example, at incident creation) and then explicitly choose to publish a status update if and when there is something noteworthy to report. Thus, stakeholders receive only curated updates, which helps avoid notification fatigue.",
+  "title": "Note
+</Callout>
+
+
 ###Add Subscribers to an Ongoing Incident
 
 Users and teams can be subscribed to an active incident from the PagerDuty web app or the mobile app. 

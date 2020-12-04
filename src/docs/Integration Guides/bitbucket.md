@@ -7,13 +7,13 @@ createdAt: "2018-08-17T01:34:34.392Z"
 updatedAt: "2020-10-09T23:01:50.308Z"
 ---
 Bitbucket is the Git solution for professional teams. Bitbucket core features include pull requests, branch permissions and inline comments. With the Bitbucket integration for PagerDuty, you can notify on-call engineers about failures within your Bitbucket pipelines.
-[block:callout]
-{
-  "type": "info",
-  "body": "This integration is intended for Bitbucket cloud.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This integration is intended for Bitbucket cloud.",
+  "title": "Note
+</Callout>
+
+
 #In PagerDuty
 
 Within your PagerDuty account, a Custom Event Transformer needs to be created. This allows PagerDuty to process webhooks from your Bitbucket account. Each repository in Bitbucket can send failure information to different PagerDuty Services. Determine which Bitbucket repository and PagerDuty service you would like to integrate.

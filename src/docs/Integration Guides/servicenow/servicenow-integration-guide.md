@@ -43,9 +43,10 @@ Incident communication between ServiceNow and PagerDuty is bi-directional, allow
 {
   "type": "info",
   "title": "Looking for another version?",
-  "body": "[V6 of our ServiceNow Integration](https://support.pagerduty.com/docs/servicenow-integration-guide-v6) is also available."
-}
-[/block]
+  "body": "[V6 of our ServiceNow Integration](https://support.pagerduty.com/docs/servicenow-integration-guide-v6) is also available.
+</Callout>
+
+
 #Integration Walkthrough
 
 #Step 1: Complete ServiceNow Pre-Install Requirements
@@ -302,9 +303,10 @@ You may see a warning at the top of the page indicating that you need to switch 
 {
   "type": "info",
   "title": "Note",
-  "body": "If the PagerDuty Service ID is not blank, it means that the object is already mapped to PagerDuty."
-}
-[/block]
+  "body": "If the PagerDuty Service ID is not blank, it means that the object is already mapped to PagerDuty.
+</Callout>
+
+
 3. In PagerDuty, using your web browser, navigate to **Services** :fa-arrow-right: **Service Directory** and select the existing service that is configured. In the URL bar, you will find the 7-character **Service ID** starting with the letter `P`. Copy the Service ID to your clipboard.
 4. In ServiceNow, paste the Service ID in the **PagerDuty Service** field.
 5. Click **Save**. If you are redirected back to the list view in ServiceNow, open the record again. 
@@ -375,9 +377,10 @@ Depending on which mapping you choose on the Settings page, some PagerDuty attri
 {
   "type": "info",
   "title": "Note",
-  "body": "The user provisioning assignment groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow."
-}
-[/block]
+  "body": "The user provisioning assignment groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow.
+</Callout>
+
+
 1. Navigate to **User Administration** and click **Groups**. Select an assignment group that you would like to provision to PagerDuty. Then, click on the **Provision Group into PagerDuty** link to deploy this group to your PagerDuty instance.
 [block:image]
 {
@@ -420,17 +423,19 @@ Please follow [documentation here](https://support.pagerduty.com/docs/servicenow
 {
   "type": "info",
   "title": "Note",
-  "body": "If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you can skip this step. You will not need to provision Configuration Items into PagerDuty."
-}
-[/block]
+  "body": "If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you can skip this step. You will not need to provision Configuration Items into PagerDuty.
+</Callout>
+
+
 
 [block:callout]
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "Before provisioning Configuration Items as services to PagerDuty, we recommend the following:\n\n* Read our [Service Configuration Guide](https://pagerduty.influitive.com/forum/t/service-configuration-guide/1660/#heading--business-services) for best practices in planning your PagerDuty Technical and Business service relationships.\n   * Given the [dependency relationships](https://support.pagerduty.com/docs/service-profile#service-dependencies) between Business and Technical services, review how you would like to map configuration item relationships noting the higher level CMDB classes and lower level CMDB classes. \n* Set the corresponding Assignment Group for each of the Configuration Items you will be provisioning. This simplifies the provisioning process: when you provision a single Configuration Item, it will verify that the Assignment Group exists in PagerDuty (as an Escalation Policy). If not, it will also provision the corresponding Assignment Group as a PagerDuty Escalation Policy."
-}
-[/block]
+  "body": "Before provisioning Configuration Items as services to PagerDuty, we recommend the following:\n\n* Read our [Service Configuration Guide](https://pagerduty.influitive.com/forum/t/service-configuration-guide/1660/#heading--business-services) for best practices in planning your PagerDuty Technical and Business service relationships.\n   * Given the [dependency relationships](https://support.pagerduty.com/docs/service-profile#service-dependencies) between Business and Technical services, review how you would like to map configuration item relationships noting the higher level CMDB classes and lower level CMDB classes. \n* Set the corresponding Assignment Group for each of the Configuration Items you will be provisioning. This simplifies the provisioning process: when you provision a single Configuration Item, it will verify that the Assignment Group exists in PagerDuty (as an Escalation Policy). If not, it will also provision the corresponding Assignment Group as a PagerDuty Escalation Policy.
+</Callout>
+
+
 With the PagerDuty integration, each ServiceNow configuration item can have a corresponding PagerDuty service. This integration offers an easy way to quickly generate a new PagerDuty service and webhook (which is necessary to send information back to ServiceNow). It will also populate the associated fields within ServiceNow.
 
 Any configuration item that extends the base `cmdb_ci` table can be mapped to PagerDuty because it inherits the same field that contains the PagerDuty service ID. This makes it easy to map any type of configuration item to services in PagerDuty, although provisioning only Business Services, Technical Services and/or Applications is recommended. For each configuration item type, the form view for it will need to be modified to show the PagerDuty object ID.
@@ -496,9 +501,10 @@ To configure Services Provisioning Settings and provision services:
 {
   "type": "info",
   "title": "Note",
-  "body": "* If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you will not be able to use this feature. If you wish to use this feature, you must select **Configuration and Assignment Groups map to PagerDuty** in PagerDuty Settings.\n* You will not be able to bulk provision CIs and services that have names that already exist within your PagerDuty account. Please check your account before provisioning to ensure you are not duplicating the names of existing services. If you have matching services, you will need to provision individual services manually (see previous section)."
-}
-[/block]
+  "body": "* If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you will not be able to use this feature. If you wish to use this feature, you must select **Configuration and Assignment Groups map to PagerDuty** in PagerDuty Settings.\n* You will not be able to bulk provision CIs and services that have names that already exist within your PagerDuty account. Please check your account before provisioning to ensure you are not duplicating the names of existing services. If you have matching services, you will need to provision individual services manually (see previous section).
+</Callout>
+
+
 1. Navigate to **PagerDuty** in the application navigator and click **Services Provisioning**. You may skip over the [Services Provisioning Settings](https://support.pagerduty.com/docs/servicenow-integration-guide#422-services-provisioning-settings-optional) section for now, as it is optional and unrelated to bulk provisioning. 
 2. Click **Custom Services Provisioning** which is where you will set the services and service relationships that will be provisioned to PagerDuty based on CIs within ServiceNow. In the **Select CI Table containing services** field, search and select the **CI table** that contains the CI you would like to provision. In the **Select the type of service to be provisioned** field, select the type of service you would like the column to be provisioned as in PagerDuty (PagerDuty only has options to create a Business Service or Technical Service). In the **Select column for Service information** field, select the column that you would like to be the name of your provisioned service. If you would like to set up a dependency relationship with another service, continue to steps 3 and 4. If you would like to provision one service without a dependency relationship, skip to step 5. 
 3. *Optional*: If you would like to set up a dependency relationship with another service, in the **Select relationship between services to be provisioned** field, you will select whether this service will be a parent or child to another service. If you would like this service to be a parent service, select **consumed by** and if you would like it to be a child service, select **consumes**.
@@ -508,9 +514,10 @@ To configure Services Provisioning Settings and provision services:
 {
   "type": "danger",
   "title": "Warning",
-  "body": "Please carefully review the CIs on this page, as the next step will provision everything listed as services in PagerDuty. If there are CIs you do not wish to provision, please delete them by selecting their checkboxes and clicking **Delete** in the **Actions on selected rows...** dropdown at the bottom left. A confirmation dialog will appear, click **Delete**."
-}
-[/block]
+  "body": "Please carefully review the CIs on this page, as the next step will provision everything listed as services in PagerDuty. If there are CIs you do not wish to provision, please delete them by selecting their checkboxes and clicking **Delete** in the **Actions on selected rows...** dropdown at the bottom left. A confirmation dialog will appear, click **Delete**.
+</Callout>
+
+
 6. Return to the bulk provisioning screen and click **Provision Services** under **Step 3 of 3** to provision to PagerDuty. You should now see a success message on the bulk provisioning screen and your provisioned services in your PagerDuty account. 
 
 If you wish to review your provisioned services in the future, you can navigate to **PagerDuty** in the application navigator and select the **PagerDuty Service Provisionings** table.

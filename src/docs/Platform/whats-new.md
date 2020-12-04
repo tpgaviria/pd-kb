@@ -7,11 +7,8 @@ updatedAt: "2017-06-20T21:40:36.279Z"
 type: "link"
 link_url: "https://www.pagerduty.com/whats-new"
 ---
-[block:api-header]
-{
-  "title": "A List of New Features and Enhancements"
-}
-[/block]
+## A List of New Features and Enhancements
+
 [Click here](doc:integration-timeline) to view a timeline of our integrations.
 [block:parameters]
 {

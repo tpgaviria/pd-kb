@@ -8,9 +8,10 @@ updatedAt: "2020-10-12T16:20:12.475Z"
 [block:api-header]
 {
   "type": "basic",
-  "title": "Web App"
-}
-[/block]
+  "title": "Web App
+</Callout>
+
+
 PagerDuty's web app requires a modern web browser with JavaScript enabled.
 
 We recommend using the most recent production release of the browser(s) you work in. Older versions and pre-release browsers, such as betas or developer previews, are not supported. Issues with a pre-release version of a browser should be reported to the browser vendor.
@@ -45,23 +46,26 @@ The following browsers are tested and supported:
 {
   "type": "warning",
   "title": "** Microsoft Internet Explorer 11 Support",
-  "body": "At the end of 2020, PagerDuty will be removing support for Microsoft Internet Explorer 11."
-}
-[/block]
+  "body": "At the end of 2020, PagerDuty will be removing support for Microsoft Internet Explorer 11.
+</Callout>
+
+
 
 [block:api-header]
 {
   "type": "basic",
-  "title": "Mobile Apps"
-}
-[/block]
+  "title": "Mobile Apps
+</Callout>
+
+
 We support the latest version of the PagerDuty app available from the Apple App Store or Google Play Store on devices running iOS 11 and higher or Android 5.0 and higher. For more information, see [Using the Mobile App](doc:mobile-app).
 
 Logging in to the Pagerduty app requires a browser installed on your device.  If you are using an Android **work profile**, the profile must be configured to be able to access a browser.  This can be done either by adding the browser into the work profile, or allowing data to be passed outside of the work profile.  Please refer to [Android's Documentation](https://developer.android.com/work/managed-profiles) to understand more about setting up work profiles.
 [block:api-header]
 {
   "type": "basic",
-  "title": "Integrations"
-}
-[/block]
+  "title": "Integrations
+</Callout>
+
+
 System requirements for integrations are listed in the integration guide.

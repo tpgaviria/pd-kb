@@ -18,9 +18,10 @@ updatedAt: "2020-10-09T23:28:06.292Z"
 {
   "type": "info",
   "title": "Looking for a different version?",
-  "body": "The [Salesforce Service Cloud V1 integration](https://support.pagerduty.com/docs/salesforce-service-cloud-v1-integration-guide) is also available."
-}
-[/block]
+  "body": "The [Salesforce Service Cloud V1 integration](https://support.pagerduty.com/docs/salesforce-service-cloud-v1-integration-guide) is also available.
+</Callout>
+
+
 # How it Works
 
 * Once a Salesforce Cloud object is connected to your PagerDuty instance, new record creations and updates on that object are evaluated against rules that you predefine. If the rule criteria is met, PagerDuty will perform actions specified by those predefined rules.
@@ -42,9 +43,10 @@ updatedAt: "2020-10-09T23:28:06.292Z"
 {
   "type": "warning",
   "body": "If you have already configured the previous version, in order to preserve your previously created rules and rulesets, we recommend that you never uninstall the previous version of the Salesforce managed package. Instead, you can follow the instructions below to update the managed package.",
-  "title": "Do Not Uninstall Previous Version"
-}
-[/block]
+  "title": "Do Not Uninstall Previous Version
+</Callout>
+
+
 **In Salesforce**:
 
 1. Log in as a Salesforce Admin and search for the **PagerDuty** app in the AppExchange. 
@@ -414,9 +416,10 @@ If you use custom permissions in Salesforce, you will need to ensure that agents
 
 [block:html]
 {
-  "html": "<div><table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAdministrator</td>\n\t\t\t<td>\nPagerDutyConfiguration\n</td>\n\t\t\t<td>read<br>write</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAuditor</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyManager</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyUser</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>off</td>\n\t\t</tr>\n\t</tbody>\n</table></div>\n\n<style>table , td, th {\n\tborder: 1px solid #595959;\n\tborder-collapse: collapse;\n}\ntd, th {\n\tpadding: 3px;\n\twidth: 30px;\n\theight: 25px;\n}\nth {\n\tbackground: #f0e6cc;\n}\n.even {\n\tbackground: #fbf8f0;\n}\n.odd {\n\tbackground: #fefcf9;\n}</style>"
-}
-[/block]
+  "html": "<div><table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAdministrator</td>\n\t\t\t<td>\nPagerDutyConfiguration\n</td>\n\t\t\t<td>read<br>write</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAuditor</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyManager</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyUser</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>off</td>\n\t\t</tr>\n\t</tbody>\n</table></div>\n\n<style>table , td, th {\n\tborder: 1px solid #595959;\n\tborder-collapse: collapse;\n}\ntd, th {\n\tpadding: 3px;\n\twidth: 30px;\n\theight: 25px;\n}\nth {\n\tbackground: #f0e6cc;\n}\n.even {\n\tbackground: #fbf8f0;\n}\n.odd {\n\tbackground: #fefcf9;\n}</style>
+</Callout>
+
+
 If you do not want to add permission sets to your users, you may check their profiles and ensure the profiles have similar object permissions for their user type. 
 
 ## If I’m a Managed Service Provider, or would like to create new cases in Salesforce Cloud based on information I get from other integrations, can I do that with this integration?

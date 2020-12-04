@@ -43,11 +43,8 @@ The Service Health and Major Incidents applications let you quickly filter out i
 
 ###Customization
 You can adjust the layout of the console, as well as the applications you want to appear. Application layout can be changed by clicking the **Console Settings** (gear) button in the upper right hand corner of the page. A single application can also be expanded to encompass the entire screen by clicking the maximize button in the upper right hand corner of any application. Display customization is per-user, so go ahead and set things ups how you like without fear that your changes will impact anybody else on your team.
-[block:api-header]
-{
-  "title": "Infrastructure Health Application"
-}
-[/block]
+## Infrastructure Health Application
+
 The Infrastructure Health Application allows a view all of your events and alerts across your entire infrastructure in a single view. This holistic view empowers you to understand the complexities of your infrastructure and ultimately improve event management throughout your organization.
 
 The infrastructure aggregates the linear data from the Alerts Tab and Incident Dashboard to offer a visual timeline of events and alerts across your PagerDuty services. Users can identify noisy low value alerts, uncover patterns in data, and juxtapose contextual events, like deploys or tweets, against alerts.
@@ -126,11 +123,8 @@ You can use our services group feature to roll multiple integrations into a sing
 
 ###How many days of data will the Application Display?
 The Infrastructure Health Application displays up to 30 days worth of data.
-[block:api-header]
-{
-  "title": "Example Use Case for the Infrastructure Health Application"
-}
-[/block]
+## Example Use Case for the Infrastructure Health Application
+
 Integrating inbound tweets into your PagerDuty [Infrastructure Health Application](#section-infrastructure-health-application) is a great way to track user responses to deploys and outages. Twitter does not support webhooks, so an intermediary tool is necessary in order to send events from Twitter to PagerDuty. You can use a tool like Zapier or Microsoft Flow. The following guide provides an example of how to integrate Twitter with the Infrastructure Health Application using Zapier.
 
 ##Integration Instructions

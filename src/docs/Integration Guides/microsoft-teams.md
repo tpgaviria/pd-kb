@@ -26,9 +26,10 @@ updatedAt: "2020-10-07T23:08:41.827Z"
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "The guide on this page is for our latest Microsoft Teams integration. Our previous [Microsoft Teams v1 integration guide](https://www.pagerduty.com/docs/guides/microsoft-teams-integration-guide/) is also available."
-}
-[/block]
+  "body": "The guide on this page is for our latest Microsoft Teams integration. Our previous [Microsoft Teams v1 integration guide](https://www.pagerduty.com/docs/guides/microsoft-teams-integration-guide/) is also available.
+</Callout>
+
+
 # Integration Walkthrough
 
 ## In Microsoft Teams

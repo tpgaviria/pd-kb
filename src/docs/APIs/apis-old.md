@@ -6,11 +6,8 @@ createdAt: "2017-05-11T23:40:30.304Z"
 updatedAt: "2019-01-23T23:00:40.968Z"
 ---
 PagerDuty has a few different APIs, like our [Events APIs](#events-apis), [REST API](#rest-api), and [webhooks](https://v2.developer.pagerduty.com/docs/webhooks-v2-overview). These APIs serve different purposes and have different plan availability, endpoints, and methods of authorization.
-[block:api-header]
-{
-  "title": "Events APIs"
-}
-[/block]
+## Events APIs
+
 ## Events API v1
 
 [Events API v1](https://v2.developer.pagerduty.com/docs/events-api) — formerly known as the Integration API or Generic Service API — is used to integrate your monitoring systems and other tools you want to be able to trigger, acknowledge, and resolve incidents in PagerDuty. This API is available to all customers at a common endpoint on `events.pagerduty.com`, and uses integration keys — formerly known as service keys — to determine which service an event should be routed to.
@@ -52,11 +49,8 @@ Hence, if you are creating a new or custom integration, we strongly recommend us
 
 - [Trigger incidents in PagerDuty via curl if a cron job fails](https://v2.developer.pagerduty.com/docs/trigger-events)
 - [Integrate PagerDuty with custom in-house monitoring utilities](https://v2.developer.pagerduty.com/docs/events-api)
-[block:api-header]
-{
-  "title": "REST API"
-}
-[/block]
+## REST API
+
 The REST API is used to create, read, update, and delete services, integrations, schedules, escalation policies, and users — including their contact methods and notification rules. This API can also be used to create, read, and update incidents, and create and read notes for an incident.
 
 The REST API is available to all customers on **current** pricing plans. It is not available to some customers on legacy pricing plans.

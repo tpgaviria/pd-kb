@@ -5,11 +5,8 @@ hidden: false
 createdAt: "2018-12-17T18:31:50.872Z"
 updatedAt: "2020-10-13T22:46:49.557Z"
 ---
-[block:api-header]
-{
-  "title": "Enabling Sound for PagerDuty Notifications"
-}
-[/block]
+## Enabling Sound for PagerDuty Notifications
+
 To enable sound for your PagerDuty notifications, you will need to assign both High and Low Urgency notifications a ringtone. In the PagerDuty app, you can do this from the :fa-bars: :fa-arrow-right: **Settings** menu as shown below. **By default, low urgency notifications will be silent**. With the notification sounds set and no other settings enabled, the PagerDuty notifications will also be muted when your phone is set to Do Not Disturb or when your volume is muted.  
 [block:image]
 {
@@ -27,11 +24,8 @@ To enable sound for your PagerDuty notifications, you will need to assign both H
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Do Not Disturb and System Volume Settings in Android 9+"
-}
-[/block]
+## Do Not Disturb and System Volume Settings in Android 9+
+
 
 [block:callout]
 {
@@ -60,11 +54,8 @@ If your phone does not have Do Not Disturb turned on, but your volume slider is 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Bypassing Do Not Disturb on Android 8"
-}
-[/block]
+## Bypassing Do Not Disturb on Android 8
+
 As of Android 8, bypassing Do Not Disturb can be less intuitive since there may be additional steps to set it up successfully. 
 
 1. Ensure that you have **Override System Volume** enabled in the app. 
@@ -261,28 +252,19 @@ Alternatively, you can enable Critical Alerts by navigating to your device **Set
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "iOS: Configure PagerDuty phone calls to bypass Do Not Disturb"
-}
-[/block]
+## iOS: Configure PagerDuty phone calls to bypass Do Not Disturb
+
 Within the Mobile App, navigate to **Settings**. If you already had the app installed, select **Update PagerDuty Contact Card**. If this is your first time logging into the app, you'll be prompted to grant PagerDuty the **Manage Contacts** permission. You can read about how we use this permission [here](https://support.pagerduty.com/docs/mobile-app#section-mobile-app-permissions). 
 
 Once you have the **PagerDuty Contact Card**, select it within your **Contacts menu**, and choose **Add to Favorites**. We recommend choosing the PagerDuty email address here, as the phone numbers we use are subject to change. 
 
 Now that PagerDuty is added as a favorite, navigate to your **Do Not Disturb** settings, and select the option to **Allow Calls from Favorites**. PagerDuty phone calls will now bypass your Do Not Disturb settings. 
-[block:api-header]
-{
-  "title": "MIUI and EMUI (Huawei and Xiaomi devices)"
-}
-[/block]
+## MIUI and EMUI (Huawei and Xiaomi devices)
+
 For these particular forks of Android, you may not be able to set sounds from the respective High and Low Urgency Notification Settings. Instead, you may need to navigate to:
 - System Notification Settings
 - Make sure High and Low Urgency Notifications are enabled
 - From here, tap either High or Low Urgency to choose your sound.
-[block:api-header]
-{
-  "title": "OnePlus devices"
-}
-[/block]
+## OnePlus devices
+
 OnePlus devices running on OS 10 do not fully support Override System Volume. These devices will not always override the system volume when the phone is on silent or vibrate mode.

@@ -78,29 +78,31 @@ updatedAt: "2020-11-11T17:47:39.358Z"
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Users with a Responder role and higher can create Zoom conference bridges."
-}
-[/block]
+  "body": "Users with a Responder role and higher can create Zoom conference bridges.
+</Callout>
+
+
 1. Click the incident’s **title** to view the incident details screen. 
 2. Next to **CONFERENCE ZOOM**, click **Create Zoom Meeting**. The new meeting ID will automatically populate. 
 3. Responders can now click this meeting link from the incident in the web or mobile app or via conference bridge notifications and One Touch to Join.
 
 ## Create a Zoom Conference Bridge Response Play
-[block:callout]
-{
-  "type": "info",
-  "body": "[Response Plays](https://support.pagerduty.com/docs/response-automation) are only available on our Digital Operations plan and as part of our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) package. Please [contact our Sales Team](https://www.pagerduty.com/contact-us/) if you would like to upgrade to a plan with this feature.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+[Response Plays](https://support.pagerduty.com/docs/response-automation) are only available on our Digital Operations plan and as part of our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) package. Please [contact our Sales Team](https://www.pagerduty.com/contact-us/) if you would like to upgrade to a plan with this feature.",
+  "title": "Note
+</Callout>
+
+
 
 [block:callout]
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Manager, Global Admin or Account Owner base roles can create response plays. At this time, Team-based roles do not have the ability to grant Response Play creation access to other users without these base roles."
-}
-[/block]
+  "body": "Manager, Global Admin or Account Owner base roles can create response plays. At this time, Team-based roles do not have the ability to grant Response Play creation access to other users without these base roles.
+</Callout>
+
+
 1. Navigate to **Incidents** :fa-arrow-right: **Response Plays** and click **+ New Response Play**.
 2. Enter a **Name**, such as `Add Zoom Conference Bridge` and **Description**. Under **What should happen when this play runs?**, check the **Add a conference bridge** checkbox and select **Meet with Zoom**. Enter any other preferred settings. **Note**: If you would like anyone to be able to create Zoom meetings via this Response Play, ensure that you select **All incident responders** under **Who can run this play on demand?**. Click **Create Play**.
 
@@ -109,9 +111,10 @@ updatedAt: "2020-11-11T17:47:39.358Z"
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "All roles, with the exception of Limited and Full Stakeholders, can run response plays on incidents."
-}
-[/block]
+  "body": "All roles, with the exception of Limited and Full Stakeholders, can run response plays on incidents.
+</Callout>
+
+
 1. Once the Zoom conference bridge Response Play has been configured (see instructions above), click an incident’s **title** to view the incident details screen. Click **Run a Play** and select the Zoom conference bridge Response Play.
 2. Once run, the Zoom meeting ID will be automatically populated in the incident details next to the **CONFERENCE** heading.
 

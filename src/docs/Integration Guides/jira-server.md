@@ -30,9 +30,10 @@ updatedAt: "2020-10-14T17:29:17.078Z"
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "Our [Jira Server v3](https://support.pagerduty.com/docs/jira-server-v3) integration is also available."
-}
-[/block]
+  "body": "Our [Jira Server v3](https://support.pagerduty.com/docs/jira-server-v3) integration is also available.
+</Callout>
+
+
 # Integration Walkthrough
 
 ## In PagerDuty

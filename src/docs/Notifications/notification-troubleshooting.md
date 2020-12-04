@@ -5,11 +5,8 @@ hidden: false
 createdAt: "2017-05-11T20:19:49.582Z"
 updatedAt: "2020-10-13T22:32:10.684Z"
 ---
-[block:api-header]
-{
-  "title": "General Push Notification Troubleshooting Guide"
-}
-[/block]
+## General Push Notification Troubleshooting Guide
+
 This is a general guide. We also have specific troubleshooting steps for [iOS](/docs/notification-troubleshooting#section-apple-push-notification-troubleshooting-guide) and [Android](/docs/notification-troubleshooting#section-android-push-notification-troubleshooting-guide).
 
 ##Notification Delivery
@@ -101,11 +98,8 @@ If you uninstall and reinstall the PagerDuty mobile app, you may find multiple i
 
 You can remove these by clicking the **x** to the right of these devices. Note that when you do this, any [Notification Rules](/docs/configuring-a-user-profile#section-notification-rules) associated with this old instance will also be removed automatically.
 
-[block:api-header]
-{
-  "title": "Android Push Notification Troubleshooting Guide"
-}
-[/block]
+## Android Push Notification Troubleshooting Guide
+
 This guide covers common troubleshooting steps for mobile app issues specific to Android devices. We suggest trying our [General Push Notification Troubleshooting Guide](https://support.pagerduty.com/docs/notification-troubleshooting#section-general-push-notification-troubleshooting-guide) before moving onto this guide.
 [block:callout]
 {
@@ -162,11 +156,8 @@ If you are receiving push notifications but are unable to hear a sound check the
 - For Android 6.0 and newer, [make sure the app is set as a prioritized app in priority mode](https://support.google.com/nexus/answer/6111295?hl=en).
 - For Android 6.0 and newer, [check to see if the app is being silenced by Doze mode](https://www.androidpit.com/android-m-tips-and-tricks).
 - Check to see if any other volume-manipulating apps are running.
-[block:api-header]
-{
-  "title": "Apple Push Notification Troubleshooting Guide"
-}
-[/block]
+## Apple Push Notification Troubleshooting Guide
+
 This guide covers common troubleshooting steps for mobile app issues specific to iOS devices. We also suggest checking out our [General Push Notification Troubleshooting Guide](/docs/notification-troubleshooting#section-general-push-notification-troubleshooting-guide).
 
 If you do not see your device under contact methods, see [Adding a Mobile Device for Push Notifications](/docs/mobile-app#section-adding-a-mobile-device-for-push-notifications).
@@ -197,11 +188,8 @@ Lastly, check that you are signed in to your Apple ID on your iOS device. Go to 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Apple Watch Notification Troubleshooting"
-}
-[/block]
+## Apple Watch Notification Troubleshooting
+
 If there is an issue receiving notifications on your Apple Watch, make sure that you've [added your iPhone as a device](/docs/mobile-app#section-adding-a-mobile-device-for-push-notifications).
 
 You'll need to be able to receive short code messages in order to receive **SMS notifications**. Contact your carrier for help with short code messages. Please see [Troubleshooting Notifications Issues](/docs/notification-troubleshooting#section-troubleshooting-notifications-issues) for more info.
@@ -229,11 +217,8 @@ You can find this under **Settings** :fa-arrow-right: **Notifications** :fa-arro
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Troubleshooting Notifications Issues"
-}
-[/block]
+## Troubleshooting Notifications Issues
+
 - [Incident Escalation](/docs/notification-troubleshooting#section-incident-escalation)
 - [SMS: Restriction on Short Code Messaging](/docs/notification-troubleshooting#section-sms-restriction-on-short-code-messaging)
 - [SMS: India's DND Registry](/docs/notification-troubleshooting#section-sms-india-s-dnd-registry)

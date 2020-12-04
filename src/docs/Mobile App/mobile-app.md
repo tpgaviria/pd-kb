@@ -445,11 +445,8 @@ Adjust the user and the time constraints as necessary, and tap **Override**.
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Mobile App Permissions"
-}
-[/block]
+## Mobile App Permissions
+
 As of app version 5.72, new downloads of the mobile app will ask for the permission to access your contacts. For existing app users, you can access this under the **Settings** tab in the mobile app. 
 
 The way we use the **Manage Contacts** permission is by importing the PagerDuty vCard, which you can also find on our [Knowledge Base](https://support.pagerduty.com/docs/notification-phone-numbers). We will automatically keep this up to date when we add or remove numbers from the vCard. 

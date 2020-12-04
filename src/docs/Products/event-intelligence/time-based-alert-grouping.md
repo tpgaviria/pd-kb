@@ -7,12 +7,12 @@ createdAt: "2017-06-22T00:00:18.087Z"
 updatedAt: "2020-10-08T16:16:17.508Z"
 ---
 When enabled, Time Based Alert Grouping will automatically add incoming alerts into open incidents on a service to help keep you focused on the problem at hand. Once Time Based Alert Grouping is enabled on a service, the first new incoming alert will create a new incident. Subsequent alerts will be added to that incident for the specified time period while the incident is open.
-[block:callout]
-{
-  "type": "info",
-  "body": "Time Based Alert Grouping is available to customers on our Digital Operations, and [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) plans. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature."
-}
-[/block]
+
+<Callout type="info" title="Info">
+Time Based Alert Grouping is available to customers on our Digital Operations, and [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) plans. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.
+</Callout>
+
+
 # Configure Time Based Alert Grouping
 
 To configure Time Based Alert Grouping:

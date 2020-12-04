@@ -5,11 +5,8 @@ hidden: false
 createdAt: "2020-03-26T07:00:30.902Z"
 updatedAt: "2020-10-09T22:22:16.406Z"
 ---
-[block:api-header]
-{
-  "title": "Mobile Status Dashboard"
-}
-[/block]
+## Mobile Status Dashboard
+
 View the current status of incident-impacted business services and provide status updates to stakeholders across your organization through the PagerDuty mobile app.
 
 ## View Mobile Status Dashboard
@@ -104,11 +101,8 @@ You will be able to review the corresponding on-call details and volume of activ
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Product Capabilities"
-}
-[/block]
+## Product Capabilities
+
 
 [block:embed]
 {

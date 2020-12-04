@@ -5,11 +5,8 @@ hidden: false
 createdAt: "2017-05-11T23:13:30.105Z"
 updatedAt: "2020-11-17T20:33:44.059Z"
 ---
-[block:api-header]
-{
-  "title": "Advanced Reporting"
-}
-[/block]
+## Advanced Reporting
+
 Advanced Reporting is available on Business and Digital Operations plans. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan featuring Advanced Reporting. In addition to [Basic Reporting](#section-basic-reporting), these accounts include the following reports, found under the **Analytics** :fa-arrow-right: **Reports** menu:
 
 - [System Report](/docs/analytics#section-system-report)
@@ -188,11 +185,8 @@ Filter by date range. The date filters will filter incidents according to when t
 Percentages are calculated by dividing the action—such as acknowledging an incident—by the total number of incidents assigned to a user.
 
 \**Time on call is not recorded when users are placed directly on an escalation policy level outside of a schedule. If a user is concurrently on-call on two schedules, that time is not counted twice. Please note that Time on Call data was not recorded before 12:00 AM (UTC), October 31st, 2015.* 
-[block:api-header]
-{
-  "title": "Basic Reporting"
-}
-[/block]
+## Basic Reporting
+
 Basic reporting is offered on any level of PagerDuty plan. There are two reports found under the **Analytics** :fa-arrow-right: **Reports** menu:
 
 - [Notification Volume](#section-notifications-report)
@@ -330,11 +324,8 @@ All incident reports are exported in the account's time zone. You can use our AP
 - [Using Time Zones with the API](https://v2.developer.pagerduty.com/docs/types#time-zone)
 
 You can also use our API to include the description of each incident in your report. 
-[block:api-header]
-{
-  "title": "Exporting Advanced Reporting Data to CSV"
-}
-[/block]
+## Exporting Advanced Reporting Data to CSV
+
 Users with Advanced Reporting available to their account can download a CSV file with more information to open up a number of powerful reporting options for your PagerDuty account. You can utilize the raw data as is, or use the generated CSV as a starting point to build your own custom reports.
 [block:callout]
 {

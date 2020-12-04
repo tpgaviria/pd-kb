@@ -29,9 +29,10 @@ When using the **regular expression** (also called regex) option to create an in
 {
   "type": "warning",
   "title": "Important note regarding HTML emails and content encoding",
-  "body": "Email management regular expressions are compared on the text of the email _after decoding_ per the encoding specified by `Content-Transfer-Encoding`. However, `Content-Type` is ignored, i.e. if after base64-decoding (if the encoding is base64) the underlying message is HTML, and there is no plain text copy of the email included, then *the regular expression will be run on the HTML code,* not on the text that would result after rendering the HTML or stripping out HTML tags.\n\nThus, if the emails are sent only as HTML (`Content-Type: text/html`), note that any regex written to match the text content alone may not work. HTML tags and hidden linebreaks / whitespace can potentially interfere with your regular expressions matching the input as expected.\n\nSee [Troubleshooting](#section-a-regular-expression-that-should-match-the-body-is-not-matching) for further details."
-}
-[/block]
+  "body": "Email management regular expressions are compared on the text of the email _after decoding_ per the encoding specified by `Content-Transfer-Encoding`. However, `Content-Type` is ignored, i.e. if after base64-decoding (if the encoding is base64) the underlying message is HTML, and there is no plain text copy of the email included, then *the regular expression will be run on the HTML code,* not on the text that would result after rendering the HTML or stripping out HTML tags.\n\nThus, if the emails are sent only as HTML (`Content-Type: text/html`), note that any regex written to match the text content alone may not work. HTML tags and hidden linebreaks / whitespace can potentially interfere with your regular expressions matching the input as expected.\n\nSee [Troubleshooting](#section-a-regular-expression-that-should-match-the-body-is-not-matching) for further details.
+</Callout>
+
+
 ##Capture Group
 A capture group will tell PagerDuty to create an incident key from the text contained within the parentheses. If the unique identifier within the capture group changes (i.e. a ticket ID # or host ID #) you can use `\d+`, which tells PagerDuty to capture all subsequent digits.
 
@@ -119,13 +120,13 @@ To set up a regex filter:
 4. Configure your rules — whether the email subject, body, and from address should match or not match the regex.
 5. In the edit fields, enter the value to match or not match (this field will not be available if **is anything** was selected).
 6. Click **Save**.
-[block:callout]
-{
-  "type": "info",
-  "body": "Regular expressions are case sensitive. We suggest using a pipe (`|`) to capture different upper/lowercase strings. i.e. `(Down|DOWN|down)`",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+Regular expressions are case sensitive. We suggest using a pipe (`|`) to capture different upper/lowercase strings. i.e. `(Down|DOWN|down)`",
+  "title": "Note
+</Callout>
+
+
 Below is an example of how to use email filters to filter events based on their critical/noncritical status. In this example, you send emails with the subjects CRITICAL and NONCRITICAL to PagerDuty, but you only want those with CRITICAL in the subject to trigger incidents.
 1.  Go to **Services** :fa-arrow-right: **Service Directory** and select the service with the email integration.
 2. Go to the **Integrations** tab and click the email integration you want to edit, then click **Edit Integration**.
@@ -185,13 +186,13 @@ This will capture all cases: "critical", "CRITICAL", "cRiTicAL", etc.
 }
 [/block]
 
-[block:callout]
-{
-  "type": "info",
-  "body": "The case insensitivity modifier `(?i)` will only work with email management rules, it will **not work** with email filters. Due to this issue, we suggest using a pipe (`|`) to capture different upper/lowercase strings for email filters, for example: `(Down|DOWN|down)`",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+The case insensitivity modifier `(?i)` will only work with email management rules, it will **not work** with email filters. Due to this issue, we suggest using a pipe (`|`) to capture different upper/lowercase strings for email filters, for example: `(Down|DOWN|down)`",
+  "title": "Note
+</Callout>
+
+
 ##Testing
 Writing regular expressions can be difficult, but [Regex101](https://regex101.com/) is a very helpful tool for editing regular expressions and making sure that the expression is correct.
 [block:image]
@@ -244,13 +245,13 @@ To set up the email management rule:
     2. The email **subject matches the regular expression:** `.*`
     3. For the incident key, have the rule state: **In the email subject, match this regular expression:** `(?:(?i)re: |fwd: )?(.*)`
 4. Click **Save changes** at the bottom of the page.
-[block:callout]
-{
-  "type": "info",
-  "body": "This regular expression is case insensitive, so any version of \"RE:\" or \"FWD:\" will de-duplicate the email trigger to the open incident.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+This regular expression is case insensitive, so any version of \"RE:\" or \"FWD:\" will de-duplicate the email trigger to the open incident.",
+  "title": "Note
+</Callout>
+
+
 
 [block:image]
 {
@@ -339,9 +340,10 @@ In the example above, the **alert/incident** key has been highlighted in green. 
 {
   "type": "info",
   "title": "Auto-Resolving with an Alert Key",
-  "body": "For a pair of trigger and resolve email management rules to work together, the alert key in both rules **must be a perfect match.** The alert key is what allows your service to pair events and apply resolve rules to existing events."
-}
-[/block]
+  "body": "For a pair of trigger and resolve email management rules to work together, the alert key in both rules **must be a perfect match.** The alert key is what allows your service to pair events and apply resolve rules to existing events.
+</Callout>
+
+
 ##Creating your Rules
 1. Specify if PagerDuty should trigger or resolve an incident and the criteria of the email.
 2. Specify the alert/incident key — the alert/incident key de-duplicates emails that have the same identifiers, and will append the email to an existing alert or incident.
@@ -362,13 +364,13 @@ In the example above, the **alert/incident** key has been highlighted in green. 
 }
 [/block]
 
-[block:callout]
-{
-  "type": "info",
-  "body": "If an email matches your \"resolve\" rule but there is no open incident for that email to resolve **OR** the email's incident key does not match an existing open incident, then this rule will not be applied.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+If an email matches your \"resolve\" rule but there is no open incident for that email to resolve **OR** the email's incident key does not match an existing open incident, then this rule will not be applied.",
+  "title": "Note
+</Callout>
+
+
 Just as with email filters, you can use regular expressions to create complex management rules - however regular expression are not mandatory. You can review how to create a regular expression in [Regular Expression Tips & Examples](#section-regular-expression-tips-examples).
 
 In some cases, you may want to create an additional rule by clicking **Add Another Rule**. When you create multiple rules, PagerDuty will apply the first rule to the incoming email, and if it doesn't match it will attempt to apply the second rule. The hierarchy continues in this order until it reaches your last rule. There is a limit of ten rules per service. Rules may be re-arranged by clicking the **Move up** and **Move down** buttons on each rule.
@@ -461,9 +463,10 @@ If the email also includes a plain text version, then the rule will still be abl
 {
   "type": "info",
   "title": "To view the source code of the email sent to the integration",
-  "body": "Go to **View Message** in the incident detail view. This should take you to a page displaying the full details of the original event sent in. The URL should be formatted as follows:\n\n```\nhttps://{subdomain}.pagerduty.com/incidents/{incident_id}/log_entries/{log_entry_id}\n```\n\nNext, click \"View Raw Message\" and you will see the source code of the email including headers."
-}
-[/block]
+  "body": "Go to **View Message** in the incident detail view. This should take you to a page displaying the full details of the original event sent in. The URL should be formatted as follows:\n\n```\nhttps://{subdomain}.pagerduty.com/incidents/{incident_id}/log_entries/{log_entry_id}\n```\n\nNext, click \"View Raw Message\" and you will see the source code of the email including headers.
+</Callout>
+
+
 While viewing the source code, note that email management rules that operate on the body of the email use the raw body as input, after decoding (i.e. if the `Content-Transfer-Encoding` of the body is `base64`, it will be decoded from base 64, or if it's `quoted-printable`, then QP escape sequences will be replaced with the actual characters to represent the underlying content of the message). Thus, to view the true source of the email that the regular expressions are compared against, one must decode the text.
 
 ### Base64-encoded Text
@@ -477,9 +480,10 @@ Base64-encoded messages are not humanly readable, but are easily decoded into a 
 {
   "type": "info",
   "title": "Example of base64-encoded text",
-  "body": "**Decoded** (Regex runs on this text):\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\n```\n\n**Encoded** (Regex does not run on this text):\n```\nQWxsIHdvcmsgYW5kIG5vIHBsYXkgbWFrZXMgSmFjayBhIGR1bGwgYm95LiBBbGwgd29yayBhbmQg\nbm8gcGxheSBtYWtlcyBKYWNrIGEgZHVsbCBib3kuClRoZSBxdWljayBmb3gganVtcHMgb3ZlciB0\naGUgbGF6eSBicm93biBkb2cuCg=\n```\n\nDecoding with `base64`:\n```\nbase64 -D < file-containing-base64-message.txt\n# or this:\ncat file-containing-base64-message.txt | base64 -D\n```"
-}
-[/block]
+  "body": "**Decoded** (Regex runs on this text):\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\n```\n\n**Encoded** (Regex does not run on this text):\n```\nQWxsIHdvcmsgYW5kIG5vIHBsYXkgbWFrZXMgSmFjayBhIGR1bGwgYm95LiBBbGwgd29yayBhbmQg\nbm8gcGxheSBtYWtlcyBKYWNrIGEgZHVsbCBib3kuClRoZSBxdWljayBmb3gganVtcHMgb3ZlciB0\naGUgbGF6eSBicm93biBkb2cuCg=\n```\n\nDecoding with `base64`:\n```\nbase64 -D < file-containing-base64-message.txt\n# or this:\ncat file-containing-base64-message.txt | base64 -D\n```
+</Callout>
+
+
 ### Quoted-Printable Text 
 
 ```
@@ -495,6 +499,6 @@ Furthermore, lines are limited to 76 characters, and if need be to limit line le
 {
   "type": "info",
   "title": "Example of quoted-printable encoding",
-  "body": "**Decoded** (Regex runs on this text):\n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE = mc^2\n```\n\n**Encoded** (Regex does not run on this text): \n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack=\n a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE =3D mc^2\n```"
-}
-[/block]
+  "body": "**Decoded** (Regex runs on this text):\n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE = mc^2\n```\n\n**Encoded** (Regex does not run on this text): \n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack=\n a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE =3D mc^2\n```
+</Callout>
+

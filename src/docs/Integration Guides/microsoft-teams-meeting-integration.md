@@ -9,9 +9,10 @@ updatedAt: "2020-10-09T23:36:12.387Z"
 {
   "type": "info",
   "title": "Early Access",
-  "body": "The Microsoft Teams Meeting integration is currently in Early Access with features and documentation subject to change."
-}
-[/block]
+  "body": "The Microsoft Teams Meeting integration is currently in Early Access with features and documentation subject to change.
+</Callout>
+
+
 ### Create a Meeting Conference Bridge From Microsoft Teams
 
 Users can create Microsoft Teams Meetings that will be assigned as incident-specific [Conference Bridges](https://support.pagerduty.com/docs/conference-bridge) in PagerDuty incidents. Users may also add notes from the Microsoft Teams Meeting chat, which will sync with the PagerDuty incident. 

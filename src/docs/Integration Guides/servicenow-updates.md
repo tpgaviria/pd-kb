@@ -12,11 +12,8 @@ Refer to the Enterprise Integration Guide for steps on getting up and running wi
 - [Selective Incident Sync](#section-selective-incident-sync)
 - [View ServiceNow Incidents in PagerDuty](#section-view-servicenow-incidents-in-pagerduty)
 - [Alerts & Incidents and ServiceNow](#section-alerts-incidents-and-servicenow) 
-[block:api-header]
-{
-  "title": "Selective Incident Sync"
-}
-[/block]
+## Selective Incident Sync
+
 Selective sync enables you to have more control over which PagerDuty incidents are synced into ServiceNow. You have the option to configure services to sync all incidents, or manually select which incidents are synced. By default, services will be configured to *Sync All Incidents*.
 
 - **Sync All Incidents**: Each incident that is triggered against this service in PagerDuty will trigger a corresponding incident in ServiceNow.
@@ -63,11 +60,8 @@ Selective sync enables you to have more control over which PagerDuty incidents a
 }
 [/block]
 3. Your incident is available in ServiceNow.
-[block:api-header]
-{
-  "title": "View ServiceNow Incidents in PagerDuty"
-}
-[/block]
+## View ServiceNow Incidents in PagerDuty
+
 When an incident is synced with ServiceNow, the incident number is prepended to the incident title and included in the incident details page. You can click on the ServiceNow incident ID to directly access the incident in your ServiceNow instance.
 [block:image]
 {
@@ -85,11 +79,8 @@ When an incident is synced with ServiceNow, the incident number is prepended to 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Alerts & Incidents and ServiceNow"
-}
-[/block]
+## Alerts & Incidents and ServiceNow
+
 Once you have upgraded to the v3.5 integration, the former, inbound, ServiceNow integration becomes obsolete and can be removed from your PagerDuty services. The new integration utilizes the REST API and webhooks instead of the Events API.
 
 The benefit to removing the old integration is that you can then enable [Alerts and Incidents](/docs/alerts#section-getting-started-with-alerts-and-incidents) on your service, giving you the opportunity to start utilizing [Suppression and Event Rules](/docs/event-management-tools#section-suppression-and-event-rules) as well.

@@ -6,13 +6,13 @@ createdAt: "2020-09-24T20:39:14.861Z"
 updatedAt: "2020-10-27T16:44:31.165Z"
 ---
 PD Labs allows you to explore and test drive new products from PagerDuty Analytics. Surface insights on your organization’s operational maturity and receive recommendations on how to improve it, with push-button account configuration options. To try PD Labs, navigate to **Analytics** :fa-arrow-right: **PD Labs**. 
-[block:callout]
-{
-  "type": "info",
-  "body": "* PD Labs is available for customers on our Digital Operations plan. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.\n* PD Labs is currently in Beta with features and documentation subject to change.",
-  "title": "Notes"
-}
-[/block]
+
+<Callout type="info" title="Info">
+* PD Labs is available for customers on our Digital Operations plan. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.\n* PD Labs is currently in Beta with features and documentation subject to change.",
+  "title": "Notes
+</Callout>
+
+
 
 [block:image]
 {
@@ -94,13 +94,13 @@ Recommendations provides a view into where your services stand in relation to th
 # PagerDuty Analytics Slack Integration 
 
 The PagerDuty Analytics Slack integration allows you to receive recurring, high-level Insights reports on Incident Activity, Service Performance, and Team Health directly to the PagerDuty app in Slack. Reports are only visible to you and they will not be shown publicly in the channels in which they are configured.
-[block:callout]
-{
-  "type": "info",
-  "body": "* The PagerDuty Analytics Slack integration is available on all plans.\n* All users can use the `/pd insights` slash command.",
-  "title": "Notes"
-}
-[/block]
+
+<Callout type="info" title="Info">
+* The PagerDuty Analytics Slack integration is available on all plans.\n* All users can use the `/pd insights` slash command.",
+  "title": "Notes
+</Callout>
+
+
 ## Configure Reports
 
 1. Configure the [PagerDuty + Slack v2 integration](https://support.pagerduty.com/docs/slack-integration-guide), if you do not have it configured already.

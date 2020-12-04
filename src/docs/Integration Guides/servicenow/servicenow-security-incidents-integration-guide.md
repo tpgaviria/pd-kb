@@ -9,9 +9,10 @@ updatedAt: "2020-11-02T18:30:30.026Z"
 [block:callout]
 {
   "type": "danger",
-  "body": "This app is currently not available in the ServiceNow store as we currently do not have up to date support for Security Incidents. Please [reach out to our Support team](https://www.pagerduty.com/contact-us/)  if you are interested in using the ServiceNow integration for Security Incidents."
-}
-[/block]
+  "body": "This app is currently not available in the ServiceNow store as we currently do not have up to date support for Security Incidents. Please [reach out to our Support team](https://www.pagerduty.com/contact-us/)  if you are interested in using the ServiceNow integration for Security Incidents.
+</Callout>
+
+
 PagerDuty can also integrate with ServiceNow’s Security Incident Response product. When a new Security Incident is created in ServiceNow, you can engage the right individuals or groups via PagerDuty to ensure incidents are actioned in real-time.
 
 # Prior to Installation

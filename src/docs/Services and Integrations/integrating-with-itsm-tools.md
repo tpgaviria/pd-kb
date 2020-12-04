@@ -19,9 +19,10 @@ Many of the ITSM tool integrations also synchronize PagerDuty incident changes b
 {
   "type": "info",
   "title": "Note",
-  "body": "* **Ticketing integrations**: Jira and Jira Service Desk are available our Professional, Team (legacy), Business, and Digital Operations plans.\n* **Advanced ITSM integrations**: ServiceNow, Remedy and Cherwell are only available on our Business and Digital Operations plans.\n\nPlease [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan featuring the above integrations."
-}
-[/block]
+  "body": "* **Ticketing integrations**: Jira and Jira Service Desk are available our Professional, Team (legacy), Business, and Digital Operations plans.\n* **Advanced ITSM integrations**: ServiceNow, Remedy and Cherwell are only available on our Business and Digital Operations plans.\n\nPlease [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan featuring the above integrations.
+</Callout>
+
+
 #Integrating Monitoring Tools and ITSM Systems via PagerDuty
 
 ITSM systems often don’t integrate well with monitoring tools, as they are inherently designed to work with human-speed data, rather than the machine-speed data flows that monitoring tools generate. In cases where ITSM systems are used with monitoring tools, it often results in a “swivel-chair” workflow: in this form of integration, a user works directly with a monitoring tool; then when they determine an incident is occurring, they switch applications and manually create a ticket in the ITSM system, using clipboard cut-and-paste to move the data over. This workflow is cumbersome, error-prone, and provides no direct linkage between operational data and ITSM tickets.

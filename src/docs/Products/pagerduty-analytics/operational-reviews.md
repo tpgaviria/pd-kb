@@ -32,9 +32,10 @@ These scorecards are intended to review past performance, and are not meant to s
 {
   "type": "info",
   "title": "Note",
-  "body": "Operational Reviews is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription."
-}
-[/block]
+  "body": "Operational Reviews is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription.
+</Callout>
+
+
 #Foundational Concepts
 
 Each scorecard incorporates interruptions and major incidents.
@@ -58,9 +59,10 @@ Operational Reviews can be found under **Analytics** :fa-arrow-right: **Operatio
 {
   "type": "info",
   "title": "Note",
-  "body": "Operational Reviews data will only create scorecards for teams that were present in the account upon enablement. At this time, any new teams created after this point will not generate scorecards."
-}
-[/block]
+  "body": "Operational Reviews data will only create scorecards for teams that were present in the account upon enablement. At this time, any new teams created after this point will not generate scorecards.
+</Callout>
+
+
 Out of the box, each user will have a unique, default scorecard view based on their team membership and they can subscribe or unsubscribe to ones they have been assigned to. If you would like to view scorecards for a team that you are not on, you will need to join that team or create a custom scorecard that covers the team(s) with your desired data. 
 
 Default scorecards are generated on a set schedule:
@@ -163,9 +165,10 @@ To edit a scorecard:
 {
   "type": "info",
   "title": "Note",
-  "body": "You cannot currently delete a scorecard, however clicking **Unsubscribe** will hide any unwanted scorecards from your list."
-}
-[/block]
+  "body": "You cannot currently delete a scorecard, however clicking **Unsubscribe** will hide any unwanted scorecards from your list.
+</Callout>
+
+
 ##Scorecard Search
 
 Each list of Team On-Call Handoff, Service Performance and Business Performance review scorecards has a search capability. For users who have many scorecards in their list, the search allows them to find specific scorecards quickly. To access the scorecard search, navigate to **Analytics** :fa-arrow-right: **Operational Reviews** :fa-arrow-right: select the **name** of the desired review type and search for the desired team(s) and/or scorecard name(s).

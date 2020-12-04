@@ -6,22 +6,23 @@ createdAt: "2020-09-18T02:33:09.555Z"
 updatedAt: "2020-11-24T18:08:46.088Z"
 ---
 On-Call Readiness Reports help organizations improve incident response quality by ensuring responders have optimal [notification rule configurations](https://support.pagerduty.com/docs/configuring-a-user-profile#notification-rules). When responders have well-configured notification rules, they are better prepared to go on-call and are less likely to miss notifications, decreasing Mean Time To Acknowledge. Every report provides a Team-filtered overview of each responders’ on-call readiness status, and can optionally send them email instructions on how to best configure their notification rules. 
-[block:callout]
-{
-  "type": "info",
-  "body": "On-Call Readiness Reports are available on Business and Digital Operations plans. Please [contact our Sales team](https://www.pagerduty.com/contact-us/) if you would like to upgrade your account to include On-Call Readiness Reports.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+On-Call Readiness Reports are available on Business and Digital Operations plans. Please [contact our Sales team](https://www.pagerduty.com/contact-us/) if you would like to upgrade your account to include On-Call Readiness Reports.",
+  "title": "Note
+</Callout>
+
+
 # Create an On-Call Readiness Report
 
 [block:callout]
 {
   "type": "warning",
   "body": "Team Managers can create On-Call Readiness Reports for teams that they are Managers or members of. Admins and Account Owners can create On-Call Readiness Reports for all teams.",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 1. Navigate to **Analytics** :fa-arrow-right: **On-Call Readiness** and click **Create a New Report**.
 2. **Readiness Profile**: You may *optionally* edit the name of the report by clicking the :fa-pencil-alt: next to the auto-populated name and clicking **Save Changes**. Next, select an on-call readiness profile:
 
@@ -73,9 +74,10 @@ Once finished with edits to all of the above pages, click **Send Email** or **Sa
 {
   "type": "warning",
   "body": "Admins and Account Owners can edit On-Call Readiness Settings.",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 To change the default On-Call Readiness profile to fit your organization:
 
 1. Navigate to **Analytics** :fa-arrow-right: **On-Call Readiness** :fa-arrow-right: **Settings**. You may also find these settings by navigating to the **User Icon**(:fa-user:) :fa-arrow-right: **Account Settings** :fa-arrow-right: **On-Call Readiness**.

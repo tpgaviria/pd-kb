@@ -111,9 +111,10 @@ Event rules define automated actions to take on alerts created by services, base
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "For more information on use cases for global vs service event rules, please [visit our Service Configuration Guide FAQ](https://community.pagerduty.com/forum/t/service-configuration-guide/1660)."
-}
-[/block]
+  "body": "For more information on use cases for global vs service event rules, please [visit our Service Configuration Guide FAQ](https://community.pagerduty.com/forum/t/service-configuration-guide/1660).
+</Callout>
+
+
 #Suppressing Alerts
 
 Suppression, as opposed to setting alert severity, allows you to send events to PagerDuty without triggering any notifications. Suppressed alerts are stored in PagerDuty and available for forensics, analysis, and context, but do not create incidents. Suppressed alerts can be viewed in the alerts list as well as the [Infrastructure Health Application](doc:operations-command-console#section-infrastructure-health-application).

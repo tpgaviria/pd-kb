@@ -6,11 +6,8 @@ createdAt: "2017-10-31T22:26:42.463Z"
 updatedAt: "2020-10-30T16:52:47.698Z"
 ---
 PagerDuty Agent is an open-source utility for integrating standalone / on-premise monitoring tools with PagerDuty.
-[block:api-header]
-{
-  "title": "First Steps"
-}
-[/block]
+## First Steps
+
 If you have trouble sending events to PagerDuty using the agent, run the following checks:
 
 * **[Verify that the `pdagent` service is running.](https://www.pagerduty.com/docs/guides/agent-install-guide#VerifyAgentRunning)** If the service is not running, you can start it with the command `systemctl start pdagent` (on systemd-based systems) or `sudo service pdagent start` (on SysV init-based systems). Any events that were enqueued while the service was stopped will be sent when the service starts.
@@ -19,11 +16,8 @@ If you have trouble sending events to PagerDuty using the agent, run the followi
 * **Check the logs** for any errors, including events that couldn't be submitted to the Events API: `/var/log/pdagent/pdagentd.log`
 
 
-[block:api-header]
-{
-  "title": "Outqueue Troubleshooting"
-}
-[/block]
+## Outqueue Troubleshooting
+
 In addition to [using `pd-queue` to manage the queue](https://www.pagerduty.com/docs/guides/agent-install-guide#pd-queue), the agent's outqueue directories will often hold a wealth of information that is useful for troubleshooting. The queue may also be manually cleared or altered by working directly with the files.
 
 Each file in these directories contains the body of a HTTP POST request that will be made to the PagerDuty Events API. You can thus see what your monitoring solutions are submitting to the agent by examining these files. They are given filenames that follow the naming convention:
@@ -71,11 +65,8 @@ To clear the queue, run the following commands:
 sudo rm -vf /var/lib/pdagent/outqueue/pdq/*
 sudo rm -vf /var/lib/pdagent/outqueue/tmp/*
 ```
-[block:api-header]
-{
-  "title": "Network Troubleshooting"
-}
-[/block]
+## Network Troubleshooting
+
 The host that is running PagerDuty Agent should be able to make a HTTPS connection to `events.pagerduty.com`. Thus, if the LAN has no DNS service, or there is no route to the internet, or the local ACL (if any) does not permit connecting to remote hosts across the internet, PagerDuty Agent will not be able to send data to PagerDuty.
 
 First, verify that you can resolve the Events API:
@@ -109,11 +100,8 @@ Connection to events.pagerduty.com port 443 [tcp/https] succeeded!
 Note, if using BSD Netcat, you can add flags `-G 5 -w 1`. That will make it exit one second after establishing a connection (`-w 1`) and give up and report timeout after five seconds of waiting to establish one (`-G 5`). 
 
 In any case, if the netcat command takes too long to print out any messages, or produces an error message indicating a timeout, connection refusal (etc), check your network's firewall/ACL and refer to [Safelisting IPs](doc:whitelisting-ips).
-[block:api-header]
-{
-  "title": "Testing TLS"
-}
-[/block]
+## Testing TLS
+
 Of note, PagerDuty Agent comes bundled with its own copy of the public server certificate, which it uses when it connects to validate the connection to the PagerDuty Events API.
 [block:callout]
 {
@@ -144,11 +132,8 @@ If you get a TLS handshake error, it may be the case that the GeoTrust root CA c
 https://www.geotrust.com/resources/root-certificates/
 
 In most distributions of Linux, the  `ca-certificates` utility can be used for managing trusted certificates. 
-[block:api-header]
-{
-  "title": "Proxy Troubleshooting"
-}
-[/block]
+## Proxy Troubleshooting
+
 One issue that can be tricky to get past is proxy configuration. If web requests are not going through the proxy, or not going anywhere, do you know whether your system is running the daemon without the proper environment variables set, or if there's an issue with connecting to the proxy server (i.e. LAN restrictions)?
 
 [block:callout]
@@ -198,11 +183,8 @@ After making the change, restart pdagent and try sending a test event using `pd-
 ```
 
 If the environment variables were set, they would have shown up in the print-out of the `os.environ` dictionary, i.e. **`'http_proxy': 'http://proxy.local:8118'`** and **`'https_proxy': 'https://proxy.local:8118'`**, which (note) are missing in the above line.
-[block:api-header]
-{
-  "title": "pdagent.service not found Error"
-}
-[/block]
+## pdagent.service not found Error
+
 Sometimes on a fresh install of pdagent, you might get the error message `Failed to start pdagent.service: Unit pdagent.service not found.`  This is due to an error during installation where the file `pdagent.service` was not copied to the proper directory. 
 
 In order to fix this you need to copy the `pdagent.service` file into the proper directory.

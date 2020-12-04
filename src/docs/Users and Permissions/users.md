@@ -11,9 +11,10 @@ updatedAt: "2020-10-09T19:49:54.112Z"
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Admin, Global Admin, and Account Owner base roles can add users.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).\n\n**Note**: Free plans are limited to five users."
-}
-[/block]
+  "body": "Admin, Global Admin, and Account Owner base roles can add users.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).\n\n**Note**: Free plans are limited to five users.
+</Callout>
+
+
 To add a user: 
 1. Go to **People** :fa-arrow-right: **Users**.
 2. Click **Add Users** in the top right corner of the page.
@@ -60,9 +61,10 @@ To change or remove the User Limit:
 {
   "type": "warning",
   "body": "Only Account Owners can change or remove the User Limit.",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 1. Go to **User Icomn** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Account Settings** tab.
 2. Scroll down to the **Account Limits** section.
 3. Set the desired limits, or click :fa-remove: to remove the limit entirely.
@@ -83,21 +85,22 @@ To change or remove the User Limit:
 }
 [/block]
 
-[block:callout]
-{
-  "type": "info",
-  "body": "If you cannot see the Account Limits section on your Account Settings page, your account may have a user limit built into its pricing plan. In this case, please refer to [our section on User Charges](https://support.pagerduty.com/docs/billing-invoices-payments#section-user-charges) to add more users.",
-  "title": "Account Limits Not Available"
-}
-[/block]
+
+<Callout type="info" title="Info">
+If you cannot see the Account Limits section on your Account Settings page, your account may have a user limit built into its pricing plan. In this case, please refer to [our section on User Charges](https://support.pagerduty.com/docs/billing-invoices-payments#section-user-charges) to add more users.",
+  "title": "Account Limits Not Available
+</Callout>
+
+
 #Resend a User Invitation
 [block:callout]
 {
   "type": "warning",
   "body": "Admin, Global Admin, and Account Owner base roles can resend user invitations.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 You can resend an invitation to a user if they cannot locate the first email that was sent.
 
 1. Go to **People** :fa-arrow-right: **Users**.
@@ -110,20 +113,21 @@ A new invitation email will be sent directly to the email associated with their 
 {
   "type": "warning",
   "body": "Admin, Global Admin, and Account Owner base roles can delete users.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 To delete a user:
 1. Go to **People** :fa-arrow-right: **Users**.
 2. Locate the user that you would like to delete, and click **Delete**.
 3. Confirm that you would like to delete them.
-[block:callout]
-{
-  "type": "info",
-  "body": "The offboarding feature allows administrators to easily deprovision users from their associated escalation policies, schedules and assigned incidents. PagerDuty accounts with [Advanced Permissions](https://support.pagerduty.com/docs/advanced-permissions), which come standard with Business and Digital Operations plans, have access to the offboarding feature. Please read our [Offboarding](https://support.pagerduty.com/docs/offboarding) article for more information.",
-  "title": "Offboarding"
-}
-[/block]
+
+<Callout type="info" title="Info">
+The offboarding feature allows administrators to easily deprovision users from their associated escalation policies, schedules and assigned incidents. PagerDuty accounts with [Advanced Permissions](https://support.pagerduty.com/docs/advanced-permissions), which come standard with Business and Digital Operations plans, have access to the offboarding feature. Please read our [Offboarding](https://support.pagerduty.com/docs/offboarding) article for more information.",
+  "title": "Offboarding
+</Callout>
+
+
 #Common Issues When Deleting Users
 
 There are 3 common reasons why you may not be able to delete a user on your account:
@@ -131,10 +135,9 @@ There are 3 common reasons why you may not be able to delete a user on your acco
 * You do not have permission to delete a user based on your user role. See above [Required User Permissions callout](https://support.pagerduty.com/docs/users#section-delete-a-user). 
 * The user is still on-call, now and/or in the future, on a schedule and/or escalation policy. To check which schedules and/or escalation policies this user is still on-call for, navigate to **People** :fa-arrow-right: **Users** :fa-arrow-right: and click their **name**. On the right hand side, you will see their escalation policies and schedules in the **Upcoming On-Call** and **On-call Schedules** widgets.
 * There is at least one open incident assigned to that user.
-[block:callout]
-{
-  "type": "info",
-  "body": "You may not delete yourself or the Account Owner. If you wish to delete yourself, you will need the Account Owner or an Admin to do so for you. If you wish to delete the Account Owner, [the Account Owner must first transfer account ownership](https://support.pagerduty.com/docs/change-account-owner) to a different user on the account, and then you can go back and delete the previous owner.",
-  "title": "Deleting Yourself or the Account Owner"
-}
-[/block]
+
+<Callout type="info" title="Info">
+You may not delete yourself or the Account Owner. If you wish to delete yourself, you will need the Account Owner or an Admin to do so for you. If you wish to delete the Account Owner, [the Account Owner must first transfer account ownership](https://support.pagerduty.com/docs/change-account-owner) to a different user on the account, and then you can go back and delete the previous owner.",
+  "title": "Deleting Yourself or the Account Owner
+</Callout>
+

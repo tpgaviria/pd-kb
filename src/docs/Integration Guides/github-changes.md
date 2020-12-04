@@ -29,9 +29,10 @@ updatedAt: "2020-12-01T00:05:14.759Z"
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "We recommend mapping your GitHub events to the PagerDuty service that represents what you are changing. This will make it easy for responders to quickly identify recent changes on their service when they get notified for an incident."
-}
-[/block]
+  "body": "We recommend mapping your GitHub events to the PagerDuty service that represents what you are changing. This will make it easy for responders to quickly identify recent changes on their service when they get notified for an incident.
+</Callout>
+
+
 1. In your PagerDuty account, navigate to **Services** :fa-arrow-right: **Service Directory** and click the **name** of your preferred service. Select the **Integrations** tab and click **Add a new integration**. 
 2. Enter an **Integration Name** in the format `Service-Name-GitHub-Changes` and select **GitHub Changes** from the **Integration Type** dropdown. Click **Add Integration**.
 3. On the next screen in the Integrations list, click the **Name** of your GitHub Changes integration to view the details screen. 
@@ -39,9 +40,10 @@ updatedAt: "2020-12-01T00:05:14.759Z"
 {
   "type": "info",
   "title": "Note",
-  "body": "On this screen you will see that the **default branch to track will be set to `master`**, if you would like to change the branch, you may optionally click **Edit Integration** on the right and enter the name of your preferred branch in the **branch** field. Click **Save Changes**"
-}
-[/block]
+  "body": "On this screen you will see that the **default branch to track will be set to `master`**, if you would like to change the branch, you may optionally click **Edit Integration** on the right and enter the name of your preferred branch in the **branch** field. Click **Save Changes**
+</Callout>
+
+
 4. Next, copy the **Integration URL** which will be in the following format: `https://events.pagerduty.com/integration/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/change/enqueue` 
 Keep the URL in a safe place as it will be used in later steps.
 
@@ -49,13 +51,13 @@ Keep the URL in a safe place as it will be used in later steps.
 
 1. Navigate to the GitHub repository where you would like to track changes, select the **Settings** tab and then select **Webhooks**.
 2. Click **Add Webhook** on the right. Paste the **Integration URL** that was generated in PagerDuty (above) in the **Payload URL** field, and in the **Content Type** dropdown, select `x-www-form-urlencoded`. Under **Which events would you like to trigger this webhook?** select **Let me select individual events**. Check the box next to **Pull requests** and uncheck the box next to **Pushes**. Ensure that the **Active** checkbox is selected. Enter any other preferred settings and click **Add Webhook**. 
-[block:callout]
-{
-  "type": "info",
-  "body": "The push event is also supported, but shows less information in PagerDuty. The pull request event is recommended if you use GitHub's pull request functionality. Selecting both pull request and push events may result in two change events for a single action. Please select only one.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+The push event is also supported, but shows less information in PagerDuty. The pull request event is recommended if you use GitHub's pull request functionality. Selecting both pull request and push events may result in two change events for a single action. Please select only one.",
+  "title": "Note
+</Callout>
+
+
 3. To test the integration, merge a pull request to the branch that you are tracking. You can temporarily change the branch you are tracking from `master` / `main` to another test branch using the instructions in the note above. In your PagerDuty account, navigate to the integrated service, click its **title** and you should see a change event labeled as **RECENT CHANGE** in grey in the **Recent Activity** timeline:
 [block:image]
 {

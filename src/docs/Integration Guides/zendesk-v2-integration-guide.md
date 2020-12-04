@@ -23,9 +23,10 @@ updatedAt: "2020-11-05T00:35:40.577Z"
 {
   "type": "info",
   "title": "Looking for a Different Version?",
-  "body": "Our [Zendesk V1 integration guide](https://www.pagerduty.com/docs/guides/zendesk-v1-integration-guide/) is also available."
-}
-[/block]
+  "body": "Our [Zendesk V1 integration guide](https://www.pagerduty.com/docs/guides/zendesk-v1-integration-guide/) is also available.
+</Callout>
+
+
 #Integration Walkthrough
 
 ##In PagerDuty

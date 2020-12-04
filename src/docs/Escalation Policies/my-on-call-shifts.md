@@ -78,9 +78,10 @@ There are two ways to create overrides in My On-Call Shifts:
 {
   "type": "info",
   "title": "Notes",
-  "body": "* If you wish to delete any overrides made with the Multi-Overrides tool, you will still need to individually delete them.\n* Multi-Overrides can only be made up to 3 months out from the current date."
-}
-[/block]
+  "body": "* If you wish to delete any overrides made with the Multi-Overrides tool, you will still need to individually delete them.\n* Multi-Overrides can only be made up to 3 months out from the current date.
+</Callout>
+
+
 1. Navigate to **People** :fa-arrow-right: **My On-Call Shifts**. You will see a calendar with current on-call shifts. Navigate to the dates and shifts that you would like to override. When you hover over dates, you will see drag icon arrows appear; **click and drag over the dates and shifts** you wish to override.
 [block:image]
 {

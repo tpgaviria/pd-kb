@@ -25,9 +25,10 @@ updatedAt: "2020-11-05T00:35:23.358Z"
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "Our [Zendesk v2 integration](https://support.pagerduty.com/docs/zendesk-v2-integration-guide) is also available."
-}
-[/block]
+  "body": "Our [Zendesk v2 integration](https://support.pagerduty.com/docs/zendesk-v2-integration-guide) is also available.
+</Callout>
+
+
 # Integration Walkthrough
 
 # Adding the Incident Command Console to Zendesk:

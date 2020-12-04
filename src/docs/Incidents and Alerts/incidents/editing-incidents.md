@@ -6,11 +6,8 @@ hidden: false
 createdAt: "2017-06-14T21:22:56.457Z"
 updatedAt: "2020-11-03T23:40:56.687Z"
 ---
-[block:api-header]
-{
-  "title": "Merging Incidents"
-}
-[/block]
+## Merging Incidents
+
 Merging related incidents into one incident streamlines the notification and resolution process when an incident is triggered. Merging incidents also enables you to consolidate the alert information into a single incident, helping responders identify the root cause and impact. 
 
 ##How to merge incidents
@@ -105,11 +102,8 @@ Webhooks will continue to update the target incident, but all past incidents tha
 Likewise webhook updates will only continue to be sent for the service for that target incident; all past resolved incidents will remain resolved for other services. For example, if an incident from service A is merged into an incident for service B, only webhooks on service B will continue to be sent.
 
 For incidents that were resolved when merged into the target incidents, the resolve webhook will trigger, if there are any that are configured. These incidents will contain reference to the new target incident ID: in the API response, the field will be merged_into_incident.
-[block:api-header]
-{
-  "title": "Snooze an Incident"
-}
-[/block]
+## Snooze an Incident
+
 Snooze allows users to keep an incident in an "acknowledged" state for the following intervals of time: 1 hour, 4 hours, 8 hours, 24 hours or Other. If you choose "Other", the maximum length you can snooze an incident is one week (168 hours). As an incident responder, this means I can snooze an incident while I troubleshoot the problem — or go back to bed and avoid being woken up again by an issue that can wait until later!
 
 ##How do I snooze an incident?
@@ -171,11 +165,8 @@ Yes. It also restarts the timeout counter once the incident returns to an acknow
 # Edit Incident Title
 
 To edit an incident's title, click the current **Title** of the incident to view the details page and then click **Edit** to the right of the title. Enter your new Title and then click **Save**.
-[block:api-header]
-{
-  "title": "Edit Incident Urgency"
-}
-[/block]
+## Edit Incident Urgency
+
 If an incident's [urgency](https://support.pagerduty.com/docs/service-settings) has been reassessed, responders can edit an incident's urgency in the web app. 
 
 To edit incident urgency in the web app:
@@ -198,11 +189,8 @@ To edit incident urgency in the web app:
 }
 [/block]
 3. The incident's urgency will automatically update and you will see a green confirmation banner. 
-[block:api-header]
-{
-  "title": "Edit Incident Duration"
-}
-[/block]
+## Edit Incident Duration
+
 
 [block:callout]
 {
@@ -251,11 +239,8 @@ To edit the incident duration of a resolved incident:
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Add a Note to an Incident"
-}
-[/block]
+## Add a Note to an Incident
+
 Notes can be used to help responders resolve incidents quicker by including information or links related to the system that the event comes from.
 
 You may want to add a note to an incident for other users to refer to. You can add this to an open or resolved incident.

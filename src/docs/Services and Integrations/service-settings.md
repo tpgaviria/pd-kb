@@ -29,13 +29,13 @@ You can run a response play whenever an incident is created on a service. To con
 # Enable Urgencies
 
 Urgencies is a feature which allows you to customize how your team is notified based on the criticality of an incident: incidents can be either **high-urgency** (requires immediate attention) or **low-urgency** (it can wait). What does this mean for responders? As an incident responder, you can set up notification rules so that you won't be woken up for low-urgency incidents that can be handled in the morning, or you can set a service to notify you with only high-urgency or low-urgency notification methods at specific times of day.
-[block:callout]
-{
-  "type": "info",
-  "body": "Urgencies are available on all plans with the exception of our legacy Basic and Lite plans. If you are on one of our legacy plans and you would like access to Urgencies, you will need to begin a new subscription to one of our [current plans](https://www.pagerduty.com/pricing/). If you have any questions about these plans, please contact our [sales team](https://www.pagerduty.com/contact-sales/) for more details.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+Urgencies are available on all plans with the exception of our legacy Basic and Lite plans. If you are on one of our legacy plans and you would like access to Urgencies, you will need to begin a new subscription to one of our [current plans](https://www.pagerduty.com/pricing/). If you have any questions about these plans, please contact our [sales team](https://www.pagerduty.com/contact-sales/) for more details.",
+  "title": "Note
+</Callout>
+
+
 - [Step 1: Configure Service](#section-step-1-configure-service)
 - [Step 2: Configure User Profiles](#section-step-2-configure-user-profiles)
 - [Use Case 1: Critical and Non-Critical Incidents](#section-use-case-1-critical-and-non-critical-incidents)

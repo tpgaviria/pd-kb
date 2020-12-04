@@ -18,13 +18,13 @@ Simply enter the phone number and then add comma(s), by itself for a delay or fo
    Dial 415-555-5555, wait **three** seconds, then dial 1234
 - 415-555-5555,,1,,,2,987
     Dial 415-555-5555, wait **two** seconds, dial 1, wait **three** seconds, dial 2, wait **one** second, dial 987
-[block:callout]
-{
-  "type": "info",
-  "body": "In some cases you may need to add commas for pauses before **AND** after your direct extension depending on your phone system.",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+In some cases you may need to add commas for pauses before **AND** after your direct extension depending on your phone system.",
+  "title": "Note
+</Callout>
+
+
 
 [block:image]
 {

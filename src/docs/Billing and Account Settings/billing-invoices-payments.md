@@ -71,11 +71,8 @@ If you need to add users to your annual plan, you can do so by going to **User I
 }
 [/block]
 There is no limit to the number of schedules, escalation policies, services, integrations, extensions, add-ons, or teams that can be added to your PagerDuty account. Also, users can be added to any number of schedules, escalation policies, or teams at no additional cost.
-[block:api-header]
-{
-  "title": "Purchase Orders"
-}
-[/block]
+## Purchase Orders
+
 If a Purchase Order Number is required on your invoices, you can add a PO number by going to **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Your Subscription**. If this is a new account, you’ll need to select a subscription plan, or if you have an existing account, select **Add More Users**. Under the **Billing & Payment** section, enter your Purchase Order number and select **Complete Your Purchase** to save your changes.
 
 [block:image]

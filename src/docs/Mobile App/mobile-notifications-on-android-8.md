@@ -6,11 +6,8 @@ createdAt: "2017-11-14T19:22:45.532Z"
 updatedAt: "2017-11-14T22:48:48.375Z"
 ---
 A workaround for Android devices to restore original notification preferences and override system volume when you’re on-call.
-[block:api-header]
-{
-  "title": "Restore Original Notification Preferences"
-}
-[/block]
+## Restore Original Notification Preferences
+
 On November 11, 2017, the PagerDuty app was migrated to Android 8.0 with the 5.10.4 release, which supports better compatibility and the ability to use new features found in Android 8.0. However, as part of these new features in Android 8.0, Google also changed the way notifications work for all its users. 
 
 Notification settings have been moved under the Android OS settings, resulting in greater and more granular control over user notification tone settings. This means that the “volume override” feature cannot be set within the PagerDuty app anymore and customers need to follow the workaround below, which will render the same notification preferences when you’re on-call.
@@ -25,11 +22,8 @@ Notification settings have been moved under the Android OS settings, resulting i
 8. Tap **Do not disturb** (for more on the “Do not disturb” feature click here: https://www.androidcentral.com/how-adjust-do-not-disturb-settings-android-o)
 9. Enable **Do not Disturb**
 10. Tap **Done**
-[block:api-header]
-{
-  "title": "Adding classic PagerDuty Ringtones to Android 8"
-}
-[/block]
+## Adding classic PagerDuty Ringtones to Android 8
+
 We are working on adding back the original PagerDuty tones but in the meantime, you can use Android 8.0’s custom ringtone picker to add the tones back yourself.
 
 1. Download the desired tones from here: https://goo.gl/z7zN7e (we do plan on adding the tones back in a future release)

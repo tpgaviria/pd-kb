@@ -14,38 +14,26 @@ updatedAt: "2020-10-07T03:07:35.267Z"
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "What Is A Response Play?"
-}
-[/block]
+## What Is A Response Play?
+
 Response plays let you create packages of incident actions that can be applied at any time to an incident with just a single button click or that can be immediately applied to all new incidents created on a service. This enables you to take a complex activity, like assembling a response team of multiple on-calls and an incident commander, and make it available to anyone that needs to use it. Grouping up these actions into a reusable play has several benefits:
 
   * Turn documented processes into executable objects.
   * Reduce the opportunity for errors and mistakes while following incident response processes.
   * Drastically cut down on the time taken to execute incident response processes.  
-[block:api-header]
-{
-  "title": "What Can A Response Play Do?"
-}
-[/block]
+## What Can A Response Play Do?
+
 The current set of actions that can be a part of a response play include:
 
 * **Mobilize a Response** (Notify responders other than the assignee to help resolve the incident.)
 * **Engage Stakeholders** (Subscribe people who are not directly involved with resolving the incident to receive **status updates**.)
 * **Publish Status Updates** (Send a prepared status update to all subscribers attached to the incident, to keep them aware of the incident’s progress.)
 * **Add a Conference Bridge** (View the conference bridge details on the incident details page.)
-[block:api-header]
-{
-  "title": "Example Usage"
-}
-[/block]
+## Example Usage
+
 A response play can be used directly by on-call engineers during triage when they determine something they’ve been paged for is bigger than expected. A service can also be configured to run a response play automatically whenever an incident opens on that service.
-[block:api-header]
-{
-  "title": "Create A Response Play"
-}
-[/block]
+## Create A Response Play
+
 
 [block:callout]
 {
@@ -139,11 +127,8 @@ In this setting, you have the following options:
 2. Click the :fa-cog: to the right of your desired response play and select **Edit**.
 3. Edit your response play based on the settings defined in the above sections. 
 4. Click **Save Changes**.
-[block:api-header]
-{
-  "title": "Running A Response Play On An Incident"
-}
-[/block]
+## Running A Response Play On An Incident
+
 
 [block:callout]
 {
@@ -172,17 +157,11 @@ From the Incident details page, you can **Run a Play** from the button bar of th
 A confirmation box will pop up to confirm your selection for running the play. 
 
 If you added responders to a play, your responders will have the ability to **Accept** or **Decline** your request.
-[block:api-header]
-{
-  "title": "Automatically Running A Response Play At Incident Creation"
-}
-[/block]
+## Automatically Running A Response Play At Incident Creation
+
 You can run a response play whenever an incident is created on a service. Choose the service and click :fa-edit: **Edit Service**. Once on the edit screen, you can choose or clear the response play that will be used for new incidents on the chosen service by editing the **Response Play** field.
-[block:api-header]
-{
-  "title": "Running A Play From The Mobile App"
-}
-[/block]
+## Running A Play From The Mobile App
+
 You can download the app from the [App Store](https://itunes.apple.com/us/app/pagerduty/id594039512) for iOS or [Google Play](https://play.google.com/store/apps/details?id=com.pagerduty.android) for Android. Screenshots are from our iOS app, and the Android app is very similar.
 
 Open an incident and click **More**

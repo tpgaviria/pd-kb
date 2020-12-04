@@ -8,11 +8,8 @@ metadata:
 createdAt: "2017-05-12T00:25:21.251Z"
 updatedAt: "2020-09-25T16:15:10.754Z"
 ---
-[block:api-header]
-{
-  "title": "Events APIs"
-}
-[/block]
+## Events APIs
+
 The PagerDuty [Events APIs](https://developer.pagerduty.com/docs/events-api-v2/overview/), which are used for triggering, acknowledging, and resolving incidents, requires that your system be able to make outbound connections to events.pagerduty.com on TCP port 443 (for HTTPS).
 
 `events.pagerduty.com` resolves to multiple IPs, which you can find by querying the A records using `dig` or `nslookup`.
@@ -29,11 +26,8 @@ The PagerDuty [Events APIs](https://developer.pagerduty.com/docs/events-api-v2/o
 }
 [/block]
 In this example, you see that the Events API is accessible at the IPs 54.244.255.45, 54.241.36.66, and 54.245.112.46.
-[block:api-header]
-{
-  "title": "REST API"
-}
-[/block]
+## REST API
+
 To access our [REST API](https://developer.pagerduty.com/docs/rest-api-v2/rest-api/), your system must be able to make outbound connections to `api.pagerduty.com` on TCP port 443. Our REST API only allows HTTPS connections; HTTP connections are not allowed for security.
 
 `api.pagerduty.com` usually resolve to multiple IPs as well, however these IPs will be different than the ones used for our Events API or webhooks.
@@ -50,11 +44,8 @@ To access our [REST API](https://developer.pagerduty.com/docs/rest-api-v2/rest-a
 }
 [/block]
 In this example, you see that the REST API is accessible at the IPs 54.203.252.221, 50.112.113.201, and 50.112.113.204.
-[block:api-header]
-{
-  "title": "Webhooks"
-}
-[/block]
+## Webhooks
+
 [Webhooks](doc:webhooks) are HTTP or HTTPS calls sent from PagerDuty to your web server on the IP and port of your choosing. The current list of IPs that our webhooks are sent from can be obtained via a HTTPS GET request to the following URL:
 
 ```
@@ -87,9 +78,6 @@ If you are hardcoding IPs into your firewall, you can use a [script to receive u
 If the firewall in question is an EC2 security group, [this Python script](https://gist.github.com/Deconstrained/f29fe709f8e4ff28715f7cf715e80f13) (requires [boto](https://pypi.org/project/boto/) and Python 2.7 or later to run), given an IAM secret key with adequate permissions, can automatically update the security group with the necessary IP addresses to grant access.
 
 
-[block:api-header]
-{
-  "title": "Jira Server Integration"
-}
-[/block]
+## Jira Server Integration
+
 If you are using the new Jira extension, you will also need to add the address records of `app.pagerduty.com` to any sort of safelist that controls network egress traffic; this integration makes special API calls that go through that particular hostname.

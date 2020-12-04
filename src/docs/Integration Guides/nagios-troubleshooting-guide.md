@@ -11,11 +11,8 @@ Below are some sample errors that you may run into when integrating Nagios with 
 - [Perl-based Integration](#section-perl-based-integration)
 - [Agent-based Integration](#section-agent-based-integration)
 - [Bi-Directional Integration](#section-bi-directional-integration)
-[block:api-header]
-{
-  "title": "General Configuration"
-}
-[/block]
+## General Configuration
+
 ##Nagios did not trigger a PagerDuty incident: possible causes
 ###Your Nagios host or service is not reaching a HARD down state
 Events are sent to PagerDuty once your service or host has a HARD State Type and the state changes. This happens once the max_check_attempts limit has been reached for the host/service.
@@ -87,11 +84,8 @@ The PagerDuty integration can only accept PROBLEM, ACKNOWLEDGE, and RECOVERY not
 Also, please note that sending a custom notification manually through the Nagios UI will not trigger an incident, as custom notifications are not supported by the integration.
 
 If you are using the Perl integration and would like to receive FLAPPINGSTART and FLAPPINGSTOP events, you can add [this script](https://gist.github.com/baskarp/3149686) to your integration.
-[block:api-header]
-{
-  "title": "Perl-based Integration"
-}
-[/block]
+## Perl-based Integration
+
 
 [block:callout]
 {
@@ -141,11 +135,8 @@ If you see this error, you will need to enable environment variables by setting 
 
 **RHEL, Fedora, CentOS, and other Redhat-derived systems**:
 `/etc/nagios/nagios.cfg`
-[block:api-header]
-{
-  "title": "Agent-based Integration"
-}
-[/block]
+## Agent-based Integration
+
 Below are some issues that may arise with an agent-based integration while using the PagerDuty agent.
 
 ## Trigger a test incident to make sure that the agent works
@@ -192,11 +183,8 @@ If you see something similar to the following in your logs, then you will need t
 [1417765072] wproc: stderr line 06: File "/usr/share/pdagent-integrations/bin/pd-nagios", line 177, in parse_fields 
 [1417765072] wproc: stderr line 07: return dict(f.split("=", 2) for f in fields)
  ```
-[block:api-header]
-{
-  "title": "Bi-Directional Integration"
-}
-[/block]
+## Bi-Directional Integration
+
 The bidirectional integration utilizes a [CGI script](https://github.com/mdcollins05/pd-nag-connector/blob/master/pagerduty.cgi) to capture webhooks and process them into commands that Nagios runs, to add the acknowledgment note.
 
 It will be of use to capture an acknowledgment webhook for iterative testing and log-checking, i.e. by sending it manually via [curl](https://curl.haxx.se/) or [Postman](https://www.getpostman.com/). You can do this by creating an extra extension on your service and pointing it to a temporary  [hookbin.com](https://hookbin.com) URL to capture the JSON body, and acknowledging an incident that was raised from Nagios.

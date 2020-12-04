@@ -28,9 +28,10 @@ updatedAt: "2020-11-25T19:09:57.802Z"
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "We recommend mapping your GitLab events to the PagerDuty service that represents what you are changing. This will make it easy for responders to quickly identify recent changes on their service when they get notified for an incident."
-}
-[/block]
+  "body": "We recommend mapping your GitLab events to the PagerDuty service that represents what you are changing. This will make it easy for responders to quickly identify recent changes on their service when they get notified for an incident.
+</Callout>
+
+
 1. In your PagerDuty account, navigate to **Services** :fa-arrow-right: **Service Directory** and click the **name** of your preferred service. Select the **Integrations** tab and click **Add a new integration**. 
 2. Enter an **Integration Name** in the format `Service-Name-GitLab` and select **GitLab Changes** from the **Integration Type** dropdown. Click **Add Integration**.
 3. On the next screen in the Integrations list, click the **Name** of your GitLab integration to view the details screen. 

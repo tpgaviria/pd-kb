@@ -17,17 +17,19 @@ This integration also supports Jira Service Desk.
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "This guide is for the Jira Server v3 integration. If you would like to use the latest version, please go to our [Jira Server v4 integration guide](https://support.pagerduty.com/docs/jira-server)."
-}
-[/block]
+  "body": "This guide is for the Jira Server v3 integration. If you would like to use the latest version, please go to our [Jira Server v4 integration guide](https://support.pagerduty.com/docs/jira-server).
+</Callout>
+
+
 # Create PagerDuty Authentication Token
 [block:callout]
 {
   "type": "warning",
   "body": "You will need an Admin or Account Owner user permission in PagerDuty to create the Jira authentication token.",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 In PagerDuty, you'll need to add the Jira Server extension. A unique authentication token will be created. The token will be used in Jira for the next step.
 
 1. In the top right corner of your screen, click **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions**.
@@ -57,9 +59,10 @@ In Jira, you'll need to download the [PagerDuty for Jira Server plugin](https://
 {
   "type": "warning",
   "body": "At minimum, you must have permission to perform the following actions in Jira: \n* Create, update and comment on issues\n* Run JQL searches\n* Read Projects\n* Read Settings (i.e., globally configured Priorities)",
-  "title": "Required User Permissions"
-}
-[/block]
+  "title": "Required User Permissions
+</Callout>
+
+
 1. From the **Jira Administration** menu in the top right corner, click **Add Ons.**
 
 [block:image]

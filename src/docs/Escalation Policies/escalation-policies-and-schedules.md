@@ -6,11 +6,8 @@ hidden: false
 createdAt: "2017-05-16T16:23:12.865Z"
 updatedAt: "2020-10-09T20:52:29.028Z"
 ---
-[block:api-header]
-{
-  "title": "Connect a Schedule to a Service via Escalation Policy"
-}
-[/block]
+## Connect a Schedule to a Service via Escalation Policy
+
 Escalation policies allow you to connect services to on-call schedules, and they ensure that the right people are notified at the right time. 
 
 To connect a schedule to a service via escalation policy:
@@ -21,11 +18,8 @@ To connect a schedule to a service via escalation policy:
 4. If you are creating a new service, click **+ New Service**. If you are adding this escalation policy to an existing service, find that service, click the **gear icon** and select **Edit Service**.
 5. In the Incident Settings section, select the **Escalation Policy** created or identified in step 1 (above). 
 6. Click **Save changes**.
-[block:api-header]
-{
-  "title": "Escalation Policy and Schedule Use Cases"
-}
-[/block]
+## Escalation Policy and Schedule Use Cases
+
 Escalation policies and schedules can be [configured](https://support.pagerduty.com/docs/escalation-policies#section-create-an-escalation-policy) in many ways to fit your team’s needs. Below are examples of common, more complex methods of configuring these features together to achieve particular goals. 
 
 ##Schedules and Escalation Levels

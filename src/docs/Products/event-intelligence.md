@@ -6,12 +6,12 @@ createdAt: "2018-06-01T17:19:15.185Z"
 updatedAt: "2020-10-08T22:24:53.250Z"
 ---
 PagerDuty Event Intelligence, built with automatic adaptive learning and team-centric workflows in mind, makes it easy for teams to cut through the noise so you can focus on what matters. With Event Intelligence, teams can automate common manual workflows, significantly reduce operational noise, and access rich context during incident triage to speed up response. This package consists of a suite of tools to assist with: Alert Grouping, Intelligent Triage and Advanced Event Automation.
-[block:callout]
-{
-  "type": "info",
-  "body": "PagerDuty Event Intelligence is included in our Digital Operations plan. For other plans, it is a new subscription available on top of your existing PagerDuty account. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature suite."
-}
-[/block]
+
+<Callout type="info" title="Info">
+PagerDuty Event Intelligence is included in our Digital Operations plan. For other plans, it is a new subscription available on top of your existing PagerDuty account. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature suite.
+</Callout>
+
+
 
 [block:image]
 {

@@ -27,9 +27,10 @@ Communication between ServiceNow and PagerDuty is bi-directional, allowing incid
 {
   "type": "info",
   "title": "Looking for another version?",
-  "body": "[V5](https://support.pagerduty.com/docs/servicenow-integration-guide-v5) and [V7](https://support.pagerduty.com/docs/servicenow-integration-guide) of our ServiceNow integration are also available."
-}
-[/block]
+  "body": "[V5](https://support.pagerduty.com/docs/servicenow-integration-guide-v5) and [V7](https://support.pagerduty.com/docs/servicenow-integration-guide) of our ServiceNow integration are also available.
+</Callout>
+
+
 # Quick Links
 
 * [What’s New with PagerDuty’s ServiceNow v6 Integration](https://community.pagerduty.com/t/whats-new-with-pagerdutys-servicenow-v6-integration/4739)
@@ -349,9 +350,10 @@ The following diagram represents the mapping between objects in both systems whe
 {
   "type": "info",
   "title": "Note",
-  "body": "If you have selected **Assignment Groups map to PagerDuty** in the **PagerDuty → Configuration → PagerDuty Settings** page, you can skip this step. You will not need to provision Configuration Items into PagerDuty."
-}
-[/block]
+  "body": "If you have selected **Assignment Groups map to PagerDuty** in the **PagerDuty → Configuration → PagerDuty Settings** page, you can skip this step. You will not need to provision Configuration Items into PagerDuty.
+</Callout>
+
+
 Before provisioning your Configuration Items into PagerDuty, it is recommended that you set the corresponding Assignment Group for each of the Configuration Items you will be provisioning. This simplifies the provisioning process: when you provision a single Configuration Item, it will verify that the Assignment Group exists in PagerDuty (as an Escalation Policy). If not, it will also provision the corresponding Assignment Group as a PagerDuty Escalation Policy.
  
 With the PagerDuty integration, each ServiceNow Configuration Item can have a corresponding PagerDuty Service. This integration offers an easy way to quickly generate a new PagerDuty service and webhook (which is necessary to send information back to ServiceNow). It will also populate the associated fields within ServiceNow.
@@ -400,13 +402,13 @@ Depending on which mapping you choose on the **PagerDuty → Configuration → P
 
 * If you choose Assignment Groups map to PagerDuty, each Assignment Group will have a corresponding PagerDuty escalation, service, and webhook ID. Optionally, each Assignment Group will also have a PagerDuty schedule and team ID.
 * If you choose Configuration Items and Assignment Groups map to PagerDuty, each Assignment Group will only have a PagerDuty escalation ID (optionally, Assignment Groups will also have a corresponding PagerDuty schedule and team ID). The PagerDuty service and webhook ID is mapped to your Configuration Items in ServiceNow.
-[block:callout]
-{
-  "type": "info",
-  "body": "The user provisioning Assignment Groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow",
-  "title": "Note"
-}
-[/block]
+
+<Callout type="info" title="Info">
+The user provisioning Assignment Groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow",
+  "title": "Note
+</Callout>
+
+
 1. Select an Assignment Group that you would like to provision to PagerDuty. Then, click on the **Provision Group into PagerDuty** link to deploy this group to your PagerDuty instance.
 [block:image]
 {
@@ -503,9 +505,10 @@ Once the incident is resolved in PagerDuty, it will be resolved in ServiceNow an
 {
   "type": "info",
   "title": "Note",
-  "body": "Once you have successfully installed and configured the PagerDuty application in your ServiceNow instance, it is highly recommended that you index the following columns in ServiceNow based on certain conditions listed below.\n\nFor “Assignment Group only” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `sys_user_group.x_pd_integration_pagerduty_service`\n* `sys-user_group.x_pd_integration_pagerduty_webhook`\n\nFor “Assignment Group and Configuration Item” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `cmdb_ci.x_pd_integration_pagerduty_service`\n* `cmdb_ci.x_pd_integration_pagerduty_webhook`\n\nRegardless of mapping, these three columns are also recommended:\n\n* `sys_user.x_pd_integration_pagerduty_id`\n* `sys_user.email`\n* `incident.x_pd_integration_incident`\n* `task.x_pd_integration_incident_id`\n\nThis will help decrease the response time when the PagerDuty application is querying the incidents, group, user and CMDB tables. PagerDuty initiates the webhook retry logic outlined [here](https://v2.developer.pagerduty.com/docs/webhook-behavior#error-handling-and-retries) if the response time exceeds a certain threshold, in which case the webhook extension will eventually get temporarily disabled."
-}
-[/block]
+  "body": "Once you have successfully installed and configured the PagerDuty application in your ServiceNow instance, it is highly recommended that you index the following columns in ServiceNow based on certain conditions listed below.\n\nFor “Assignment Group only” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `sys_user_group.x_pd_integration_pagerduty_service`\n* `sys-user_group.x_pd_integration_pagerduty_webhook`\n\nFor “Assignment Group and Configuration Item” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `cmdb_ci.x_pd_integration_pagerduty_service`\n* `cmdb_ci.x_pd_integration_pagerduty_webhook`\n\nRegardless of mapping, these three columns are also recommended:\n\n* `sys_user.x_pd_integration_pagerduty_id`\n* `sys_user.email`\n* `incident.x_pd_integration_incident`\n* `task.x_pd_integration_incident_id`\n\nThis will help decrease the response time when the PagerDuty application is querying the incidents, group, user and CMDB tables. PagerDuty initiates the webhook retry logic outlined [here](https://v2.developer.pagerduty.com/docs/webhook-behavior#error-handling-and-retries) if the response time exceeds a certain threshold, in which case the webhook extension will eventually get temporarily disabled.
+</Callout>
+
+
 #Using PagerDuty’s Add Responders and Conference Bridge Features in ServiceNow
 
 The latest version of PagerDuty’s ServiceNow integration allows ServiceNow users to utilize PagerDuty’s [Add Responders](https://support.pagerduty.com/docs/mobilizing-a-response) and [Conference Bridge](https://support.pagerduty.com/docs/conference-bridge) features. To use these features within ServiceNow, users must have a new role added to their ServiceNow user record: `x_pd_integration.incident_response`.

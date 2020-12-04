@@ -9,11 +9,8 @@ Below are some common issues that you may run into when trying to integrate Zabb
 - [Potential Issues within the Zabbix Configuration](#section-potential-issues-within-the-zabbix-configuration)
 - [Troubleshooting Issues with the Agent-based Integration](#section-troubleshooting-issues-with-the-agent-based-integration)
 - [Troubleshooting Issues with the Python-based Integration](#section-troubleshooting-issues-with-the-python-based-integration) 
-[block:api-header]
-{
-  "title": "Potential Issues within the Zabbix Configuration"
-}
-[/block]
+## Potential Issues within the Zabbix Configuration
+
 Check whether Zabbix has attempted to send an event to PagerDuty by viewing your Zabbix logs. Make sure the PagerDuty action was called, and if there were any errors in doing so.
 
 For Zabbix 2.x: navigate go to **Monitoring → Events**, then click the event timestamp for the problem event. Check the **Message actions** section in the event details.
@@ -76,11 +73,8 @@ severity:{TRIGGER.SEVERITY}
 2. Make sure that the messaging operations configured for the PagerDuty Notifications action have the same message template for the main action as for the recovery action
 3. Make sure the message template is the one given in the integration guide for your Zabbix integration: [Zabbix Integration Guide](https://www.pagerduty.com/docs/guides/zabbix-integration-guide/) and [Zabbix 3 Integration Guide](https://www.pagerduty.com/docs/guides/zabbix-3-integration-guide/) (also produced above; see [Potential Issues Within the Zabbix Configuration](#section-potential-issues-within-the-zabbix-configuration)).
 4. Ensure that the recovery operations' default message subject is `resolve`, verbatim (it is case sensitive)
-[block:api-header]
-{
-  "title": "Troubleshooting Issues with the Agent-based Integration"
-}
-[/block]
+## Troubleshooting Issues with the Agent-based Integration
+
 ##Verify the Agent is Installed
 The most common problem we see when we begin troubleshooting agent integrations is that the agent has not been installed successfully (i.e. trying to install on an incompatible distribution like CentOS 5). The first step in troubleshooting Agent-based integrations is to make sure that the PagerDuty Agent is both compatible with your distribution and successfully installed by following the steps in our Agent Install Guide.
 
@@ -115,11 +109,8 @@ value:5
 event_id:2
 severity:1"
 ```
-[block:api-header]
-{
-  "title": "Troubleshooting Issues with the Python-based Integration"
-}
-[/block]
+## Troubleshooting Issues with the Python-based Integration
+
 ##Make Sure you have Python 2.7.9 or Newer
  Although the Python script was previously tested with Python 2.6, it now requires version 2.7.9 to make a secure connection to PagerDuty. This changed because SSLv3 is no longer enabled on our web servers due to the [POODLE vulnerability](https://en.wikipedia.org/wiki/POODLE), and older versions of Python try to use SSLv3. Python 2.7.9 uses a backported version of Python 3's SSL library, so versions 2.7.9 and newer (up to 3.x) are able to make a secure connection to PagerDuty. The script also does not work with Python 3.x due to other language changes in this version of Python.
 

@@ -6,11 +6,8 @@ hidden: false
 createdAt: "2017-05-16T16:28:16.401Z"
 updatedAt: "2020-10-09T20:48:22.770Z"
 ---
-[block:api-header]
-{
-  "title": "Confluence"
-}
-[/block]
+## Confluence
+
 PagerDuty schedules in Confluence allow Confluence users access to their on-call shifts without having to login to multiple interfaces.
 
 ##In PagerDuty
@@ -75,11 +72,8 @@ PagerDuty schedules in Confluence allow Confluence users access to their on-call
 }
 [/block]
 5. You may see an incomplete calendar at first. Click **Save** in the bottom right corner of the page, and then your full calendar will be appear.
-[block:api-header]
-{
-  "title": "Calendar Apps"
-}
-[/block]
+## Calendar Apps
+
 You can integrate your on-call schedule with calendar software (Apple Calendar, Google Calendar, Microsoft Outlook, etc.) using iCal or WebCal.
 [block:callout]
 {

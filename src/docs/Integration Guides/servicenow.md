@@ -31,11 +31,8 @@ All of the source code that performs the actions underpinning the integration is
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Introduction and Terminology"
-}
-[/block]
+## Introduction and Terminology
+
 ## Assignment versus Escalation and Delegation
 
 The term **assignment** has a slightly different meaning in PagerDuty than it does in ServiceNow. When an incident is "assigned" to a user in PagerDuty, it is escalated to them and they are the agents who will be notified. When an incident is first triggered, it is considered to be assigned to the first targets in the escalation policy until escalated. However, it will not assign the incident to anyone in ServiceNow until someone acknowledges it, in which case the corresponding ServiceNow incident will be assigned to them.
@@ -63,11 +60,8 @@ To get the most detailed information about what is happening and in what order, 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "The Core Components"
-}
-[/block]
+## The Core Components
+
 Most of the tasks performed to synchronize data between PagerDuty and ServiceNow are taken in the following application files, under *Script Includes*:
 
 * **PagerDuty:** Utilities for obtaining PagerDuty metadata, and functions for performing actions on  incidents, i.e. assigning to a user, synchronizing worknotes, and triggering new incidents.
@@ -80,11 +74,8 @@ Each of the above defines a class constructor named after the script include. Me
 Another important file, which handles the importing of webhook data into ServiceNow incidents, is the **PagerDuty Webhook Import** Table Transform Map, which can be found under the *Application Files* tab.
 
 
-[block:api-header]
-{
-  "title": "Provisioning: Linking Objects Between Systems"
-}
-[/block]
+## Provisioning: Linking Objects Between Systems
+
 For any user or assignment group, user or CI in ServiceNow to be recognized by the integration, it must be provisioned.
 
 Objects can be provisioned by clicking "Provision PagerDuty Service" or "Provision PagerDuty User" under *Related Links* in the view of the group, user, or configuration item, or by selecting several from the list view and selecting the option to provision them under the menu “actions on selected rows”.
@@ -117,11 +108,8 @@ In short, for the bidirectional integration, the following is how the fields are
 Conversely, it should be possible to manually associate an assignment group with multiple services, which all use the same escalation policy, and have the integration still work smoothly. This is because it identifies the assignment group by escalation policy ID, and there's one escalation policy for all the services, so the service ID has no bearing in this part of the process (see [PagerDuty to ServiceNow: The Webhook Import Process](https://support.pagerduty.com/v1/docs/servicenow#section-webhook-import-pagerduty-to-servicenow))
 
 In the opposite direction, ServiceNow incidents can only trigger incidents in PagerDuty on one service: the one whose ID is stored in the assignment group's *PagerDuty Service* field.
-[block:api-header]
-{
-  "title": "Business Rules: ServiceNow to PagerDuty"
-}
-[/block]
+## Business Rules: ServiceNow to PagerDuty
+
 All aspects of the integration that concern any flow of data from ServiceNow to PagerDuty are handled by business rules that begin when an event such as an insertion, update or deletion takes place on an incident. If the conditions of a business rule are met, the rule and its associated script are run, which invokes a transaction with the PagerDuty API to perform the necessary actions in PagerDuty.
 
 If you are unfamiliar with ServiceNow business rules, the two-part video series [Business Rules | Best Practices](https://hi.service-now.com/kb_view.do?sysparm_article=KB0540192) from the ServiceNow knowledge base is highly recommended, as is the article [Business Rules](http://wiki.servicenow.com/index.php?title=Business_Rules#gsc.tab=0) in the ServiceNow Wiki.
@@ -156,11 +144,8 @@ Incidents in ServiceNow, when assigned to a user or assignment group, may trigge
 
 * **PD User Assign:** If a provisioned user is assigned a linked incident, this escalates the PagerDuty incident to the user in PagerDuty, by raising the `x_pd_integration.assign_incident_user` event, which is handled by the **PagerDuty User Assign Incident** script action, which calls the `PagerDuty.assignIncidentToUser` function.
 * **PD Group Policy Assign:** if the assignment group of a linked incident changes, and the new assignment group is provisioned, the corresponding PagerDuty incident will be delegated to the Escalation Policy in PagerDuty specified by the assignment group's **PagerDuty Escalation** field. This will restart escalation and notify the new assignees in the target policy.
-[block:api-header]
-{
-  "title": "Worknote Synchronization"
-}
-[/block]
+## Worknote Synchronization
+
 ## ServiceNow Worknotes to PagerDuty
 
 *Worknotes are copied from ServiceNow to PagerDuty through the **PD Copy worknote to PagerDuty incident** business rule, which triggers the `x_pd_integration.post_worknote` event, which then invokes the `PagerDuty.postIncidentNote` function. This runs on any update of a linked incident wherein the work notes change.
@@ -170,11 +155,8 @@ Incidents in ServiceNow, when assigned to a user or assignment group, may trigge
 Starting in version 5, notes are synchronized in near real time by utilizing the new `incident.annotate` webhook event type. When a user adds a note to the incident in PagerDuty, the webhook transform will recognize this event as such, and add the note as a worknote with the suffix `(PagerDuty: USER-NAME-HERE on TIMESTAMP-HERE)' identifying the PagerDuty user who added the note.
 
 In earlier versions, the process that runs in the opposite direction was initiated by a business rule, apart from just the UI Action *Refresh PagerDuty Notes*, which appeared as an action in the context menu for any given linked incident. The mechanism is thus polling; it is done through the business rule **PD Update Worknotes from PagerDuty Notes**, raising the event `x_pd_integration.import_notes` (handled by the *Import Notes from PagerDuty incident* script action). In both cases, the functions `PagerDuty.getIncidentNotes` and `PagerDuty.createNoteImports` are used to import and save notes from PagerDuty.
-[block:api-header]
-{
-  "title": "Webhook Import: PagerDuty to ServiceNow"
-}
-[/block]
+## Webhook Import: PagerDuty to ServiceNow
+
 Real-time updates to incidents in PagerDuty are communicated to ServiceNow through [extensions](/docs/extensions-and-add-ons#section-extensions), created on each PagerDuty service that corresponds to a provisioned assignment group in ServiceNow. When a group is initially provisioned, an extension will also be created on the service. In version 3.5 and later, an extension on the service will be provisioned automatically if one does not already exist, whenever a new incident is created.
 
 The extensions, also known as webhooks, specify URLs in the ServiceNow instances to which JSON-encoded data is sent via HTTPS/POST requests.

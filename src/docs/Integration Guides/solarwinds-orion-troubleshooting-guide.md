@@ -12,11 +12,8 @@ This integration is based on [a VBScript](https://github.com/jcurreee/pagerduty-
 3. The script removes the file once delivery is successful.
 
 Troubleshooting will involve examining each aspect of the process.
-[block:api-header]
-{
-  "title": "Cannot Import Sample Alerts Due to Error"
-}
-[/block]
+## Cannot Import Sample Alerts Due to Error
+
 If an alert cannot be imported, you may be presented with an error such as the following:
 
 > There was an error while importing alert from ... Please check OrionWeb.log for more details.
@@ -26,11 +23,8 @@ If an alert cannot be imported, you may be presented with an error such as the f
 The error in the log will provide more information on why the import did not succeed.
 
 Sometimes, the error itself can be due to one or more software components referenced by the alert not being present in the SolarWinds Orion installation. For example, note that the [APM (Application Performance Monitor)](https://www.solarwinds.com/apm-app-performance-monitor) alerts, which have "Application" in their names, require that the APM module be installed and activated.
-[block:api-header]
-{
-  "title": "PagerDuty Incidents Not Triggered"
-}
-[/block]
+## PagerDuty Incidents Not Triggered
+
 The first thing you should do is look in `C:\PagerDuty\Queue` for `.txt` files that are "stuck" in the event queue. They would have creation timestamps earlier than a few seconds ago.
 
 If there are any stuck event files, move them out of the folder so that the script will stop trying to send them to PagerDuty while you troubleshoot the integration. 
@@ -293,11 +287,8 @@ If the nature of the problem appears to be network-related, perform the followin
 Once you have gathered the necessary information about the nature of the connection issue, contact your local network or IT administrator for further assistance, and ask them to enable outbound HTTPS connections to remote hosts.
 
 However, you should also check to make sure there are no local firewall rules (on the SolarWinds server) that prevent connections.
-[block:api-header]
-{
-  "title": "Alert Recovery Does Not Resolve PagerDuty Incident"
-}
-[/block]
+## Alert Recovery Does Not Resolve PagerDuty Incident
+
 Go to **Settings &rarr; All Settings** through the main menu, and from there go to **Manage Alerts**. Then, open the alert corresponding to the incident that did not get automatically resolved to edit it and go to the **Reset Actions** step.
 [block:image]
 {

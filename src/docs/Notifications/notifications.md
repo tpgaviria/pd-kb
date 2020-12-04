@@ -178,11 +178,8 @@ Here is an example of a PagerDuty push notification:
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Notification Bundling"
-}
-[/block]
+## Notification Bundling
+
 Given that notification volume in some cases can increase to 100 notifications in a minute, we calibrate our policies to prevent alert fatigue. Notification bundling is the incident summary we switch to when multiple simultaneous incidents are triggered and assigned to a user. PagerDuty rolls together or bundles these multiple notifications into a single summarizing notification, regardless of your notification method (phone, SMS, email, or push). All incidents that are in the triggered state (i.e. not acknowledged or resolved) will be included in the bundled notification.
 
 The following are examples of how each contact method will notify you, in the event of near-simultaneous incidents. For this example, assume 5 incidents have been triggered on a service named "Nagios-Shopping-Cart" within a 1-minute time frame.
@@ -206,11 +203,8 @@ https://fake-name.pagerduty.com/dashboard
    Link: https://fake-service.pagerduty.com/i/100
 ```
 Another way to minimize the number of notifications that you receive is to adjust your notification rules so that you are notified of an incident several minutes after it is assigned to you as opposed to immediately after it is assigned to you. Adjusting the notification rules will allow more time for incidents to aggregate and you will receive fewer notifications during a high volume period.
-[block:api-header]
-{
-  "title": "Responding to SMS and Phone Notifications"
-}
-[/block]
+## Responding to SMS and Phone Notifications
+
 ##Responding to an SMS Notification
 
 To reply to an SMS notification you will reply with the unique code that is provided. Here is an example:

@@ -17,11 +17,8 @@ Any changes made to a schedule (including adding and removing users) won't affec
 }
 [/block]
 *If you are creating a schedule for the first time, please visit our article on [Schedule Basics](/docs/schedules).*
-[block:api-header]
-{
-  "title": "Adding Users to Existing Schedules"
-}
-[/block]
+## Adding Users to Existing Schedules
+
 
 [block:callout]
 {
@@ -117,11 +114,8 @@ To copy a schedule:
 1. Navigate to **People** :fa-arrow-right: **On-Call Schedules** :fa-arrow-right: click the :fa-cog: icon to the right of the schedule that you want to copy and select **Copy**. 
 2. This will create a new schedule that copies all users and settings from the previous schedule. Add an **On-call schedule name** and make any edits necessary to the new schedule. 
 3. Click **Create Schedule** to save. 
-[block:api-header]
-{
-  "title": "Create and Delete Overrides"
-}
-[/block]
+## Create and Delete Overrides
+
 Overrides are used to make manual one-time adjustments to on-call schedules. Overrides are most commonly used when a user is sick, goes on vacation, or would like to swap on-call periods with someone else. 
 
 Scheduling an override creates an override layer over the existing schedule. Scheduled overrides are displayed beneath your schedule layers, as the lowest layer before the Final Schedule (the lowest layer always takes precedence). 
@@ -250,11 +244,8 @@ To delete an override:
 #Edit Schedule Time Zone Settings
 
 When you create a new schedule, it will be set to the [account-level time zone](https://support.pagerduty.com/docs/time-zones#section-changing-the-account-level-time-zone) by default. Please follow the instructions in our section [Changing the Schedule-Level Time Zone](https://support.pagerduty.com/docs/time-zones#section-changing-the-schedule-level-time-zone) if you would like your schedule to have a different time zone than the account. 
-[block:api-header]
-{
-  "title": "Pause or Deactivate an On-call Schedule"
-}
-[/block]
+## Pause or Deactivate an On-call Schedule
+
 Sometimes you might want to stop a schedule from being used without deleting it.
 
 For example:
@@ -338,11 +329,8 @@ Click **Save** when you are done, and repeat this process for any additional esc
 ##Option 2: Change the Escalation Policy for a Service
 
 Please visit our article on [Escalation Policies and Services](https://support.pagerduty.com/docs/escalation-policy-vs-schedule#section-pause-or-deactivate-an-on-call-schedule) for instructions on how to change the escalation policy used by a service. This will ensure that incidents triggered for the service do not alert the schedule you want to deactivate.
-[block:api-header]
-{
-  "title": "Restore a Schedule to a Previous Version"
-}
-[/block]
+## Restore a Schedule to a Previous Version
+
 If you or another user alters a schedule in an undesired way, you can quickly revert a schedule back to a previously saved version. This feature also allows you to see when each saved change was made.
 
 To revert a schedule:

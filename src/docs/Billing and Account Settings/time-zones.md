@@ -14,22 +14,16 @@ Most times in the PagerDuty web UI are rendered in the desired time zone of the 
 }
 [/block]
 
-[block:api-header]
-{
-  "title": "Changing the Account-Level Time Zone"
-}
-[/block]
+## Changing the Account-Level Time Zone
+
 Only the Account Owner can change the account-level time zone.
 
 1. Log in to PagerDuty as the Account Owner. 
 2. In the upper right of the page navigate to the **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Account Settings** tab.
 3. Under Account Details, select the Default Time Zone from the drop-down menu.
 4. Click **Save changes**.
-[block:api-header]
-{
-  "title": "Changing the User-Level Time Zone"
-}
-[/block]
+## Changing the User-Level Time Zone
+
 1. Navigate to **My Profile** under the **User Icon** in the top right corner of any page.
 2. Click the **Edit icon** next to the time zone under your contact information.
 3. Select the desired time zone from the drop-down list.
