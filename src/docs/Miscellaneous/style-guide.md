@@ -121,21 +121,9 @@ If the content you're adding to a page exists somewhere else, and you're duplica
 ## Redundant Titles
 
 Don't use "PagerDuty" in article titles, or repeat the section name in your page title like this:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2f663b0-duplicate-section-title.png",
-        "duplicate-section-title.png",
-        518,
-        168,
-        "#343434"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2f663b0-duplicate-section-title.png)
+
 ## Be Clear & Concise
 
 > "On the average Web page, users have time to read at most 28% of the words during an average visit; 20% is more likely."
@@ -372,21 +360,9 @@ Rectangle outlines are suitable for most annotations. They should highlight some
 #### Rectangle usage
 `⌃⌘R` **Tools** :fa-arrow-right: **Annotate** :fa-arrow-right: **Rectangle**
 Set the fill color to transparent, border color to red, and the line width to the fourth option (from the top).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e22f41-how-to-annotations.png",
-        "how-to-annotations.png",
-        843,
-        391,
-        "#dedcde"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1e22f41-how-to-annotations.png)
+
 ### Arrow
 
 Arrows should be reserved for bringing attention to objects that outlines alone wouldn't easily point out. In the example below, an arrow is used to point to the OCC settings icon, since a box outline could be easily overlooked in the corner of a screenshot that large. **Use straight, horizontal arrows** or vertical arrows if a horizontal arrow won't fit neatly. Do not add arrows at an angle. Arrows, like rectangles, should also use the 4th line width (as pictured above). 
@@ -394,21 +370,9 @@ Arrows should be reserved for bringing attention to objects that outlines alone 
 #### Arrow usage
 `⌃⌘A` **Tools** :fa-arrow-right: **Annotate** :fa-arrow-right: **Arrow**
 Set the border color to red and the line width to the fourth option (from the top), just as you would for a rectangle.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f49b2b0-console-settings.png",
-        "console-settings.png",
-        1050,
-        1426,
-        "#15202f"
-      ],
-      "caption": "Rectangle outline, arrow, and text annotations are used here to indicate where OCC's Saved Layouts option is hidden"
-    }
-  ]
-}
+
+![](https://files.readme.io/f49b2b0-console-settings.png)
+
 [/block]
 ### Text
 
@@ -424,21 +388,9 @@ Although we want out documentation to be functional first and foremost, we shoul
 
 #### Loupe usage
 `⌃⌘L` **Tools** :fa-arrow-right: **Annotate** :fa-arrow-right: **Loupe**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0589299-loupe.png",
-        "loupe.png",
-        1600,
-        204,
-        "#dceaf2"
-      ],
-      "caption": "Loupe annotation is used here to indicate where the Test option is located for a specific contact method"
-    }
-  ]
-}
+
+![](https://files.readme.io/0589299-loupe.png)
+
 [/block]
 ## Videos
 

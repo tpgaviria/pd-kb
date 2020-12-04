@@ -28,10 +28,9 @@ updatedAt: "2020-11-25T19:09:57.802Z"
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "We recommend mapping your GitLab events to the PagerDuty service that represents what you are changing. This will make it easy for responders to quickly identify recent changes on their service when they get notified for an incident.
-</Callout>
-
-
+  "body": "We recommend mapping your GitLab events to the PagerDuty service that represents what you are changing. This will make it easy for responders to quickly identify recent changes on their service when they get notified for an incident."
+}
+[/block]
 1. In your PagerDuty account, navigate to **Services** :fa-arrow-right: **Service Directory** and click the **name** of your preferred service. Select the **Integrations** tab and click **Add a new integration**. 
 2. Enter an **Integration Name** in the format `Service-Name-GitLab` and select **GitLab Changes** from the **Integration Type** dropdown. Click **Add Integration**.
 3. On the next screen in the Integrations list, click the **Name** of your GitLab integration to view the details screen. 
@@ -46,21 +45,9 @@ Keep this URL in a safe place for later use.
 1. Navigate to the GitLab project where you would like to track changes, select the **Settings** menu on the left, and then select **Webhooks**.
 2. Paste the **Integration URL** generated in PagerDuty (above) in the **URL** field. Under the **Trigger** header, deselect **Push events** and select **Merge request events**. Click **Add Webhook**. 
 3. Once added, you will see the webhook appear below these settings. To test the integration, create a `merge_request` in the integrated project. In your PagerDuty account, navigate to the integrated service, click its **title** and you should see a change event labeled as **RECENT CHANGE** in grey in the **Recent Activity** timeline:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ded82f4-gitlab-changes-test-event.png",
-        "gitlab-changes-test-event.png",
-        2324,
-        204,
-        "#f7f7f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ded82f4-gitlab-changes-test-event.png)
+
 # Send and View Change Events
 
 Please read our [Change Events](https://support.pagerduty.com/docs/change-events) article for more information on how to send change events and view them within individual services, incidents and across all services in the Service Directory.

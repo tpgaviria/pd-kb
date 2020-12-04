@@ -30,21 +30,9 @@ Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right:
 }
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0e4784d-preview-iag-on-service.png",
-        "preview-iag-on-service.png",
-        1152,
-        544,
-        "#dde5f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0e4784d-preview-iag-on-service.png)
+
 
 ## Viewing Groups in Detail
 
@@ -58,21 +46,9 @@ You will see metrics at the top of the preview, which are all calculated based o
 * **Incidents**: The total number of incidents within the past 45 days this service would have seen without turning on any alert grouping.
 * **Number of Unique Incidents**: The number of incidents that would have been triggered within the past 45 days, if the service had Intelligent Alert Grouping turned on.
 * **Number of Incidents Saved**: The number of incidents that would have been saved from a trigger within the past 45 days, if the service had Intelligent Alert Grouping turned on.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7aad8a6-preview-iag-modal.png",
-        "preview-iag-modal.png",
-        1600,
-        1130,
-        "#f7f8f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7aad8a6-preview-iag-modal.png)
+
 You can expand each potential alert group to see how many and which alerts would have been grouped together into a potential incident. The date and time listed reflect when the first incoming alert was triggered. Please note that the title of the potential incident is derived from the first incoming alert.
 
 Some services may have a lot of alert groups  in this list. We recommend looking at some of the larger groups to get a sense of the grouping behavior of the algorithm.

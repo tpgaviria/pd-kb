@@ -71,21 +71,9 @@ If your account has access to the [add responders](https://support.pagerduty.com
 You may also want to use a custom responder message - this allows you to specify a conference bridge phone number or URL, or a Slack channel where the response will be taking place. 
 
 Check the **Notify responders other than the assignee to help resolve the incident** option, then select **Send a custom message to responders** and enter your custom message.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e463f96-response-plays-send-custom-message.png",
-        "response-plays-send-custom-message.png",
-        1720,
-        694,
-        "#f2f1f0"
-      ],
-      "border": false,
-      "sizing": "smart"
-    }
-  ]
+
+![](https://files.readme.io/e463f96-response-plays-send-custom-message.png)
+
 }
 [/block]
 Phone numbers should be formatted like 234-567-8912,,,,1234#, where a comma (,) represents a one-second wait and pound (#) completes access code input.
@@ -138,21 +126,9 @@ In this setting, you have the following options:
 }
 [/block]
 From the Incident details page, you can **Run a Play** from the button bar of the incident. You can select any play from the list.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/29454ff-response-plays-run-a-play.png",
-        "response-plays-run-a-play.png",
-        1624,
-        666,
-        "#f0eeee"
-      ],
-      "border": false
-    }
-  ]
-}
+
+![](https://files.readme.io/29454ff-response-plays-run-a-play.png)
+
 [/block]
 A confirmation box will pop up to confirm your selection for running the play. 
 
@@ -165,56 +141,20 @@ You can run a response play whenever an incident is created on a service. Choose
 You can download the app from the [App Store](https://itunes.apple.com/us/app/pagerduty/id594039512) for iOS or [Google Play](https://play.google.com/store/apps/details?id=com.pagerduty.android) for Android. Screenshots are from our iOS app, and the Android app is very similar.
 
 Open an incident and click **More**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f0efe74-mobile_1.jpeg",
-        "mobile_1.jpeg",
-        750,
-        1334,
-        "#212836"
-      ],
-      "sizing": "smart",
-      "border": false
-    }
-  ]
+
+![](https://files.readme.io/f0efe74-mobile_1.jpeg)
+
 }
 [/block]
 Tap **Run a Play**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eff1113-mobile_2.jpeg",
-        "mobile_2.jpeg",
-        750,
-        1334,
-        "#f7f1f8"
-      ],
-      "border": false,
-      "sizing": "smart"
-    }
-  ]
+
+![](https://files.readme.io/eff1113-mobile_2.jpeg)
+
 }
 [/block]
 Confirm that you want to Run the play
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5afcb35-step_3.jpg",
-        "step_3.jpg",
-        750,
-        1334,
-        "#131b23"
-      ],
-      "border": false,
-      "sizing": "smart"
-    }
-  ]
+
+![](https://files.readme.io/5afcb35-step_3.jpg)
+
 }
 [/block]

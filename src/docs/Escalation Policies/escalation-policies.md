@@ -43,21 +43,9 @@ To create an escalation policy:
 ##Escalation Policy Example
 
 In the example below, if an on-call user in the **Primary On-Call Schedule** schedule does not acknowledge an incident in 30 minutes, it will escalate to Jason Collison. The escalation timeout at the second level is also 30 minutes. Jason will have 30 minutes to acknowledge the incident before it escalates and starts over from the beginning of the policy. This escalation policy is set to repeat 9 times.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/924b543-ep-basics-ep-example.png",
-        "ep-basics-ep-example.png",
-        984,
-        485,
-        "#f9fafa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/924b543-ep-basics-ep-example.png)
+
 ##Add an Escalation Policy to a Team 
 
 If your account has access to the Teams feature, escalation policies are designed to connect other core PagerDuty objects to your Teams. When you add an escalation policy to a Team, all of the escalation policy's associated users, schedules and services will be assigned to that Team. For more information, please check out our [Teams](https://support.pagerduty.com/docs/teams) article.
@@ -87,21 +75,9 @@ If nobody is on-call in the first level, we will assign the incident to the next
 ## Escalation Levels
 
 Escalation policies are made up of levels that allow you to escalate incident notifications to different users and/or on-call schedules in the case that no one responds. An escalation policy should have at least two levels, with the option of adding more. Escalation levels can also be used to achieve more [complex use cases involving schedules](https://support.pagerduty.com/docs/escalation-policies-and-schedules#section-escalation-policy-and-schedule-use-cases). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a29adf-escalation-policy-basics-levels.png",
-        "escalation-policy-basics-levels.png",
-        1688,
-        732,
-        "#f7f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/6a29adf-escalation-policy-basics-levels.png)
+
 
 ## Notify Multiple Users at Once
 
@@ -130,21 +106,9 @@ To notify two or more users at once regardless of their on-call status, you will
 3. Click in the field below **Notify the following users or schedules** and select the on-call users you want to notify at the same time when an incident is triggered or escalated. 
 
 In the example below, Harriet Spy and Rocko Wallaby will be notified at the same time since they are both in escalation level 1. If neither of them respond within 30 minutes, it will then escalate to escalation level 2 and Donatello Turtle will then be notified. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7d98de6-escalation-policy-basics-escalation-level.png",
-        "escalation-policy-basics-escalation-level.png",
-        1146,
-        792,
-        "#f4f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7d98de6-escalation-policy-basics-escalation-level.png)
+
 4. Click **Save** and you're done!
 [block:callout]
 {
@@ -179,34 +143,9 @@ To send OCHONs for an escalation policy without a service:
 
 When viewing escalation policies in **People** :fa-arrow-right: **Escalation Policies**, you will be able to see if OCHONs will be sent on the right hand side. The following example is an escalation policy assigned to a service, which will always send OCHONs:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/32de8dc-ep-ochons-always.png",
-        "ep-ochons-always.png",
-        778,
-        464,
-        "#faf7f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/32de8dc-ep-ochons-always.png)
+
 The following is an escalation policy that is not currently assigned to a service, and it will only send OCHONs if one is assigned, or if it is edited and set to **always**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f477a9-ep-ochons-in-use-service.png",
-        "ep-ochons-in-use-service.png",
-        778,
-        478,
-        "#f9f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1f477a9-ep-ochons-in-use-service.png)

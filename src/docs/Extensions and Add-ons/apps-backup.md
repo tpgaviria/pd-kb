@@ -5,12 +5,12 @@ hidden: true
 createdAt: "2019-10-18T16:52:41.003Z"
 updatedAt: "2019-12-13T17:59:55.631Z"
 ---
-
-<Callout type="info" title="Info">
-For more information on apps, including how to build them, visit our [Developer Docs](https://v2.developer.pagerduty.com/docs/app-overview).
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "For more information on apps, including how to build them, visit our [Developer Docs](https://v2.developer.pagerduty.com/docs/app-overview)."
+}
+[/block]
 ## Adding Apps
 Any user with a PagerDuty account can add an app to their account following the installation instructions in the app’s documentation. 
 

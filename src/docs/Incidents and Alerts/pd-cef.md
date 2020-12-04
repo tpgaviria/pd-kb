@@ -60,21 +60,9 @@ PD-CEF details map to the following fields. The table below outlines the name, t
 }
 [/block]
 ## PD-CEF fields as they appear on an individual alert
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1b175de-pdcef-fields-in-alert.png",
-        "pdcef-fields-in-alert.png",
-        2254,
-        948,
-        "#f2f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1b175de-pdcef-fields-in-alert.png)
+
 ## Events API v2
 
 The Events API v2 offers an easier way to leverage PD-CEF fields in your alerts. Monitoring partners can now directly send in the PD-CEF format, giving you the benefit of the format without needing to manually convert your events. Custom monitoring can also leverage this format, to take advantage of the new PD-CEF display and workflow features in PagerDuty. 

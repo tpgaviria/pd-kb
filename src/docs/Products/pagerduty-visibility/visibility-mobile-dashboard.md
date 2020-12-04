@@ -10,37 +10,13 @@ updatedAt: "2019-07-25T18:38:05.041Z"
 You can view top-level business services within the Visibility mobile dashboard. To access, open the PagerDuty mobile app and navigate to **☰ > Visibility**.
 
 You will see a top-level view of any disrupted business services and all healthy business services.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0427e8d-visibility-mobile-dashboard.jpg",
-        "visibility-mobile-dashboard.jpg",
-        852,
-        1733,
-        "#1c2733"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0427e8d-visibility-mobile-dashboard.jpg)
+
  ## Analyzing Disrupted Business Services
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e86218-visibility-best-practices-mobile-dashboard.jpg",
-        "visibility-best-practices-mobile-dashboard.jpg",
-        852,
-        1733,
-        "#202e39"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1e86218-visibility-best-practices-mobile-dashboard.jpg)
+
 A business service is disrupted when an incident with a priority is triggered on a technical service connected to the business service, and the business service was not already in a disrupted state due to another incident. 
 
 Selecting a business service will display the detailed view:

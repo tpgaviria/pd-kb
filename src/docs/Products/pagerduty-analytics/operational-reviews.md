@@ -12,30 +12,17 @@ The Operational Reviews feature offers metrics for three different types of revi
 - [Business Performance Reviews](/docs/operational-reviews#section-business-performance-reviews)
 
 These scorecards are intended to review past performance, and are not meant to serve ad-hoc or real-time analytics needs. Operational Reviews is found at **Analytics** :fa-arrow-right: **Operational Reviews** in the web app. For in-depth information on the background of why we created the Operational Reviews feature, please read our [Reviews Guide](https://reviews.pagerduty.com/).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4d7bbea-operational-reviews-overview.png",
-        "operational-reviews-overview.png",
-        1948,
-        1024,
-        "#eff2f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/4d7bbea-operational-reviews-overview.png)
+
 
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "Operational Reviews is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription.
-</Callout>
-
-
+  "body": "Operational Reviews is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription."
+}
+[/block]
 #Foundational Concepts
 
 Each scorecard incorporates interruptions and major incidents.
@@ -59,10 +46,9 @@ Operational Reviews can be found under **Analytics** :fa-arrow-right: **Operatio
 {
   "type": "info",
   "title": "Note",
-  "body": "Operational Reviews data will only create scorecards for teams that were present in the account upon enablement. At this time, any new teams created after this point will not generate scorecards.
-</Callout>
-
-
+  "body": "Operational Reviews data will only create scorecards for teams that were present in the account upon enablement. At this time, any new teams created after this point will not generate scorecards."
+}
+[/block]
 Out of the box, each user will have a unique, default scorecard view based on their team membership and they can subscribe or unsubscribe to ones they have been assigned to. If you would like to view scorecards for a team that you are not on, you will need to join that team or create a custom scorecard that covers the team(s) with your desired data. 
 
 Default scorecards are generated on a set schedule:
@@ -75,58 +61,22 @@ Default scorecards are generated on a set schedule:
 ##Show All Scorecards
 
 To view scorecards that you are not currently subscribed to, check the **Show me all the scorecards (including Unsubscribed)** checkbox. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9608353-operational-reviews-show-all.png",
-        "operational-reviews-show-all.png",
-        1206,
-        430,
-        "#ebebeb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9608353-operational-reviews-show-all.png)
+
 ##Subscribe or Unsubscribe From a Scorecard
 
 1. Navigate to **Analytics** :fa-arrow-right: **Operational Reviews** :fa-arrow-right: and select the **name** of the desired review type. 
 2. **If you would like to subscribe to a scorecard**: check the **Show me all the scorecards (including Unsubscribed)** checkbox. Search for the desired scorecard and click **Subscribe** on the right side. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0896343-operational-reviews-subscribe.png",
-        "operational-reviews-subscribe.png",
-        2146,
-        520,
-        "#f2f1f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0896343-operational-reviews-subscribe.png)
+
 **If you would like to unsubscribe from a scorecard**: search for it and click **Unsubscribe** on the right side. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/65e856f-operational-reviews-unsubscribe.png",
-        "operational-reviews-unsubscribe.png",
-        2098,
-        338,
-        "#f3f3f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/65e856f-operational-reviews-unsubscribe.png)
+
 ##Create a Custom Scorecard
 
 If you would like to generate reviews of multiple, often less-related teams, you can create a custom scorecard. Custom scorecards will first generate at the end of the time period you set when you created the scorecard. For example, if you created a scorecard on Tuesday that goes from Monday 8:00am through Monday 7:59am, you will have to wait until the next Monday to see a scorecard.
@@ -137,21 +87,9 @@ If you would like to generate reviews of multiple, often less-related teams, you
     * **Select Teams**: Search and select the teams you would like to be reviewed. 
     * **Select Review Frequency** *(Team On-Call Handoff Reviews only)*: Select the amount of weeks between reviews, and the date and time when you would like the review to be generated. 
 4. Click **Save** to create your custom scorecard. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/637e51b-operational-reviews-create-review.png",
-        "operational-reviews-create-review.png",
-        1202,
-        566,
-        "#eff0ef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/637e51b-operational-reviews-create-review.png)
+
 ##Editing Scorecards
 
 Default Team On-Call Handoff Review scorecards allow you to edit the number of weeks, days of the week, and hour of day that they are generated. Default Service Performance Review and Business Performance Review scorecards are not currently editable. Custom scorecards of any type allow you to edit any aspect of the scorecard that was customizable when created.
@@ -165,28 +103,15 @@ To edit a scorecard:
 {
   "type": "info",
   "title": "Note",
-  "body": "You cannot currently delete a scorecard, however clicking **Unsubscribe** will hide any unwanted scorecards from your list.
-</Callout>
-
-
+  "body": "You cannot currently delete a scorecard, however clicking **Unsubscribe** will hide any unwanted scorecards from your list."
+}
+[/block]
 ##Scorecard Search
 
 Each list of Team On-Call Handoff, Service Performance and Business Performance review scorecards has a search capability. For users who have many scorecards in their list, the search allows them to find specific scorecards quickly. To access the scorecard search, navigate to **Analytics** :fa-arrow-right: **Operational Reviews** :fa-arrow-right: select the **name** of the desired review type and search for the desired team(s) and/or scorecard name(s).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a84ed5d-operational-reviews-search.png",
-        "operational-reviews-search.png",
-        2564,
-        824,
-        "#f4f4f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a84ed5d-operational-reviews-search.png)
+
 #Scorecard Types
 
 ##Team On-Call Handoff Reviews

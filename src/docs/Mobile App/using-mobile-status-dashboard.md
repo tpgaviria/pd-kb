@@ -21,85 +21,25 @@ To view the status dashboard in the mobile app, navigate to the :fa-bars: menu a
 
 When there are no incidents with priority open on any of the supporting technical services, then the business service will show as **operational**. There will be a green banner at the top of the screen and a green suitcase icon next to each business service on the status dashboard:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9929eef-Photo_-_Google_Photos-2.jpg",
-        "Photo_-_Google_Photos-2.jpg",
-        750,
-        1200,
-        "#1f2a23"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9929eef-Photo_-_Google_Photos-2.jpg)
+
 If a business service has a triggered or acknowledged incident which does not impact the status dashboard, it did not meet the priority requirement set under the [business service](https://support.pagerduty.com/docs/business-services). To **view the disrupted technical service**, tap the **name** of the disrupted business service: 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1ef96b9-Photo_-_Google_Photos-3.jpg",
-        "Photo_-_Google_Photos-3.jpg",
-        750,
-        1202,
-        "#1b231e"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1ef96b9-Photo_-_Google_Photos-3.jpg)
+
 When a business service is **disrupted**, a red banner will display at the top of the screen and the disrupted business service will display the priority of the incident which is impacting it. If there are multiple incidents impacting the same business service, the highest priority will be displayed next to the business service. Multiple business services impacted will be ordered via the highest priority:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7c7ce9c-Photo_-_Google_Photos-4.jpg",
-        "Photo_-_Google_Photos-4.jpg",
-        750,
-        1202,
-        "#432628"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7c7ce9c-Photo_-_Google_Photos-4.jpg)
+
 When selecting a disrupted business service, you can view the disrupted technical service dependent on it.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/07e9d2d-Photo_-_Google_Photos-5.jpg",
-        "Photo_-_Google_Photos-5.jpg",
-        750,
-        1200,
-        "#2f2122"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/07e9d2d-Photo_-_Google_Photos-5.jpg)
+
 You will be able to review the corresponding on-call details and volume of active incidents on a disrupted service when selecting a disrupted technical service.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c666390-Photo_-_Google_Photos-6.jpg",
-        "Photo_-_Google_Photos-6.jpg",
-        750,
-        1198,
-        "#0d0d0d"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c666390-Photo_-_Google_Photos-6.jpg)
+
 
 ## Product Capabilities
 
@@ -115,67 +55,18 @@ You will be able to review the corresponding on-call details and volume of activ
 [/block]
 A responder can [publish status updates](doc:communicating-with-stakeholders#section-sending-status-updates-to-subscribers) to the users subscribed to the incident by selecting the **Status Updates** tab and then selecting the **+** sign next to **Published Updates** in the respective incident.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a95d292-Photo_-_Google_Photos-7.jpg",
-        "Photo_-_Google_Photos-7.jpg",
-        752,
-        1198,
-        "#0e0c0c"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a95d292-Photo_-_Google_Photos-7.jpg)
+
 When writing a status update, you can select **change** to make modifications prior to publishing. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/38f8f1f-Photo_-_Google_Photos-10.jpg",
-        "Photo_-_Google_Photos-10.jpg",
-        802,
-        1280,
-        "#0d0c0c"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/38f8f1f-Photo_-_Google_Photos-10.jpg)
+
 Users can add more subscribers to the incident, adjust priority of the incident as well as add additional business services and their respective subscribers the status update should be published against. Select **Done** to save changes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/43f0ae3-Photo_-_Google_Photos-8.jpg",
-        "Photo_-_Google_Photos-8.jpg",
-        752,
-        1200,
-        "#0d0c0c"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/43f0ae3-Photo_-_Google_Photos-8.jpg)
+
 Once a status update has been sent, it will be displayed within the incident **Status Updates** tab.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4d03062-Photo_-_Google_Photos-9.jpg",
-        "Photo_-_Google_Photos-9.jpg",
-        750,
-        1200,
-        "#0c0b0b"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/4d03062-Photo_-_Google_Photos-9.jpg)

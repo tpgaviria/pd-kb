@@ -34,21 +34,9 @@ To set up a Limited Stakeholder user:
 1. Go to **People** :fa-arrow-right: **Users**.
 2. Click the **name** of the desired user and select the **Permissions & Teams** tab.
 3.  Click **Edit** to the right of the user's Base Role and select **Limited Stakeholder** from the **Fixed** roles dropdown. Please contact your account representative if you want to purchase more Stakeholder licenses in our new, lower cost packages.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ddfacb2-status-dashboard-edit-limited-stakeholder.png",
-        "status-dashboard-edit-limited-stakeholder.png",
-        1070,
-        696,
-        "#f0f0f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ddfacb2-status-dashboard-edit-limited-stakeholder.png)
+
 ##Stakeholder Users
 
 Stakeholder users are available by default on Digital Operations plans, and can [purchased as add-on users](https://www.pagerduty.com/pricing/) on Team and Business plans. Stakeholders can view objects in an account, but cannot make modifications. The intended use case for a Stakeholder is to be added as a [Subscriber](doc:adding-users-to-existing-incidents#section-add-and-notify-subscribers) to an incident — they will receive updates about the incident, but cannot take any action. Subscriptions to incidents are only available for Stakeholders with our Modern Incident Response package. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.

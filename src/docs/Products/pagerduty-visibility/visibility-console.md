@@ -6,38 +6,25 @@ createdAt: "2020-05-07T15:58:10.775Z"
 updatedAt: "2020-11-11T23:49:08.108Z"
 ---
 The newly redesigned Visibility Console provides users with the single pane-of-glass experience to effectively monitor their digital operations in real time. This feature provides Central Ops / NOC teams and technical stakeholders with context on their technical environment at a glance, allowing them to quickly understand the health of their digital operations.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/692155b-Vis_Console_GIF_640_1.gif",
-        "Vis Console GIF 640 (1).gif",
-        640,
-        324,
-        "#f5f7f9"
-      ]
-    }
-  ]
-}
-[/block]
 
-
-<Callout type="info" title="Info">
-The interactive, read-only version of the Visibility Console is available as part of our Business Plan. The fully editable and customizable version of the Visibility Console is available as part of our Digital Operations plan.\n\nPlease contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to sign up for a trial or upgrade to a plan with this feature suite.",
-  "title": "Note
-</Callout>
-
+![](https://files.readme.io/692155b-Vis_Console_GIF_640_1.gif)
 
 
 [block:callout]
 {
   "type": "info",
+  "body": "The interactive, read-only version of the Visibility Console is available as part of our Business Plan. The fully editable and customizable version of the Visibility Console is available as part of our Digital Operations plan.\n\nPlease contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to sign up for a trial or upgrade to a plan with this feature suite.",
+  "title": "Note"
+}
+[/block]
+
+[block:callout]
+{
+  "type": "info",
   "title": "Looking for a Different Version?",
-  "body": "Our [Visibility Console v1](https://support.pagerduty.com/docs/visibility-console-v1) is also available.
-</Callout>
-
-
+  "body": "Our [Visibility Console v1](https://support.pagerduty.com/docs/visibility-console-v1) is also available."
+}
+[/block]
 Each user in an account will have access to their own Visibility Console under **Incidents** :fa-arrow-right: **Visibility** and changes will be unique to their account. The new console currently has six new modules available with global filtering capabilities, which allow users to filter the modules by a combination of teams, services, and incident priorities. 
 
 # Global Filtering
@@ -50,88 +37,39 @@ To show a specific group of services or incidents, simply add filter tags to the
 {
   "type": "info",
   "title": "Note",
-  "body": "Filtering only impacts the Service Activity, Services, and Incidents modules.
-</Callout>
-
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2b05d0c-visibility-console-filter.png",
-        "visibility-console-filter.png",
-        1600,
-        411,
-        "#f4f4f5"
-      ]
-    }
-  ]
+  "body": "Filtering only impacts the Service Activity, Services, and Incidents modules."
 }
 [/block]
+
+
+![](https://files.readme.io/2b05d0c-visibility-console-filter.png)
+
 # Service Activity Module
 
 The Service Activity module allows users to see incident activity across a multitude of their services at once, so that they can quickly understand their digital operations health, and identify if there’s a widespread major incident. It is ordered by most recently impacted service and will reorder itself when new incidents are triggered. It has different time windows so eyes on glass teams can monitor their digital operations in real-time, but can also see service activity in the last 24 hours. This module can be filtered to any set of teams and services.
-
-<Callout type="info" title="Info">
-The Service Activity module is currently available to all users on accounts with the Visibility product, but it is in Beta. Please [contact our Support team](https://www.pagerduty.com/contact-us/) with any feedback or requests, as the team continues to improve the module.",
-  "title": "Note
-</Callout>
-
-
-
-[block:image]
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f834ecb-new-visibility-service-activity-console.png",
-        "new-visibility-service-activity-console.png",
-        1534,
-        687,
-        "#e7ebf2"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "The Service Activity module is currently available to all users on accounts with the Visibility product, but it is in Beta. Please [contact our Support team](https://www.pagerduty.com/contact-us/) with any feedback or requests, as the team continues to improve the module.",
+  "title": "Note"
 }
 [/block]
+
+
+![](https://files.readme.io/f834ecb-new-visibility-service-activity-console.png)
+
 # Incidents Module
 
 The Incidents module displays a real-time list of the most recent open incidents that have triggered based on the filters selected. It sorts the incidents by most recent trigger time and shows the status, priority, title of the incident, the service impacted, and the responders assigned. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3c07b75-visibility-console-incidents-module.png",
-        "visibility-console-incidents-module.png",
-        1600,
-        1046,
-        "#f4f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3c07b75-visibility-console-incidents-module.png)
+
 # Services Module
 
 The Services module is ordered in the same way as the Service Activity module and offers additional context on the current state of a given service. Each service will display the associated team (if there is one configured), the number of open incidents, the time of the last incident, and the current state of the service.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aa82038-new-visibility-console-services-module.png",
-        "new-visibility-console-services-module.png",
-        1600,
-        665,
-        "#f3f4f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/aa82038-new-visibility-console-services-module.png)
+
 Definitions of different technical service states:
 
 * **Awaiting Response**: The service currently has one or more incidents in a triggered state waiting on a response.
@@ -145,57 +83,32 @@ The Markdown module allows users to add any text / notes to their console. This 
 # Status Dashboard Module
 
 The Status Dashboard module brings the information from the status page and adds that context to the console so users can monitor the status of their business services in one place. Business services can be expanded to show the status of supporting technical services ensuring stakeholders and response teams are always up to date with the live status of system health. 
-
-<Callout type="info" title="Info">
-The Status Dashboard module is only available to accounts who have Visibility and [Status Dashboard](https://support.pagerduty.com/docs/status-dashboard) features.",
-  "title": "Note
-</Callout>
-
-
-
-[block:image]
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b9e35bc-new-visibility-status-dashboard-console.png",
-        "new-visibility-status-dashboard-console.png",
-        1600,
-        594,
-        "#f9f7f7"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "The Status Dashboard module is only available to accounts who have Visibility and [Status Dashboard](https://support.pagerduty.com/docs/status-dashboard) features.",
+  "title": "Note"
 }
 [/block]
+
+
+![](https://files.readme.io/b9e35bc-new-visibility-status-dashboard-console.png)
+
 # Custom URL Module
 
 The Custom URL module allows users to embed external web pages into an iframe, in order to add external monitoring to the Visibility Console. Any PagerDuty webpage is embeddable, as well as many external status pages, and public dashboard URLs. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d693175-new-visibility-custom-url-module.png",
-        "new-visibility-custom-url-module.png",
-        1600,
-        596,
-        "#ced4d2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d693175-new-visibility-custom-url-module.png)
+
 
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "Not all webpages will allow themselves to be embedded, please read the details below to learn more.
-</Callout>
-
-
+  "body": "Not all webpages will allow themselves to be embedded, please read the details below to learn more."
+}
+[/block]
 ## Custom URL Module Security Limitations
 
 The Custom URL module has some limitations in place to ensure security. 
@@ -222,10 +135,9 @@ Some URLs may not load for the following reasons:
 {
   "type": "info",
   "title": "Note",
-  "body": "Customers on the Digital Operations plan can customize the Visibility Console. Customers using our Visibility Beta on Business plans will not be able to customize the Visibility Console and will have a default view.
-</Callout>
-
-
+  "body": "Customers on the Digital Operations plan can customize the Visibility Console. Customers using our Visibility Beta on Business plans will not be able to customize the Visibility Console and will have a default view."
+}
+[/block]
 Each module can be added, moved, edited or removed from the Visibility Console.
 
 ## Add a Module

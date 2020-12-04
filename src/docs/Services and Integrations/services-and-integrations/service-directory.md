@@ -13,30 +13,17 @@ Use the Service Directory to [save your favorite questions](https://support.page
 - *Which services owned by my teams had incidents in the last week?*
 - *How many of the services in my organization have the word “database” in them?*
 - *Are there any services that have never had an incident and are currently unowned by team? (Should we delete those services from PagerDuty?)*
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1593c9a-service-directory-overview.png",
-        "service-directory-overview.png",
-        1253,
-        1006,
-        "#f5f5f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1593c9a-service-directory-overview.png)
+
 
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "The Service Directory is generally available on all PagerDuty plans and replaces the old Services list view. If you have any feedback regarding this feature, please [contact PagerDuty Support](mailto:support@pagerduty.com).
-</Callout>
-
-
+  "body": "The Service Directory is generally available on all PagerDuty plans and replaces the old Services list view. If you have any feedback regarding this feature, please [contact PagerDuty Support](mailto:support@pagerduty.com)."
+}
+[/block]
 #Navigating to the Service Directory
 
 In your PagerDuty account, navigate to **Services** :fa-arrow-right: **Service Directory**. You can still access the old Services list view by clicking on the **Return to previous version of Service list** link on the top of the page.
@@ -103,21 +90,9 @@ The Service Directory makes it easy for you to customize and save a view of the 
 
 ##Create a New Service
 Located on the far right of the main Service Directory screen, click **+New Service**. Please note that this is only available to users with [permissions to create new services](https://support.pagerduty.com/docs/services-and-integrations#section-create-a-new-service).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8f6ebae-Screen_Shot_2020-03-02_at_10.16.48_AM.png",
-        "Screen Shot 2020-03-02 at 10.16.48 AM.png",
-        1200,
-        245,
-        "#f0f0f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8f6ebae-Screen_Shot_2020-03-02_at_10.16.48_AM.png)
+
 ##View Service Incidents
 If you can see the service information from the Service Directory, you can navigate directly to an individual service’s detailed view of current incidents and other information, including upcoming maintenance windows and on call rotation. Located under the **More** menu on the far right of a service listing. 
 
@@ -126,21 +101,9 @@ Depending on your permissions for a particular service, you can navigate directl
  
 ##Edit Service Settings
 Depending on your permissions for a particular service, you can navigate directly its settings page to edit configuration choices, update escalation policy information, and modify metadata like the name and description. Located under the **More** menu on the far right of a service listing.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/02ca579-service-directory-settings.png",
-        "service-directory-settings.png",
-        1194,
-        435,
-        "#f6f5f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/02ca579-service-directory-settings.png)
+
 #FAQ
 
 ##When I search, what’s the default order?

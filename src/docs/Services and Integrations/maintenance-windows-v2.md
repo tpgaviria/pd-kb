@@ -9,29 +9,16 @@ updatedAt: "2020-10-09T21:12:41.484Z"
 {
   "type": "info",
   "title": "Early Access",
-  "body": "This feature is currently in development, and documentation is subject to change.
-</Callout>
-
-
+  "body": "This feature is currently in development, and documentation is subject to change."
+}
+[/block]
 Maintenance windows temporarily disable a service, including all of the integrations for the service, for a set period of time. No new incidents will be triggered while a service is in a maintenance window. Existing incidents will not resolve; they will remain open and continue to notify users on the expected escalation policy until manually resolved. When a maintenance window ends, the service will reactivate and incidents can start triggering again.
 
 #View Maintenance Windows
 You can view all maintenance windows for all services by going to **Services** :fa-arrow-right: **Service Directory**. On the Service Directory, click on on the **Maintenance Windows** tab.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1fba750-maintenance-windows-overview.png",
-        "maintenance-windows-overview.png",
-        1494,
-        522,
-        "#e7e8e9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1fba750-maintenance-windows-overview.png)
+
 #Create a Maintenance Window
 
 1. Go to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: **Maintenance Windows**.
@@ -48,37 +35,13 @@ You can view all maintenance windows for all services by going to **Services** :
 Once you save a maintenance window, it will immediately show up in the list of maintenance windows.  Immediate windows will appear in **Happening Now**, and Scheduled windows will appear under **All Maintenance Windows**.
 
 Current maintenance windows will also appear on the Service Profile under the service **Status**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7e7a051-maintenance-windows-service-directory.png",
-        "maintenance-windows-service-directory.png",
-        2128,
-        254,
-        "#f9f9fb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7e7a051-maintenance-windows-service-directory.png)
+
 And they will appear in the **Happening Now** section of your service **Activity**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0c84197-maintenance-windows-example.png",
-        "maintenance-windows-example.png",
-        2224,
-        1038,
-        "#f4f4f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0c84197-maintenance-windows-example.png)
+
 ##End a Maintenance Window
 
 To end your maintenance window earlier than the scheduled time:

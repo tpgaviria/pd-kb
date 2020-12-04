@@ -15,10 +15,9 @@ PagerDuty is an incident management platform that provides reliable notification
   "url": "https://www.youtube.com/watch?v=q--cTCdg46g&feature=youtu.be",
   "title": "The PagerDuty Platform Overview",
   "favicon": "https://www.youtube.com/s/desktop/aa71f599/img/favicon.ico",
-  "image": "https://i.ytimg.com/vi/q--cTCdg46g/hqdefault.jpg
-</Callout>
-
-
+  "image": "https://i.ytimg.com/vi/q--cTCdg46g/hqdefault.jpg"
+}
+[/block]
 # Getting Help
 
 ## :fa-comments-o: PagerDuty Community

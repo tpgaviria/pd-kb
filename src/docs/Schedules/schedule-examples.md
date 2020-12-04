@@ -20,53 +20,17 @@ This schedule has 6 users that alternate shifts every other week. One week, they
 ##Ex1. Schedule Configuration
 
 Layer 1 rotates weekly with a handoff time at the beginning of the first time restriction. It will cover the STTS days by restricting on-call duty to specific *times-of-the-week*.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ac9acf3-schedule-examples-complex-irregular-layer1.png",
-        "schedule-examples-complex-irregular-layer1.png",
-        2124,
-        764,
-        "#e3e1e1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ac9acf3-schedule-examples-complex-irregular-layer1.png)
+
 Layer 2 rotates weekly with a handoff time at the beginning of its first time restriction. It will cover MWF by restricting on-call duty to specific times-of-the-week.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a97e66a-schedule-examples-complex-irregular-layer2.png",
-        "schedule-examples-complex-irregular-layer2.png",
-        2120,
-        762,
-        "#e4e2e1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a97e66a-schedule-examples-complex-irregular-layer2.png)
+
 ##Ex1. Final Schedule
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e9cae39-schedule-examples-complex-irregular-final-layer.png",
-        "schedule-examples-complex-irregular-final-layer.png",
-        2126,
-        842,
-        "#ebeaea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e9cae39-schedule-examples-complex-irregular-final-layer.png)
+
 
 ## Example 2: Complex Schedule for 2 Users on a 2-Day Rotation with Separate Weekends
 
@@ -87,85 +51,25 @@ Create four layers, each with its own weekly rotation that fulfills one of the r
 
 The handoff time should be the day and time that the first restriction begins. The effective date of change should be the first date that that layer's restriction begins on. *This means that the date in Step 3 for each layer will be different.*
 - User 1 is on-call Tuesday and Wednesday from 17:00 to 08:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/13face7-schedule-examples-2day-layer1.png",
-        "schedule-examples-2day-layer1.png",
-        2124,
-        742,
-        "#efecf2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/13face7-schedule-examples-2day-layer1.png)
+
 - User 2 is on-call Thursday and Friday from 17:00 to 08:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1ff41ff-schedule-examples-2day-layer2.png",
-        "schedule-examples-2day-layer2.png",
-        2122,
-        746,
-        "#efecf2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1ff41ff-schedule-examples-2day-layer2.png)
+
 - User 1 is on-call Saturday at 8:00 to Sunday at 09:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a706470-schedule-examples-2day-layer3.png",
-        "schedule-examples-2day-layer3.png",
-        2124,
-        744,
-        "#f0edf3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a706470-schedule-examples-2day-layer3.png)
+
 - User 2 then is on-call Sunday at 8am to Monday 08:00, and Monday 17:00 to Tuesday 08:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f79f43a-schedule-examples-2day-layer4.png",
-        "schedule-examples-2day-layer4.png",
-        2126,
-        746,
-        "#efecf2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f79f43a-schedule-examples-2day-layer4.png)
+
 ##Ex2. Final Schedule
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ffb705b-schedule-examples-2day-final-schedule.png",
-        "schedule-examples-2day-final-schedule.png",
-        2124,
-        1090,
-        "#f2edf3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ffb705b-schedule-examples-2day-final-schedule.png)
+
 
 ## Example 3: Complex Split Shift Rotation
 
@@ -180,53 +84,17 @@ These users are on-call between 00:00-10:00 with a shift length of 5 hours. Afte
 ##Ex3. Configuration
 1. Add four users to the schedule in Step 1.
 2. Click the Restrict on-call shifts to specific times option. Restrict the schedule to 00:00-10:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0437200-schedule-examples-split-shift-restrictions.png",
-        "schedule-examples-split-shift-restrictions.png",
-        1120,
-        878,
-        "#f3f3f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0437200-schedule-examples-split-shift-restrictions.png)
+
 3. Create a custom rotation type with a shift length of 12 hours. Set the handoff time to be halfway between the shift (05:00). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/503b078-schedule-examples-split-shift-layer1.png",
-        "schedule-examples-split-shift-layer1.png",
-        2120,
-        910,
-        "#edeaeb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/503b078-schedule-examples-split-shift-layer1.png)
+
 ##Ex3. Final Schedule
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8124097-schedule-examples-split-shift-final-schedule.png",
-        "schedule-examples-split-shift-final-schedule.png",
-        2126,
-        720,
-        "#f2f0f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8124097-schedule-examples-split-shift-final-schedule.png)
+
 
 ## Example 4: Complex Schedule with Restrictions
 
@@ -239,133 +107,37 @@ In this example, User 5 and User 6 trade off the early morning shift, User 3 tak
 - Friday: User 1 (12 hrs), User 2 (12 hrs).
 - Saturday: User 1 (12 hrs), User 2 (12 hrs).
 - Sunday: User 1 (12 hrs), User 2 (12 hrs).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b9620fd-schedule-examples-complex-restrictions-month-view.png",
-        "schedule-examples-complex-restrictions-month-view.png",
-        2120,
-        1062,
-        "#dacdce"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b9620fd-schedule-examples-complex-restrictions-month-view.png)
+
 User 1 and User 2 are easy to schedule because they have consistent shifts. Create a layer for each remaining user and restrict on-call duty to specific times of the week, based on their scheduled shifts.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a7261ff-schedule-examples-complex-restrictions-layer12.png",
-        "schedule-examples-complex-restrictions-layer12.png",
-        2122,
-        1210,
-        "#f0eff0"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6717fba-schedule-examples-complex-restrictions-layer34.png",
-        "schedule-examples-complex-restrictions-layer34.png",
-        2120,
-        1188,
-        "#f4f4f4"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/a7261ff-schedule-examples-complex-restrictions-layer12.png)
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1b84ed1-schedule-examples-complex-restrictions-layer5.png",
-        "schedule-examples-complex-restrictions-layer5.png",
-        2122,
-        540,
-        "#f2f3f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+
+![](https://files.readme.io/6717fba-schedule-examples-complex-restrictions-layer34.png)
+
+
+
+![](https://files.readme.io/1b84ed1-schedule-examples-complex-restrictions-layer5.png)
+
 The result looks like this:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1d5b7bb-schedule-examples-complex-restrictions-final-schedule.png",
-        "schedule-examples-complex-restrictions-final-schedule.png",
-        2122,
-        1102,
-        "#f2efef"
-      ]
-    }
-  ]
-}
-[/block]
-You can overlap layers to make the schedule simpler. If you put the original User 1 and User 2 layer on the bottom, you can simplify some of the restrictions. User 3 and User 4 now only need to be restricted by time of day, and so on.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2da2fb4-schedule-examples-complex-restrictions-alt-layer12.png",
-        "schedule-examples-complex-restrictions-alt-layer12.png",
-        2198,
-        1174,
-        "#f1f4f2"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/32e6174-schedule-examples-complex-restrictions-alt-layer34.png",
-        "schedule-examples-complex-restrictions-alt-layer34.png",
-        2200,
-        1176,
-        "#f0f0f2"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/1d5b7bb-schedule-examples-complex-restrictions-final-schedule.png)
+
+You can overlap layers to make the schedule simpler. If you put the original User 1 and User 2 layer on the bottom, you can simplify some of the restrictions. User 3 and User 4 now only need to be restricted by time of day, and so on.
+
+![](https://files.readme.io/2da2fb4-schedule-examples-complex-restrictions-alt-layer12.png)
+
+
+
+![](https://files.readme.io/32e6174-schedule-examples-complex-restrictions-alt-layer34.png)
+
 ##Ex4. Final Schedule
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8fd4f45-schedule-examples-complex-restrictions-alt-final.png",
-        "schedule-examples-complex-restrictions-alt-final.png",
-        2122,
-        1090,
-        "#edecec"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8fd4f45-schedule-examples-complex-restrictions-alt-final.png)
+
 
 ## Example 5: Create Primary and Secondary On-Call Schedules
 
@@ -384,40 +156,16 @@ Creating primary and secondary schedules is helpful if the primary responder mis
     2. Select the **Rotation Type** from the drop-down menu.
     3. Set the schedule **Start Date** and **Time**.
 5. Preview the schedule and click **Create Schedule**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0c57f8c-schedule-examples-primary-secondary-primary.png",
-        "schedule-examples-primary-secondary-primary.png",
-        2124,
-        716,
-        "#e6e1e2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0c57f8c-schedule-examples-primary-secondary-primary.png)
+
 ##Create a Secondary On-Call Schedule
 1. Repeat the steps from the primary on-call schedule set up.
 2. Add users in the secondary on-call order.
 3. Complete steps 2 and 3 and click **Create Schedule**. Note that the secondary on-call rotation is different from the primary on-call rotation.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ea4e389-schedule-examples-primary-secondary-secondary.png",
-        "schedule-examples-primary-secondary-secondary.png",
-        2124,
-        716,
-        "#e9e1e3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ea4e389-schedule-examples-primary-secondary-secondary.png)
+
 ##Create an Escalation Policy
 1. Go to **People** :fa-arrow-right: **Escalation Policies**.
 2. Click **New Escalation Policy**.
@@ -427,21 +175,9 @@ Creating primary and secondary schedules is helpful if the primary responder mis
 6. Click **Add a new Escalation Rule**.
 7. Select **Secondary Schedule** from the drop down list.
 8. Click **Save**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a71e69d-schedule-examples-primary-secondary-ep.png",
-        "schedule-examples-primary-secondary-ep.png",
-        2212,
-        1328,
-        "#f5f5f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a71e69d-schedule-examples-primary-secondary-ep.png)
+
 
 ## Example 6: Follow-the-Sun Schedule
 
@@ -468,37 +204,13 @@ To create a schedule:
 ##Team 1 (US)
 1. Add the US users (users 1 and 2) by clicking on the **Add User** link **Layer 1**.
 2. Select **weekly** as the rotation type, set the **handoff time** to the beginning of your shift, and select **on-call shift to specific times...** checkbox to restrict on-call shifts for this team.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9cd8204-schedule-examples-follow-sun-layer1.png",
-        "schedule-examples-follow-sun-layer1.png",
-        2124,
-        748,
-        "#f0edf2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9cd8204-schedule-examples-follow-sun-layer1.png)
+
 3. Restrict on-call duty to specific *times-of-the-day* and enter 08:00 to 20:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/31ec74e-schedule-examples-follow-sun-layer1-restrictions.png",
-        "schedule-examples-follow-sun-layer1-restrictions.png",
-        1118,
-        874,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/31ec74e-schedule-examples-follow-sun-layer1-restrictions.png)
+
 4. Click **Apply** to apply time restrictions to the layer.
 [block:callout]
 {
@@ -510,93 +222,33 @@ To create a schedule:
 ##Team 2 (India)
 1. Click on the **Add Another Layer** button and add users 3 and 4 to **Layer 2**.
 2. Select **weekly** as the rotation type and enter the start of the shift as the **handoff time**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5caa473-schedule-examples-follow-sun-layer2.png",
-        "schedule-examples-follow-sun-layer2.png",
-        2124,
-        746,
-        "#f1f0ec"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5caa473-schedule-examples-follow-sun-layer2.png)
+
 3. Restrict the *times-of-the-day* for the on-call shifts to 20:00 – 08:00 (8pm to 8am next day). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6cbe7f1-schedule-examples-follow-sun-layer2-restrictions.png",
-        "schedule-examples-follow-sun-layer2-restrictions.png",
-        1118,
-        874,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/6cbe7f1-schedule-examples-follow-sun-layer2-restrictions.png)
+
 4. Click **Apply** to restrict the layer.
 
 ##Team 3 (Weekend)
 1. Click on the **Add Another Layer** button and add all 4 users to **Layer 3**.
 2. Select **weekly** as the rotation type and set the **handoff time** to the beginning of the shift. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ecc523f-schedule-examples-follow-sun-layer3.png",
-        "schedule-examples-follow-sun-layer3.png",
-        2122,
-        914,
-        "#edeaea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ecc523f-schedule-examples-follow-sun-layer3.png)
+
 3. Restrict the *times-of-the-week* for the on-call shifts to be from Friday 20:00 to Sunday 20:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ca01241-schedule-examples-follow-sun-layer3-restrictions.png",
-        "schedule-examples-follow-sun-layer3-restrictions.png",
-        1116,
-        874,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ca01241-schedule-examples-follow-sun-layer3-restrictions.png)
+
 4. Click **Apply** to restrict the layer.
 
 ##Ex6. Final Schedule
 In the upper-right corner, click **Create Schedule** to create the schedule.
 ###Timeline View
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2c373cb-schedule-examples-follow-sun-final-schedule.png",
-        "schedule-examples-follow-sun-final-schedule.png",
-        2124,
-        964,
-        "#eee9ea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2c373cb-schedule-examples-follow-sun-final-schedule.png)
+
 
 ## Example 7: Inverse Schedules on an Escalation Policy
 
@@ -614,37 +266,13 @@ This schedule has 2 users on-call. When User 1 is the first point of escalation,
 You will need to create 2 schedules. One for the escalation policy level 1, and the another for level 2.
 
 ###Schedule 1:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/663d9da-schedule-examples-inverse-layer1.png",
-        "schedule-examples-inverse-layer1.png",
-        2180,
-        1280,
-        "#f2f1f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/663d9da-schedule-examples-inverse-layer1.png)
+
 ###Schedule 2:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fa9f66e-schedule-examples-inverse-2.png",
-        "schedule-examples-inverse-2.png",
-        2156,
-        1270,
-        "#f2f1f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fa9f66e-schedule-examples-inverse-2.png)
+
 
 [block:callout]
 {
@@ -655,21 +283,9 @@ You will need to create 2 schedules. One for the escalation policy level 1, and 
 [/block]
 ##Ex7. Escalation Policy
 Go to **People** :fa-arrow-right: **Escalation Policies** and either create a **New Escalation Policy**, or edit an existing one. Add Schedule 1 to Level 1 of the escalation policy. Then add Schedule 2 to Level 2 of the escalation policy.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a5b6a85-schedule-examples-inverse-ep.png",
-        "schedule-examples-inverse-ep.png",
-        1386,
-        1318,
-        "#f4f5f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a5b6a85-schedule-examples-inverse-ep.png)
+
 
 ## Example 8: Schedule Users On-call Every Other Week
 
@@ -683,53 +299,17 @@ This schedule has 4 users. 2 users are on-call during the weekdays. The other 2 
 
 ##Ex8. Configuration
 Layer 1 will have weekday rotations. User 1 and 2 will rotate on a weekly basis with a handoff time Monday 00:00.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e1bb423-schedule-examples-every-other-layer1.png",
-        "schedule-examples-every-other-layer1.png",
-        2124,
-        746,
-        "#f0eef3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e1bb423-schedule-examples-every-other-layer1.png)
+
 Click **Add Another Layer** to create a second layer for the weekend. Layer 2 has Users 3 and 4 on a weekly rotation. Their handoff time is Saturday 00:00. Restrict this layer to the weekend.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c347448-schedule-examples-every-other-layer2.png",
-        "schedule-examples-every-other-layer2.png",
-        2124,
-        746,
-        "#f0f0ec"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c347448-schedule-examples-every-other-layer2.png)
+
 ##Ex8. Final Schedule
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e6590b1-schedule-examples-every-other-final-schedule.png",
-        "schedule-examples-every-other-final-schedule.png",
-        2124,
-        840,
-        "#e8e1e7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e6590b1-schedule-examples-every-other-final-schedule.png)
+
 
 ## Example 9: Weekday — Weekend Schedule
 
@@ -740,53 +320,16 @@ To get started, navigate to **People** :fa-arrow-right: **Schedules** and click 
 ##Layer 1: Weekday
 
 The first layer is the weekday layer. Each member of this layer is on-call from 00:00 Monday morning to 00:00 Saturday morning in a weekly rotation. The easiest way to schedule this is to create a [basic weekly](/docs/schedules#section-create-a-basic-weekly-schedule) rotation where the handoff time is 00:00 with a weekly rotation.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a2169b0-schedule-examples-weekday-weekend-layer1.png",
-        "schedule-examples-weekday-weekend-layer1.png",
-        2122,
-        744,
-        "#f0edf2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a2169b0-schedule-examples-weekday-weekend-layer1.png)
+
 ##Layer 2: Weekend
 1. To create the weekend schedule, click **Add Another Layer** below the previous one. The second layer will be the *weekend* layer.
 2. Add the layer members and set the rotation type as **daily** with a handoff time of **00:00** so users start at midnight.
 3. Since this layer is only on Saturday and Sunday, you will need to click the check box to **Restrict on-call shifts to specific times**. Restrict on-call shift to *times-of-the-week* from Saturday 00:00 – Monday 00:00 to create the weekend rotation. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/57fd317-schedule-examples-weekday-weekend-layer2-restrictions.png",
-        "schedule-examples-weekday-weekend-layer2-restrictions.png",
-        1114,
-        872,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/57fd317-schedule-examples-weekday-weekend-layer2-restrictions.png)
+
 Since the bottom layer takes precedence over other layers, the Final Schedule shows that User 1 and 2 take turns being on call Monday-Friday on a weekly basis. User 3 goes on call Saturday at 00:00. User 4 goes on call Sunday at 00:00. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ba1c82f-schedule-examples-weekday-weekend-final-schedule.png",
-        "schedule-examples-weekday-weekend-final-schedule.png",
-        2122,
-        840,
-        "#e9e0e7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ba1c82f-schedule-examples-weekday-weekend-final-schedule.png)

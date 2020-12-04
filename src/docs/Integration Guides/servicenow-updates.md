@@ -24,60 +24,24 @@ Selective sync enables you to have more control over which PagerDuty incidents a
 2. Click on the service you're configuring and navigate to the Integrations tab.
 3. Under extensions, locate the ServiceNow (v3.5) extension, click on the gear icon and select Edit from the dropdown.
 4. Next to Sync Options, select Manually Sync Incidents from the dropdown.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ba9a953-SNOW1.png",
-        "SNOW1.png",
-        1266,
-        268,
-        "#f1f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ba9a953-SNOW1.png)
+
 5. Click **Save**.
 
 ##Sync an Incident to ServiceNow
 1. Navigate to the incident in PagerDuty that you'd like to sync to ServiceNow.
 2. Click the **Sync to ServiceNow** button.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d1cee30-SNOW2.png",
-        "SNOW2.png",
-        1530,
-        575,
-        "#ebeceb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d1cee30-SNOW2.png)
+
 3. Your incident is available in ServiceNow.
 ## View ServiceNow Incidents in PagerDuty
 
 When an incident is synced with ServiceNow, the incident number is prepended to the incident title and included in the incident details page. You can click on the ServiceNow incident ID to directly access the incident in your ServiceNow instance.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c7ea88b-SNOW4.png",
-        "SNOW4.png",
-        1099,
-        344,
-        "#e6f1e4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c7ea88b-SNOW4.png)
+
 
 ## Alerts & Incidents and ServiceNow
 
@@ -95,21 +59,9 @@ The benefit to removing the old integration is that you can then enable [Alerts 
 1. Navigate to **Configuration → Services** and click into the service you want to edit.
 2. Click on the **Integrations** tab and double check that you have the ServiceNow (v3.5) extension configured on your service.
 3. After confirming that the ServiceNow (v3.5) extension is present, click on the gear icon next to the former, ServiceNow, inbound integration and select **Delete** from the dropdown. Make sure you're deleting the inbound integration and that the ServiceNow (v3.5) extension remains. ***Note**: You will only need to remove the old, inbound integration if you upgraded from v3.2.1 or earlier. If this is your first time integrating with ServiceNow, the old integration will not be present.* 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d8adbd4-SNOW5.png",
-        "SNOW5.png",
-        1269,
-        655,
-        "#eaf6ec"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d8adbd4-SNOW5.png)
+
 4. Navigate to the **Settings** tab on your service and click the **Edit Service** button.
 5. Scroll down to Incident Behavior and select the radio button next to **Create incidents and alerts**.
 6. Click the **Save** button.

@@ -35,21 +35,9 @@ You are able to create impact metrics through the web app.
 5. Once done, select **Save Changes to this Metric**.
 
 In return, you will be provided with a corresponding corresponding ID for each impact metric. You will need this ID in order to submit observations to the REST API.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dd83835-impact-metrics-details.png",
-        "impact-metrics-details.png",
-        2434,
-        1592,
-        "#f4f4f4"
-      ],
-      "caption": ""
-    }
-  ]
-}
+
+![](https://files.readme.io/dd83835-impact-metrics-details.png)
+
 [/block]
 #Sending Data to Impact Metrics
 To send data to an impact metric you will first need a valid PagerDuty API token and the ID of the impact metric. For general information about interacting with the PagerDuty API, including information about API tokens and authentication, please refer to [Using the REST API](doc:using-the-api). The ID for the impact metric can be found in the [Impact Metrics list](https://support.pagerduty.com/v1/docs/impact-metrics#section-creating-an-impact-metric) on the web application.

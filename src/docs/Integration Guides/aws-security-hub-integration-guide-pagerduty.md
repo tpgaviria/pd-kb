@@ -39,21 +39,9 @@ Integrating with global or service-level event rules may be beneficial if you wa
 
 1. From the **Services** menu, select **Event Rules** and click your **Default Global Ruleset**. 
 2. On the Event Rules screen, copy your **Integration Key**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8e1f37b-cloudwatch-copy-key.png",
-        "cloudwatch-copy-key.png",
-        2146,
-        980,
-        "#f7f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8e1f37b-cloudwatch-copy-key.png)
+
 3. Once you have your **Integration Key**, the **Integration URL** will be:
 
 `https://events.pagerduty.com/x-ere/[YOUR_INTEGRATION_KEY_HERE]`
@@ -117,110 +105,38 @@ Integrating With Global Event Rules:
 
 Integrating With a PagerDuty Service:
 `https://events.pagerduty.com/integration/7c6178Yourcb469Keyb039e15c3f4499/enqueue`
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6c446fc-aws-security-hub-cloudformation-example.png",
-        "aws-security-hub-cloudformation-example.png",
-        2790,
-        1385,
-        "#e7e8e9"
-      ],
-      "caption": ""
-    }
-  ]
-}
+
+![](https://files.readme.io/6c446fc-aws-security-hub-cloudformation-example.png)
+
 [/block]
 ###Manually Configure CloudWatch Events
 
 1. In the SNS dashboard, click **Create topic**. This will be used to route alerts to PagerDuty from AWS Security Hub.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf83ec4-AWS_Console.png",
-        "AWS_Console.png",
-        1701,
-        654,
-        "#f7f7f7"
-      ],
-      "caption": ""
-    }
-  ]
-}
+
+![](https://files.readme.io/cf83ec4-AWS_Console.png)
+
 [/block]
 2. Enter a **Name**, optionally enter a **Display name** and then click **Create topic**. You may want to name your topic after your PagerDuty service’s name.
 3. Now that your topic has been created, click **Create Subscription**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/826261b-Subscription.png",
-        "Subscription.png",
-        1558,
-        344,
-        "#edecec"
-      ],
-      "caption": ""
-    }
-  ]
-}
+
+![](https://files.readme.io/826261b-Subscription.png)
+
 [/block]
 4. In the **Protocol** field, select **HTTPS**. In the **Endpoint** field, paste the PagerDuty **Integration URL** that was generated above in step 3 of the [Integrating Global Event Rules](https://support.pagerduty.com/docs/aws-security-hub-integration-guide-pagerduty#section-integrating-with-global-event-rules) section, or step 5 of the [Integrating With a PagerDuty Service](https://support.pagerduty.com/docs/aws-security-hub-integration-guide-pagerduty#section-integrating-with-a-pagerduty-service) section. Click **Create Subscription** to continue.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/93bf886-aws-security-hub-subscription-endpoint.png",
-        "aws-security-hub-subscription-endpoint.png",
-        1790,
-        694,
-        "#f3f1f1"
-      ],
-      "caption": ""
-    }
-  ]
-}
+
+![](https://files.readme.io/93bf886-aws-security-hub-subscription-endpoint.png)
+
 [/block]
 5. Your Subscription ID should automatically read as **Confirmed**. Click the :fa-refresh: icon on the right hand side to refresh and ensure that the Subscription ID is not `PendingConfirmation`.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9dbea71-aws-security-hub-subscription-refresh.png",
-        "aws-security-hub-subscription-refresh.png",
-        1600,
-        252,
-        "#f2f2f2"
-      ],
-      "caption": ""
-    }
-  ]
-}
+
+![](https://files.readme.io/9dbea71-aws-security-hub-subscription-refresh.png)
+
 [/block]
 6. Next, navigate to CloudWatch and select **Rules** to create a rule that will define when to trigger an AWS Security Hub finding and where to send the finding.
 7. Click the **Create Rule** button. In the Service Name field, select **Security Hub** and in the Event Type field, select your preference of what Events should be sent to PagerDuty.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a463871-Configure_Rule.png",
-        "Configure_Rule.png",
-        2522,
-        1101,
-        "#f7f7f7"
-      ],
-      "caption": ""
-    }
-  ]
-}
+
+![](https://files.readme.io/a463871-Configure_Rule.png)
+
 [/block]
 8. Click **Add Target** on the right to specify where to send the event.
 9. Select **SNS Topic** from the dropdown and then select the **Topic** name created in Step 2 (above). Click **Configure details** to continue.
@@ -233,53 +149,17 @@ If you would like to manually send AWS Security Hub Findings instead of automati
 1. Navigate to **Security Hub**
 2. Select **Settings** on the left navigation panel, select the **Custom actions** tab and click the **Create custom action** button.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5cec09c-aws-security-hub-create-custom-action.png",
-        "aws-security-hub-create-custom-action.png",
-        1259,
-        354,
-        "#f3f2f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5cec09c-aws-security-hub-create-custom-action.png)
+
 3. Enter a **Name**, **Description** and **Custom Action ID**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dfa100f-aws-security-hub-custom-action-details.png",
-        "aws-security-hub-custom-action-details.png",
-        639,
-        441,
-        "#f4f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dfa100f-aws-security-hub-custom-action-details.png)
+
 4. Copy the **Custom action ARN** to be used when defining the CloudWatch Event Rule.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ec64df8-aws-security-hub-arn-custom-action.png",
-        "aws-security-hub-arn-custom-action.png",
-        1256,
-        368,
-        "#f3f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ec64df8-aws-security-hub-arn-custom-action.png)
+
 5. Navigate to CloudWatch.
 6. Select **Rules** in the left navigation panel and click the **Create Rule** button.
 7. Select **Build custom event pattern**.
@@ -298,21 +178,9 @@ Example:
     “CUSTOM_ACTION_ARN_HERE”
   ]
 }```
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9dfe5c1-aws-security-hub-custom-event-pattern.png",
-        "aws-security-hub-custom-event-pattern.png",
-        1188,
-        691,
-        "#f8f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9dfe5c1-aws-security-hub-custom-event-pattern.png)
+
 9. Specify where the AWS Security Hub Finding should be sent under the **Target** section. If you haven’t already configured this, this is available in Steps 1-3 in the section [Manually Configure CloudWatch Events](https://support.pagerduty.com/docs/aws-security-hub-integration-guide-pagerduty#section-manually-configure-cloudwatch-events) above.
 
 #FAQ

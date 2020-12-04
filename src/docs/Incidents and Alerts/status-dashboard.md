@@ -7,31 +7,18 @@ createdAt: "2019-03-28T21:29:30.713Z"
 updatedAt: "2020-10-09T21:49:21.884Z"
 ---
 PagerDuty’s status dashboard provides technical responders, business responders, and leaders a live, shared view of system health to improve awareness of operational issues. It displays the current status of key business services and sends notifications to alert users when business services are impacted. This feature improves communication between response teams and stakeholders during incidents. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/17e9d78-StatusDashboard.png",
-        "StatusDashboard.png",
-        2068,
-        1548,
-        "#f5eeed"
-      ],
-      "sizing": "smart"
-    }
-  ]
-}
+
+![](https://files.readme.io/17e9d78-StatusDashboard.png)
+
 [/block]
 
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "The status dashboard feature is available on Business and Digital Operations plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan including the status dashboard feature.
-</Callout>
-
-
+  "body": "The status dashboard feature is available on Business and Digital Operations plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan including the status dashboard feature."
+}
+[/block]
 # Product Capabilities
 [block:embed]
 {
@@ -39,10 +26,9 @@ PagerDuty’s status dashboard provides technical responders, business responder
   "url": "https://www.youtube.com/watch?v=MaUmLBgLDBE&feature=youtu.be",
   "title": "Business Response: Add Subscribers and Status Updates, View Status Dashboard",
   "favicon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
-  "image": "https://i.ytimg.com/vi/MaUmLBgLDBE/hqdefault.jpg
-</Callout>
-
-
+  "image": "https://i.ytimg.com/vi/MaUmLBgLDBE/hqdefault.jpg"
+}
+[/block]
 
 ## Status Dashboard
 
@@ -65,42 +51,17 @@ Admins and Account Owners can create multiple custom dashboard views. This allow
   "url": "https://www.youtube.com/watch?v=Ug1s_fsheu4&feature=youtu.be",
   "title": "Business Response: Create a Custom Dashboard",
   "favicon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
-  "image": "https://i.ytimg.com/vi/Ug1s_fsheu4/maxresdefault.jpg
-</Callout>
-
-
+  "image": "https://i.ytimg.com/vi/Ug1s_fsheu4/maxresdefault.jpg"
+}
+[/block]
 To create a new dashboard, navigate to **Status** and click the **Business Services** dropdown and select **+ New Dashboard**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5fe6d9a-multiple-dashboard-view.png",
-        "multiple-dashboard-view.png",
-        2270,
-        1471,
-        "#f5f7f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5fe6d9a-multiple-dashboard-view.png)
+
 Enter a meaningful **Name**, optionally edit the **Custom URL** and select which **Business Services** you would like to include in this dashboard view. Click **Create Dashboard** to save.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b6edcd1-status-dashboard-create-new-dash.png",
-        "status-dashboard-create-new-dash.png",
-        2128,
-        1344,
-        "#f7f7f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b6edcd1-status-dashboard-create-new-dash.png)
+
 ## Limited Stakeholder Access Level
 
 The Limited Stakeholder role provides users access to view and subscribe to the status dashboard, view their own user profile, and does not show any other parts of PagerDuty, whether they are using the web UI or the mobile app. This access level is great for teams who don't need to see all of the alerts, schedules, and responder details in your account. 
@@ -112,10 +73,9 @@ To set up a Limited Stakeholder user, please visit our [User Roles](https://supp
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Admin, Manager, Global Admin and Account Owner base roles.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).
-</Callout>
-
-
+  "body": "Admin, Manager, Global Admin and Account Owner base roles.\n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles)."
+}
+[/block]
 To configure the status dashboard, you must:
 
 - [Step 1: Create business services](https://support.pagerduty.com/docs/status-communications-closed-beta#section-step-1-create-business-services) 
@@ -140,10 +100,9 @@ You may have business services listed on an external status page, within a servi
 {
   "type": "info",
   "title": "Note",
-  "body": "While it is possible to configure multiple levels of business service dependencies, only the top level business services currently appear on the Status Dashboard. A “top level” business service is a business service that is not listed as an [upstream dependency](https://support.pagerduty.com/docs/business-services#section-upstream-dependencies) for another business service.
-</Callout>
-
-
+  "body": "While it is possible to configure multiple levels of business service dependencies, only the top level business services currently appear on the Status Dashboard. A “top level” business service is a business service that is not listed as an [upstream dependency](https://support.pagerduty.com/docs/business-services#section-upstream-dependencies) for another business service."
+}
+[/block]
 ## Step 2: Enable Incident Priority in Your Account 
 
 Next, follow the instructions in our section on [enabling incident priority](https://support.pagerduty.com/docs/incident-priority#section-enabling-incident-priority). Only incidents with an assigned priority will appear on your status dashboard. 
@@ -159,26 +118,13 @@ During an incident, responders can update the status of a business service to in
 {
   "type": "warning",
   "body": "A User, Manager, Admin, Global Admin or Account Owner base role or a Manager team role is required in order to manually associate business services with incidents.",
-  "title": "Required User Permissions
-</Callout>
-
-
-
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5260e2-status-dashboard-impacted-business-services.png",
-        "status-dashboard-impacted-business-services.png",
-        746,
-        868,
-        "#f4f4f5"
-      ]
-    }
-  ]
+  "title": "Required User Permissions"
 }
 [/block]
+
+
+![](https://files.readme.io/c5260e2-status-dashboard-impacted-business-services.png)
+
 Incidents that have not been assigned a priority will not appear on the status dashboard, so that it does not become cluttered with operational noise. When the above criteria are not met, the business service will show as operational on the status dashboard.
 
 ## Send Resolution Notes as a Status Update
@@ -187,21 +133,9 @@ When resolving an incident, responders have the option to add a resolution note.
 
 * The incident has subscribers OR the incident is visible on the status dashboard
 * AND the incident is resolved from the PagerDuty web app as a single resolve (versus a bulk resolve from the incident dashboard)
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a321359-resolution-status-update.png",
-        "resolution-status-update.png",
-        1196,
-        692,
-        "#f1f2f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a321359-resolution-status-update.png)
+
 By checking the box **Post resolution note as status update**, the note will be sent to all subscribers on the incident, regardless of whether they were added via response play or added on demand through the UI. 
 
 ## Status Update Branding
@@ -209,10 +143,9 @@ By checking the box **Post resolution note as status update**, the note will be 
 {
   "type": "info",
   "title": "Note",
-  "body": "Status update branding is available with our Modern Incident Response suite of features available on our Business and Digital Operations plans.
-</Callout>
-
-
+  "body": "Status update branding is available with our Modern Incident Response suite of features available on our Business and Digital Operations plans."
+}
+[/block]
 If you would like to change the logo that appears in your status update emails (it will be the PagerDuty logo by default), you may upload a custom logo with status update branding. 
 
 To upload a custom logo:
@@ -221,38 +154,25 @@ To upload a custom logo:
 2. Click **Replace Logo** and upload the file from your device. Once uploaded, it is automatically saved. If you would like to preview how this logo will appear on your emails, click **Preview**.
 
 If at any time you wish to switch back to the default PagerDuty logo, you can click **Reset PagerDuty Logo** on the right side of the screen.
-[block:image]
+
+![](https://files.readme.io/839968c-status-dashboard-status-update-branding.png)
+
+# Subscribing to Business Services
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/839968c-status-dashboard-status-update-branding.png",
-        "status-dashboard-status-update-branding.png",
-        2260,
-        1102,
-        "#f3f4f3"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "Business service subscription is available with the [PagerDuty Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) suite of features. Please [contact our Sales team](https://www.pagerduty.com/contact-sales/) for information on subscriptions with Modern Incident Response.",
+  "title": "Note"
 }
 [/block]
-# Subscribing to Business Services
-
-<Callout type="info" title="Info">
-Business service subscription is available with the [PagerDuty Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) suite of features. Please [contact our Sales team](https://www.pagerduty.com/contact-sales/) for information on subscriptions with Modern Incident Response.",
-  "title": "Note
-</Callout>
-
-
 Business stakeholders can subscribe to business services they care about to stay informed about those services. Any user who subscribes to a business service will receive a notification whenever a status update is posted to the ***first*** ongoing incident (see note below) impacting that business service. These notifications are sent via email, SMS, or push, depending on the user’s preferences. All status updates also appear on the status dashboard. 
 [block:callout]
 {
   "type": "warning",
   "title": "Impacted Business Service Notifcations",
-  "body": "This subscription will only send notifications for status updates posted to the ***first*** incident created within the business service that meets the criteria to impact the business service.\n\nAll other status updates made to incidents created within the business service during the time of the first incident will not use this subscription method until the original incident and all following incidents are resolved. \n\nOnce the business service has returned to a healthy state, the first incident to impact the business service can begin to use the status update subscriber notifications.
-</Callout>
-
-
+  "body": "This subscription will only send notifications for status updates posted to the ***first*** incident created within the business service that meets the criteria to impact the business service.\n\nAll other status updates made to incidents created within the business service during the time of the first incident will not use this subscription method until the original incident and all following incidents are resolved. \n\nOnce the business service has returned to a healthy state, the first incident to impact the business service can begin to use the status update subscriber notifications."
+}
+[/block]
 
 [block:embed]
 {
@@ -260,26 +180,13 @@ Business stakeholders can subscribe to business services they care about to stay
   "url": "https://www.youtube.com/watch?v=XX2aP200wSw&feature=youtu.be",
   "title": "Business Response: Manage Subscriptions and View Contact Info",
   "favicon": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
-  "image": "https://i.ytimg.com/vi/XX2aP200wSw/hqdefault.jpg
-</Callout>
-
-
-To subscribe to a business service, navigate to **Status** :fa-arrow-right: **View My Subscriptions**. Select any business services you wish to subscribe to. Notifications will be sent to the first email, SMS, and push notification channels you have set up in PagerDuty.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/df06938-status-dashboard-view-subscriptions.png",
-        "status-dashboard-view-subscriptions.png",
-        1756,
-        628,
-        "#eef4ed"
-      ]
-    }
-  ]
+  "image": "https://i.ytimg.com/vi/XX2aP200wSw/hqdefault.jpg"
 }
 [/block]
+To subscribe to a business service, navigate to **Status** :fa-arrow-right: **View My Subscriptions**. Select any business services you wish to subscribe to. Notifications will be sent to the first email, SMS, and push notification channels you have set up in PagerDuty.
+
+![](https://files.readme.io/df06938-status-dashboard-view-subscriptions.png)
+
 # FAQ 
 
 ## How can I set incident priority automatically?

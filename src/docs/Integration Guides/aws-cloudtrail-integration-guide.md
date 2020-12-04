@@ -24,21 +24,9 @@ Integrating with global or service-level event rules may be beneficial if you wa
 
 1. From the **Services** menu, select **Event Rules** and click your **Default Global Ruleset**. 
 2. On the Event Rules screen, copy your **Integration Key**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/811292a-cloudwatch-copy-key.png",
-        "cloudwatch-copy-key.png",
-        2146,
-        980,
-        "#f7f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/811292a-cloudwatch-copy-key.png)
+
 3. Once you have your **Integration Key**, the **Integration URL** will be:
 
 `https://events.pagerduty.com/x-ere/[YOUR_INTEGRATION_KEY_HERE]`
@@ -78,151 +66,43 @@ If you are creating a new service for your integration, in General Settings, ent
 3. Now that your topic has been created, Select **Subscriptions** in the left hand menu and click **Create Subscription**.
 4. Make sure **HTTPS** is the selected Protocol. Paste your **Integration URL** from step 5 (above) into the **Endpoint** field, ensure that the **Enable raw message delivery** checkbox is **unchecked** and click **Create Subscription**.
 5. Your subscription should be automatically confirmed. Click the refresh icon to make sure the **Subscription ID** is not *PendingConfirmation*.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0bd4428-AWS-CloudTrail-Pending-Confirmation.png",
-        "AWS-CloudTrail-Pending-Confirmation.png",
-        1600,
-        252,
-        "#f2f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0bd4428-AWS-CloudTrail-Pending-Confirmation.png)
+
 6. Search for **CloudTrail** in your AWS Management Console.
 7. Create a **[trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-a-trail-using-the-console-first-time.html)** if you do not already have one. Note that you can optionally send the trail data to a newly created S3 bucket. 
 8. In the **CloudTrail** console, click the trail that you would like to integrate with PagerDuty. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/285e3ff-CloudTrail-Click-Trail.png",
-        "CloudTrail-Click-Trail.png",
-        2360,
-        468,
-        "#f3f4f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/285e3ff-CloudTrail-Click-Trail.png)
+
 9. If you have not yet configured CloudTrail to deliver logs to CloudWatch logs, start by pressing the **Configure button**. If you have already integrated CloudTrail with CloudWatch Logs, choose a log group name and click **Continue**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f2476e9-CloudTrail-Configure-Trail.png",
-        "CloudTrail-Configure-Trail.png",
-        2424,
-        1112,
-        "#fafbfb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f2476e9-CloudTrail-Configure-Trail.png)
+
 10. On the next screen, click the **Allow** button at the bottom right to allow communication between CloudTrail and CloudWatch.
 11. After configuring CloudTrail to send data to CloudWatch Logs, navigate to the **CloudWatch** console where you can configure an **Alarm** based on a CloudTrail finding.
 12. In the CloudWatch console, click **Logs**, select the radio button to the left of the log group that you would like to set a filter on, then click **Create Metric Filter**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/44e49f9-CloudTrail-Create-Metric-filter.png",
-        "CloudTrail-Create-Metric-filter.png",
-        1950,
-        654,
-        "#f4f3f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/44e49f9-CloudTrail-Create-Metric-filter.png)
+
 13. Define a [pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html) for the type of activity you’d like to send to PagerDuty and click **Assign Metric**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f61d538-CloudTrail-Assign-Metric.png",
-        "CloudTrail-Assign-Metric.png",
-        2042,
-        1398,
-        "#f8f8f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f61d538-CloudTrail-Assign-Metric.png)
+
 14. Choose an existing [Metric Namespace](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Namespace) or create a new one, and name the metric. Then click **Create Filter**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0021098-CloudTrail-Create-Metric-Filter2.png",
-        "CloudTrail-Create-Metric-Filter2.png",
-        2048,
-        830,
-        "#f6f5f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0021098-CloudTrail-Create-Metric-Filter2.png)
+
 15. After creating the Filter, click **Create Alarm**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/328b25a-CloudTrail-Create-Alarm.png",
-        "CloudTrail-Create-Alarm.png",
-        2044,
-        810,
-        "#f5f7f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/328b25a-CloudTrail-Create-Alarm.png)
+
 16. On the **Modify Alarm** screen, verify your alarm threshold and settings. Add a new **Action** to Send Notification(s) when the alarm state reaches **ALARM**, by clicking **+ Notification**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3c0a66f-CloudTrail-Add-Notification.png",
-        "CloudTrail-Add-Notification.png",
-        2008,
-        1536,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3c0a66f-CloudTrail-Add-Notification.png)
+
 17. Add a notification for the **OK** state and check that your **ALARM** state notification is correct. You'll want to ensure both notifications are being sent to the **Topic** created earlier in step 2 (above). Click **Create Alarm** to save your changes. You should now see PagerDuty incidents if the alarm thresholds are breached.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dae08a8-CloudTrail-Actions.png",
-        "CloudTrail-Actions.png",
-        2006,
-        974,
-        "#f8f7f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dae08a8-CloudTrail-Actions.png)
+
 Congratulations, you have now integrated AWS CloudTrail with PagerDuty! For more information on how to adjust settings to deduplicate events within PagerDuty, please visit our article on [Event Management](https://support.pagerduty.com/docs/event-management).

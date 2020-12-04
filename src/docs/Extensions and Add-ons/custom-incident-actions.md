@@ -12,10 +12,9 @@ Custom incident actions provide a user assigned to an incident with a quick way 
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "Observers, Responders, Managers, Global Admins and Account Owners can create custom incident actions. \n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles).
-</Callout>
-
-
+  "body": "Observers, Responders, Managers, Global Admins and Account Owners can create custom incident actions. \n\nIf you're not sure what role you have, or if you need your permissions adjusted, visit our sections on [Checking Your User Role](https://support.pagerduty.com/v1/docs/user-roles#section-checking-your-user-role) or [Changing User Roles](https://support.pagerduty.com/docs/user-roles#section-changing-user-roles)."
+}
+[/block]
 1. Go to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions**.
 2. Click **+ New Extension** in the **Service Extensions tab** and search for ‘Custom Incident Action’, as the **Extension Type**. 
 3. From here you will be taken to the **Custom Incident Action** extension page. If you have not yet created any custom actions, the page will display a message with information about custom incident actions. On this page, select **New Action** to create your new action.
@@ -23,46 +22,21 @@ Custom incident actions provide a user assigned to an incident with a quick way 
 5. When you have finished configuring your custom action, you can select **Create Action** to finish creating your action.
 
 For more information about the payload you will receive through a PagerDuty webhook, please [visit this page](https://v2.developer.pagerduty.com/docs/webhooks-v2-overview). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/190f46e-webhooks-custom-incident-action.png",
-        "webhooks-custom-incident-action.png",
-        580,
-        721,
-        "#f6f8f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/190f46e-webhooks-custom-incident-action.png)
+
 Once you have created your custom action, you will see the action button available on all incidents on that service.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/131006d-custom-incident-actions-incident-button.png",
-        "custom-incident-actions-incident-button.png",
-        444,
-        430,
-        "#f1f3f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/131006d-custom-incident-actions-incident-button.png)
+
 When a user clicks on this button, it will fire an HTTP POST request with data on the incident to the endpoint URL specified during configuration. You can then build a script that listens for this request and executes custom logic when a request is received.
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "There is a maximum of three custom incident actions per service.
-</Callout>
-
-
+  "body": "There is a maximum of three custom incident actions per service."
+}
+[/block]
 ##Common Use Cases
 ###Restart Server
 Create a **Restart Server** button on your incidents that, when selected, restarts the server associated with the incident. The custom action POST request will include details on the incident that would allow a single script to dynamically determine the server in need of a restart.

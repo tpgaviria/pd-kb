@@ -56,21 +56,9 @@ The infrastructure aggregates the linear data from the Alerts Tab and Incident D
 }
 [/block]
 For the best experience with this application, we recommend expanding the Infrastructure Health Application to fill your screen.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/266ec65-pasted_image_0.png",
-        "pasted image 0.png",
-        1436,
-        789,
-        "#22333f"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/266ec65-pasted_image_0.png)
+
 ##Infrastructure Health Application Features 
 
 ###Click, Drag, Select and Zoom-in
@@ -84,21 +72,9 @@ Get a completely new perspective on your data using the Source and Service Pivot
 
 ###Using Filters
 In the search bar below these pivot points you may also filter which individual sources or services are represented in your data to fine tune what data is on display. Filtering may be done by text or regex. Clicking on individual services or sources in the list below the search bar allows for filtering as well.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7c57797-IHA_img2.png",
-        "IHA_img2.png",
-        496,
-        445,
-        "#e6e8df"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7c57797-IHA_img2.png)
+
 ###Accessing Cluster Details
 Hovering over a cluster of will create a dialog box with details about data in that cluster. Clicking on the cluster will generate a scrollable dialog box with information about the data, including individual events' severity, priority, source, and integration.
 
@@ -137,21 +113,9 @@ Integrating inbound tweets into your PagerDuty [Infrastructure Health Applicatio
 4. On your Twitter service's individual page, select the **Integrations** tab and click on **Custom Event Transformer**. Then click **Add Integration**.
 5. Select **Edit Integration**.
 6. Delete the JavaScript that appears on the **Edit Integration** page 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/93a2ec7-delete_javascript.png",
-        "delete javascript.png",
-        779,
-        514,
-        "#e9f5e2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/93a2ec7-delete_javascript.png)
+
 7. Here is an example of what can be pasted into the JavaScript field. You can map these fields to meet your specific needs. Ensure that `event_class` is set to `"tweet"` in order to have Twitter events appear as small blue "T's" in the Infrastructure Health Application interface so that they are easily differentiated from alerts.
 [block:code]
 {
@@ -175,21 +139,9 @@ Integrating inbound tweets into your PagerDuty [Infrastructure Health Applicatio
 
 13. Go back to your Twitter service's individual service page and click on the **Integrations** tab. Then click on the **Custom Events Transformer**.
 14. Copy the URL provided under **Integration URL**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bedd813-CET_link.png",
-        "CET link.png",
-        905,
-        328,
-        "#394c64"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/bedd813-CET_link.png)
+
 ###Return to Zapier
 
 15. Paste the PagerDuty URL into Zapier on the **Set up Webhooks by Zapier POST** page.

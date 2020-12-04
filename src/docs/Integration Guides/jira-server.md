@@ -30,10 +30,9 @@ updatedAt: "2020-10-14T17:29:17.078Z"
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "Our [Jira Server v3](https://support.pagerduty.com/docs/jira-server-v3) integration is also available.
-</Callout>
-
-
+  "body": "Our [Jira Server v3](https://support.pagerduty.com/docs/jira-server-v3) integration is also available."
+}
+[/block]
 # Integration Walkthrough
 
 ## In PagerDuty
@@ -41,75 +40,27 @@ updatedAt: "2020-10-14T17:29:17.078Z"
 1. Navigate to **Apps & Add Ons** :fa-th-large: :fa-arrow-right: **API Access** and then click the **Create New API Key** button.
 2. Enter a description, e.g. `Jira Server API Key` and click **Create Key**.
 3. On the next screen, copy the **API Key** and paste it in a safe place for future use. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4efbe0f-jira-server-api-key.png",
-        "jira-server-api-key.png",
-        554,
-        487,
-        "#f6f3ee"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/4efbe0f-jira-server-api-key.png)
+
 ## In Jira Server
 
 4. From the **Jira Administration** :fa-cog: menu in the top right corner, click **Manage Apps**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dfc3ad1-jira-server-manage-apps.png",
-        "jira-server-manage-apps.png",
-        244,
-        307,
-        "#d6deea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dfc3ad1-jira-server-manage-apps.png)
+
 5. Click the **Manage Apps** tab, then click **Find new apps** in the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1218226/pagerduty-jira-server-extension?hosting=server&tab=overview). Search for **PagerDuty for Jira Server** and click the **Install** button. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dab3523-jira-server-add-pd-app.png",
-        "jira-server-add-pd-app.png",
-        876,
-        232,
-        "#f0f2f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dab3523-jira-server-add-pd-app.png)
+
 6. After installing, go to the **Manage Apps** page, select the **PagerDuty Add On**, and click **Configure**. 
 7. Click **Login with PagerDuty** and log in on the screen that pops up to connect your PagerDuty account.
 8. Click **Connect Jira to PagerDuty** to open up the next screen where you will configure your account. 
 9. Paste the **API Key** you copied from PagerDuty in Step 3 and click **Save**.
 10. Add the required fields for the Jira instance that you’re working in and click **Save**. The user credentials should have read/write access to the connected projects.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/21666c9-jira-server-account-integration-api-key.png",
-        "jira-server-account-integration-api-key.png",
-        620,
-        757,
-        "#f7f8fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/21666c9-jira-server-account-integration-api-key.png)
+
 ### Configure Automation Rules
 
 To configure automation rules via the PagerDuty web app, continue to follow instructions below. If you would like to configure automation rules via API, please check out our [Jira Server Integration API documentation](https://developer.pagerduty.com/api-reference/reference/integration-jira-service/openapiv3.json).
@@ -147,21 +98,9 @@ To configure automation rules via the PagerDuty web app, continue to follow inst
 
 Click **Save** to save your rule(s). You should see the following webhook check dialog if the connection was successful:
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ad8a50c-jira-server-webhook-success-dialog.png",
-        "jira-server-webhook-success-dialog.png",
-        765,
-        347,
-        "#f6f8fb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ad8a50c-jira-server-webhook-success-dialog.png)
+
 If you receive an unsuccessful webhook error, navigate to the **Rules** tab and click the **Check webhooks…** button to troubleshoot the error. Once the webhook check has been successfully completed, you may move on to the next section to link your PagerDuty and Jira accounts.
 
 ### Link PagerDuty and Jira User Accounts
@@ -172,55 +111,19 @@ Linking PagerDuty and Jira user accounts allows us to identify which user change
 * **To have individual users link their accounts**: Skip to step 18. 
 
 14. From the **Jira Administration** menu in the top right corner, click **Manage Apps**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0330977-jira-server-manage-apps.png",
-        "jira-server-manage-apps.png",
-        244,
-        307,
-        "#d6deea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0330977-jira-server-manage-apps.png)
+
 15. Select **Manage Apps** from the left menu, click the **PagerDuty** add-on, then click **Configure**. 
 16. Under **PagerDuty settings**, click the **User mapping** tab and click **Link Users** to start mapping user accounts between systems.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f75dd73-63a6716-jira-server-user-mapping-new.png",
-        "63a6716-jira-server-user-mapping-new.png",
-        1230,
-        600,
-        "#f8f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f75dd73-63a6716-jira-server-user-mapping-new.png)
+
 17. On this page you can also set up users to be optionally mapped based on email, and a fallback user in the event that a user wants to take action on an incident but their account isn’t mapped.
 18. **To have individual users link their accounts**, they will need to go to an issue in your Jira project, and click on the **Users** icon to link their user accounts. If the icon is orange, their user account isn't linked. Once linked, the icon will appear grey.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/30beca5-jira-server-connect-users.png",
-        "jira-server-connect-users.png",
-        832,
-        812,
-        "#f5f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/30beca5-jira-server-connect-users.png)
+
 Once your Jira and PagerDuty accounts have been linked, the integration is complete.
 
 ### Connect Multiple PagerDuty Accounts
@@ -242,21 +145,9 @@ For each of your Service Desk projects, ensure that the PagerDuty user account h
    d. Select the **Add users to a role** button.
    e. Add the `jira-servicedesk-users` group or **PagerDuty** user to the **Service Desk Team** role.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/12d9054-jira-server-add-user-role.png",
-        "jira-server-add-user-role.png",
-        1600,
-        760,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/12d9054-jira-server-add-user-role.png)
+
 You can learn more about managing users and roles on the [Atlassian website](https://confluence.atlassian.com/adminjiracloud/managing-project-roles-776636382.html).
 
 # FAQ
@@ -272,21 +163,9 @@ In order to allow bi-directional integration between PagerDuty and your JIRA Ser
 ## Does the JIRA Server integration support mandatory custom fields?
 
 Yes. You can have PagerDuty populate mandatory Jira fields. They can be defined when [configuring](https://support.pagerduty.com/docs/jira-server-integration-guide-v4#%D1%81reate-jira-issues-from-pagerduty-incidents) the **Create Jira Issues from PagerDuty incidents** settings. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8676baa-jira-server-create-jira-issues-faq.png",
-        "jira-server-create-jira-issues-faq.png",
-        1600,
-        460,
-        "#eaeef7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8676baa-jira-server-create-jira-issues-faq.png)
+
 ## When testing, I don’t see an incident or issue being created. 
 To troubleshoot, the Jira administrator can navigate to global settings **:fa-cog:**, select **Manage Apps**, click on the **PagerDuty** app, and click **Configure**. In the **Configuration Settings**, locate the **Debug logs** tab. With this window still open, open another tab or window on your browser and then try to test the integration’s workflow. You will be able to see any errors or successes in the debug logs as long as you keep the window open while testing.   
 
@@ -299,21 +178,9 @@ This can happen for the following reasons:
 
 One way that you can ensure the workflow configuration does not interfere is to edit the statuses corresponding to acknowledged and/or resolved, and enabling transitions from all other statuses to it.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3f1f9a2-jira-server-remove-status.png",
-        "jira-server-remove-status.png",
-        279,
-        317,
-        "#f4f5f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3f1f9a2-jira-server-remove-status.png)
+
 ## I just updated the priority of a PagerDuty incident, why didn't the priority update in the Jira issue?
 
 The Jira Issue is only updated when the PagerDuty incident triggers an action that would trigger a v2 webhook. A full list of actions can be viewed in [our webhook documentation](https://v2.developer.pagerduty.com/docs/webhooks-v2-overview#webhook-types). If you'd like PagerDuty to trigger an action for PagerDuty incident priority changes, please make a feature request [with our Support Team](https://www.pagerduty.com/contact-us/).

@@ -28,10 +28,9 @@ updatedAt: "2020-11-23T23:46:16.019Z"
 {
   "type": "info",
   "title": "Looking for Another Version?",
-  "body": "The [Slack V1 integration guide](https://www.pagerduty.com/docs/guides/slack-v1-integration-guide/) is also available.
-</Callout>
-
-
+  "body": "The [Slack V1 integration guide](https://www.pagerduty.com/docs/guides/slack-v1-integration-guide/) is also available."
+}
+[/block]
 #Integration Walkthrough
 ##Initial Configuration
 To begin the integration, you will need to map your PagerDuty account to your Slack Workspace. If this has already been performed, please skip ahead to the [Add the Slack Extension to a Service](https://support.pagerduty.com/docs/slack-integration-guide#section-add-the-slack-extension-to-a-service) section.
@@ -39,10 +38,9 @@ To begin the integration, you will need to map your PagerDuty account to your Sl
 {
   "type": "info",
   "title": "Note",
-  "body": "* Multiple Slack workspaces can be mapped to a single PagerDuty account by repeating the below steps for each workspace.\n* At this time, mapping multiple PagerDuty accounts to a single Slack workspace is not supported.
-</Callout>
-
-
+  "body": "* Multiple Slack workspaces can be mapped to a single PagerDuty account by repeating the below steps for each workspace.\n* At this time, mapping multiple PagerDuty accounts to a single Slack workspace is not supported."
+}
+[/block]
 1. Navigate to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions**.
 2. Select **Slack**.
 3. On the Slack Workspace Mapping screen, click the **Install App into Workspace** button to connect your PagerDuty account to your Slack workspace. Connecting your PagerDuty account to your Slack workspace ensures that the PagerDuty bot is present and that PagerDuty slash commands can be executed from any Slack channel.
@@ -68,38 +66,14 @@ Click **Allow** to authorize. Once this step is complete, you can then begin con
    * **View email addresses of people on your workspace**: This allows the extension to access your team’s profile information and it is used for Slack user association. 
 
 Once you have reviewed these permissions, click **Authorize**. You may add the Slack extension to multiple services by repeating steps 5-7.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9acbeac-slack-ig-service-authorization-screen.png",
-        "slack-ig-service-authorization-screen.png",
-        1040,
-        1240,
-        "#f9f9f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9acbeac-slack-ig-service-authorization-screen.png)
+
 4. The Slack integration is now complete. You should see a message in your designated Slack channel that the PagerDuty integration has been added. If you set up the integration on a private channel, add **@pagerduty** to your channel. 
 5. When an incident is triggered, the trigger message in Slack will show **Acknowledge** and **Resolve** buttons, and under the **More actions…** menu, you will see the options **View Details**, **Add a Note**, **Escalate** or **Run a Play**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/875352b-slack-ig-incident-message.png",
-        "slack-ig-incident-message.png",
-        836,
-        264,
-        "#eff0f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/875352b-slack-ig-incident-message.png)
+
 #Available Slash Commands
 Once the updated integration has been installed, new slash commands will be available. These slash commands can be run from Slack channels that are configured with PagerDuty:
 
@@ -112,36 +86,22 @@ Once the updated integration has been installed, new slash commands will be avai
 {
   "type": "warning",
   "body": "`/pd oncall` requires channel-specific permissions. You must invite `@PagerDuty` to private Slack channels in order to use this Slack Slash Command.\n\nIt is not possible to use this command in other direct messages outside of a direct message with `@PagerDuty`.",
-  "title": "Required Permissions
-</Callout>
-
-
+  "title": "Required Permissions"
+}
+[/block]
 #Creating On-Demand Slack Channels
 With the updated Slack integration, PagerDuty users can create on-demand Slack channels within PagerDuty. These can be created on the Incident Details screen in the web application by clicking **Set Channel**. You will have the ability to create new public or private channels or associate an existing channel to an incident. 
 [block:callout]
 {
   "type": "warning",
   "title": "User Permission Notes",
-  "body": "* When you click **Set Channel** you may be prompted to authorize the connection between your PagerDuty and Slack accounts again, as PagerDuty will now be creating a channel behalf of your individual Slack user account.\n* You will only be able to view channels that you have permission in Slack to access. \n* If you do not have permission in Slack to create channels, you will not be able to create them from the **Set Channel** link in a PagerDuty incident. \n* If your PagerDuty account has multiple Slack workspaces connected, you will have the option to pick which workspace to use.
-</Callout>
-
-
-If you would like to use this feature and don’t see it in your PagerDuty account, please [reach out to our Support team](https://www.pagerduty.com/contact-us/). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3cc8387-add_slack_channel.png",
-        "add_slack_channel.png",
-        1664,
-        696,
-        "#f0efef"
-      ]
-    }
-  ]
+  "body": "* When you click **Set Channel** you may be prompted to authorize the connection between your PagerDuty and Slack accounts again, as PagerDuty will now be creating a channel behalf of your individual Slack user account.\n* You will only be able to view channels that you have permission in Slack to access. \n* If you do not have permission in Slack to create channels, you will not be able to create them from the **Set Channel** link in a PagerDuty incident. \n* If your PagerDuty account has multiple Slack workspaces connected, you will have the option to pick which workspace to use."
 }
 [/block]
+If you would like to use this feature and don’t see it in your PagerDuty account, please [reach out to our Support team](https://www.pagerduty.com/contact-us/). 
+
+![](https://files.readme.io/3cc8387-add_slack_channel.png)
+
 # Create an Incident Trigger Slack Workflow
 
 [Slack workflows](https://slack.com/help/articles/360053571454-Set-up-a-workflow-in-Slack) can be used to trigger PagerDuty incidents from Slack with pre-configured details such as service and priority.

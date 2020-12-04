@@ -28,53 +28,17 @@ Service Event Rules can be scheduled for a specific time or on a recurring sched
 ## Creating and Formatting Service Event Rules
 
 To use event rules on a service, that service must first be set to create [alerts and incidents](https://support.pagerduty.com/docs/alerts#section-getting-started-with-alerts-and-incidents) for inbound events. To do this, go to **Services**, select **Service Directory** and then select the **service** where you would like to configure event rules. Click **Edit Service**, locate the **Incident Behavior** section at the bottom of the screen and select **Create alerts and incidents**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f5d0156-service-event-rules-service-settings.png",
-        "service-event-rules-service-settings.png",
-        2216,
-        380,
-        "#f6f6f6"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9c2009a-service-event-rules-incident-behavior.png",
-        "service-event-rules-incident-behavior.png",
-        1388,
-        318,
-        "#f6f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/f5d0156-service-event-rules-service-settings.png)
+
+
+
+![](https://files.readme.io/9c2009a-service-event-rules-incident-behavior.png)
+
 Rules can then be added from the individual service page in the Event Rules tab. Applying rules to a service undergoes the same process as creating [global event rules](https://support.pagerduty.com/docs/global-event-routing#section-accessing-creating-and-formatting-event-rules). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dff3d34-service-event-rules-event-rules-tab.png",
-        "service-event-rules-event-rules-tab.png",
-        1706,
-        700,
-        "#f5f8f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dff3d34-service-event-rules-event-rules-tab.png)
+
 Service Event Rules operate on CEF fields in order to normalize incoming events, particularly those that have been routed by way of a global event rule. The dropdown is populated by the [mapped CEF fields](https://support.pagerduty.com/docs/pd-cef) that allow users to create rule conditions. 
 
 ##Formatting Rules 

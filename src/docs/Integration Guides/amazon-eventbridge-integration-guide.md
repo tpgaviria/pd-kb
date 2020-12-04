@@ -42,21 +42,9 @@ It is a good practice to label your Event Source Name such that the PagerDuty Te
 
 9. Select the same **Service** that you selected in step 2, above. The incidents created on this service will send updates to the specified AWS Account ID and Region specified above. Click **Create** to save.
 10. After creation, the Amazon EventBridge Configuration Dashboard will display the newly created extension that will send incident-related information to the specified AWS Account ID and Region. Keep this page up for reference as you continue to the next section. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/961743d-amazon-eventbridge-pd-dashboard.png",
-        "amazon-eventbridge-pd-dashboard.png",
-        2292,
-        1032,
-        "#f8f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/961743d-amazon-eventbridge-pd-dashboard.png)
+
 ##In the AWS Console 
 
 To complete configuration, you will need to create an Event Bus in the AWS Console to receive incident information from PagerDuty.
@@ -64,21 +52,9 @@ To complete configuration, you will need to create an Event Bus in the AWS Conso
 1. Navigate to the [Partner Event Sources](https://console.aws.amazon.com/events/home#/partners) page.
 2. Change the **AWS Region** to the one specified on the Amazon EventBridge Configuration Dashboard (Step 9 of In PagerDuty, above).
 3. Search and select the **Partner Event Name** specified as the **Event Source Name** on the Amazon EventBridge Configuration Dashboard (Step 9 of In PagerDuty, above). Next, click **Associate with event bus** in the top right.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3c60ff2-amazon-event-bridge-partner-event-sources.png",
-        "amazon-event-bridge-partner-event-sources.png",
-        2880,
-        1800,
-        "#e7e8ea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3c60ff2-amazon-event-bridge-partner-event-sources.png)
+
 4. On the next screen, click **Associate**.
 5. Next, click **Rules** in the left hand menu, select the **Event Bus** you just associated, and click **Create rule**.
 6. On the next screen, specify the following information:
@@ -91,37 +67,13 @@ To complete configuration, you will need to create an Event Bus in the AWS Conso
 	* **Select Target(s)**: Select what you would like to happen once an event matching the Event Pattern. (E.g., executing a specific Lambda function.)
 
 Click **Add Target** to complete the integration.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5c6b3d0-amazon-eventbridge-create-rule-name-pattern.png",
-        "amazon-eventbridge-create-rule-name-pattern.png",
-        2880,
-        1800,
-        "#e5e5e6"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bce54cc-amazon-eventbridge-create-rule-select-event-bus.png",
-        "amazon-eventbridge-create-rule-select-event-bus.png",
-        2880,
-        1800,
-        "#e7e6e7"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/5c6b3d0-amazon-eventbridge-create-rule-name-pattern.png)
+
+
+
+![](https://files.readme.io/bce54cc-amazon-eventbridge-create-rule-select-event-bus.png)
+
 #FAQ
 ##Can you configure the same service to send events to different AWS Accounts?
 

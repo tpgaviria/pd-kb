@@ -31,53 +31,17 @@ To add additional users to an existing on-call schedule:
 
 1. Navigate to  **People** and select **On-Call Schedules**.
 2. Click the gear icon for an existing on-call schedule and select **Edit**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a279bf2-editing-schedules-edit-schedule.png",
-        "editing-schedules-edit-schedule.png",
-        2120,
-        806,
-        "#efeff3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a279bf2-editing-schedules-edit-schedule.png)
+
 3. Click **Select a User** to choose a user's name from the dropdown or search for it to add a user to the on-call schedule layer. When you click the user’s name, it will add them to the schedule.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7b3318f-editing-schedules-add-new-user.png",
-        "editing-schedules-add-new-user.png",
-        700,
-        528,
-        "#b7c0c8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7b3318f-editing-schedules-add-new-user.png)
+
 4. Repeat until required users are added. Users will move through the rotation in the top-to-bottom order they are listed in. If they are in the wrong rotation order, you can also drag and drop users into a different order.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/393263f-editing-schedules-move-user.png",
-        "editing-schedules-move-user.png",
-        700,
-        500,
-        "#aab6bb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/393263f-editing-schedules-move-user.png)
+
 5. Click **Save Changes** in the upper right hand corner of the screen.
 
 ##Removing Users From Existing Schedules
@@ -88,21 +52,9 @@ To permanently remove a user from an on-call schedule:
 2. Click the gear icon for the existing on-call schedule and select **Edit**.
 3. Click the **X** next to the user's name that you want to remove.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/17f08c7-editing-schedules-remove-user.png",
-        "editing-schedules-remove-user.png",
-        700,
-        502,
-        "#aab7bc"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/17f08c7-editing-schedules-remove-user.png)
+
 4. Click **Save Changes** in the upper right hand corner.
 
 # Copy a Schedule
@@ -119,21 +71,9 @@ To copy a schedule:
 Overrides are used to make manual one-time adjustments to on-call schedules. Overrides are most commonly used when a user is sick, goes on vacation, or would like to swap on-call periods with someone else. 
 
 Scheduling an override creates an override layer over the existing schedule. Scheduled overrides are displayed beneath your schedule layers, as the lowest layer before the Final Schedule (the lowest layer always takes precedence). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d0607eb-editing-schedules-override-overview.png",
-        "editing-schedules-override-overview.png",
-        2116,
-        898,
-        "#e8e9ec"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d0607eb-editing-schedules-override-overview.png)
+
 You can create overrides within the [PagerDuty web UI](https://support.pagerduty.com/docs/editing-schedules#section-create-overrides-in-the-web-ui), or you can create them [using the REST API](https://support.pagerduty.com/docs/editing-schedules#section-create-overrides-using-the-rest-api). 
 [block:callout]
 {
@@ -156,56 +96,20 @@ Scheduling an override by clicking directly on the shift you'd like to override 
 1. Navigate to **People** and select **On-Call Schedules**.
 2. From the **On-Call Schedules** page or from the individual schedule's edit page, click directly on the shift that you would like to override. If need be, you can tab forward by days, weeks, and months to locate the shift you would like to override.
 3. The **Schedule an Override** window will be pre-populated with the times of the shift that you just clicked. Make the necessary changes to the **Person** you're adding for the override and click **Create Override** and the override will immediately appear on the schedule.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e182490-editing-schedules-create-override.png",
-        "editing-schedules-create-override.png",
-        1118,
-        812,
-        "#f3f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e182490-editing-schedules-create-override.png)
+
 ###Override any span of time on a schedule
 
 1. Navigate to **People** and select **On-Call Schedules**.
 2. Click the gear icon for the desired on-call schedule and select **Schedule an Override**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/60e3651-editing-schedules-override-from-edit-menu.png",
-        "editing-schedules-override-from-edit-menu.png",
-        2116,
-        800,
-        "#eff0f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/60e3651-editing-schedules-override-from-edit-menu.png)
+
 3. Or you can click into a schedule and select **Schedule an Override**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9f73ef0-editing-schedules-override-from-schedule-page.png",
-        "editing-schedules-override-from-schedule-page.png",
-        540,
-        670,
-        "#f0dfdf"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9f73ef0-editing-schedules-override-from-schedule-page.png)
+
 4. The override window will be a pop-up. Select the **Person** and **start/end times** of the override. Click **Create Override**.
 
 ## Create Overrides in My On-Call Shifts
@@ -226,21 +130,9 @@ To delete an override:
 
 1. While on the **On-Call Schedules** page, click on the name of the schedule *or* select **View** after clicking on the gear for the schedule you would like to change.
 2. In the **Upcoming Overrides** list, click the **X** to delete the override.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ac811ba-editing-schedules-upcoming-overrides.png",
-        "editing-schedules-upcoming-overrides.png",
-        540,
-        966,
-        "#e9e1db"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ac811ba-editing-schedules-upcoming-overrides.png)
+
 #Edit Schedule Time Zone Settings
 
 When you create a new schedule, it will be set to the [account-level time zone](https://support.pagerduty.com/docs/time-zones#section-changing-the-account-level-time-zone) by default. Please follow the instructions in our section [Changing the Schedule-Level Time Zone](https://support.pagerduty.com/docs/time-zones#section-changing-the-schedule-level-time-zone) if you would like your schedule to have a different time zone than the account. 
@@ -259,53 +151,17 @@ To prevent an on-call schedule from being used, you will want to either remove t
 ##Option 1: Remove a Schedule from an Escalation Policy
 
 The right sidebar will display any escalation policies where the schedule is in use.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c63220e-editing-schedules-eps.png",
-        "editing-schedules-eps.png",
-        534,
-        1180,
-        "#ece5e1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c63220e-editing-schedules-eps.png)
+
 Click on the **escalation policy** you want to remove the schedule from, then click **Edit Escalation Policy** on the top right corner of the page.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/620058e-editing-schedules-edit-ep.png",
-        "editing-schedules-edit-ep.png",
-        494,
-        74,
-        "#eaeaea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/620058e-editing-schedules-edit-ep.png)
+
 Find your **schedule** in the **Notify the following users or schedules** field, then click the **X button** on the schedule object to remove it from the rule.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/82e0f71-editing-schedules-delete-schedule-from-ep.png",
-        "editing-schedules-delete-schedule-from-ep.png",
-        886,
-        296,
-        "#f0efef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/82e0f71-editing-schedules-delete-schedule-from-ep.png)
+
 
 [block:callout]
 {
@@ -338,36 +194,12 @@ To revert a schedule:
 1. Click on **People** :fa-arrow-right: **On-Call Schedules**.
 2. Click on the name of the schedule that you wish to revert to open its details.
 3. On the right hand side of the page, click on **Revert this Schedule** to view the recent changes made to that schedule.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cbb24f1-editing-schedules-revert-schedule.png",
-        "editing-schedules-revert-schedule.png",
-        528,
-        1006,
-        "#eef1f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/cbb24f1-editing-schedules-revert-schedule.png)
+
 4. Once you select one of the options from the dropdown, you will be brought to the Edit Schedule page for that version of the schedule. From here you may make additional edits, or click on **Revert Schedule** in the upper right corner of the page.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/197e6bc-editing-schedules-confirm-revert.png",
-        "editing-schedules-confirm-revert.png",
-        2710,
-        278,
-        "#e2e9e6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/197e6bc-editing-schedules-confirm-revert.png)
+
 ##Limitations
 Currently only changes made to the schedule layers are saved and can be reverted. Overrides will *not* be affected if you revert a schedule. For now, the user's name making each change is omitted. However, this is something being considered for a later release.

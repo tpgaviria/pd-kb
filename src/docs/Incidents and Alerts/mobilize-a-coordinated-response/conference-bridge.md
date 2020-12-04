@@ -15,13 +15,13 @@ And there are two ways to add a conference bridge to an incident:
 
 - [Manually Add a Conference Bridge to an Incident via Add Responders](#section-manually-add-a-conference-bridge-to-an-incident-via-add-responders)
 - [Automatically Add a Conference Bridge to an Incident with a Response Play](https://support.pagerduty.com/docs/conference-bridge#section-automatically-add-a-conference-bridge-to-an-incident-with-a-response-play)
-
-<Callout type="info" title="Info">
-The conference bridge feature is available on current Business and Digital Operations plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with the conference bridge feature.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "The conference bridge feature is available on current Business and Digital Operations plans. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with the conference bridge feature.",
+  "title": "Note"
+}
+[/block]
 #Create an Account-level Conference Bridge
 Conference bridges can be added as account-level extensions. This provides users with a list of persistent conference lines to choose from when triggering an incident.
 1. Go to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions**.
@@ -35,21 +35,9 @@ Conference bridges can be added as account-level extensions. This provides users
 4. Now the conference bridge will be available as an option when adding a bridge to an incident.
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8b2a4c3-conference-bridge-account-level-new-incident.png",
-        "conference-bridge-account-level-new-incident.png",
-        1072,
-        1458,
-        "#f7f7f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8b2a4c3-conference-bridge-account-level-new-incident.png)
+
 #Create a Service-level Conference Bridge
 
 When adding a conference bridge to a service it is important to note that the conference bridge information will appear on **all incidents that trigger on that service**. We recommend adding a conference bridge to services dedicated to critical incidents that require a bridge.
@@ -62,21 +50,9 @@ When adding a conference bridge to a service it is important to note that the co
 4. When you are done, click **Save changes**.
 
 When an incident is triggered on your service you will see the conference bridge information in the web UI, email notifications, and Slack (if you have a [Slack integration](https://www.pagerduty.com/docs/guides/slack-integration-guide/) configured).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/73b6248-conference-bridge-info-on-incident.png",
-        "conference-bridge-info-on-incident.png",
-        1080,
-        530,
-        "#f9f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/73b6248-conference-bridge-info-on-incident.png)
+
 #Manually Add a Conference Bridge to an Incident via Add Responders
 
 If you do not have conference bridge information added to your service, you can use the **Add Responders** feature to input the conference bridge information.
@@ -98,31 +74,18 @@ At this time, if you wish to add a conference bridge to an open incident you wil
 {
   "type": "info",
   "title": "Note",
-  "body": "Response plays are a feature of our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) add-on product and they are available standard for Digital Operations accounts. Please [contact our sales team](https://www.pagerduty.com/contact-sales/) if you are interested in the Modern Incident Response product.
-</Callout>
-
-
+  "body": "Response plays are a feature of our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) add-on product and they are available standard for Digital Operations accounts. Please [contact our sales team](https://www.pagerduty.com/contact-sales/) if you are interested in the Modern Incident Response product."
+}
+[/block]
 Adding a conference bridge to a response play allows you to easily mobilize your responders - you can do this automatically at the service level or for individual incidents. 
 1. Go to **Incidents** :fa-arrow-right: **Response Plays**.
 2. Click **New Response Play**.
 3. Add responders to notify when the response play is run.
 4. Configure the conference bridge information — this will be shared with responders when the response play is run.
 5. When you are done, click **Save changes**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f2e0e0-conference-bridge-response-play.png",
-        "conference-bridge-response-play.png",
-        944,
-        476,
-        "#f1f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0f2e0e0-conference-bridge-response-play.png)
+
 Once you've created the response play, you can configure the play to run automatically at the service level for all incidents that are created on that service. You can also allow your responders to run the response play on demand. This will allow them to run Response Plays for individual incidents. You can learn more about response plays [here](https://support.pagerduty.com/docs/response-automation).
 
 #Joining Conference Bridges as a Responder
@@ -130,53 +93,17 @@ Once you've created the response play, you can configure the play to run automat
 Conference bridge information is available within incidents in the web UI, email notifications, Slack (if you have a [Slack integration](https://www.pagerduty.com/docs/guides/slack-integration-guide/) configured) and via voice call. When referencing the web UI, email notifications and Slack, responders will need to manually dial into the conference bridge or click its link. For voice call notifications, responders have the option of using the [One Touch To Join](https://support.pagerduty.com/docs/conference-bridge#section-one-touch-to-join-conference-bridge) feature. 
 
 ##Conference Bridge Information in the Web UI
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/11014b0-conference-bridge-web-ui.png",
-        "conference-bridge-web-ui.png",
-        1138,
-        1032,
-        "#f8f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/11014b0-conference-bridge-web-ui.png)
+
 ##Conference Bridge Information in Email Notifications
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/46b985a-conference-bridge-email.png",
-        "conference-bridge-email.png",
-        1210,
-        1204,
-        "#f9f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/46b985a-conference-bridge-email.png)
+
 ##Conference Bridge Information in Slack Notifications
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7b2f42f-conference-bridge-info-slack.png",
-        "conference-bridge-info-slack.png",
-        1030,
-        328,
-        "#f2f0f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7b2f42f-conference-bridge-info-slack.png)
+
 ##Conference Bridge Information in Voice Call Notifications
 
 When responders receive voice call notifications, they will hear the following prompt:
@@ -197,10 +124,9 @@ When responders receive voice call notifications, they will hear the following p
 {
   "type": "info",
   "title": "Note",
-  "body": "One Touch to Join Conference Bridge works with the [Conference Bridge](https://support.pagerduty.com/docs/response-bridge#section-service-level-response-bridge) and [Add Responders](https://support.pagerduty.com/docs/mobilizing-a-response#section-add-responders) capabilities available in our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) product add-on. It can be enabled upon request for customers with [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) - please reach out to your sales representative for more information.
-</Callout>
-
-
+  "body": "One Touch to Join Conference Bridge works with the [Conference Bridge](https://support.pagerduty.com/docs/response-bridge#section-service-level-response-bridge) and [Add Responders](https://support.pagerduty.com/docs/mobilizing-a-response#section-add-responders) capabilities available in our [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) product add-on. It can be enabled upon request for customers with [Modern Incident Response](https://support.pagerduty.com/docs/pagerduty-modern-incident-response) - please reach out to your sales representative for more information."
+}
+[/block]
 The One Touch To Join Conference Bridge feature enables rapid response team assembly by giving responders a push-button means of joining a conference bridge. This feature relies on two core PagerDuty Platform features: [Conference Bridge](https://support.pagerduty.com/docs/response-bridge#section-service-level-response-bridge) and [Add Responders](https://support.pagerduty.com/docs/mobilizing-a-response#section-add-responders). When responders are added to an incident and receive a voice call, they will receive the option to “Join the bridge” which will immediately add them to the conference call. The One Touch To Join Conference Bridge solution works with your existing direct-dial conference bridge provider and reduces effective time-to-engage and resolution time for major incidents.
 
 Configure One Touch To Join Conference Bridge:
@@ -212,37 +138,13 @@ Configure One Touch To Join Conference Bridge:
 
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5c6bb7-conference-bridge-add-phone-number.png",
-        "conference-bridge-add-phone-number.png",
-        1356,
-        700,
-        "#f0f0f0"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b63d65f-conference-bridge-notification-rule-phone.png",
-        "conference-bridge-notification-rule-phone.png",
-        1154,
-        296,
-        "#e9e5e5"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/c5c6bb7-conference-bridge-add-phone-number.png)
+
+
+
+![](https://files.readme.io/b63d65f-conference-bridge-notification-rule-phone.png)
+
 3. During an incident with a conference bridge, add responders by using the [Add Responders](https://support.pagerduty.com/docs/mobilizing-a-response#section-add-responders) feature or at-scale with [Response Plays](https://support.pagerduty.com/docs/response-automation). 
 
 Any requested responder with the above configuration will receive a voice call with the following phrasing:
@@ -288,21 +190,9 @@ The following table lists the effects of each response to the voice call:
 }
 [/block]
 Whenever a responder who has joined the bridge via One Touch To Join disconnects or the overall bridge call ends, the Incident Timeline will reflect these departures as well. This information can then be used in incident analysis using the [Postmortems](https://support.pagerduty.com/docs/postmortems) tool.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/946be0f-one-touch-timeline-view.png",
-        "one-touch-timeline-view.png",
-        1408,
-        342,
-        "#eff0f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/946be0f-one-touch-timeline-view.png)
+
 You can add as many responders to your conference bridge as your conference provider allows.  One Touch To Join calls will disconnect after **two hours**.  Should the responder still need to participate, they can manually redial the bridge based on the conference details attached to the PagerDuty incident.
 
 If a responder misses a voice call, PagerDuty will attempt to reach them using each of the configured contact methods used by their high-urgency notification rules. We recommend that at least two contact methods are configured so that if a notification for one channel is missed, context is provided in the other channel. Thus, is the voice call is missed, the responder will still be able to manually join the conference bridge using information found in the web UI, email notification or Slack message, but they will not be able to use One Touch To Join. 

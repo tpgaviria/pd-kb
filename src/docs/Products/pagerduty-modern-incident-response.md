@@ -17,21 +17,9 @@ PagerDuty Modern Incident Response is a suite of capabilities that drive fast an
 ## Product Capabilities
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b1a4468-modern-incident-response-overview.png",
-        "modern-incident-response-overview.png",
-        1628,
-        1468,
-        "#f2f2f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b1a4468-modern-incident-response-overview.png)
+
 PagerDuty Modern Incident Response includes capabilities essential for every stage of the response process for critical incidents:
 
 ##Response Plays

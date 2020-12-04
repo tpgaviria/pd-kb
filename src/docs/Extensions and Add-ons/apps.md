@@ -12,21 +12,9 @@ Users with the appropriate permissions can add an app to their PagerDuty account
 Users are presented with a prompt when authorizing an app with OAuth 2.0 functionality.
 
 **Published Authorization Prompt**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1592f59-screencapture-pdt-jbaldo-pagerduty-oauth-authorize-2020-04-16-16_48_17.png",
-        "screencapture-pdt-jbaldo-pagerduty-oauth-authorize-2020-04-16-16_48_17.png",
-        2880,
-        1446,
-        "#f3f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1592f59-screencapture-pdt-jbaldo-pagerduty-oauth-authorize-2020-04-16-16_48_17.png)
+
 ### Security Warnings
 
 When an app has not been reviewed by PagerDuty, the user sees a warning message. The exact message varies depending on which of these scenarios apply.
@@ -42,21 +30,9 @@ Unpublished apps which are not admin approved and were not developed by a member
 *Message:* “This app was enabled by an admin of your PagerDuty organization but has not been reviewed or approved by PagerDuty.”
 
 **Unpublished App Prompt With Warning Message**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/057abf9-screencapture-pdt-jbaldo-pagerduty-oauth-authorize-2020-04-16-16_15_33.png",
-        "screencapture-pdt-jbaldo-pagerduty-oauth-authorize-2020-04-16-16_15_33.png",
-        2880,
-        1446,
-        "#f4f5f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/057abf9-screencapture-pdt-jbaldo-pagerduty-oauth-authorize-2020-04-16-16_15_33.png)
+
 # Removing Apps
 Removing an app from an account will depend on how the app connects to PagerDuty. Refer to the app’s documentation, and general information about removing apps is below:
 

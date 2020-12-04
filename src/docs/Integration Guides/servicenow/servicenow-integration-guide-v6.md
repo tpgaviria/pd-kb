@@ -27,10 +27,9 @@ Communication between ServiceNow and PagerDuty is bi-directional, allowing incid
 {
   "type": "info",
   "title": "Looking for another version?",
-  "body": "[V5](https://support.pagerduty.com/docs/servicenow-integration-guide-v5) and [V7](https://support.pagerduty.com/docs/servicenow-integration-guide) of our ServiceNow integration are also available.
-</Callout>
-
-
+  "body": "[V5](https://support.pagerduty.com/docs/servicenow-integration-guide-v5) and [V7](https://support.pagerduty.com/docs/servicenow-integration-guide) of our ServiceNow integration are also available."
+}
+[/block]
 # Quick Links
 
 * [What’s New with PagerDuty’s ServiceNow v6 Integration](https://community.pagerduty.com/t/whats-new-with-pagerdutys-servicenow-v6-integration/4739)
@@ -55,21 +54,9 @@ In order for the PagerDuty integration to function, a ServiceNow administrator m
 [/block]
 3. Next, return to the application navigator and select **System Definition** → **Tables** module. Open the record for the Group (`sys_user_group`) table. 
 4. The following permissions are required so that the PagerDuty integration can map PagerDuty users to ServiceNow user records. In the **Application Access** tab, check the **Can update** checkbox so that the integration can store a PagerDuty User ID on the ServiceNow record when user provisioning is complete. Next, click the **Allow configuration** checkbox, which is required so that you can provision one or more Groups into PagerDuty from the List view. Click **Update** to save.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/00eb704-snow-v6-group-application-access.png",
-        "snow-v6-group-application-access.png",
-        1786,
-        874,
-        "#fbfafb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/00eb704-snow-v6-group-application-access.png)
+
 5. Next, from the **System Definition** → **Tables** module, open the record for the Group Member (`sys_user_grmember`) table and check the **Allow configuration** option. This option is required so that PagerDuty can add an item into the bulk action menu when managing Group Members. Click **Update** to save.
 [block:image]
 {
@@ -92,21 +79,9 @@ In order for the PagerDuty integration to function, a ServiceNow administrator m
 If you wish to view the PagerDuty ID fields within ServiceNow, they will need to be manually added to the Group, User and Incident views. This will make it easier to see which ServiceNow objects are mapped to PagerDuty. Instructions are detailed in [Show or hide fields on a form](https://docs.servicenow.com/bundle/london-platform-administration/page/administer/form-administration/concept/configure-form-layout.html) in ServiceNow’s documentation.
 
 It is recommended that you add the PagerDuty fields to the User and Group list views by clicking the gear icon in the upper left corner of the grid to customize the display of columns. This will make them visible in your list views only.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/db83df6-snow-v6-gear-icon.png",
-        "snow-v6-gear-icon.png",
-        1999,
-        481,
-        "#a3a7ad"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/db83df6-snow-v6-gear-icon.png)
+
 The following is the list of available PagerDuty fields that you can add to the various list views or forms in ServiceNow: 
 
 * User list view and user form
@@ -144,54 +119,18 @@ The integration requires ServiceNow to have access your PagerDuty account both b
 
 The PagerDuty integration requires a ServiceNow user account to operate under. This enables PagerDuty to sync actions back to ServiceNow via webhooks. This design serves as a security feature, and allows you to control the integration’s permissions and roles within ServiceNow.
 1. Log in to your ServiceNow instance. In the ServiceNow application navigator, search **Organization** → **Users** and click **New** to create a new user account for PagerDuty application use. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9e054ac-snow-v6-configuration-new-user.png",
-        "snow-v6-configuration-new-user.png",
-        976,
-        456,
-        "#7c818a"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9e054ac-snow-v6-configuration-new-user.png)
+
 2. Enter  a **User ID**, **First/Last name** and **Password** for the user. You can use any desired username and password. Copy the username and password and keep them in a safe place, as you will need to provide them in the PagerDuty Settings UI (within ServiceNow) in a later step. If the **Web service access only** and **Internal Integration User** options are available, you can optionally select these checkboxes.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a9d61ab-snow-v6-snow-config-user-fields.png",
-        "snow-v6-snow-config-user-fields.png",
-        960,
-        898,
-        "#faf5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a9d61ab-snow-v6-snow-config-user-fields.png)
+
 3. In the  **Email** field, enter the same email that you entered for the new user in PagerDuty (step 2 of the [Create a Default PagerDuty User Account for ServiceNow](https://support.pagerduty.com/docs/servicenow-integration-guide#section-create-a-default-pagerduty-user-account-for-servicenow) section, above) . This will result in requests being properly formatted with a PagerDuty-From header.
 4. Under the **Roles** tab, select **Edit** and assign to the user the following three roles: `itil`, `rest_service`, and `x_pd_integration.admin`. Click **Save** to be returned to the User form.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ca0f1ac-snow-v6-roles-list.png",
-        "snow-v6-roles-list.png",
-        1199,
-        828,
-        "#f7f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ca0f1ac-snow-v6-roles-list.png)
+
 This new user account requires the ability to make API requests, which allows PagerDuty to create incidents in ServiceNow and action existing Incidents (such as changing assignment). If your ServiceNow instance allows all users to perform REST API calls, providing the `itil` and the `x_pd_integration.admin` role should be sufficient. If REST API access is restricted by role, provide the necessary role to the user account. In many cases, this is either the  `snc_platform_rest_api_access` or the  `rest_service` role.
 5. In the **PagerDuty ID** field, enter the 7 character user ID of the default PagerDuty user account (generated in step 3 of [Create a Default PagerDuty User Account for ServiceNow](https://support.pagerduty.com/docs/servicenow-integration-guide#section-create-a-default-pagerduty-user-account-for-servicenow)).
 
@@ -206,21 +145,9 @@ If all of these prerequisites have been fulfilled, **Save** the user record. You
 
 ##Configuring the PagerDuty Settings Page in ServiceNow
 Please note that most of the settings for the integration can be set by navigating to the application navigator of your ServiceNow instance, searching for the **PagerDuty** application → **Configuration** → **PagerDuty Settings**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8acafa6-image11.png",
-        "image11.png",
-        1999,
-        490,
-        "#bfc1c5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8acafa6-image11.png)
+
 You may see a warning at the top of the page indicating that you need to switch into the PagerDuty application scope. Proceed with this step if you are prompted. Once done, the PagerDuty Settings page should be editable.
 
 1. In your ServiceNow instance, navigate to **PagerDuty** → **Configuration** → **PagerDuty Settings** in the application navigator.
@@ -330,30 +257,17 @@ The option **Choose ServiceNow to PagerDuty mapping** on the **PagerDuty → Con
   * Assignment Groups will map to both a PagerDuty Service and a PagerDuty Escalation Policy.
 
 The following diagram represents the mapping between objects in both systems when Configuration Items and Assignment Groups map to PagerDuty:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/39666ee-image13.png",
-        "image13.png",
-        736,
-        348,
-        "#f1f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/39666ee-image13.png)
+
 ## Provisioning Configuration Items to PagerDuty
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "If you have selected **Assignment Groups map to PagerDuty** in the **PagerDuty → Configuration → PagerDuty Settings** page, you can skip this step. You will not need to provision Configuration Items into PagerDuty.
-</Callout>
-
-
+  "body": "If you have selected **Assignment Groups map to PagerDuty** in the **PagerDuty → Configuration → PagerDuty Settings** page, you can skip this step. You will not need to provision Configuration Items into PagerDuty."
+}
+[/block]
 Before provisioning your Configuration Items into PagerDuty, it is recommended that you set the corresponding Assignment Group for each of the Configuration Items you will be provisioning. This simplifies the provisioning process: when you provision a single Configuration Item, it will verify that the Assignment Group exists in PagerDuty (as an Escalation Policy). If not, it will also provision the corresponding Assignment Group as a PagerDuty Escalation Policy.
  
 With the PagerDuty integration, each ServiceNow Configuration Item can have a corresponding PagerDuty Service. This integration offers an easy way to quickly generate a new PagerDuty service and webhook (which is necessary to send information back to ServiceNow). It will also populate the associated fields within ServiceNow.
@@ -361,37 +275,13 @@ With the PagerDuty integration, each ServiceNow Configuration Item can have a co
 Any Configuration Item that extends the base `cmdb_ci` table can be mapped to PagerDuty because it inherits the same field that contains the PagerDuty service ID. This makes it easy to map any type of Configuration Item to services in PagerDuty, although provisioning only Business Services, Technical Services and/or Applications is recommended. For each Configuration Item type, the form view for it will need to be modified to show the PagerDuty object ID.
 
 1. In the list of Applications within your ServiceNow instance, you will notice that the **PagerDuty service**, and **PagerDuty webhook** fields are all empty for the listed groups except when the Configuration Item (CI) is mapped to PagerDuty.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e8fdd5-image8.png",
-        "image8.png",
-        1242,
-        158,
-        "#efeaea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1e8fdd5-image8.png)
+
 2. Select an application (or CI) that you would like to provision to PagerDuty. Then, under Related Links, click the **Provision CI Into PagerDuty** link to deploy it to your PagerDuty instance.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/55b9579-image16.png",
-        "image16.png",
-        1590,
-        972,
-        "#f6f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/55b9579-image16.png)
+
 3. You should see a notification that the Configuration Item will be created. Once it’s complete, the **PagerDuty service** and **PagerDuty webhook** fields will be populated with the PagerDuty IDs.
 4. Lastly, you will find that the corresponding service and escalation policy have been created in PagerDuty. The service also has the webhook automatically created, which powers the bi-directional sync between PagerDuty and ServiceNow.
 
@@ -402,113 +292,52 @@ Depending on which mapping you choose on the **PagerDuty → Configuration → P
 
 * If you choose Assignment Groups map to PagerDuty, each Assignment Group will have a corresponding PagerDuty escalation, service, and webhook ID. Optionally, each Assignment Group will also have a PagerDuty schedule and team ID.
 * If you choose Configuration Items and Assignment Groups map to PagerDuty, each Assignment Group will only have a PagerDuty escalation ID (optionally, Assignment Groups will also have a corresponding PagerDuty schedule and team ID). The PagerDuty service and webhook ID is mapped to your Configuration Items in ServiceNow.
-
-<Callout type="info" title="Info">
-The user provisioning Assignment Groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow",
-  "title": "Note
-</Callout>
-
-
-1. Select an Assignment Group that you would like to provision to PagerDuty. Then, click on the **Provision Group into PagerDuty** link to deploy this group to your PagerDuty instance.
-[block:image]
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5807d53-image10.png",
-        "image10.png",
-        1999,
-        1022,
-        "#c8cacd"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "The user provisioning Assignment Groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow",
+  "title": "Note"
 }
 [/block]
+1. Select an Assignment Group that you would like to provision to PagerDuty. Then, click on the **Provision Group into PagerDuty** link to deploy this group to your PagerDuty instance.
+
+![](https://files.readme.io/5807d53-image10.png)
+
 2. You should see a notification that the Assignment Group will be created. Once it’s complete, the **PagerDuty service**, **PagerDuty escalation**, and **PagerDuty webhook** fields will be populated.
 
 The Assignment Group will also have a corresponding schedule ID and team ID if these were enabled in the PagerDuty Settings UI.
 
 3. Lastly, you will find that the corresponding service and escalation policy have been created in PagerDuty. The service also has the webhook automatically created, which powers the bi-directional sync between PagerDuty and ServiceNow. The webhook contains the shared secret in the URL, enhancing the security of the communications.
 4. You can also provision multiple groups at once by selecting them and clicking on the **Provision Group into PagerDuty** option from the dropdown menu on the Groups list view.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/68c9130-image14.png",
-        "image14.png",
-        541,
-        313,
-        "#dce2e9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/68c9130-image14.png)
+
 ## Provisioning Users to PagerDuty
 1. The integration also allows for the provisioning of users from ServiceNow to PagerDuty. In a list of ServiceNow users, you can see directly which users have already been created in PagerDuty as their **PagerDuty ID** field will already be populated.
 2. In the below example, we’ll select a user that has not already been provisioned to PagerDuty. We can then click on the **Provision PagerDuty User** link to add them to our PagerDuty account:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b5cce87-image18.png",
-        "image18.png",
-        1999,
-        1026,
-        "#c8cacd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b5cce87-image18.png)
+
 3. You then see a notice that the user is being provisioned. Upon completion, the **PagerDuty ID** field is automatically populated. The user also shows up within PagerDuty, with the same name and email address.
 4. If the user has their **Business phone** or **Mobile phone** fields populated in ServiceNow, these settings will also be automatically provisioned as **Contact Methods** and **Notification Rules** in PagerDuty.
 5. You can also provision multiple users at once by selecting them and clicking on the **Provision PagerDuty User** option from the dropdown menu on the Users screen.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ffdabc7-image15.png",
-        "image15.png",
-        246,
-        197,
-        "#e3e8ee"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ffdabc7-image15.png)
+
 # Verify that ServiceNow and PagerDuty are Communicating
 
 You can verify that PagerDuty and ServiceNow are communicating by creating a new incident in ServiceNow and setting the **Assignment Group** field to a group that has been mapped to PagerDuty. Below is an incident that was assigned to the Database group which is mapped to PagerDuty. It was then reassigned to the CAB Approval group, as shown in the Activity log.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d0e2433-image3.png",
-        "image3.png",
-        910,
-        1210,
-        "#fafafa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d0e2433-image3.png)
+
 Once the incident is resolved in PagerDuty, it will be resolved in ServiceNow and vice-versa. ServiceNow also maintains a log of what activities have taken place within PagerDuty.
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "Once you have successfully installed and configured the PagerDuty application in your ServiceNow instance, it is highly recommended that you index the following columns in ServiceNow based on certain conditions listed below.\n\nFor “Assignment Group only” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `sys_user_group.x_pd_integration_pagerduty_service`\n* `sys-user_group.x_pd_integration_pagerduty_webhook`\n\nFor “Assignment Group and Configuration Item” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `cmdb_ci.x_pd_integration_pagerduty_service`\n* `cmdb_ci.x_pd_integration_pagerduty_webhook`\n\nRegardless of mapping, these three columns are also recommended:\n\n* `sys_user.x_pd_integration_pagerduty_id`\n* `sys_user.email`\n* `incident.x_pd_integration_incident`\n* `task.x_pd_integration_incident_id`\n\nThis will help decrease the response time when the PagerDuty application is querying the incidents, group, user and CMDB tables. PagerDuty initiates the webhook retry logic outlined [here](https://v2.developer.pagerduty.com/docs/webhook-behavior#error-handling-and-retries) if the response time exceeds a certain threshold, in which case the webhook extension will eventually get temporarily disabled.
-</Callout>
-
-
+  "body": "Once you have successfully installed and configured the PagerDuty application in your ServiceNow instance, it is highly recommended that you index the following columns in ServiceNow based on certain conditions listed below.\n\nFor “Assignment Group only” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `sys_user_group.x_pd_integration_pagerduty_service`\n* `sys-user_group.x_pd_integration_pagerduty_webhook`\n\nFor “Assignment Group and Configuration Item” mapping:\n\n* `sys_user_group.x_pd_integration_pagerduty_escalation`\n* `cmdb_ci.x_pd_integration_pagerduty_service`\n* `cmdb_ci.x_pd_integration_pagerduty_webhook`\n\nRegardless of mapping, these three columns are also recommended:\n\n* `sys_user.x_pd_integration_pagerduty_id`\n* `sys_user.email`\n* `incident.x_pd_integration_incident`\n* `task.x_pd_integration_incident_id`\n\nThis will help decrease the response time when the PagerDuty application is querying the incidents, group, user and CMDB tables. PagerDuty initiates the webhook retry logic outlined [here](https://v2.developer.pagerduty.com/docs/webhook-behavior#error-handling-and-retries) if the response time exceeds a certain threshold, in which case the webhook extension will eventually get temporarily disabled."
+}
+[/block]
 #Using PagerDuty’s Add Responders and Conference Bridge Features in ServiceNow
 
 The latest version of PagerDuty’s ServiceNow integration allows ServiceNow users to utilize PagerDuty’s [Add Responders](https://support.pagerduty.com/docs/mobilizing-a-response) and [Conference Bridge](https://support.pagerduty.com/docs/conference-bridge) features. To use these features within ServiceNow, users must have a new role added to their ServiceNow user record: `x_pd_integration.incident_response`.

@@ -43,10 +43,9 @@ Incident communication between ServiceNow and PagerDuty is bi-directional, allow
 {
   "type": "info",
   "title": "Looking for another version?",
-  "body": "[V6 of our ServiceNow Integration](https://support.pagerduty.com/docs/servicenow-integration-guide-v6) is also available.
-</Callout>
-
-
+  "body": "[V6 of our ServiceNow Integration](https://support.pagerduty.com/docs/servicenow-integration-guide-v6) is also available."
+}
+[/block]
 #Integration Walkthrough
 
 #Step 1: Complete ServiceNow Pre-Install Requirements
@@ -77,21 +76,9 @@ Install the [PagerDuty integration from the ServiceNow Store](https://store.serv
 If you wish to view the PagerDuty ID fields within ServiceNow, they will need to be manually added to the Group, User and Incident views. This will make it easier to see which ServiceNow objects are mapped to PagerDuty. Instructions are detailed in [Show or hide fields on a form](https://docs.servicenow.com/bundle/jakarta-platform-administration/page/administer/form-administration/task/t_ConfigureAForm.html) in ServiceNow’s documentation.
 
 1. It is recommended that you add the PagerDuty fields to the User and Group list views by clicking the gear icon in the upper left corner of the grid to customize the display of columns. This will make them visible in your list views only.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f94e5b9-servicenow-personalize-list.png",
-        "servicenow-personalize-list.png",
-        750,
-        213,
-        "#8a9797"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f94e5b9-servicenow-personalize-list.png)
+
 2. The following is the list of available PagerDuty fields that you can add to the various list views or forms in ServiceNow: 
 
 [block:parameters]
@@ -118,21 +105,9 @@ If you wish to view the PagerDuty ID fields within ServiceNow, they will need to
 
  1. Log in to your PagerDuty account in the web app. Navigate to **Apps and Add-Ons** :fa-th-large: :fa-arrow-right: **API Access**.
  2. On the API Access Keys page, click the **Create New API Key** button.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/537174f-servicenow-create-pagerduty-api-access-key.png",
-        "servicenow-create-pagerduty-api-access-key.png",
-        1169,
-        161,
-        "#ebf1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/537174f-servicenow-create-pagerduty-api-access-key.png)
+
 3. In the dialog that pops up, enter a **Description** for your key. You will also have the option to create the key as Read-only; leave this box **unchecked** as a full API key is required. Click **Create key** to save.
 4. Next you will see a dialog displaying your API key. **Copy this key and save it in a secure place**, as you will not have access to the key after this step. If you lose a key that you created previously and need access to it again, you should remove the key and create a new one. Click **Close** once you have successfully copied and saved your key.
 
@@ -152,38 +127,14 @@ The PagerDuty integration also requires a ServiceNow user account to operate und
 
 1. Log in to your ServiceNow instance. In the ServiceNow application navigator, search **Organization** :fa-arrow-right: **Users** and click **New** to create a new user account for PagerDuty application use. 
 2. Enter  a **User ID**, **First/Last name** and **Password** for the user. You can use any desired username and password. **Copy the username and password and keep them in a safe place**, as you will need to provide them in the PagerDuty Settings (within the ServiceNow UI) in a later step. If the **Web service access only** and **Internal Integration User** options are available, you can optionally select these checkboxes.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3110243-servicenow-enter-user-information.png",
-        "servicenow-enter-user-information.png",
-        960,
-        898,
-        "#faf5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3110243-servicenow-enter-user-information.png)
+
 3. In the  **Email** field, enter the same email that you entered for the new user in PagerDuty (step 2 of the **Create a Default User Account for ServiceNow** section, above). This will result in requests being properly formatted with a PagerDuty-From header. Click **Submit** and then search and click into the user profile.
 4. Under the **Roles** tab, select **Edit** and assign to the user the following three roles: `itil`, `rest_service`, and `x_pd_integration.admin`. Click **Save** to be returned to the User form.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/903dd64-servicenow-add-roles.png",
-        "servicenow-add-roles.png",
-        1199,
-        828,
-        "#f7f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/903dd64-servicenow-add-roles.png)
+
 The new user account that you created requires the ability to make API requests. This allows PagerDuty to create incidents in ServiceNow and action existing Incidents (such as changing assignment). If your ServiceNow instance allows all users to perform REST API calls, providing the itil and the `x_pd_integration.admin` role should be sufficient. If REST API access is restricted by role, provide the necessary role to the user account. In many cases, this is either the  `snc_platform_rest_api_access` or the  `rest_service` role. 
 5. In the **PagerDuty ID** field, enter the 7 character user ID of the default PagerDuty user account (generated in step 3 of Create a Default PagerDuty User Account for ServiceNow, above).
 
@@ -199,21 +150,9 @@ If all of these prerequisites have been fulfilled, **Update** the user record in
 ##3.2: Configure PagerDuty Settings in ServiceNow
 
 Please note that most of the settings for the integration can be set by navigating to the **PagerDuty** application :fa-arrow-right: **Configuration** :fa-arrow-right: **PagerDuty Settings**, accessed through the application navigator of your ServiceNow instance:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3f0365c-servicenow-pagerduty-settings.png",
-        "servicenow-pagerduty-settings.png",
-        2090,
-        1284,
-        "#b9bdbe"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3f0365c-servicenow-pagerduty-settings.png)
+
 You may see a warning at the top of the page indicating that you need to switch into the PagerDuty application scope. Proceed with this step if you are prompted. Once done, the PagerDuty Settings page should become editable.
 
 1. In your ServiceNow instance, navigate to **PagerDuty** :fa-arrow-right: **Configuration** :fa-arrow-right: **PagerDuty Settings** in the application navigator, and enter the **user ID** and **password** of the new ServiceNow user into the **ServiceNow user for authentication** and **ServiceNow user password for authentication** fields.
@@ -240,21 +179,9 @@ You may see a warning at the top of the page indicating that you need to switch 
  Once you have provided the necessary configuration on the PagerDuty Settings page, click **Save**.
 
 3. Validate that the integration works by clicking **Configuration** :fa-arrow-right: **Test REST API Connection**. You should get a Connection test successful (200) response if everything is working properly:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8ea5315-servicenow-rest-api-connection.png",
-        "servicenow-rest-api-connection.png",
-        1429,
-        478,
-        "#c3c7c7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8ea5315-servicenow-rest-api-connection.png)
+
 4. Validate that the ServiceNow user account was successfully configured by clicking **Configuration** :fa-arrow-right: **Test ServiceNow User Authentication**. You should get a ServiceNow user authentication test successful (200) response if everything is working properly. Upon successful completion of the two tests, initial configuration is now complete. 
 
 5. Validate that the Default User settings were properly configured. To do this, click **Test Default User Settings**. You should see a series of success messages. If there are any changes required, you will be informed of what changes are required.
@@ -303,10 +230,9 @@ You may see a warning at the top of the page indicating that you need to switch 
 {
   "type": "info",
   "title": "Note",
-  "body": "If the PagerDuty Service ID is not blank, it means that the object is already mapped to PagerDuty.
-</Callout>
-
-
+  "body": "If the PagerDuty Service ID is not blank, it means that the object is already mapped to PagerDuty."
+}
+[/block]
 3. In PagerDuty, using your web browser, navigate to **Services** :fa-arrow-right: **Service Directory** and select the existing service that is configured. In the URL bar, you will find the 7-character **Service ID** starting with the letter `P`. Copy the Service ID to your clipboard.
 4. In ServiceNow, paste the Service ID in the **PagerDuty Service** field.
 5. Click **Save**. If you are redirected back to the list view in ServiceNow, open the record again. 
@@ -344,21 +270,9 @@ The option **Choose ServiceNow to PagerDuty mapping** on the **PagerDuty** :fa-a
    * Assignment Groups map to PagerDuty Escalation Policies
 
 The following diagram represents the mapping between objects in both systems when Configuration Items and Assignment Groups map to PagerDuty:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f5080af-servicenow-object-mapping.png",
-        "servicenow-object-mapping.png",
-        736,
-        348,
-        "#f1f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f5080af-servicenow-object-mapping.png)
+
 # Step 4: Provisioning from ServiceNow to PagerDuty
 
 In order to create a bi-directional sync between PagerDuty and ServiceNow, you must provision an Assignment Group PagerDuty. Assignment Groups provisioned will create PagerDuty services and associated escalation policies where ServiceNow incidents will be triggered. 
@@ -377,45 +291,20 @@ Depending on which mapping you choose on the Settings page, some PagerDuty attri
 {
   "type": "info",
   "title": "Note",
-  "body": "The user provisioning assignment groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow.
-</Callout>
-
-
-1. Navigate to **User Administration** and click **Groups**. Select an assignment group that you would like to provision to PagerDuty. Then, click on the **Provision Group into PagerDuty** link to deploy this group to your PagerDuty instance.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f6e5f1b-servicenow-provision-group.png",
-        "servicenow-provision-group.png",
-        716,
-        529,
-        "#faf9f9"
-      ]
-    }
-  ]
+  "body": "The user provisioning assignment groups from ServiceNow to PagerDuty must have a PagerDuty user ID attached to their account in ServiceNow."
 }
 [/block]
+1. Navigate to **User Administration** and click **Groups**. Select an assignment group that you would like to provision to PagerDuty. Then, click on the **Provision Group into PagerDuty** link to deploy this group to your PagerDuty instance.
+
+![](https://files.readme.io/f6e5f1b-servicenow-provision-group.png)
+
 2. You should see a notification that the assignment group will be created. Once it’s complete, the **PagerDuty service**, **PagerDuty escalation**, and **PagerDuty webhook** fields will be populated within the Assignment Group.
 The Assignment Group will also have a corresponding schedule ID and team ID if these were enabled in the PagerDuty Settings UI.
 3. Lastly, you will find that the corresponding service and escalation policy have been created in PagerDuty. The service also has the webhook automatically created, which powers the bi-directional sync between PagerDuty and ServiceNow. The webhook contains the shared secret in the URL, enhancing the security of the communications.
 4. You can also provision multiple groups at once by selecting them and clicking on the **Provision Group into PagerDuty** option from the dropdown menu on the Groups list view.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c159fd5-servicenow-bulk-provision-group.png",
-        "servicenow-bulk-provision-group.png",
-        541,
-        313,
-        "#dce2e9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c159fd5-servicenow-bulk-provision-group.png)
+
 Please follow [documentation here](https://support.pagerduty.com/docs/servicenow-integration-guide#configure-escalation-policy-priority-mapping) to add additional priority-mapped escalation policies to your Assignment Group.
 
 ##4.2 Provision Configuration Items to PagerDuty (Optional)
@@ -423,19 +312,17 @@ Please follow [documentation here](https://support.pagerduty.com/docs/servicenow
 {
   "type": "info",
   "title": "Note",
-  "body": "If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you can skip this step. You will not need to provision Configuration Items into PagerDuty.
-</Callout>
-
-
+  "body": "If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you can skip this step. You will not need to provision Configuration Items into PagerDuty."
+}
+[/block]
 
 [block:callout]
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "Before provisioning Configuration Items as services to PagerDuty, we recommend the following:\n\n* Read our [Service Configuration Guide](https://pagerduty.influitive.com/forum/t/service-configuration-guide/1660/#heading--business-services) for best practices in planning your PagerDuty Technical and Business service relationships.\n   * Given the [dependency relationships](https://support.pagerduty.com/docs/service-profile#service-dependencies) between Business and Technical services, review how you would like to map configuration item relationships noting the higher level CMDB classes and lower level CMDB classes. \n* Set the corresponding Assignment Group for each of the Configuration Items you will be provisioning. This simplifies the provisioning process: when you provision a single Configuration Item, it will verify that the Assignment Group exists in PagerDuty (as an Escalation Policy). If not, it will also provision the corresponding Assignment Group as a PagerDuty Escalation Policy.
-</Callout>
-
-
+  "body": "Before provisioning Configuration Items as services to PagerDuty, we recommend the following:\n\n* Read our [Service Configuration Guide](https://pagerduty.influitive.com/forum/t/service-configuration-guide/1660/#heading--business-services) for best practices in planning your PagerDuty Technical and Business service relationships.\n   * Given the [dependency relationships](https://support.pagerduty.com/docs/service-profile#service-dependencies) between Business and Technical services, review how you would like to map configuration item relationships noting the higher level CMDB classes and lower level CMDB classes. \n* Set the corresponding Assignment Group for each of the Configuration Items you will be provisioning. This simplifies the provisioning process: when you provision a single Configuration Item, it will verify that the Assignment Group exists in PagerDuty (as an Escalation Policy). If not, it will also provision the corresponding Assignment Group as a PagerDuty Escalation Policy."
+}
+[/block]
 With the PagerDuty integration, each ServiceNow configuration item can have a corresponding PagerDuty service. This integration offers an easy way to quickly generate a new PagerDuty service and webhook (which is necessary to send information back to ServiceNow). It will also populate the associated fields within ServiceNow.
 
 Any configuration item that extends the base `cmdb_ci` table can be mapped to PagerDuty because it inherits the same field that contains the PagerDuty service ID. This makes it easy to map any type of configuration item to services in PagerDuty, although provisioning only Business Services, Technical Services and/or Applications is recommended. For each configuration item type, the form view for it will need to be modified to show the PagerDuty object ID.
@@ -448,37 +335,13 @@ There are two ways to provision Configuration Items to PagerDuty:
 ### 4.2.1 Manually Provision Individual Configuration Items to PagerDuty (Optional)
 
 1. In the list of Applications within your ServiceNow instance, you will notice that the **PagerDuty service**, and **PagerDuty webhook** fields are all empty for the listed groups except when the Configuration Item (CI) is mapped to PagerDuty.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/73f941a-servicenow-configuration-item-unprovisioned.png",
-        "servicenow-configuration-item-unprovisioned.png",
-        1242,
-        158,
-        "#efeaea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/73f941a-servicenow-configuration-item-unprovisioned.png)
+
 2. Select an application (or Configuration Item) that you would like to provision to PagerDuty. Then  under Related Links, click either **Provision CI Into PagerDuty (Technical)** if you would like to provision it as a Technical service, or **Provision CI Into PagerDuty (Business)** if you would like to provision it as a Business Service. **Note**: If you would like to provision with dependencies, please read the next section on Services Provisioning Settings.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d5321f6-servicenow-manually-provision.png",
-        "servicenow-manually-provision.png",
-        247,
-        120,
-        "#ebf4f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d5321f6-servicenow-manually-provision.png)
+
 3. You should see a notification that the Configuration Item will be created. Once it’s complete, the **PagerDuty service** and **PagerDuty webhook** fields will be populated with the PagerDuty IDs.
 4. Lastly, you will find that the corresponding service and escalation policy have been created in PagerDuty. The service also has the webhook automatically created, which powers the bi-directional sync between PagerDuty and ServiceNow.
 
@@ -501,10 +364,9 @@ To configure Services Provisioning Settings and provision services:
 {
   "type": "info",
   "title": "Note",
-  "body": "* If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you will not be able to use this feature. If you wish to use this feature, you must select **Configuration and Assignment Groups map to PagerDuty** in PagerDuty Settings.\n* You will not be able to bulk provision CIs and services that have names that already exist within your PagerDuty account. Please check your account before provisioning to ensure you are not duplicating the names of existing services. If you have matching services, you will need to provision individual services manually (see previous section).
-</Callout>
-
-
+  "body": "* If you have selected **Assignment Groups map to PagerDuty** in the PagerDuty Settings UI, you will not be able to use this feature. If you wish to use this feature, you must select **Configuration and Assignment Groups map to PagerDuty** in PagerDuty Settings.\n* You will not be able to bulk provision CIs and services that have names that already exist within your PagerDuty account. Please check your account before provisioning to ensure you are not duplicating the names of existing services. If you have matching services, you will need to provision individual services manually (see previous section)."
+}
+[/block]
 1. Navigate to **PagerDuty** in the application navigator and click **Services Provisioning**. You may skip over the [Services Provisioning Settings](https://support.pagerduty.com/docs/servicenow-integration-guide#422-services-provisioning-settings-optional) section for now, as it is optional and unrelated to bulk provisioning. 
 2. Click **Custom Services Provisioning** which is where you will set the services and service relationships that will be provisioned to PagerDuty based on CIs within ServiceNow. In the **Select CI Table containing services** field, search and select the **CI table** that contains the CI you would like to provision. In the **Select the type of service to be provisioned** field, select the type of service you would like the column to be provisioned as in PagerDuty (PagerDuty only has options to create a Business Service or Technical Service). In the **Select column for Service information** field, select the column that you would like to be the name of your provisioned service. If you would like to set up a dependency relationship with another service, continue to steps 3 and 4. If you would like to provision one service without a dependency relationship, skip to step 5. 
 3. *Optional*: If you would like to set up a dependency relationship with another service, in the **Select relationship between services to be provisioned** field, you will select whether this service will be a parent or child to another service. If you would like this service to be a parent service, select **consumed by** and if you would like it to be a child service, select **consumes**.
@@ -514,10 +376,9 @@ To configure Services Provisioning Settings and provision services:
 {
   "type": "danger",
   "title": "Warning",
-  "body": "Please carefully review the CIs on this page, as the next step will provision everything listed as services in PagerDuty. If there are CIs you do not wish to provision, please delete them by selecting their checkboxes and clicking **Delete** in the **Actions on selected rows...** dropdown at the bottom left. A confirmation dialog will appear, click **Delete**.
-</Callout>
-
-
+  "body": "Please carefully review the CIs on this page, as the next step will provision everything listed as services in PagerDuty. If there are CIs you do not wish to provision, please delete them by selecting their checkboxes and clicking **Delete** in the **Actions on selected rows...** dropdown at the bottom left. A confirmation dialog will appear, click **Delete**."
+}
+[/block]
 6. Return to the bulk provisioning screen and click **Provision Services** under **Step 3 of 3** to provision to PagerDuty. You should now see a success message on the bulk provisioning screen and your provisioned services in your PagerDuty account. 
 
 If you wish to review your provisioned services in the future, you can navigate to **PagerDuty** in the application navigator and select the **PagerDuty Service Provisionings** table.
@@ -526,39 +387,15 @@ If you wish to review your provisioned services in the future, you can navigate 
 
 1. The integration also allows you to provision users from ServiceNow to PagerDuty. In your ServiceNow Users list, you can see directly which users have already been created in PagerDuty as their **PagerDuty ID** field will be populated.
 2. Select a user that has not already been provisioned to PagerDuty and click on the **Provision PagerDuty User** link to add them to your PagerDuty account:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/edb46d6-servicenow-provision-pagerduty-user.png",
-        "servicenow-provision-pagerduty-user.png",
-        669,
-        785,
-        "#fafafa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/edb46d6-servicenow-provision-pagerduty-user.png)
+
 3. You will then see a notice that the user is being provisioned. Upon completion, the **PagerDuty ID** field is automatically populated. The user also shows up within PagerDuty, with the same name and email address.
 4. If the user has their **Business phone** or **Mobile phone** fields populated in ServiceNow, these settings will also be automatically provisioned as **Contact Methods** and **Notification Rules** in PagerDuty.
 5. You can also provision multiple users at once by selecting them and clicking on the **Provision PagerDuty User** option from the dropdown menu on the Users screen.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5deb38a-servicenow-bulk-provision-users.png",
-        "servicenow-bulk-provision-users.png",
-        246,
-        197,
-        "#e3e8ee"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5deb38a-servicenow-bulk-provision-users.png)
+
 # Step 5: Test the Integration
 
 To verify that that PagerDuty and ServiceNow are communicating:
@@ -569,21 +406,9 @@ To verify that that PagerDuty and ServiceNow are communicating:
 
 Below is an incident that was assigned to the Database group which is mapped to PagerDuty. It was then reassigned to the CAB Approval group, as shown in the Activity log.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0687d54-servicenow-incident-activity.png",
-        "servicenow-incident-activity.png",
-        910,
-        1210,
-        "#fafafa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0687d54-servicenow-incident-activity.png)
+
 Once the incident is resolved in PagerDuty, it will be resolved in ServiceNow and vice versa. ServiceNow also maintains a log of what activities have taken place within PagerDuty.
 
 **Note**: Once you have successfully installed and configured the PagerDuty application in your ServiceNow instance, it is highly recommended that you index the following columns in ServiceNow:
@@ -633,21 +458,9 @@ To configure a MID server:
 # Use PagerDuty Actions in ServiceNow
 
 The latest version of PagerDuty’s ServiceNow integration allows ServiceNow users to utilize PagerDuty’s [Add Responders](https://support.pagerduty.com/docs/mobilizing-a-response),  [Conference Bridge](https://support.pagerduty.com/docs/conference-bridge), [Response Plays](https://support.pagerduty.com/docs/response-automation) and [Status Update](https://support.pagerduty.com/docs/status-dashboard#status-updates) capabilities within the ServiceNow interface. This suite of actions is an extension of previous versions which also allow users to trigger, reassign and resolve PagerDuty incidents from ServiceNow. To use these capabilities within ServiceNow, users must have a new role added to their ServiceNow user record: `x_pd_integration.incident_response`.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dc5e74c-servicenow-pagerduty-actions.png",
-        "servicenow-pagerduty-actions.png",
-        2310,
-        624,
-        "#f4f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dc5e74c-servicenow-pagerduty-actions.png)
+
 ## Trigger and Resolve an Incident from ServiceNow
 
 Note: Acknowledge is not available in ServiceNow at this time.

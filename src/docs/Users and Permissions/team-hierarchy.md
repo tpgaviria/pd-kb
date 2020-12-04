@@ -13,21 +13,9 @@ updatedAt: "2020-10-09T20:13:40.156Z"
 }
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f78ed44-Screen_Shot_2018-03-28_at_2.21.24_PM.png",
-        "Screen Shot 2018-03-28 at 2.21.24 PM.png",
-        1036,
-        457,
-        "#cbdcf5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f78ed44-Screen_Shot_2018-03-28_at_2.21.24_PM.png)
+
 
 ## Creating and Managing a Team Hierarchy
 

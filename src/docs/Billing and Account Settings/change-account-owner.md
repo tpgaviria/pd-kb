@@ -18,11 +18,11 @@ If you are an Account Owner and want to promote another user to be your account'
 }
 [/block]
 
-
-<Callout type="info" title="Info">
-Your account will not be removed when you promote another user to be the Account Owner, your account will simply be demoted to an Admin user role.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "Your account will not be removed when you promote another user to be the Account Owner, your account will simply be demoted to an Admin user role.",
+  "title": "Note"
+}
+[/block]
 If your current account owner has left your organization and their PagerDuty login information is not available, you can [contact our Support team](mailto:support@pagerduty.com) for assistance with account ownership changes.

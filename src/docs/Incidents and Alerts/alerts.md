@@ -15,21 +15,9 @@ Excluding a small handful of exceptions, you can set up alerts for any service t
 
 ##Creating an alert
 When a service’s integration has an event, an alert is created in PagerDuty that is linked to an incident. Notifications are not sent to users based on alerts, which means that you can have one or more alerts under a single incident. That incident will be assigned to users, teams, or schedules on the escalation policy for the service. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/13545bd-alerts-alert-flow-chart.png",
-        "alerts-alert-flow-chart.png",
-        863,
-        164,
-        "#ecefed"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/13545bd-alerts-alert-flow-chart.png)
+
 Alerts are only created from services using a third party monitoring tool integration, email integration or via our Generic API integration. They cannot be manually created in PagerDuty. 
 
 ##Webhooks
@@ -46,21 +34,9 @@ Once alerts are enabled for a service, your integration will create an alert and
 Additionally, any alerts associated with a particular incident may be viewed on the incident's individual page in the web UI. Alerts will be listed in their own section under the **Details** section.
 
 To expand or collapse the details of the alert such as the message sent from your monitoring tool, click the **Show/Hide Details** buttons.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e8308c-alerts-show-details.png",
-        "alerts-show-details.png",
-        1452,
-        702,
-        "#f9f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1e8308c-alerts-show-details.png)
+
 ##Where alert functionality is applicable
 
 Alerts are only created for inbound events submitted via one of our events APIs ([Events API (v1)](https://v2.developer.pagerduty.com/docs/trigger-events) or [Events API (v2)](https://v2.developer.pagerduty.com/docs/events-api-v2)), or through any of the majority of integrations that utilize an events API based integration. Incidents created via any of the following processes would have no alerts associated with them, and thus, alert rules, suppression and other features of alerts will not be applicable:
@@ -79,21 +55,9 @@ Alerts are only created for inbound events submitted via one of our events APIs 
 }
 [/block]
 To turn on alerts in your account, open up the settings for a service that you would like to have alerts for. You can find these settings under **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: click the **name** of your desired service :fa-arrow-right: **Integrations** tab. Under the **Alert and Incident Settings** section, click **Edit** and select **Create both alerts and incidents** and click **Save Changes** to enable alerts. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9a4371b-alerts-enable-alerts.png",
-        "alerts-enable-alerts.png",
-        1366,
-        504,
-        "#dfe8f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9a4371b-alerts-enable-alerts.png)
+
 On accounts without alerts and incidents automatically enabled, you will need to enable alerts and incidents on each service that you would like this functionality to extend to. Enabling this feature of one service will not enable it on all services.
 
 When enabled, the `incident_key` is deprecated and becomes `null`. De-duplication will be based on on the `alert_key` instead of the `incident_key`. This may cause issues with some bidirectional integrations. Additionally, the summary of the number of alerts is found using the `alert_count`. You can read more on this in our [API Documentation](https://v2.developer.pagerduty.com).
@@ -150,21 +114,9 @@ With the active filters bar you will never lose track of which filters are curre
 ###Clearing Table Filters
 
 Table filters can be cleared from within the Active Filters Bar by clicking the **x** next to each individual filter, or by clicking Clear all table filters. In the event that no results are found when a search filter is input, this may be removed by clicking the search icon a second time and clicking Clear filter.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1d7336e-alerts-clear-filter.png",
-        "alerts-clear-filter.png",
-        1368,
-        588,
-        "#f3f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1d7336e-alerts-clear-filter.png)
+
 
 ## Bi-Directional Integration Limitations
 

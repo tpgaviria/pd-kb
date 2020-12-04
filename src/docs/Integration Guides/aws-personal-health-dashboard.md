@@ -24,21 +24,9 @@ Integrating with global or service-level event rules may be beneficial if you wa
 
 1. From the **Services** menu, select **Event Rules** and click your **Default Global Ruleset**. 
 2. On the Event Rules screen, copy your **Integration Key**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6df99e3-cloudwatch-copy-key.png",
-        "cloudwatch-copy-key.png",
-        2146,
-        980,
-        "#f7f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/6df99e3-cloudwatch-copy-key.png)
+
 3. Once you have your **Integration Key**, the **Integration URL** will be:
 
 `https://events.pagerduty.com/x-ere/[YOUR_INTEGRATION_KEY_HERE]`
@@ -77,102 +65,30 @@ If you are creating a new service for your integration, in General Settings, ent
 3. Now that your topic has been created, Select **Subscriptions** in the left menu and click **Create Subscription**.
 4. Make sure **HTTPS** is the selected Protocol. Paste your **Integration URL** from step 5 (above) into the **Endpoint** field, ensure that the **Enable raw message delivery** checkbox is **unchecked** and click **Create Subscription**.
 5. Your subscription should be automatically confirmed. Click the refresh icon to make sure the **Subscription ID** is not *PendingConfirmation*.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/507bcbe-GuardDuty-Pending-Confirmation.png",
-        "GuardDuty-Pending-Confirmation.png",
-        3035,
-        478,
-        "#f2f2f2"
-      ]
-    }
-  ]
-}
-[/block]
-6. To navigate to the AWS Personal Health Dashboard, click on the **Alerts** icon in the top navigation bar, then select **View all alerts**, and then select **Dashboard** in the left navigation bar.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/683ae05-PHD-Alerts.png",
-        "PHD-Alerts.png",
-        1806,
-        486,
-        "#d0d2d4"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2ad11e1-PHD-Dashboard-Left-Nav.png",
-        "PHD-Dashboard-Left-Nav.png",
-        2818,
-        550,
-        "#f3f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/507bcbe-GuardDuty-Pending-Confirmation.png)
+
+6. To navigate to the AWS Personal Health Dashboard, click on the **Alerts** icon in the top navigation bar, then select **View all alerts**, and then select **Dashboard** in the left navigation bar.
+
+![](https://files.readme.io/683ae05-PHD-Alerts.png)
+
+
+
+![](https://files.readme.io/2ad11e1-PHD-Dashboard-Left-Nav.png)
+
 7. To create an [alarm](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html), click **Set up notifications with CloudWatch Events** in the upper right hand corner. Enter **Health** as the **Service Name**. 
 Decide if you want to route all AWS Personal Health Dashboard notifications or only ones for specific services. For all events, set **Event Type** to **All Events** or alternatively select **Specific Health events** then choose the services you are interested in.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1802734-PHD-Create-a-Rule.png",
-        "PHD-Create-a-Rule.png",
-        1586,
-        1546,
-        "#f7f4f4"
-      ]
-    }
-  ]
-}
-[/block]
-8. Click **Add target**, select **SNS topic** in the dropdown menu, select the **Topic** you created above (in steps 1-5) and then click **Configure details**. In the **Configure rule details** section, assign a name and optional description for the rule, then click **Create Rule**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ace7391-PHD-Add-Target.png",
-        "PHD-Add-Target.png",
-        1354,
-        554,
-        "#faf5f5"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9335e40-PHD-Configure-Rule-Details.png",
-        "PHD-Configure-Rule-Details.png",
-        1582,
-        706,
-        "#f5f6f8"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/1802734-PHD-Create-a-Rule.png)
+
+8. Click **Add target**, select **SNS topic** in the dropdown menu, select the **Topic** you created above (in steps 1-5) and then click **Configure details**. In the **Configure rule details** section, assign a name and optional description for the rule, then click **Create Rule**.
+
+![](https://files.readme.io/ace7391-PHD-Add-Target.png)
+
+
+
+![](https://files.readme.io/9335e40-PHD-Configure-Rule-Details.png)
+
 9. Now that you have configured CloudWatch to send AWS Personal Health Dashboard notifications to PagerDuty, your responders will immediately be notified when AWS is experiencing problems.
 
 Congratulations, you have now integrated AWS Personal Health Dashboard with PagerDuty! For more information on how to adjust settings to deduplicate events within PagerDuty, please visit our article on [Event Management](https://support.pagerduty.com/docs/event-management).

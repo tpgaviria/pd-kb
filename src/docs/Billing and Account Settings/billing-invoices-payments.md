@@ -24,21 +24,9 @@ Invoices are automatically sent to the account owner's login email address every
 ## Invoice Address
 
 If you need a separate address to be displayed on your invoices, navigate to **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Account Settings** tab :fa-arrow-right: **Update Billing Information**. Then update your address on the **Billing Information** tab. Click **Update** to save the address.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ce5d530-UpdateBillingAddress.png",
-        "UpdateBillingAddress.png",
-        791,
-        716,
-        "#f3f3f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ce5d530-UpdateBillingAddress.png)
+
 ## Invoice Emails
 
 If another user or a member of your company's finance team would like to receive copies of the invoices each month, you can have them CC'd on all invoice and payment-related emails by going to **User Icon** :fa-arrow-right: **Account Settings**. Under the **Billing** section, enter the email address for the additional recipient in the **Invoice Email** field and click **Save changes**. Multiple email addresses can be entered here, but must be separated by commas.
@@ -55,41 +43,17 @@ The number of users you currently have can be found by going to **People** :fa-a
 ## Purchasing more users
 
 If you need to add users to your annual plan, you can do so by going to **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Your Subscription** and clicking the **Add Users** button. This will co-term more users for your annual plan with a pro-rated amount based on when your annual subscription completes.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cdbfd9f-Account_Settings_-_PagerDuty.png",
-        "Account_Settings_-_PagerDuty.png",
-        162,
-        47,
-        "#62b90e"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/cdbfd9f-Account_Settings_-_PagerDuty.png)
+
 There is no limit to the number of schedules, escalation policies, services, integrations, extensions, add-ons, or teams that can be added to your PagerDuty account. Also, users can be added to any number of schedules, escalation policies, or teams at no additional cost.
 ## Purchase Orders
 
 If a Purchase Order Number is required on your invoices, you can add a PO number by going to **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Your Subscription**. If this is a new account, you’ll need to select a subscription plan, or if you have an existing account, select **Add More Users**. Under the **Billing & Payment** section, enter your Purchase Order number and select **Complete Your Purchase** to save your changes.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/03d86a4-Screen_Shot_2020-10-15_at_9.35.58_AM.png",
-        "Screen Shot 2020-10-15 at 9.35.58 AM.png",
-        1724,
-        1268,
-        "#f8f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/03d86a4-Screen_Shot_2020-10-15_at_9.35.58_AM.png)
+
 
 [block:api-header]
 {

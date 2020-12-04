@@ -26,10 +26,9 @@ Before you can start adding the extension to your services, your JIRA admin must
 {
   "type": "warning",
   "body": "You will need `admin` or `account owner` user permission in PagerDuty to create the Jira authentication token.",
-  "title": "Note
-</Callout>
-
-
+  "title": "Note"
+}
+[/block]
 1. Go to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions.**
 2. Once you are on the **Extensions** page, click the **Jira Cloud** tile.
 3. Your Jira admin should have already added the PagerDuty Add-on in Jira following the instructions above. Paste in your **Jira key** found in Step 3 above and click the **Connect Jira Account** button.
@@ -44,21 +43,9 @@ Before you can start adding the extension to your services, your JIRA admin must
    * Map the status of PagerDuty incidents to the status of Jira Issues.
    * Optionally, sync PagerDuty incident priority levels with Jira priority levels.
    * Optionally, sync custom fields between a PagerDuty Attribute and Jira Issue Field Name.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cdf7e1b-Jira_Cloud_-_JQL.png",
-        "Jira Cloud - JQL.png",
-        2272,
-        2184,
-        "#fbfbfb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/cdf7e1b-Jira_Cloud_-_JQL.png)
+
 6. To create a Jira issue from a PagerDuty incident, go to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: click your desired **Service**. Then open one of the incidents on your service.
 7. On the incident details page of your incident, click **More Actions** :fa-arrow-right: **Create Jira Issue**. 
 8. When a JIRA issue has been created, you will see a confirmation message appear, and you can click to **View Jira Issue**, which will open the JIRA issue in a new tab. If you refresh the page, you will also see it listed in the incident.
@@ -93,21 +80,9 @@ Yes! You can create Jira issues from PagerDuty incidents and PagerDuty incidents
 The flow of status changes can not move backwards on PagerDuty via the mapping of statuses.
 
 You can create PagerDuty incidents from Jira issues by navigating to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Jira Cloud** (Edit on Jira Cloud Extension Page) :fa-arrow-right: **Edit the Jira Cloud Configuration** :fa-arrow-right: check the **Create incidents with JQL** box and then input your JQL query in the following field. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fbfd880-jira-cloud-jql-incident-config.png",
-        "jira-cloud-jql-incident-config.png",
-        751,
-        583,
-        "#f8f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fbfd880-jira-cloud-jql-incident-config.png)
+
 ### Can I create multiple JIRA issues for the same incident?
 
 No, only one Jira issue will be created.

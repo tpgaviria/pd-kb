@@ -32,21 +32,9 @@ Easily test and troubleshoot push notifications through the notification trouble
 A successful push notification set up will show 3 green check marks along with the device receiving a test push notification. If an issue is identified, an error message will appear which will explain the root cause of why a test push notification can not be sent.  
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fb402b9-Screen_Shot_2020-10-13_at_3.16.29_PM.png",
-        "Screen Shot 2020-10-13 at 3.16.29 PM.png",
-        798,
-        850,
-        "#0f0f0f"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fb402b9-Screen_Shot_2020-10-13_at_3.16.29_PM.png)
+
 ###Not enabled
 
 In the mobile app, click on :fa-bars: :fa-arrow-right: :fa-cog: **Settings** and make sure you have the following settings configured:
@@ -201,21 +189,9 @@ If you are not receiving **push notifications**, our [Apple Push Notification Tr
 2. Your **iPhone must be locked** to receive watch notifications.
 3. On your iPhone, **notifications must be turned ON** for both the PagerDuty app **AND** the Apple Watch app.
 You can find this under **Settings** :fa-arrow-right: **Notifications** :fa-arrow-right: **PagerDuty** :fa-arrow-right: **Allow Notifications**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fac8a35-allow_notifications.png",
-        "allow_notifications.png",
-        750,
-        317,
-        "#f2eef6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fac8a35-allow_notifications.png)
+
 
 ## Troubleshooting Notifications Issues
 
@@ -230,37 +206,13 @@ You may not receive notifications to all of your notification rules because an i
 
 For example:
 1. Your notification rules are set to push notify you immediately, email you after 1 minute, and call you after 5 minutes.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ef169e7-notification-troubleshooting-notification-rules.png",
-        "notification-troubleshooting-notification-rules.png",
-        1478,
-        812,
-        "#e9eced"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ef169e7-notification-troubleshooting-notification-rules.png)
+
 2. You are on level 1 of an escalation policy where incidents are escalated after 5 minutes.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0655bb3-notification-troubleshooting-ep-levels.png",
-        "notification-troubleshooting-ep-levels.png",
-        1058,
-        746,
-        "#f3f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0655bb3-notification-troubleshooting-ep-levels.png)
+
 3. When an incident is triggered, you receive the push notification immediately, and one minute later the email notification. You do not receive a phone call.
 4. This is because the incident was escalated to the level 2 on-call user (Ryan) at the 5 minute mark. Since the incident was escalated to someone else it is no longer assigned to you at 5 minutes, so PagerDuty will not send you a phone call notification.
 

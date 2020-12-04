@@ -17,21 +17,9 @@ Webhooks allow you to receive HTTP callbacks when incidents are triggered and up
 6. Click **Save**.
 
 To test your webhook, click **New Incident** on the service to trigger a test incident, and then check your endpoint for updates. We recommend reviewing the webhook PagerDuty sends when an incident triggers. You can do this by using a tool online such as [Beeceptor](https://beeceptor.com/), [webhook.site](https://webhook.site), or [postb.in](https://postb.in/).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9d610c0-webhooks-check-webhook-message.png",
-        "webhooks-check-webhook-message.png",
-        924,
-        255,
-        "#dcdcdd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9d610c0-webhooks-check-webhook-message.png)
+
 #Custom Headers
 
 Custom headers can be added to outgoing webhook requests, allowing you to input pairs of header names and header values. Up to five custom headers can be added to each webhook. For security purposes, the header values will not be visible and cannot be edited once saved. 
@@ -40,18 +28,5 @@ Custom headers can be added to outgoing webhook requests, allowing you to input 
 2. Click **+ Add Custom Header**.
 3. Enter the custom **header name** and **header value**.
 4. Click **Save**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e61f509-webhook-custom-headers.png",
-        "webhook-custom-headers.png",
-        1399,
-        514,
-        "#f9faf9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e61f509-webhook-custom-headers.png)

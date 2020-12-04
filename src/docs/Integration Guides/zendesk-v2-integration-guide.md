@@ -23,10 +23,9 @@ updatedAt: "2020-11-05T00:35:40.577Z"
 {
   "type": "info",
   "title": "Looking for a Different Version?",
-  "body": "Our [Zendesk V1 integration guide](https://www.pagerduty.com/docs/guides/zendesk-v1-integration-guide/) is also available.
-</Callout>
-
-
+  "body": "Our [Zendesk V1 integration guide](https://www.pagerduty.com/docs/guides/zendesk-v1-integration-guide/) is also available."
+}
+[/block]
 #Integration Walkthrough
 
 ##In PagerDuty
@@ -39,21 +38,9 @@ There are two ways that Zendesk can be integrated with PagerDuty: via Global Eve
 
 1. From the **Services** menu, select **Event Rules** and click your **Default Global Ruleset**.
 2. On the Event Rules screen, click on the arrow next to **Incoming Event Source** to display the Integration key information. Copy your **Integration Key** and keep it in a safe place for later use. When you have finished setting up the integration, you will return to this interface to specify how to route events from Zendesk to services in PagerDuty. Please continue to the **In Zendesk** section of this guide.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/98e6ad0-cloudwatch-copy-key.png",
-        "cloudwatch-copy-key.png",
-        2146,
-        980,
-        "#f7f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/98e6ad0-cloudwatch-copy-key.png)
+
 ###Integrating With a PagerDuty Service
 
 1. In the **Services** menu, select **Service Directory**.
@@ -67,37 +54,13 @@ There are two ways that Zendesk can be integrated with PagerDuty: via Global Eve
 
 1. In the left hand menu, click the Admin :fa-cog: and select **Extensions** under Settings.
 2. Click **Add Target** and then **HTTP Target**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/13a8bd2-zendesk-ig-add-target.png",
-        "zendesk-ig-add-target.png",
-        1402,
-        438,
-        "#f8f8f8"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5ee6c5-zendesk-ig-http-target.png",
-        "zendesk-ig-http-target.png",
-        1022,
-        842,
-        "#f2f1f2"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/13a8bd2-zendesk-ig-add-target.png)
+
+
+
+![](https://files.readme.io/c5ee6c5-zendesk-ig-http-target.png)
+
 3. On the HTTP Target screen, enter the following:
    * **Title**: Enter a title that will be identifiable when configuring Triggers in later steps. 
    * **Url**: Enter the following value: `https://events.pagerduty.com/v2/enqueue`. 
@@ -145,21 +108,9 @@ After configuring the JSON body, click **Create**.
 
 6. Next, navigate to the [Zendesk App Marketplace](https://www.zendesk.com/apps/directory/), search for PagerDuty and install the PagerDuty app.
 7. Once you’ve installed the app, navigate back to your Zendesk account, click **+Add** in the upper left corner and select **Ticket**. On the new ticket, click the **Apps** button on the upper right to display the PagerDuty application. Click **login with PagerDuty** to sign in and access PagerDuty from the Zendesk interface.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1932123-zendesk-ig-apps-button.png",
-        "zendesk-ig-apps-button.png",
-        736,
-        752,
-        "#f8f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1932123-zendesk-ig-apps-button.png)
+
 8. There are two ways to test the integration:
    * Modify the ticket created in the last step to meet the Conditions for the Trigger to execute. This should automatically trigger an Event API call once the Priority is set to **URGENT**. 
    * You may also create a ticket after signing in to PagerDuty from the Zendesk interface and click the blue **Create Incident** button. On the next screen, select which PagerDuty service you would like to open an incident on. 

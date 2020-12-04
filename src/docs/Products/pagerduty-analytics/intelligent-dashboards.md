@@ -6,49 +6,24 @@ createdAt: "2019-09-20T23:08:03.903Z"
 updatedAt: "2020-10-09T22:50:51.069Z"
 ---
 Intelligent Dashboards measure the impact of real-time work on teams and business objectives, promoting continuous improvement in digital operations towards greater success. Digital business leaders can use flexible data visualizations to compare key metrics to industry benchmarks or teams to company averages. After making improvements in training, processes and technology investments, leaders can then monitor the performance of Teams and Services and ensure they are trending in the right direction.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1cc4483-intelligent-dashboards-full-screen.png",
-        "intelligent-dashboards-full-screen.png",
-        1319,
-        1055,
-        "#ebf2f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1cc4483-intelligent-dashboards-full-screen.png)
+
 
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "Intelligent Dashboards is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription.
-</Callout>
-
-
+  "body": "Intelligent Dashboards is a feature of [PagerDuty Analytics](https://support.pagerduty.com/docs/pagerduty-analytics) which is included on our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) for information on adding PagerDuty Analytics to your subscription."
+}
+[/block]
 #Product Capabilities 
 
 ##Spotlight Recommendations
 Spotlight uses the Digital Operations Maturity Model to surface insights and recommended actions throughout the product. Spotlight recommendations offer insight into how organizations can improve their process and use of PagerDuty for measurable business outcomes.  At present, the dashboard generates three types of recommendations to help you strategize around High Escalations, Unactionable Incidents and Repeat Incidents. Spotlight Recommendations can be found at **Analytics** :fa-arrow-right: **Intelligent Dashboards**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1532a1a-intelligent-dashboards-spotlight.png",
-        "intelligent-dashboards-spotlight.png",
-        2558,
-        666,
-        "#dae8dd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1532a1a-intelligent-dashboards-spotlight.png)
+
 ###High Escalations
 
 **Definition**: If your account had any teams (sorted by highest escalation count) that had services that were causing more than 40% of the team’s escalations (with a minimum of at least 10 escalations).

@@ -34,55 +34,19 @@ updatedAt: "2020-10-09T23:23:08.056Z"
 1. Navigate to the **Apps & Add ons** :fa-th-large: and select **API Access** and click **Create New API Key**.
 3. Enter a description, e.g. “Salesforce API Key” and click **Create Key**.
 4. On the next screen, copy the **API Key** and paste it in a safe place for future use. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/81b67fc-salesforce-ig-new-api-key.png",
-        "salesforce-ig-new-api-key.png",
-        1116,
-        872,
-        "#f4f3f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/81b67fc-salesforce-ig-new-api-key.png)
+
 ##In Salesforce 
 1. In the [Salesforce AppExchange](https://appexchange.salesforce.com/), search PagerDuty and install the app.
 2. Once installed, in your Salesforce Service Cloud account, click the :fa-cog: on the right hand side and select **Setup**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/88a07ca-salesforce-ig-setup.png",
-        "salesforce-ig-setup.png",
-        618,
-        644,
-        "#f5f5f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/88a07ca-salesforce-ig-setup.png)
+
 2. In the Setup console, search for and click **Named Credentials**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9552677-salesforce-ig-named-credentials.png",
-        "salesforce-ig-named-credentials.png",
-        502,
-        470,
-        "#ebf0f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9552677-salesforce-ig-named-credentials.png)
+
 3. Click the **New Named Credential** button and enter the following information in the fields on the next screen:
    a. **Label**: `PagerDuty_API`
    b. **Name**: `PagerDuty_API`
@@ -96,39 +60,15 @@ updatedAt: "2020-10-09T23:23:08.056Z"
       * **Generate Authorization Header**: UNCHECK
       * **Allow Merge Fields in HTTP Header**: CHECK
       * **Allow Merge Fields in HTTP Body**: UNCHECK
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/879cbb5-salesforce-ig-callout-options.png",
-        "salesforce-ig-callout-options.png",
-        470,
-        240,
-        "#dcdee4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/879cbb5-salesforce-ig-callout-options.png)
+
 Click **Save** to continue.
 4. Click the App Launcher :fa-th: on the left hand side, search and then click **PagerDuty Configuration**.
 5. In the **SUMMARY** tab, if the Named Credential was properly configured, the **Connection** should show an **OK** message in green text.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7561d88-salesforce-ig-connection-ok.png",
-        "salesforce-ig-connection-ok.png",
-        1032,
-        376,
-        "#eeeff2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7561d88-salesforce-ig-connection-ok.png)
+
 6. Next, select the **OBJECT MAPPINGS** tab:
     a. **Business object mapped to PagerDuty Incident**: Select the business object that you would like to build the rules off of. **Note**: At this time, only Case objects are supported, and we will use a Case object as an example in the following steps. We currently do not support Custom Objects.
     b. **Incident Title Field**: Select the **business object case field** that you would like to be mapped to PagerDuty's **incident title**. In this example, we have chosen **Subject**.
@@ -137,30 +77,18 @@ Click **Save** to continue.
     e. **Sync Salesforce Comments to PagerDuty Notes** *(optional)*: You can sync the Salesforce Service Cloud Case Comments to PagerDuty Notes, but please be aware that syncing between the two may consume your API request limits in Salesforce Service Cloud.
 
 **Example**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/99a4b5c-salesforce-ig-object-mappings-example.png",
-        "salesforce-ig-object-mappings-example.png",
-        978,
-        790,
-        "#f5f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/99a4b5c-salesforce-ig-object-mappings-example.png)
+
 Click **Save** to continue.
 7. Next, select the **RULESETS** tab. This is where you will build the rules that apply to your business. Click the **Add Ruleset** button on the right, enter a **Ruleset Name** and click **Save**. Click the ruleset name and click the **Add Rules** button. Enter a **Rule Name**, click **Save** and then click the name of the rule. Each rule will ask for conditions that should be met prior to performing the actions specified in the latter part of the rule definition. 
-
-<Callout type="info" title="Info">
-**By default, Rulesets are disabled upon creation**. You will need to enable this ruleset once you're ready to test and use it.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "**By default, Rulesets are disabled upon creation**. You will need to enable this ruleset once you're ready to test and use it.",
+  "title": "Note"
+}
+[/block]
    **Run rule on** selections: 
    * **Case create or update**: Define the Salesforce Service Cloud field conditions that need to be satisfied for the PagerDuty package to run and perform the specified action.
    * **PagerDuty incident create or update**: Define when PagerDuty should send updates to Salesforce Service Cloud about incident changes made by other sources such as an acknowledge, resolve, reassignment, etc. This option will need additional configuration within PagerDuty to be able to authenticate and send updates to Salesforce Service Cloud. Steps are outlined in the next section.
@@ -176,21 +104,9 @@ Click **Save** to continue.
 
 Click **Save** to continue. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e7f9822-salesforce-ig-extension-details.png",
-        "salesforce-ig-extension-details.png",
-        1600,
-        250,
-        "#f3f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e7f9822-salesforce-ig-extension-details.png)
+
 ###Establishing Salesforce Service Cloud Rules to Perform Actions on PagerDuty Updates
 
 In Salesforce Service Cloud, ensure that you’ve built rules that specify what should happen to the case object and fields when PagerDuty sends an update back to Salesforce Service Cloud.
@@ -209,19 +125,7 @@ Yes. After specifying your evaluation conditions, select that you want to “Cre
 ##If I’m a Managed Service Provider, or would like to create new cases in Salesforce based on information I get from other integrations, can I do that with this integration?
 
 Yes. When you’re defining the rule, make sure you select **On PagerDuty Update** instead of Case create/update, specify what conditions to look for on a PagerDuty update, and what you would like Salesforce to do when it meets that criteria. For example, if you want to automatically create a Salesforce Case when a PagerDuty Incident is created on Service “XYZ”, you would have a Ruleset that looks like the following:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/004a337-salesforce-ig-faq-example.png",
-        "salesforce-ig-faq-example.png",
-        1600,
-        777,
-        "#fcfcfc"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/004a337-salesforce-ig-faq-example.png)
+
 Make sure you also use **Set Case field value** for *ALL* required fields in your Salesforce Case Object.

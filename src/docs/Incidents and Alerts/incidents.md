@@ -45,39 +45,15 @@ Services can also be configured to automatically resolve incidents using the Inc
 # Incident Timeline
 
 Each incident has a **Timeline** tab in the incident details page, showing timestamps of each [incident state](https://support.pagerduty.com/docs/incidents#incident-states) along with all other actions taken and notifications sent from the incident. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a8a3c08-incidents-timeline.png",
-        "incidents-timeline.png",
-        1233,
-        463,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a8a3c08-incidents-timeline.png)
+
 #Unacknowledging an Incident
 
 If you accidentally acknowledge an incident, you can undo this by clicking the **More Actions** button in the incident, and then **Unacknowledge Incident**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c5638e2-incidents-unacknowledge-incident.png",
-        "incidents-unacknowledge-incident.png",
-        444,
-        382,
-        "#efedf0"
-      ],
-      "sizing": "80"
-    }
-  ]
-}
+
+![](https://files.readme.io/c5638e2-incidents-unacknowledge-incident.png)
+
 [/block]
 Unacknowledging an incident brings the incident back to a **Triggered** state, and causes notifications to be sent out again. The escalation process also resumes.
 
@@ -94,21 +70,9 @@ Unacknowledging an incident can only be done from the web UI.
 }
 [/block]
 In the event that an incident contains sensitive information, the **Account Owner** can permanently delete the incident's details by selecting **More Actions** and clicking the **Redact Incident** button.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f1849c2-incidents-redact-incident.png",
-        "incidents-redact-incident.png",
-        1548,
-        614,
-        "#f6f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f1849c2-incidents-redact-incident.png)
+
 After confirming that you would like to redact an incident’s name and details, it will be updated to show who redacted the data and when.
 ## Triggering an Incident via Web UI, API or Email
 
@@ -135,41 +99,17 @@ There are two places in PagerDuty where you can manually trigger an incident:
 * Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: click the **Name** of your desired service :fa-arrow-right: **New Incident**.
 
 In the **Create Incident** dialog, you can optionally choose an escalation policy or a user from their respective tabs. This selection will override the *service's* escalation policy, and the incident will notify the escalation policy or user you've selected.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/09edca6-incidents-service-new-incident-change-ep.png",
-        "incidents-service-new-incident-change-ep.png",
-        1076,
-        634,
-        "#f6f5f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/09edca6-incidents-service-new-incident-change-ep.png)
+
 If you assign a manually triggered incident to yourself, PagerDuty will not notify you. The incident will be in an Acknowledged state since it is understood that you are aware of the incident and working to resolve it.
 
 ##Send an Event Through the API
 
 If a service has an API integration, you can trigger an incident by sending a properly-formatted `POST` request with your integration key.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e328861-incidents-api-integration-key.png",
-        "incidents-api-integration-key.png",
-        1476,
-        376,
-        "#ecedeb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e328861-incidents-api-integration-key.png)
+
 
 [block:callout]
 {
@@ -181,21 +121,9 @@ If a service has an API integration, you can trigger an incident by sending a pr
 ##Send an Event to an Email Integration
 
 If a service has an email integration, you can trigger an incident by sending an email to the integration's email address. To view an email integration's address go to **Services** :fa-arrow-right: **Service Directory**, select the service, click service's **Integrations** tab and look in the **Integration Key** field.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bc3d58a-incidents-email-integration-key.png",
-        "incidents-email-integration-key.png",
-        1668,
-        378,
-        "#edeeec"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/bc3d58a-incidents-email-integration-key.png)
+
 When you send an email to the integration email address, an incident will trigger on that service. The incident will appear in the **Incidents** tab.
 ## Where is incident number ___?
 

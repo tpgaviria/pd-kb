@@ -22,77 +22,29 @@ If there are two or more triggered incidents on the incident dashboard, you can 
 You can also merge incidents on the incident details page by clicking the **More Actions** button and selecting **Merge with Another Incident**. Then enter the **incident number** to merge into.
 
 To view more granular details about what was sent you can also navigate to Show or Hide Details.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/98401a7-incidents-merge-incident-show-details.png",
-        "incidents-merge-incident-show-details.png",
-        1076,
-        126,
-        "#fcfbfc"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/98401a7-incidents-merge-incident-show-details.png)
+
 ##What happens when incidents are merged
 
 When merging multiple incidents together, alerts will be consolidated into the selected incident. The other selected incidents will be resolved, with the reason for the resolution listed as "merged". These incidents will reference the target incident that you selected in the merge dialog.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dbb9a5c-editing-incidents-merged-resolved-incidents.png",
-        "editing-incidents-merged-resolved-incidents.png",
-        888,
-        616,
-        "#f8f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dbb9a5c-editing-incidents-merged-resolved-incidents.png)
+
 The deduplication key, called the alert_key, will not be changed, but it will move so that it is under a single incident with other deduplication keys.
 
 If you are using a bidirectional integration such as the Slack integration, the merged incidents will display as resolved and reference the new target incident that contains all of the alerts.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f3eb3e-editing-incidents-slack-merged-incidents.png",
-        "editing-incidents-slack-merged-incidents.png",
-        978,
-        536,
-        "#f2f4f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1f3eb3e-editing-incidents-slack-merged-incidents.png)
+
 When you merge the incidents, acknowledgers, assignees and responders from the source incidents are not merged. Instead, the target incident’s assigner, responder, and acknowledgers are preserved and they become the user(s) assigned to all alerts under that incident. These users may be viewed under the Timeline tab on the incident's page.
 
 ##Moving alerts to another incident
 
 If an alert is incorrectly merged, open up the Alert details page and select **Move to Another Incident** in the upper right-hand corner. A dialog box will prompt you to move the alert to its own new Incident, or you can optionally move the alert to an existing incident in PagerDuty:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/11a4ff8-editing-incidents-move-alert-to-another-incident.png",
-        "editing-incidents-move-alert-to-another-incident.png",
-        2238,
-        266,
-        "#e3e8e3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/11a4ff8-editing-incidents-move-alert-to-another-incident.png)
+
 ##Merged incidents and webhooks
 
 If you are using webhooks, merging alerts into a single incident will send a resolve action through the webhooks for the source incidents with a resolve_reason of “merged.”
@@ -112,21 +64,9 @@ You're only able to snooze acknowledged incidents. You can acknowledge an incide
 
 1. **Acknowledge** the incident.
 2. The Acknowledge button will be replaced with a **Snooze** button. Select **Snooze** and the length of time the incident should be snoozed.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d9ea5d1-editing-incidents-snooze-incident.png",
-        "editing-incidents-snooze-incident.png",
-        400,
-        470,
-        "#f7f7f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d9ea5d1-editing-incidents-snooze-incident.png)
+
 
 [block:callout]
 {
@@ -136,21 +76,9 @@ You're only able to snooze acknowledged incidents. You can acknowledge an incide
 }
 [/block]
 The incident log will capture all snooze actions taken on an incident. If **Other** is selected, you will have the option to select a custom snooze time, snooze until a time tomorrow, or base your snooze on [support hours](/docs/service-settings#section-enable-urgencies) for that service.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0b47498-editing-incidents-snooze-options.png",
-        "editing-incidents-snooze-options.png",
-        1076,
-        628,
-        "#f2f5f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0b47498-editing-incidents-snooze-options.png)
+
 If a user does not resolve the incident within the snooze timeframe, the incident will return to a triggered state and will begin notifying the user again following their notification rules. If a different user is on call in the escalation policy when the incident retriggers, that user will also be notified.
 
 ##What happens if I reassign a snoozed incident?
@@ -173,21 +101,9 @@ To edit incident urgency in the web app:
 
 1. Click the incident's **title** to view the incident details screen. 
 2. Next to **Urgency**, select your preferred urgency from the dropdown. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a4f2900-editing-incidents-edit-incident-urgency.png",
-        "editing-incidents-edit-incident-urgency.png",
-        1872,
-        572,
-        "#f8f8f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a4f2900-editing-incidents-edit-incident-urgency.png)
+
 3. The incident's urgency will automatically update and you will see a green confirmation banner. 
 ## Edit Incident Duration
 
@@ -206,38 +122,14 @@ Sometimes the actual effort you spent on an incident may be different from the a
 To edit the incident duration of a resolved incident:
 
 1. Click the :fa-pencil: under **Duration** at the top right of the incident details page. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9610ae8-edit-incident-duration.png",
-        "edit-incident-duration.png",
-        322,
-        145,
-        "#f5f6f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9610ae8-edit-incident-duration.png)
+
 2. In the modal that pops up, enter in the **Actual effort** time that was required to resolve the incident in the following format: `xd xh xm`.
 3. Click **Update Incident**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b021bab-edit-incident-duration-actual-effort.png",
-        "edit-incident-duration-actual-effort.png",
-        599,
-        422,
-        "#f2f3f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b021bab-edit-incident-duration-actual-effort.png)
+
 
 ## Add a Note to an Incident
 
@@ -249,42 +141,18 @@ You may want to add a note to an incident for other users to refer to. You can a
 
 1. On the **Incidents** page, click on the **Title** of an incident to open up the incident details.
 2. In the right hand section under **Notes**, enter your note and click **+ Add Note**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8479b91-editing-incidents-add-note.png",
-        "editing-incidents-add-note.png",
-        1032,
-        952,
-        "#f9f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8479b91-editing-incidents-add-note.png)
+
 ##In Mobile App
 
 1. Open the mobile app. Open the menu and tap either **Open Incidents** or **Resolved Incidents**
 2. Tap on the incident you would like to add a note to to open its details.
 3. On iOS, tap the More button at the bottom of the screen. On Android, tap the menu icon in the top right corner.
 4. Tap **Add Note**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/792385e-editing-incidents-add-note-mobile.png",
-        "editing-incidents-add-note-mobile.png",
-        1080,
-        1920,
-        "#1e211f"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/792385e-editing-incidents-add-note-mobile.png)
+
 5. Enter your note and tap **Done** on iOS or **Add** on Android.
 [block:callout]
 {
@@ -298,21 +166,9 @@ You may want to add a note to an incident for other users to refer to. You can a
 Notes via Event Rules functionality is part of our [Event Intelligence product,](https://support.pagerduty.com/v1/docs/event-intelligence) which is purchased separately from the core PagerDuty platform.
 
 Notes are added to incidents via the [Global Event Rules Engine](https://support.pagerduty.com/v1/docs/global-event-routing) workflows. Users first set specific criteria in which notes information will be added. Users can then detail which information or links they want to include in the note.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dcb0b73-editing-incidents-add-context-response-play.png",
-        "editing-incidents-add-context-response-play.png",
-        1240,
-        424,
-        "#f7f7f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dcb0b73-editing-incidents-add-context-response-play.png)
+
 If the event is added to an incident, notes can be seen on that incident's details page. Notes added by event rules will list the first account user as the author.
 
 # Technical Service Dependencies for Triage
@@ -322,21 +178,9 @@ If the event is added to an incident, notes can be seen on that incident's detai
 ## View Technical Service Dependencies in an Incident
 
 To view the impacted service’s Technical Service Dependencies, click the **Title** of the incident to view the incident details page. You will see the **Technical Service Dependencies** section on the right, below Notes.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0b1411a-technical-service-dependencies-incident.png",
-        "technical-service-dependencies-incident.png",
-        512,
-        558,
-        "#f7f5f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0b1411a-technical-service-dependencies-incident.png)
+
 Each Dependency will have the following overview details:
 
 * **Service Name**
@@ -350,37 +194,13 @@ If you click the Dependency’s **Service Name** you will be able to see more gr
 ## Suggested Technical Service Dependencies in an Incident
 
 If incidents on your service tend to be followed by incidents on another service, or vice versa, Suggested Technical Service Dependencies will also be provided. If you have Suggested Technical Service Dependencies, they will be listed under a **Suggested** header with a :fa-bolt: next to the service name:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6c148c7-technical-service-dependencies-suggested.png",
-        "technical-service-dependencies-suggested.png",
-        474,
-        205,
-        "#f7f2f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/6c148c7-technical-service-dependencies-suggested.png)
+
 **To add the Suggested Technical Service Dependency**, click the **service name** and click **Add** next to **Add this service as a dependency?**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f1bf34f-technical-service-dependencies-add-suggested.png",
-        "technical-service-dependencies-add-suggested.png",
-        459,
-        483,
-        "#f0f3f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f1bf34f-technical-service-dependencies-add-suggested.png)
+
 ## Add Technical Service Dependencies From an Incident
 
 1. Click the **Title** of the incident to view the incident details page. You will see the **Technical Service Dependencies** section on the right, below Notes.

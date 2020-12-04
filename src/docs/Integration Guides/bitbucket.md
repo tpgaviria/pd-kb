@@ -7,13 +7,13 @@ createdAt: "2018-08-17T01:34:34.392Z"
 updatedAt: "2020-10-09T23:01:50.308Z"
 ---
 Bitbucket is the Git solution for professional teams. Bitbucket core features include pull requests, branch permissions and inline comments. With the Bitbucket integration for PagerDuty, you can notify on-call engineers about failures within your Bitbucket pipelines.
-
-<Callout type="info" title="Info">
-This integration is intended for Bitbucket cloud.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "This integration is intended for Bitbucket cloud.",
+  "title": "Note"
+}
+[/block]
 #In PagerDuty
 
 Within your PagerDuty account, a Custom Event Transformer needs to be created. This allows PagerDuty to process webhooks from your Bitbucket account. Each repository in Bitbucket can send failure information to different PagerDuty Services. Determine which Bitbucket repository and PagerDuty service you would like to integrate.
@@ -34,21 +34,9 @@ The remaining configuration resides on the Bitbucket side, through the Bitbucket
 3. Provide a title, then paste the PagerDuty URL you copied from the above steps.
 4. Change the **Triggers** radio option to **Choose from a full list of triggers**.
 5. Under **Repository**, select **Build status updated**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c67bbf0-Screen_Shot_2018-09-01_at_3.01.13_PM.png",
-        "Screen Shot 2018-09-01 at 3.01.13 PM.png",
-        1108,
-        904,
-        "#f8f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c67bbf0-Screen_Shot_2018-09-01_at_3.01.13_PM.png)
+
 6. **Save** the configuration. 
 
 You have successfully completed setting up the integration. When there is a failure in your pipelines, a PagerDuty incident will notify on-call responders. When the failure recovers, a SUCCESSFUL message is sent to PagerDuty and the PagerDuty incident will be automatically resolved.

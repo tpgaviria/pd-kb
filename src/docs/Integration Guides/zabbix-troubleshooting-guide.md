@@ -52,21 +52,9 @@ severity:{TRIGGER.SEVERITY}
     - {ALERT.SENDTO}
     - {ALERT.SUBJECT}
     - {ALERT.MESSAGE}
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/50d6592-ZabbixTroubleshooting_img2.png",
-        "ZabbixTroubleshooting_img2.png",
-        776,
-        489,
-        "#124c76"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/50d6592-ZabbixTroubleshooting_img2.png)
+
 ##Incidents are being triggered in PagerDuty, but they are not being resolved automatically after recovering in Zabbix
 
 1. Ensure that your *PagerDuty Notifications* action has messaging operations (send to user / group) defined for its **Recovery operations**.

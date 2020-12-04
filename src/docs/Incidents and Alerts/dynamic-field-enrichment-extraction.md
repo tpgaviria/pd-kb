@@ -6,21 +6,9 @@ createdAt: "2020-08-14T23:09:05.774Z"
 updatedAt: "2020-10-13T21:16:10.124Z"
 ---
 Dynamic Field Enrichment & Extraction is a tool to normalize event payloads using Event Rules. This capability allows you to copy important data from any combination of source event fields into any PagerDuty Common Event Format (CEF) field. Translate difficult machine terms and code into helpful context for responders so they can effectively respond to the problem. Dynamic Field Enrichment & Extraction can also be used to enhance Event Intelligence capabilities by customizing alerts, influencing the Intelligent Alert Grouping and Intelligent Triage machine learning algorithms. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dad0bfe-DFEE_Configuration.png",
-        "DFEE Configuration.png",
-        1265,
-        608,
-        "#e7ecf8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dad0bfe-DFEE_Configuration.png)
+
 Dynamic Field Enrichment & Extraction is composed of two functions:
 
 * **Create Custom Variables**: Capture snippets from a source event using regex matching for later use.
@@ -31,10 +19,9 @@ Dynamic Field Enrichment & Extraction is available with both Global Event Rules 
 {
   "type": "info",
   "title": "Early Access",
-  "body": "This capability is currently in Early Access and is available to all Event Intelligence & Digital Operations customers. Its features and documentation are subject to change.
-</Callout>
-
-
+  "body": "This capability is currently in Early Access and is available to all Event Intelligence & Digital Operations customers. Its features and documentation are subject to change."
+}
+[/block]
 # Configure Dynamic Field Enrichment & Extraction
 
 1. In the **Customize Event Fields** section of your event rule, under **Define Custom Variable**, create a variable from event fields by entering a **Name**. Use a short descriptive name to represent the value that you will use later on to define a CEF field. Then enter a **Value** for the variable and the origin **Source**. Values are defined using valid RE2 regular expression syntax, and you can add as much complexity as you want with Regex to customize what part of each field you capture into a variable. You may also use **Sample Events** on the right as a reference for variables by clicking **Show Details**. You may add multiple variables by clicking **Add Variable** in the upper right of the Customize Event Fields panel, or delete variables by clicking the trashcan icon directly to the right of the variable.
@@ -43,21 +30,9 @@ Dynamic Field Enrichment & Extraction is available with both Global Event Rules 
 
 Configure the rest of the event rule to your preference and then click **Save Rule** in the lower right of the screen.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d88fb46-DFEE_Alert_Logs.png",
-        "DFEE Alert Logs.png",
-        2237,
-        470,
-        "#f9f9f9"
-      ],
-      "caption": "Users can see the dynamic field enrichment & extraction updates that were applied to the alert in the Alert Details page both in the Details section and the Alert Log."
-    }
-  ]
-}
+
+![](https://files.readme.io/d88fb46-DFEE_Alert_Logs.png)
+
 [/block]
 ## Set a Deduplication Key with Event Rules
 

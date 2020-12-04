@@ -133,21 +133,9 @@ To find your object-level role(s),  click the **User Icon**, select **My Profile
 ##How Base, Team, and Object Roles Work Together
 
 Base roles establish the level of access that a user has to everything across the entire account, whereas team and object roles gives users more or less access to specific configuration objects and incidents than what they would have access to at the account, or base role, level.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d3af126-advanced-permissions-roles-together.png",
-        "advanced-permissions-roles-together.png",
-        942,
-        337,
-        "#c3dfd9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d3af126-advanced-permissions-roles-together.png)
+
 
 ## Managing Roles
 
@@ -183,42 +171,18 @@ Base, team, and object roles can be managed by different users on the account ba
 Users with an Account Owner or Global Admin base role can update other users’ base roles. 
 
 To update a user’s base role, go to the **Permissions & Teams** tab on their user profile and click **Edit** next to their Base Role.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/88b4dca-advanced-permissions-edit-base-role.png",
-        "advanced-permissions-edit-base-role.png",
-        1466,
-        570,
-        "#eeeeef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/88b4dca-advanced-permissions-edit-base-role.png)
+
 ##Updating Team Roles
 
 Users with an Account Owner, Global Admin, or Manager base role can update other users’ team roles. Users with a Manager *team role* can also update the team roles of users, but only for users on their team.
 
 Users with an Account Owner, Global Admin, or Manager base role can update a user’s team role from the user’s profile page. Go to the **Permissions & Teams** tab on the user’s profile and select their team role from the drop-down menu under **Teams & Team Roles**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b7e0a97-advanced-permissions-edit-team-role-user-profile.png",
-        "advanced-permissions-edit-team-role-user-profile.png",
-        1714,
-        1358,
-        "#f1f1f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b7e0a97-advanced-permissions-edit-team-role-user-profile.png)
+
 Users with a Manager *team role* are only able to update a user’s team role from their team’s page. Navigate to the **People** menu and select **Teams**, then click on your **Team**, select the **Users** tab and then select the appropriate role under the **Team Role** column for that user. 
 
 If a user is not yet part of a team, please visit our section on [manually adding users to a team](https://support.pagerduty.com/docs/teams#section-add-users-or-escalation-policies-to-a-team). 
@@ -229,37 +193,13 @@ Users with an Account Owner or Global Admin base role can update other users’ 
 
 To update a user’s base role, go to the **Permissions & Teams** tab on their user profile and click **Edit** next to their Base Role.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2a5ad9a-advanced-permissions-edit-base-role.png",
-        "advanced-permissions-edit-base-role.png",
-        1466,
-        570,
-        "#eeeeef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2a5ad9a-advanced-permissions-edit-base-role.png)
+
 Under **Additional Permissions**, assign an object role to a specific schedule, escalation policy, and/or service.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/30bd983-advanced-permissions-object-permissions.png",
-        "advanced-permissions-object-permissions.png",
-        1066,
-        1264,
-        "#f3f2f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/30bd983-advanced-permissions-object-permissions.png)
+
 
 ## Team Privacy
 
@@ -291,21 +231,9 @@ When a team is set to private, users who are *not* part of that team:
 Users with an Account Owner,  Global Admin, or Manager base role can set a team to public or private. Users with a Manager *team role* specific to a team can also set that team to public or private. 
 
 To update a team’s privacy, navigate to the **People** menu, select **Teams** and then click on your desired **Team**. Navigate to the **Users** tab on that team’s page and set the **External Visibility** to either public or private.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ab255e-advanced-permissions-external-visibility.png",
-        "advanced-permissions-external-visibility.png",
-        2262,
-        500,
-        "#f3f3f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5ab255e-advanced-permissions-external-visibility.png)
+
 
 ## Responding to Incidents From Other Teams
 

@@ -18,10 +18,9 @@ updatedAt: "2020-10-09T23:28:06.292Z"
 {
   "type": "info",
   "title": "Looking for a different version?",
-  "body": "The [Salesforce Service Cloud V1 integration](https://support.pagerduty.com/docs/salesforce-service-cloud-v1-integration-guide) is also available.
-</Callout>
-
-
+  "body": "The [Salesforce Service Cloud V1 integration](https://support.pagerduty.com/docs/salesforce-service-cloud-v1-integration-guide) is also available."
+}
+[/block]
 # How it Works
 
 * Once a Salesforce Cloud object is connected to your PagerDuty instance, new record creations and updates on that object are evaluated against rules that you predefine. If the rule criteria is met, PagerDuty will perform actions specified by those predefined rules.
@@ -43,10 +42,9 @@ updatedAt: "2020-10-09T23:28:06.292Z"
 {
   "type": "warning",
   "body": "If you have already configured the previous version, in order to preserve your previously created rules and rulesets, we recommend that you never uninstall the previous version of the Salesforce managed package. Instead, you can follow the instructions below to update the managed package.",
-  "title": "Do Not Uninstall Previous Version
-</Callout>
-
-
+  "title": "Do Not Uninstall Previous Version"
+}
+[/block]
 **In Salesforce**:
 
 1. Log in as a Salesforce Admin and search for the **PagerDuty** app in the AppExchange. 
@@ -60,41 +58,17 @@ updatedAt: "2020-10-09T23:28:06.292Z"
 1. Navigate to the **Apps & Add ons** :fa-th-large: icon at top right of the page, select **API Access** and click **Create New API Key**.
 2. Enter a **Description** (e.g. “Salesforce Cloud API Key”) and click **Create Key**.
 3. On the next screen, **copy the API Key** and **paste it in a safe place for future use**. **Note**: You will not have access to this key after this screen. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/57b0cce-salesforce-ig-new-api-key.png",
-        "salesforce-ig-new-api-key.png",
-        1116,
-        872,
-        "#f4f3f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/57b0cce-salesforce-ig-new-api-key.png)
+
 ## In Salesforce Cloud
 
 4. Next, you will set up the API connection between PagerDuty and Salesforce Cloud. In the Salesforce AppExchange, search **PagerDuty** and **install the app**.
 5. Once installed, in your Salesforce Cloud account, click the **cog icon** on the right hand side and select **Setup**.
 6.  In the Setup console, search for and click **Named Credentials**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/68d217f-salesforce-ig-named-credentials.png",
-        "salesforce-ig-named-credentials.png",
-        502,
-        470,
-        "#ebf0f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/68d217f-salesforce-ig-named-credentials.png)
+
 7. Click the **New Named Credential** button and enter the following information in the fields on the next screen:
 
 
@@ -111,21 +85,9 @@ updatedAt: "2020-10-09T23:28:06.292Z"
    * Generate Authorization Header: UNCHECK
    * Allow Merge Fields in HTTP Header: CHECK
    * Allow Merge Fields in HTTP Body: UNCHECK
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f70a03b-salesforce-ig-callout-options.png",
-        "salesforce-ig-callout-options.png",
-        470,
-        240,
-        "#dcdee4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f70a03b-salesforce-ig-callout-options.png)
+
 Click **Save** to continue.
 
 8. Next, you will set up the PagerDuty extension using Salesforce Cloud OAuth. 
@@ -156,86 +118,26 @@ Click **Save**. You may see the following prompt after saving: `Allow from 2-10 
 
 10. Click **Edit Policies** and select **Admin approved users are pre-authorized** in the Permitted Users field, click **Save**. On the next screen, click **Manage**, scroll down to the Profiles section and click **Manage Profiles**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0897ea-salesforce-permitted-users.png",
-        "salesforce-permitted-users.png",
-        844,
-        810,
-        "#e9e8ea"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aafef66-salesforce-manage-profiles.png",
-        "salesforce-manage-profiles.png",
-        760,
-        214,
-        "#eeeeee"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/e0897ea-salesforce-permitted-users.png)
+
+
+
+![](https://files.readme.io/aafef66-salesforce-manage-profiles.png)
+
 11. Next, **check** the box next to the Profile of the user who will be sending the request from PagerDuty to Salesforce Cloud and click **Save**.
 12. If you do not have a `System Administrator` user role in Salesforce, navigate to your **User Profile**, and click **Edit Assignments** under the the Permission Set Assignments section. Add the `PagerDutyAdministrator` permission set from **Available Permission Sets** to the **Enabled Permission Sets** column, and click **Save**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/510a441-PD-Permission-Column.png",
-        "PD-Permission-Column.png",
-        1794,
-        756,
-        "#f3f3f3"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f424cdd-PD-PermissionSet.png",
-        "PD-PermissionSet.png",
-        3276,
-        916,
-        "#e7eaed"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/510a441-PD-Permission-Column.png)
+
+
+
+![](https://files.readme.io/f424cdd-PD-PermissionSet.png)
+
 13. Finally, navigate back to **Apps** → **App Manager**, click the dropdown to the right of the **PagerDuty** connected app and select **View**. You will be using information from this screen in the steps in PagerDuty, below. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/178f7c2-salesforce-view-pd-app.png",
-        "salesforce-view-pd-app.png",
-        1957,
-        1105,
-        "#ededee"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/178f7c2-salesforce-view-pd-app.png)
+
 ## In PagerDuty (Cont.)
 
 14. Navigate to **Apps & Add-Ons** :fa-th-large:, select **Extensions** and click **New Extension**. Enter the following information:
@@ -247,21 +149,9 @@ Click **Save**. You may see the following prompt after saving: `Allow from 2-10 
 * **Consumer Key**: Copy the **Consumer Key** from the Connected App screen in Salesforce Cloud and paste it in this field in PagerDuty.
 * **Username**: Enter the Salesforce Cloud Username of the user who will be sending webhooks from PagerDuty.
 * **Salesforce Shared Key**: Copy the shared key from the `nameOfSharedKey.pem` file you opened on your computer in earlier steps and paste the contents in here. It should look similar to the following, and you need to include the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----`:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c983bd8-salesforce-private-key.png",
-        "salesforce-private-key.png",
-        936,
-        802,
-        "#5b5252"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c983bd8-salesforce-private-key.png)
+
 * **Salesforce RestResource URL**: This can be left blank if you are using the PagerDuty out-of-the-box integration. If building a custom integration, you can specify where the PagerDuty webhooks will be delivered.
 
 Click **Save** to continue.
@@ -285,39 +175,15 @@ trigger PagerDuty[SALESFORCE-OBJECT]Trigger on [SALESFORCE-OBJECT] (after insert
 ```
 
 **Example**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0c77984-salesforce-apex-trigger.png",
-        "salesforce-apex-trigger.png",
-        2124,
-        620,
-        "#f2f3f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0c77984-salesforce-apex-trigger.png)
+
 19. Click **Save**. Repeat steps 15-18 for each object on which you would like to create a trigger. Once you are finished, continue to step 19. 
 20. Next, you will set up rules to trigger the bi-directional integration. Click the **App Launcher** on the left hand side, search and then click **PagerDuty Configuration**.
 21. In the SUMMARY tab, if the Named Credential was properly configured, the Connection should show an OK message in green text.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/54d7814-salesforce-ig-connection-ok.png",
-        "salesforce-ig-connection-ok.png",
-        1032,
-        376,
-        "#eeeff2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/54d7814-salesforce-ig-connection-ok.png)
+
 In the OBJECT MAPPINGS tab:
 
 
@@ -369,37 +235,13 @@ Next, select an **Operation** and enter a **value** to complete the condition. Y
 **Salesforce Cloud Actions**:
 * **Set [SALESFORCE-OBJECT] field value**: If rule conditions are met, set an object’s specified field value.
 * **Create new [SALESFORCE-OBJECT]**: If rule conditions are met, create a new specified object.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f4f244-salesforce-actions.png",
-        "salesforce-actions.png",
-        844,
-        576,
-        "#f4f4f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0f4f244-salesforce-actions.png)
+
 28. Click **Save** to complete the rule configuration. Navigate back to the RULESETS tab and click the toggle switch next to your ruleset to **Enabled**. The integration is now complete. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/33a1d64-salesforce-enable-ruleset.png",
-        "salesforce-enable-ruleset.png",
-        948,
-        456,
-        "#f5f5f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/33a1d64-salesforce-enable-ruleset.png)
+
 29. Finally, navigate back to your PagerDuty account and click **Services**, select **Service Directory** and click the **name** of the service that you just connected to the Salesforce OAuth Flow webhook. [Manually trigger a test incident](https://support.pagerduty.com/docs/incidents#section-manually-trigger-an-incident) on this service.
 30. Once the test incident has been triggered, return to Salesforce Cloud, click the **App Launcher** and search and select **PagerDuty Logs** to see if a webhook from PagerDuty arrives. When you receive the webhook, the integration is complete. If you do not receive the webhook, check your log management tool to troubleshoot why the webhook failed to deliver. 
 
@@ -416,46 +258,20 @@ If you use custom permissions in Salesforce, you will need to ensure that agents
 
 [block:html]
 {
-  "html": "<div><table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAdministrator</td>\n\t\t\t<td>\nPagerDutyConfiguration\n</td>\n\t\t\t<td>read<br>write</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAuditor</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyManager</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyUser</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>off</td>\n\t\t</tr>\n\t</tbody>\n</table></div>\n\n<style>table , td, th {\n\tborder: 1px solid #595959;\n\tborder-collapse: collapse;\n}\ntd, th {\n\tpadding: 3px;\n\twidth: 30px;\n\theight: 25px;\n}\nth {\n\tbackground: #f0e6cc;\n}\n.even {\n\tbackground: #fbf8f0;\n}\n.odd {\n\tbackground: #fefcf9;\n}</style>
-</Callout>
-
-
+  "html": "<div><table>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAdministrator</td>\n\t\t\t<td>\nPagerDutyConfiguration\n</td>\n\t\t\t<td>read<br>write</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyAuditor</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyManager</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read<br>create<br>edit<br>delete</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>on</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td rowspan=\"4\">PagerDutyUser</td>\n\t\t\t<td>PagerDutyConfiguration</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyIncident Mapping</td>\n\t\t\t<td>read<br>create<br>edit</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyRules &amp; Rulesets</td>\n\t\t\t<td>read</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>PagerDutyConfiguration Tab</td>\n\t\t\t<td>off</td>\n\t\t</tr>\n\t</tbody>\n</table></div>\n\n<style>table , td, th {\n\tborder: 1px solid #595959;\n\tborder-collapse: collapse;\n}\ntd, th {\n\tpadding: 3px;\n\twidth: 30px;\n\theight: 25px;\n}\nth {\n\tbackground: #f0e6cc;\n}\n.even {\n\tbackground: #fbf8f0;\n}\n.odd {\n\tbackground: #fefcf9;\n}</style>"
+}
+[/block]
 If you do not want to add permission sets to your users, you may check their profiles and ensure the profiles have similar object permissions for their user type. 
 
 ## If I’m a Managed Service Provider, or would like to create new cases in Salesforce Cloud based on information I get from other integrations, can I do that with this integration?
 
 Yes. When you’re defining the rule, make sure you select On PagerDuty Update instead of object create/update, specify what conditions to look for on a PagerDuty update, and what you would like Salesforce Cloud to do when it meets that criteria. For example, if you want to automatically create a Salesforce Cloud Case object when a PagerDuty Incident is created on Service “XYZ”, you would have a Ruleset that looks like the following:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/586e01e-salesforce-ig-faq-example.png",
-        "salesforce-ig-faq-example.png",
-        1600,
-        777,
-        "#fcfcfc"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/586e01e-salesforce-ig-faq-example.png)
+
 Make sure you also use Set [SALESFORCE-OBJECT] field value for ALL required fields in your Salesforce Cloud object.
 
 ## How can I troubleshoot my integration?
 We have provided a logging tool to help troubleshoot problems in the integration. Under the LOGGER tab in the PagerDuty Configuration, you can turn on logging by selecting one of the following levels and clicking **Save**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b8bf52d-salesforce-logger.png",
-        "salesforce-logger.png",
-        1306,
-        576,
-        "#f8f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b8bf52d-salesforce-logger.png)

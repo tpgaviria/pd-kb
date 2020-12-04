@@ -34,53 +34,17 @@ To Create or Add a Tag:
 **To add an existing tag**: Type the tag name you’re searching for and select it from the dropdown, or browse the dropdown for your tag and then click **Save**.
 
 **Team Tags**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/819b8da-contextual-search-team-tags.png",
-        "contextual-search-team-tags.png",
-        1898,
-        1154,
-        "#f1f1f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/819b8da-contextual-search-team-tags.png)
+
 **Escalation Policy Tags**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e40297c-contextual-search-ep-tags.png",
-        "contextual-search-ep-tags.png",
-        1802,
-        1378,
-        "#f3f4f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e40297c-contextual-search-ep-tags.png)
+
 **User Tags**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eab473d-contextual-search-user-tags.png",
-        "contextual-search-user-tags.png",
-        1624,
-        294,
-        "#e5e9e0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/eab473d-contextual-search-user-tags.png)
+
 
 ## Filter Objects by Tag
 

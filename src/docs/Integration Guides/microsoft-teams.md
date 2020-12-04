@@ -26,52 +26,27 @@ updatedAt: "2020-10-07T23:08:41.827Z"
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "The guide on this page is for our latest Microsoft Teams integration. Our previous [Microsoft Teams v1 integration guide](https://www.pagerduty.com/docs/guides/microsoft-teams-integration-guide/) is also available.
-</Callout>
-
-
+  "body": "The guide on this page is for our latest Microsoft Teams integration. Our previous [Microsoft Teams v1 integration guide](https://www.pagerduty.com/docs/guides/microsoft-teams-integration-guide/) is also available."
+}
+[/block]
 # Integration Walkthrough
 
 ## In Microsoft Teams
 
 1. Download the **PagerDuty** application in the [Microsoft Teams Marketplace](https://teams.microsoft.com/l/app/c8c302dc-4e77-4536-890d-0c2bffbef9cc?source=store-copy-link) app store.
 2. Next, click **Add to a Team** and select a **Team** or **Channel** for initial installation. **Note**: The application will be applied to all channels within the selected team. Finally, click **Set up a bot** to install the application.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1ad8578-ms-teams-select-channel.png",
-        "ms-teams-select-channel.png",
-        1600,
-        1300,
-        "#fafbfa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1ad8578-ms-teams-select-channel.png)
+
 3. Next, click **Chat** in the left hand menu. You will receive a message in a private chat confirming that installation is complete. Click into the chat message and click **Authorize** to connect your team to PagerDuty. Continue with steps in the **In PagerDuty** section, below.
 
 If you are not a PagerDuty Admin, click the **I’m not a PagerDuty Admin** button to send a message to an Admin on your PagerDuty account and see additional instructions to complete authorization. A PagerDuty Admin must follow the below steps to authorize PagerDuty to connect to Teams:
 
   a. Start or open a chat with the PagerDuty bot
   b. Use the `authorize [KEY]` command and paste the key provided during application installation to receive a personal authorization link.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5091dbe-ms-teams-authorize.png",
-        "ms-teams-authorize.png",
-        1250,
-        1352,
-        "#edebeb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5091dbe-ms-teams-authorize.png)
+
 ##In PagerDuty
 
 4. A PagerDuty login page will open in a separate window. Log in with Admin or Account Owner credentials to connect PagerDuty to the previously selected team. **Note**: If you are already logged in, this step will be bypassed. You will be directed to the Microsoft Teams Add-on page in your PagerDuty account and you should see a **success message**: 
@@ -98,37 +73,13 @@ To perform incident actions via Microsoft Teams incident notifications, responde
    a. **Via Channel Message**: Use the **Link Accounts** button to receive a personal account mapping link. 
 
 **Posted in General channel after Microsoft Team connection**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3494c4f-ms-teams-link-accounts-connected.png",
-        "ms-teams-link-accounts-connected.png",
-        1058,
-        580,
-        "#f2f2f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3494c4f-ms-teams-link-accounts-connected.png)
+
 **Posted in a channel after a PagerDuty service is connected**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/13ba3cc-ms-teams-link-account-service-connection.png",
-        "ms-teams-link-account-service-connection.png",
-        950,
-        534,
-        "#f0f1ef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/13ba3cc-ms-teams-link-account-service-connection.png)
+
    b. **Via App Command**: Use app command `linkUser` in a private PagerDuty bot chat to receive a personal account mapping link. 
 
 
@@ -154,21 +105,9 @@ The PagerDuty application allows users to interact with the applications bot via
 * `configure`: Open PagerDuty’s app configuration page in browser.
 
 ## Incident Actions
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4635e32-ms-teams-incident-actions.png",
-        "ms-teams-incident-actions.png",
-        298,
-        371,
-        "#f4eeef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/4635e32-ms-teams-incident-actions.png)
+
 After an incident notification has been posted in a channel, channel members can **Acknowledge**, **Resolve**, and **Add note** to an incident. All incident actions performed in Microsoft Teams will update the incident in PagerDuty. To perform an incident action in Microsoft Teams, a user’s PagerDuty and Microsoft Teams account must be linked. If their account is not linked, they will receive a private bot message with a personal link to complete the process. 
 
 # FAQ
@@ -179,21 +118,9 @@ A PagerDuty Admin or Account Owner can remove a service to channel connection vi
 
 1. Navigate to **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions** :fa-arrow-right: **Microsoft Teams Integration** tile.
 2. Next, click the **down arrow** next to **Notification Channels** and then click the **Remove** button next to the service to channel connection to delete.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fef7502-ms-teams-remove-channel.png",
-        "ms-teams-remove-channel.png",
-        2258,
-        966,
-        "#f5f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fef7502-ms-teams-remove-channel.png)
+
 ## How do I disconnect the PagerDuty app from a team? 
 
 A PagerDuty Admin or Account Owner can disconnect via PagerDuty’s Microsoft Teams extension page. Disconnecting or un-authorizing a team removes the link between Microsoft Teams and PagerDuty. By performing a disconnect, all channel to service connections will be deleted and user account mappings will be removed. 

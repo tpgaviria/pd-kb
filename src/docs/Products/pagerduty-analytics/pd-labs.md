@@ -6,29 +6,17 @@ createdAt: "2020-09-24T20:39:14.861Z"
 updatedAt: "2020-10-27T16:44:31.165Z"
 ---
 PD Labs allows you to explore and test drive new products from PagerDuty Analytics. Surface insights on your organization’s operational maturity and receive recommendations on how to improve it, with push-button account configuration options. To try PD Labs, navigate to **Analytics** :fa-arrow-right: **PD Labs**. 
-
-<Callout type="info" title="Info">
-* PD Labs is available for customers on our Digital Operations plan. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.\n* PD Labs is currently in Beta with features and documentation subject to change.",
-  "title": "Notes
-</Callout>
-
-
-
-[block:image]
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7d17e3f-pd-labs-overview.png",
-        "pd-labs-overview.png",
-        1152,
-        578,
-        "#f0f2f1"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "* PD Labs is available for customers on our Digital Operations plan. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.\n* PD Labs is currently in Beta with features and documentation subject to change.",
+  "title": "Notes"
 }
 [/block]
+
+
+![](https://files.readme.io/7d17e3f-pd-labs-overview.png)
+
 # Insights
 
 Insights is a new reporting tool that surfaces data based on common use cases and the Digital Operations Maturity Model. It provides you with flexible insight tables that help you find answers to common questions about your Incident Activity, Service Performance, Team Health and Business Impact. You can also search, filter, and sort data by Team, Urgency, Priority, Date Range, as well as a number of other fields in order to view data in a way that is most useful to you.Insights can be found by navigating to **Analytics** :fa-arrow-right: **PD Labs** :fa-arrow-right: **Explore My Insights**. If you have feedback, please click the **Provide Feedback** button in the upper right of the screen.
@@ -94,13 +82,13 @@ Recommendations provides a view into where your services stand in relation to th
 # PagerDuty Analytics Slack Integration 
 
 The PagerDuty Analytics Slack integration allows you to receive recurring, high-level Insights reports on Incident Activity, Service Performance, and Team Health directly to the PagerDuty app in Slack. Reports are only visible to you and they will not be shown publicly in the channels in which they are configured.
-
-<Callout type="info" title="Info">
-* The PagerDuty Analytics Slack integration is available on all plans.\n* All users can use the `/pd insights` slash command.",
-  "title": "Notes
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "* The PagerDuty Analytics Slack integration is available on all plans.\n* All users can use the `/pd insights` slash command.",
+  "title": "Notes"
+}
+[/block]
 ## Configure Reports
 
 1. Configure the [PagerDuty + Slack v2 integration](https://support.pagerduty.com/docs/slack-integration-guide), if you do not have it configured already.
@@ -113,36 +101,11 @@ The PagerDuty Analytics Slack integration allows you to receive recurring, high-
   Click **Confirm** to save your settings.
 
 4. You will then see a final confirmation message from the PagerDuty app:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5758cfb-pd-labs-slack-confirmation.png",
-        "pd-labs-slack-confirmation.png",
-        1212,
-        190,
-        "#eaebea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5758cfb-pd-labs-slack-confirmation.png)
+
 ## View Reports
 
 On the date(s) that you have configured (see section above) you will receive a report that is only visible to you. Each report provides a high-level view of your Insights. Click each **report type** button to view the report. You have the option to **Explore incident activity on web** to see further details in the web app, and you may also **Share this report on Slack** or **Unsubscribe**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e347f08-pd-labs-slack-report.png",
-        "pd-labs-slack-report.png",
-        1474,
-        1038,
-        "#f5f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e347f08-pd-labs-slack-report.png)

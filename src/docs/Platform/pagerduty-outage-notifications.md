@@ -39,18 +39,5 @@ To setup Twitter to send you a text message when we tweet from [@PagerDutyOps](h
 5. Save your changes.
 6. [Follow @PagerDutyOps](https://twitter.com/intent/follow?screen_name=PagerDutyOps).
 7. Click on the action icon next to the **Following** button and enable mobile notifications from @PagerDutyOps.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/53763dd-twitter-mobile-notifications.png",
-        "twitter-mobile-notifications.png",
-        306,
-        339,
-        "#4d97bd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/53763dd-twitter-mobile-notifications.png)

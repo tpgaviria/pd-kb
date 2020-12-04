@@ -20,55 +20,19 @@ For more information on the differences between the APIs, check out our article 
 1. Go to **Apps & Add-Ons** :fa-arrow-right: **API Access** and click **Create New API Key**.
 2. Enter a **Description** that will help you identify the key later on. If you would like it to be read-only, check the *Read-only* option. 
 3. Click **Create Key**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dd0cae8-API_Keys_-_PagerDuty.png",
-        "API_Keys_-_PagerDuty.png",
-        1162,
-        556,
-        "#dbdad8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dd0cae8-API_Keys_-_PagerDuty.png)
+
 4. A unique API key will be generated. Copy it to a safe place and click **Close**.
 
 Once you click Close you will be asked to confirm that you copied the API key. **This is your last chance to copy the key** — you will only be able to see the last 4 characters of the key in the PagerDuty interface after you confirm. If you lose a key you will need to delete it and create a new one.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e7e17ef-APIKeys_img3.png",
-        "APIKeys_img3.png",
-        613,
-        463,
-        "#f4f3ee"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e7e17ef-APIKeys_img3.png)
+
 Once created, you will see your key appear in the list of keys on the API Access page, with versioning noted.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6b8a068-APIKeys_img4.png",
-        "APIKeys_img4.png",
-        1148,
-        243,
-        "#ecf2f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/6b8a068-APIKeys_img4.png)
+
 
 ## OpenAPI Spec
 
@@ -113,21 +77,9 @@ The following integrations require the generation of a REST API key for setup:
 ## Generating a Personal REST API key
 
 If your account has [Advanced Permissions](doc:advanced-permissions) enabled, users can create personal REST API keys on the **User Settings** tab of their user profile. Requests made using personal REST API keys will be restricted to the user's permissions.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ec8b19f-Responder_-_PagerDuty.png",
-        "Responder_-_PagerDuty.png",
-        1694,
-        1454,
-        "#f5f4f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ec8b19f-Responder_-_PagerDuty.png)
+
 
 ## Getting Started with the REST API
 

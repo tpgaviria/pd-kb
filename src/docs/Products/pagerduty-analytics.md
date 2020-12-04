@@ -6,13 +6,13 @@ createdAt: "2019-01-31T22:34:43.532Z"
 updatedAt: "2020-09-20T21:14:21.593Z"
 ---
 PagerDuty Analytics uses human and machine response data to create modern operational insights that can be used to drive process maturity and better business outcomes. Business and operational leaders can make smarter, real-time decisions with a holistic view of machine data, services, teams, and corresponding incident actions. With data perspectives unique to a digital operations platform, PagerDuty Analytics surfaces modern digital metrics that go far beyond MTTA and MTTR. These metrics will help you understand how your digital operations impact your people, your business, and your customers.
-
-<Callout type="info" title="Info">
-PagerDuty Analytics is included in our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature suite.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "PagerDuty Analytics is included in our Digital Operations plan. Please contact our [Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature suite.",
+  "title": "Note"
+}
+[/block]
 # Product Capabilities
 
 PagerDuty Analytics is currently made up of Operational Reviews and Intelligent Dashboards, with other capabilities on the roadmap. 
@@ -23,21 +23,9 @@ PagerDuty Analytics is currently made up of Operational Reviews and Intelligent 
 - [Team On-Call Handoff Reviews](/docs/operational-reviews#section-team-on-call-handoff-reviews) surface the metrics and incidents that caused interruption to your on-call responder’s work day and personal time. 
 - [Service Performance Reviews](/docs/operational-reviews#section-service-performance-reviews) highlight how technical services impact an organization's ability to keep their systems running. 
 - [Business Performance Reviews](/docs/operational-reviews#section-business-outcomes-reviews) focus on how major incidents impact customer availability and result in incident response costs.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4a3f339-analytics-operational-reviews.png",
-        "analytics-operational-reviews.png",
-        1896,
-        1482,
-        "#f4f4f4"
-      ],
-      "sizing": "full"
-    }
-  ]
-}
+
+![](https://files.readme.io/4a3f339-analytics-operational-reviews.png)
+
 [/block]
 ## Intelligent Dashboards
 
@@ -48,26 +36,14 @@ Intelligent Dashboards are made up of the following features:
 * [Spotlight Recommendations](https://support.pagerduty.com/docs/intelligent-dashboards#spotlight-recommendations): Spotlight’s at-a-glance insights and recommendations promote informed decisions about investments in real-time operations.
 * [Team Performance Dashboard](https://support.pagerduty.com/docs/intelligent-dashboards#team-performance-dashboard): The Team Performance Dashboard provides key insights and highlights trends that impact performance of your Teams and their Services. 
 * [Service Health Dashboard](https://support.pagerduty.com/docs/intelligent-dashboards#service-health-dashboard): The Service Health dashboard allows for the discovery of services that drive incidents and cause increased team response effort. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fe2eea0-intelligent-dashboards-full-screen.png",
-        "intelligent-dashboards-full-screen.png",
-        1319,
-        1055,
-        "#ebf2f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fe2eea0-intelligent-dashboards-full-screen.png)
+
 
 [block:callout]
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "Please visit our article on [PagerDuty Analytics Best Practices](https://community.pagerduty.com/t/pagerduty-analytics-best-practices/3381) for more information on the configuration and proper use of core features supporting this add-on product.
-</Callout>
-
+  "body": "Please visit our article on [PagerDuty Analytics Best Practices](https://community.pagerduty.com/t/pagerduty-analytics-best-practices/3381) for more information on the configuration and proper use of core features supporting this add-on product."
+}
+[/block]

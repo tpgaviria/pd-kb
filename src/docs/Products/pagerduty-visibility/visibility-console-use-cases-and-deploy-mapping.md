@@ -19,21 +19,9 @@ Integrating inbound tweets into your PagerDuty [Infrastructure Health Applicatio
 4. On your Twitter service's individual page, select the **Integrations** tab and click on **Custom Event Transformer**. Then click **Add Integration**.
 5. Select **Edit Integration**.
 6. Delete the JavaScript that appears on the **Edit Integration** page 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/93a2ec7-delete_javascript.png",
-        "delete javascript.png",
-        779,
-        514,
-        "#e9f5e2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/93a2ec7-delete_javascript.png)
+
 7. Here is an example of what can be pasted into the JavaScript field. You can map these fields to meet your specific needs. Ensure that `event_class` is set to `"tweet"` in order to have Twitter events appear as small blue "T's" in the Infrastructure Health Application interface so that they are easily differentiated from alerts.
 [block:code]
 {
@@ -57,21 +45,9 @@ Integrating inbound tweets into your PagerDuty [Infrastructure Health Applicatio
 
 13. Go back to your Twitter service's individual service page and click on the **Integrations** tab. Then click on the **Custom Events Transformer**.
 14. Copy the URL provided under **Integration URL**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bedd813-CET_link.png",
-        "CET link.png",
-        905,
-        328,
-        "#394c64"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/bedd813-CET_link.png)
+
 ###Return to Zapier
 
 15. Paste the PagerDuty URL into Zapier on the **Set up Webhooks by Zapier POST** page.
@@ -91,21 +67,9 @@ Including deploys in your PagerDuty [Infrastructure Health Application](https://
 4. Finalize your service setup by clicking **Add Service** at the bottom of the page.
 5. After you’ve saved your service, edit the integration you added. 
 6. Delete the JavaScript that appears on the **Edit Integration** page
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a709318-Mapping-Deploys-IHA-Delete-Javascript.png",
-        "Mapping-Deploys-IHA-Delete-Javascript.png",
-        779,
-        514,
-        "#f6f8f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a709318-Mapping-Deploys-IHA-Delete-Javascript.png)
+
 You are now going to replace the dummy JavaScript that was in the **The code you want to execute** box, and replace it with this:
 [block:code]
 {

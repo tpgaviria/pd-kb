@@ -30,21 +30,9 @@ For Global Event Rules, navigate to **Services** :fa-arrow-right: **Event Rules*
 If you have regex filters set up on your email integration service, then you will want to check to make sure that your regex filters are not [filtering out emails](doc:email-management-filters-and-rules#section-limit-noise-with-email-integration-filters) that you want to trigger incidents.
 
 For example, if you have the following regex filter:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7948e76-why-incidents-fail-regex-rules.png",
-        "why-incidents-fail-regex-rules.png",
-        1628,
-        930,
-        "#f1f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7948e76-why-incidents-fail-regex-rules.png)
+
 Then emails with the subject line "PROBLEM" will not trigger incidents in PagerDuty, because they are filtered out based on your regex rules.
 - [View some regular expression examples](/docs/email-management-filters-and-rules#section-regular-expression-tips-examples)
 - [Test your regular expressions with Regex101](https://regex101.com/) (Use the Golang flavor with the `m` and `s` flags to see exactly how PagerDuty will interpret your regex).

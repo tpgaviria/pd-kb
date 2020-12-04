@@ -23,21 +23,9 @@ For services with API integrations, if multiple incidents are triggering for the
 PagerDuty de-duplicates incidents based on the `dedup_key`/`incident_key` parameter — this identifies the incident to which a trigger event should be applied. If there are no open (unresolved) incidents with this key, a new incident will be created.
 
 If there is already an open incident with a matching key, this event will be appended to that incident's alert log as an additional **Trigger** log entry.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f79c46f-event-management-deduplicating-incidents.png",
-        "event-management-deduplicating-incidents.png",
-        1584,
-        372,
-        "#f8f9fb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f79c46f-event-management-deduplicating-incidents.png)
+
 If the event key field isn't provided, PagerDuty will automatically open a new incident with a unique key.
 
 To learn more about how to deduplicate incidents, please visit our [Developer Docs](https://v2.developer.pagerduty.com/docs/events-api-v2#alert-de-duplication).
@@ -73,21 +61,9 @@ This means PDF files and similar attachments will be stripped.
 
 You can tell if a message has been truncated or had attachments removed by checking for the headers `X-PagerDuty-Truncated-Part` or `X-PagerDuty-Removed-Attachments` when viewing the raw message. You can view the raw message on the incident's individual page by clicking **View Message** on an incident log entry, then **View Raw Message**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2a6d9aa-event-management-email-truncation.png",
-        "event-management-email-truncation.png",
-        595,
-        142,
-        "#f1eae5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2a6d9aa-event-management-email-truncation.png)
+
 ###Email Size Limits
 If an email is over 10 MB, our server will reject it.
 
@@ -111,10 +87,9 @@ Event rules define automated actions to take on alerts created by services, base
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "For more information on use cases for global vs service event rules, please [visit our Service Configuration Guide FAQ](https://community.pagerduty.com/forum/t/service-configuration-guide/1660).
-</Callout>
-
-
+  "body": "For more information on use cases for global vs service event rules, please [visit our Service Configuration Guide FAQ](https://community.pagerduty.com/forum/t/service-configuration-guide/1660)."
+}
+[/block]
 #Suppressing Alerts
 
 Suppression, as opposed to setting alert severity, allows you to send events to PagerDuty without triggering any notifications. Suppressed alerts are stored in PagerDuty and available for forensics, analysis, and context, but do not create incidents. Suppressed alerts can be viewed in the alerts list as well as the [Infrastructure Health Application](doc:operations-command-console#section-infrastructure-health-application).
@@ -127,37 +102,13 @@ Suppressed alerts are filtered out of the incidents dashboard by default, includ
 They can be viewed in the Alerts page under **Incidents > Alerts**.
 
 Here is an example of a suppressed event. It looks very similar to other alerts, but has "Suppressed" in the severity field and is not assigned/assignable.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a7236ae-event-management-suppressed-event.png",
-        "event-management-suppressed-event.png",
-        987,
-        552,
-        "#f9f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a7236ae-event-management-suppressed-event.png)
+
 The incident below was triggered on a service with alerts set up to trigger as suppressed by default.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1bb86c1-event-management-event-via-api.png",
-        "event-management-event-via-api.png",
-        687,
-        720,
-        "#f3f3f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1bb86c1-event-management-event-via-api.png)
+
 #FAQ
 
 ##What is the difference between deduplication and suppression?

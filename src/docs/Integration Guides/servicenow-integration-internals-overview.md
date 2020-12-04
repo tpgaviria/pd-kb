@@ -8,21 +8,9 @@ updatedAt: "2017-09-18T22:06:26.139Z"
 ---
 A broad overview of what the integration does can be seen in the following diagram in the [Integration Guide](https://www.pagerduty.com/docs/guides/ServiceNow-integration-guide/):
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/77affae-SN-PD-Integration-Diagram.png",
-        "SN-PD-Integration-Diagram.png",
-        2060,
-        890,
-        "#212121"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/77affae-SN-PD-Integration-Diagram.png)
+
 Some familiarity with the components that drive each aspect of the integration workflow, and the functions they serve, can be useful for fine-grained troubleshooting or in planning how to implement a custom solution.
 
 If you are having trouble with your ServiceNow integration, it is recommended that you first review the [ServiceNow Troubleshooting Guide](/docs/servicenow-troubleshooting-guide).

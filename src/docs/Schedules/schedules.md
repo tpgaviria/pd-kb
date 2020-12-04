@@ -40,21 +40,9 @@ In the first section of the schedule you can [add or delete users](/docs/editing
 }
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/943dbad-schedule-basics-add-users.png",
-        "schedule-basics-add-users.png",
-        1010,
-        352,
-        "#e6f1e3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/943dbad-schedule-basics-add-users.png)
+
 ##Step 2: Set up an on-call rotation
 
 In this step you will set a **Rotation type** and a **Handoff time**, and you will have the option to **Restrict on-call shifts to specific times**:
@@ -62,37 +50,13 @@ In this step you will set a **Rotation type** and a **Handoff time**, and you wi
 ###Rotation type 
 
 Rotation Types determine how frequently the shifts on a layer rotate to the next user. Select your preferred Rotation type: daily, weekly, or custom.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/610d9b6-schedule-basics-setup-on-call-rotation.png",
-        "schedule-basics-setup-on-call-rotation.png",
-        525,
-        552,
-        "#e9e7e8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/610d9b6-schedule-basics-setup-on-call-rotation.png)
+
 If the rotation type is **Custom**, enter the **Shift Length** and select hours, days, or weeks.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9345bc3-schedule-basics-custom-rotation.png",
-        "schedule-basics-custom-rotation.png",
-        554,
-        346,
-        "#f7f4f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9345bc3-schedule-basics-custom-rotation.png)
+
 Refer to the **Final Schedule** section at the bottom of the page for a preview of what the schedule will look like after saving.
 
 By default, a user will be on-call for the entire length of time determined by the Rotation Type. If you'd only like them to be on-call for for specific times during the day or week (i.e. after hours), please see our section on [schedule restrictions](https://support.pagerduty.com/docs/schedules#section-schedule-restrictions).
@@ -110,55 +74,19 @@ If you restrict these to *times-of-the-day*, users will only be on call during t
 If you restrict these to *times-of-the-week*, users will only be on call during the specified times on the selected days of the week (9am-5pm on Monday, Wednesday, and Friday in the example below). 
 
 Please visit our section on [Schedule Restrictions](https://support.pagerduty.com/docs/schedules#section-schedule-restrictions) to learn more about common use cases for this feature.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/60482d9-schedule-basics-on-call-restrictions.png",
-        "schedule-basics-on-call-restrictions.png",
-        1109,
-        982,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/60482d9-schedule-basics-on-call-restrictions.png)
+
 ##Step 3: Start time for this layer
 
 In the **Start time for this layer** section (when creating new schedules) or **Changes should take effect at** section (when editing existing schedules), set the date when would like the rotation specified in the schedule to start. The time will be set automatically by the **Handoff time** that you set in Step 2 (above).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/abb5bb4-schedule-basics-start-time-for-this-layer.png",
-        "schedule-basics-start-time-for-this-layer.png",
-        584,
-        598,
-        "#ebe7e6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/abb5bb4-schedule-basics-start-time-for-this-layer.png)
+
 4. Check the **Final Schedule** section to ensure your shifts are correctly laid out. Click **Create schedule** (when creating a new schedule) or **Save changes** (when editing an existing schedule).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8cacb45-schedule-basics-final-schedule.png",
-        "schedule-basics-final-schedule.png",
-        2652,
-        604,
-        "#e6dbdf"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8cacb45-schedule-basics-final-schedule.png)
+
 ##Step 4: Connect Schedule to a Service via Escalation Policy
 A schedule is intended to be connected to service via an escalation policy so users on-call can be notified about incidents on that service. **If you do not add your schedule to an escalation policy, incident notifications will not be sent to users on-call in your schedule.**
 
@@ -188,21 +116,9 @@ This functionality allows you to achieve two common use cases:
 Restrictions allow you to create gaps in coverage where no one is on call. This feature is most commonly used for coverage after business hours. If no one is on-call at a certain escalation level, the incident will immediately escalate to the next level of the escalation policy. If no one is on-call on the entire escalation policy, an incident will **not** be created.
 
 If you try to create a new incident in the web UI on a service where no one is on-call, you will get an error message that the **Incident cannot be created**. Any trigger events sent to an integration where no one is on-call **will not trigger an incident**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/66c7182-schedule-basics-incident-cannot-be-assigned.png",
-        "schedule-basics-incident-cannot-be-assigned.png",
-        1298,
-        1446,
-        "#e2e4e4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/66c7182-schedule-basics-incident-cannot-be-assigned.png)
+
 
 [block:callout]
 {
@@ -221,40 +137,16 @@ To create schedule gaps:
 4. Click on the **Restrict on-call shifts to specific times** checkbox.
 5. Select **Restrict on-call duty to specific times-of-the-week**.
 6. Select the correct days and start times from the drop-down menu.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2fba3d4-schedule-basics-gaps1.png",
-        "schedule-basics-gaps1.png",
-        1114,
-        1100,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2fba3d4-schedule-basics-gaps1.png)
+
 7. Click **Apply** to save.
 
 The completed weekly schedule has gaps (meaning that nobody is on-call) from 09:00 to 17:00 Monday through Friday.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ec4c939-schedule-basics-gaps-final-schedule.png",
-        "schedule-basics-gaps-final-schedule.png",
-        2660,
-        738,
-        "#edebf0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ec4c939-schedule-basics-gaps-final-schedule.png)
+
 ###Create Restrictions For On-Call Shift Duration
 
 If you would like to limit the amount of time a user is on-call, instead of having a continuous 24/7 distribution between users, you will need to set up restrictions for the on-call duty duration.
@@ -269,21 +161,9 @@ To create restrictions for on-call duty duration:
 
 In the example below, we restricted the on-call user to be on call from 19:00-07:00 every weekday.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7eec7fd-schedule-basics-shift-restrictions.png",
-        "schedule-basics-shift-restrictions.png",
-        1114,
-        1044,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7eec7fd-schedule-basics-shift-restrictions.png)
+
 
 [block:callout]
 {
@@ -299,37 +179,13 @@ A schedule layer is comprised of a group of people who will rotate on-call respo
 PagerDuty’s calendar enables you to create multiple layers for one schedule. This feature can be useful for international companies wishing to create a [follow-the-sun schedule](/docs/schedule-examples#section-follow-the-sun-schedule), where each time zone can be grouped as a layer.
 
 In cases when one schedule has multiple layers, the last layer created (the bottom layer on the schedule creation page) has precedence over the previous layer. This is illustrated in the example below.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5c66a5a-schedule-basics-precedence-example.png",
-        "schedule-basics-precedence-example.png",
-        3052,
-        730,
-        "#dbdedd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5c66a5a-schedule-basics-precedence-example.png)
+
 Layers are also very commonly used for different weekday and weekend rotations. The example below has three separate layers. Layer 1 and Layer 2 have been shown as a weekday rotation and the bottom layer (Layer 3) is shown as a weekend rotation.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e0edeab-schedule-basics-weekend-schedule.png",
-        "schedule-basics-weekend-schedule.png",
-        2122,
-        854,
-        "#eaecec"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e0edeab-schedule-basics-weekend-schedule.png)
+
 ###End-Dating a Schedule Layer
 If you would like to permanently delete a specific layer within an on-call schedule, you can set the end-date for that layer as today’s date with time set to whatever time you want that layer to end.
 
@@ -337,51 +193,14 @@ To end-date a schedule layer:
 1. Go to **People** :fa-arrow-right: **On-Call Schedules**, then click on the schedule you want to edit.
 2. Click **Edit this Schedule**.
 3. Click **X** on the top right corner of the schedule layer you want to delete.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/18940d5-schedule-basics-end-date-layer-x.png",
-        "schedule-basics-end-date-layer-x.png",
-        2124,
-        744,
-        "#f3f3ef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/18940d5-schedule-basics-end-date-layer-x.png)
+
 4. In the Schedule Layer Removal screen that appears, enter a date and time that you want to remove the schedule layer and click **Remove Layer**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5b07505-schedule-basics-schedule-layer-end-time.png",
-        "schedule-basics-schedule-layer-end-time.png",
-        1120,
-        548,
-        "#f2f4f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5b07505-schedule-basics-schedule-layer-end-time.png)
+
 5. Click **Save Changes**.
 6. If you create an end-date for a schedule layer, you can return to the schedule and either undo or edit the end-date. Click to edit the on-call schedule so that you can edit or undo the end-date.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/350e471-schedule-basics-undo-end-date.png",
-        "schedule-basics-undo-end-date.png",
-        2116,
-        228,
-        "#eaf3f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/350e471-schedule-basics-undo-end-date.png)

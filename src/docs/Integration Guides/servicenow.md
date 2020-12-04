@@ -184,21 +184,9 @@ The **PagerDuty Webhook Import Table Transform Map**, and other transform maps t
 This behavior is dictated by the configuration of the **Field Maps** in the Table Transform Map:
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/caaffc5-coalesce-on-id.png",
-        "coalesce-on-id.png",
-        730,
-        232,
-        "#ebe8eb"
-      ],
-      "caption": "Coalesce = true here means no new record will be created if there is found a preexisting record in the target table with its `x_pd_integration_incident` field equal to the `id` field in the source table (`x_pd_integration_webhook_import`)"
-    }
-  ]
-}
+
+![](https://files.readme.io/caaffc5-coalesce-on-id.png)
+
 [/block]
 When creating or updating the incident in ServiceNow, one of the next things that is done (for trigger, acknowledge, escalate and delegate webhooks) is automatically setting the assignment group. The group is identified by the PagerDuty escalation policy ID given in the webhook;  the group assigned the incident will be the one whose *PagerDuty Escalation* field (`x_pd_integration_pagerduty_escalation`) is the same ID.
 

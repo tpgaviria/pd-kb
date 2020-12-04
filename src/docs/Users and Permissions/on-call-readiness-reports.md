@@ -6,23 +6,22 @@ createdAt: "2020-09-18T02:33:09.555Z"
 updatedAt: "2020-11-24T18:08:46.088Z"
 ---
 On-Call Readiness Reports help organizations improve incident response quality by ensuring responders have optimal [notification rule configurations](https://support.pagerduty.com/docs/configuring-a-user-profile#notification-rules). When responders have well-configured notification rules, they are better prepared to go on-call and are less likely to miss notifications, decreasing Mean Time To Acknowledge. Every report provides a Team-filtered overview of each responders’ on-call readiness status, and can optionally send them email instructions on how to best configure their notification rules. 
-
-<Callout type="info" title="Info">
-On-Call Readiness Reports are available on Business and Digital Operations plans. Please [contact our Sales team](https://www.pagerduty.com/contact-us/) if you would like to upgrade your account to include On-Call Readiness Reports.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "On-Call Readiness Reports are available on Business and Digital Operations plans. Please [contact our Sales team](https://www.pagerduty.com/contact-us/) if you would like to upgrade your account to include On-Call Readiness Reports.",
+  "title": "Note"
+}
+[/block]
 # Create an On-Call Readiness Report
 
 [block:callout]
 {
   "type": "warning",
   "body": "Team Managers can create On-Call Readiness Reports for teams that they are Managers or members of. Admins and Account Owners can create On-Call Readiness Reports for all teams.",
-  "title": "Required User Permissions
-</Callout>
-
-
+  "title": "Required User Permissions"
+}
+[/block]
 1. Navigate to **Analytics** :fa-arrow-right: **On-Call Readiness** and click **Create a New Report**.
 2. **Readiness Profile**: You may *optionally* edit the name of the report by clicking the :fa-pencil-alt: next to the auto-populated name and clicking **Save Changes**. Next, select an on-call readiness profile:
 
@@ -44,21 +43,9 @@ On-Call Readiness Reports are available on Business and Digital Operations plans
    * **Documentation Link** *(optional)*: By default the email will direct users to follow documentation in the [PagerDuty Knowledge Base](https://support.pagerduty.com/). If you wish to link to internal documentation instead, you can do so by clicking **Add one**, pasting the documentation URL and clicking **Save Changes**.
 
 6. Once you have reviewed the above information, you may click **Send Email** to send to the selected recipients, or **Save & Close** to save the report and email settings to be used at a later time. If you choose to send the email, click **Confirm** when the confirmation pop-up appears.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b4ef053-on-call-readiness-email-template.png",
-        "on-call-readiness-email-template.png",
-        431,
-        816,
-        "#f3f6f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b4ef053-on-call-readiness-email-template.png)
+
 ## Edit an On-Call Readiness Report
 
 1. Navigate to **Analytics** :fa-arrow-right: **On-Call Readiness** and click the **Name** of the report. 
@@ -74,10 +61,9 @@ Once finished with edits to all of the above pages, click **Send Email** or **Sa
 {
   "type": "warning",
   "body": "Admins and Account Owners can edit On-Call Readiness Settings.",
-  "title": "Required User Permissions
-</Callout>
-
-
+  "title": "Required User Permissions"
+}
+[/block]
 To change the default On-Call Readiness profile to fit your organization:
 
 1. Navigate to **Analytics** :fa-arrow-right: **On-Call Readiness** :fa-arrow-right: **Settings**. You may also find these settings by navigating to the **User Icon**(:fa-user:) :fa-arrow-right: **Account Settings** :fa-arrow-right: **On-Call Readiness**.
@@ -87,21 +73,9 @@ To change the default On-Call Readiness profile to fit your organization:
 
 1. Navigate to **Analytics** :fa-arrow-right: **On-Call Readiness**. 
 2. Hover over the **Name** of your report and click the :fa-trash:. A confirmation pop-up will appear, click **Delete** to delete the report.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2701210-on-call-readiness-delete-report.png",
-        "on-call-readiness-delete-report.png",
-        259,
-        41,
-        "#f8f9fc"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2701210-on-call-readiness-delete-report.png)
+
 # On-Call Readiness Report Profiles 
 
 ## Never miss a page
@@ -123,21 +97,9 @@ The **Must include phone** profile ensures that responders have high-urgency not
 # On-Call Readiness Responder Emails
 
 When a Team Manager or Admin sends out emails from the On-Call Readiness Report, the users from the selected teams that do not meet the report’s criteria will receive emails similar to the below, prompting them to configure their notification rules properly: 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/92a49e3-on-call-readiness-example-email.png",
-        "on-call-readiness-example-email.png",
-        597,
-        538,
-        "#eff4f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/92a49e3-on-call-readiness-example-email.png)
+
 # Mobile Notification Rule Templates
 
 Facilitate [notification rule](https://support.pagerduty.com/docs/configuring-a-user-profile#notification-rules) configuration by choosing one of our pre-made templates through the mobile app. 
@@ -146,18 +108,5 @@ New users downloading the PagerDuty mobile app for the first time will be going 
 
 These templates include notification rule presets which were crafted to signify different levels of urgency. Choosing a template will clear other notification rules, and it will prompt users who already have custom rules to confirm they would like to apply these changes. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b072442-on-callreadiness-mobile-templates.png",
-        "on-callreadiness-mobile-templates.png",
-        610,
-        584,
-        "#e1e6e5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b072442-on-callreadiness-mobile-templates.png)

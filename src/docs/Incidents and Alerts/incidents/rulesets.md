@@ -14,10 +14,9 @@ The new Rulesets feature allows you to route events to an endpoint and create co
 {
   "type": "info",
   "title": "What’s the difference between Rulesets and Global Event Rules?",
-  "body": "Global Event Rules was a legacy feature, where all accounts only had access to a single set of global event rules, and users could configure service event rules with limited actions. The new Rulesets feature is an extension of Global Event Rules, and it allows you to create multiple, unlimited rulesets that can be assigned to Teams, and it expands actions available for service event rules.
-</Callout>
-
-
+  "body": "Global Event Rules was a legacy feature, where all accounts only had access to a single set of global event rules, and users could configure service event rules with limited actions. The new Rulesets feature is an extension of Global Event Rules, and it allows you to create multiple, unlimited rulesets that can be assigned to Teams, and it expands actions available for service event rules."
+}
+[/block]
 #Ruleset Types
 
 There are two ways to organize event rules in your account, based on your integration use case:
@@ -42,10 +41,9 @@ To access your Default Global Ruleset:
 {
   "type": "warning",
   "body": "* Account Owners, Admins and Global Admins can create/edit/delete rulesets by default. Users with Team Manager roles can create/edit/delete rulesets for their assigned Team. \n* Business and Digital Operations plans have the ability to create multiple, unlimited global rulesets, each of which can be assigned to a Team. **Note**: If you do not assign a new ruleset to a team, then it will behave as an additional global ruleset.\n* Account Owners and Admins have view access to all rulesets. Users below Admin will only be able to view rulesets associated with Teams they are assigned to. If you would like *all* users to have view access to rulesets, please contact [PagerDuty Support](support@pagerduty.com).",
-  "title": "Required User Permissions
-</Callout>
-
-
+  "title": "Required User Permissions"
+}
+[/block]
 1. Navigate to **Services** :fa-arrow-right: **Event Rules** :fa-arrow-right: **Create Ruleset**. 
 2. Enter a **Name**, *optionally* select a **Team** and click **Create Ruleset**. 
 3. Click **New Event Rule** to begin [creating event rules](#section-create-event-rules). If you would like to create multiple rulesets with unique, individual endpoints, repeat the above steps as needed. 
@@ -59,10 +57,9 @@ Events that are sent to any [service](https://support.pagerduty.com/docs/service
 {
   "type": "warning",
   "title": "Requirements",
-  "body": "In order to use service event rules, the service must be [configured to create both Alerts and Incidents](https://support.pagerduty.com/docs/alerts#section-enabling-alerts).
-</Callout>
-
-
+  "body": "In order to use service event rules, the service must be [configured to create both Alerts and Incidents](https://support.pagerduty.com/docs/alerts#section-enabling-alerts)."
+}
+[/block]
 To create a service event rule:
 
 1. Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: click the **name** of the service where you would like to configure your event rule.
@@ -92,41 +89,17 @@ Example in CURL:
 }
 [/block]
 This alert will be visible in the **Base conditions from the incoming JSON events below** section when you are configuring a rule.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f50cfc0-image.png",
-        "image.png",
-        2160,
-        888,
-        "#c3c8d4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f50cfc0-image.png)
+
 Within the sample alert JSON body, you have the option to click the decided key:value pair, and this will automatically populate the relevant rule’s conditions.
 
 ##Step 1: When events match these conditions
 
 Depending on your preferences, indicate the **condition(s)** that should be met when this event rule searches inbound events. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/100cb18-rulesets-conditions.png",
-        "rulesets-conditions.png",
-        1840,
-        570,
-        "#d6dff7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/100cb18-rulesets-conditions.png)
+
 1. Select if you would like this rule to be run when **All** *or* **Any** of the following conditions are met. If you select **All**, *every* condition must be met for the rule to run. If you select **Any**, then *only one* condition must be met for the rule to run.
 2. In the first condition box, select the **event field** that you would like the rule to search for from the following options:
 
@@ -151,13 +124,13 @@ If your monitoring tool sends emails with **custom headers**, you can create rul
 * The field matches/does not match a regular expression. Regular expressions must use [RE2 syntax](https://github.com/google/re2/wiki/Syntax ). Note that unlike service-level event rules, global rules only support one (e.g. the first) capture group within the regex.
 
 
-
-<Callout type="info" title="Info">
-Rules with negative operations, such as “does not contain” or “does not equal”, will match events when the field in question does not exist. As an example:\n\n> - severity field does not equal `critical`\n\nThese rules will also match any events where the severity field does not exist. If you'd like to avoid this, you must add an additional condition that matches only when the field exists. For example:\n\nWhen all conditions are true:\n> - severity field exists\n> - severity field does not equal `critical`\n\nNote that you must select that all conditions must be true for the rule to match.",
-  "title": "Negative Operations
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "Rules with negative operations, such as “does not contain” or “does not equal”, will match events when the field in question does not exist. As an example:\n\n> - severity field does not equal `critical`\n\nThese rules will also match any events where the severity field does not exist. If you'd like to avoid this, you must add an additional condition that matches only when the field exists. For example:\n\nWhen all conditions are true:\n> - severity field exists\n> - severity field does not equal `critical`\n\nNote that you must select that all conditions must be true for the rule to match.",
+  "title": "Negative Operations"
+}
+[/block]
 4. In the last condition box, enter a **value** to apply to the event field and its filter. 
 5. If you only have one condition, proceed with the following steps. If you would like to add more than one condition, click **Add Condition** and repeat steps 1-4 as many times as needed. When you are finished adding conditions, proceed with the following steps.
 
@@ -166,21 +139,9 @@ Rules with negative operations, such as “does not contain” or “does not eq
 ## Dynamic Field Enrichment & Extraction
 
 Dynamic Field Enrichment & Extraction is a tool to normalize event payloads using Event Rules. This capability allows you to copy important data from any combination of source event fields into any PagerDuty Common Event Format (CEF) field. Translate difficult machine terms and code into helpful context for responders so they can effectively respond to the problem. Dynamic Field Enrichment & Extraction can also be used to enhance Event Intelligence capabilities by customizing alerts, influencing the Intelligent Alert Grouping and Intelligent Triage machine learning algorithms. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c52eec6-dad0bfe-DFEE_Configuration.png",
-        "dad0bfe-DFEE_Configuration.png",
-        1265,
-        608,
-        "#e7ecf8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c52eec6-dad0bfe-DFEE_Configuration.png)
+
 Dynamic Field Enrichment & Extraction is composed of two functions:
 
 * **Create Custom Variables**: Capture snippets from a source event using regex matching for later use.
@@ -193,21 +154,9 @@ Dynamic Field Enrichment & Extraction is available with both Global Event Rules 
 1. In the **Customize Event Fields** section of your event rule, under **Define Custom Variable**, create a variable from event fields by entering a **Name**. Use a short descriptive name to represent the value that you will use later on to define a CEF field. Then enter a **Value** for the variable and the origin **Source**. Values are defined using valid RE2 regular expression syntax, and you can add as much complexity as you want with Regex to customize what part of each field you capture into a variable. You may also use **Sample Events** on the right as a reference for variables by clicking **Show Details**. You may add multiple variables by clicking **Add Variable** in the upper right of the Customize Event Fields panel, or delete variables by clicking the trashcan icon directly to the right of the variable.
 
 2. Next, under **Replace Event Field**, select your preferred **Common Event Field (CEF)** from the left dropdown. Select whether you would like to use **Regex** or a **Template** from the right hand dropdown. If you are using a text Template, you can reference a variable defined in step 1 using `{{ }}` brackets (e.g. `{{class}}`) in the **Value** field. If you are using Regex, enter a **Value** and the origin **Source**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0ab9e22-d88fb46-DFEE_Alert_Logs.png",
-        "d88fb46-DFEE_Alert_Logs.png",
-        2237,
-        470,
-        "#f9f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0ab9e22-d88fb46-DFEE_Alert_Logs.png)
+
 ## Set a Deduplication Key with Event Rules
 
 The `dedup_key` field is used to merge events into a single alert. Events with the same `dedup_key` can update the status of the alert they are automatically merged into.
@@ -239,21 +188,9 @@ Dynamic Field Enrichment & Extraction can be powerfully leveraged for improving 
 ##Step 2: Do these things
 
 Select which **actions** you would like this rule to take when an event meets the **condition(s)** set in Step 1. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0d07741-rulesets-actions.png",
-        "rulesets-actions.png",
-        1838,
-        288,
-        "#aec1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0d07741-rulesets-actions.png)
+
 1. Select whether you would like to **Create an incident** *or* **Suppress Alert**:
 
 
@@ -272,104 +209,44 @@ Select which **actions** you would like this rule to take when an event meets th
 ## Event Rule Actions
 
 In order to set an event rule to perform custom actions on incidents or suppressed alerts that meet the rule’s conditions, you must first follow the instructions in Step 1. Once completed, you will find these *optional* actions on the right side of the screen under **Once your conditions are met, what would you like to happen?**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1d9c271-rulesets-event-rule-actions.png",
-        "rulesets-event-rule-actions.png",
-        931,
-        694,
-        "#ebf1fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1d9c271-rulesets-event-rule-actions.png)
+
 ## Paused Incident Notifications
 
 As a new [Rulesets](doc:rulesets) feature, paused incident notifications allows rules to be set to create alerts, but pause incident creation and notifications for a predefined amount of time. During the pause period, new alerts will be viewable in the [Alerts table](https://support.pagerduty.com/docs/alerts#alerts-table) with a **Suspended** status. These suspended alerts have new actions, allowing users to **Trigger** an incident from the alert during the pause period, or **Resolve** the alert, preventing the incident and its notifications from being created altogether.
-
-<Callout type="info" title="Info">
-* The Paused Incident Notifications functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to purchase this product.\n* Paused Incident Notifications is only available on incidents generated by our [Events API](https://developer.pagerduty.com/docs/events-api-v2/overview/), and does not work with those generated from our [REST API](https://developer.pagerduty.com/docs/rest-api-v2/rest-api/).",
-  "title": "Notes
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "* The Paused Incident Notifications functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to purchase this product.\n* Paused Incident Notifications is only available on incidents generated by our [Events API](https://developer.pagerduty.com/docs/events-api-v2/overview/), and does not work with those generated from our [REST API](https://developer.pagerduty.com/docs/rest-api-v2/rest-api/).",
+  "title": "Notes"
+}
+[/block]
 To configure paused incident notifications:
 
 1. In [Step 2: Do These Things](https://support.pagerduty.com/docs/rulesets#step-2-do-these-things), select **Create an incident on a service**. In the right hand panel in **Incident Creation** section, select **Create alert but pause notifications** as an event rule action. Enter the amount of time you would like to pass before an incident and notifications are created in the **Suspend alert for _ second(s) before triggering incident** field.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c8e8c2c-paused-incident-notifications-rule-actions.png",
-        "paused-incident-notifications-rule-actions.png",
-        487,
-        194,
-        "#f6eae8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c8e8c2c-paused-incident-notifications-rule-actions.png)
+
 3. Click **Save Rule**.
 
 ### View and Take Action on Paused Alerts
 
 To view alerts in a paused state, navigate to the **Alerts** table in the upper menu of the web app. Alerts with paused incident notifications will have a **Suspended** status:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0057fea-delayed-incident-notif-suspended-alert.png",
-        "delayed-incident-notif-suspended-alert.png",
-        1513,
-        500,
-        "#ecf2f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0057fea-delayed-incident-notif-suspended-alert.png)
+
 To take action on a paused alert:
 
 1. Click the incident **title** to view its details page.
 2. On the right hand side, click **Trigger** to trigger an incident and send notifications, or **Resolve** if you would like to resolve the alert without triggering an incident/notifications. You will see a green dialog that confirms that the alert has been triggered or resolved.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/43399fa-delayed-incident-notif-trigger-resolve.png",
-        "delayed-incident-notif-trigger-resolve.png",
-        1527,
-        834,
-        "#f3f4f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/43399fa-delayed-incident-notif-trigger-resolve.png)
+
 The pause period and action taken will also appear in the Alert Log timeline, accessible by clicking an alert's **title** to view the detail page:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1cd7572-delayed-incident-notif-alert-log-entry.png",
-        "delayed-incident-notif-alert-log-entry.png",
-        762,
-        185,
-        "#f6f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1cd7572-delayed-incident-notif-alert-log-entry.png)
+
 ## Suppress, but Create Triggering Thresholds with Event Rules
 
 Receive PagerDuty notifications only when your customized alert conditions breach your specified limits. In this way, responders effectively reduce alert noise without missing critical issues. 
@@ -377,26 +254,13 @@ Receive PagerDuty notifications only when your customized alert conditions breac
 {
   "type": "info",
   "title": "Note",
-  "body": "The Threshold Alerts functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to purchase this product.
-</Callout>
-
-
-To set a threshold, enter the **number value** of alerts that should be suppressed within a **number value** of **minutes, hours or days** before an incident is created. For example, if we set the following threshold:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b82fe02-rulesets-threshold-alerts.png",
-        "rulesets-threshold-alerts.png",
-        1492,
-        172,
-        "#f4f4f5"
-      ]
-    }
-  ]
+  "body": "The Threshold Alerts functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to purchase this product."
 }
 [/block]
+To set a threshold, enter the **number value** of alerts that should be suppressed within a **number value** of **minutes, hours or days** before an incident is created. For example, if we set the following threshold:
+
+![](https://files.readme.io/b82fe02-rulesets-threshold-alerts.png)
+
 Then if 6 or more alerts come in within a 10 minute time window, the threshold will be exceeded and an incident will be created. 
 
 ## Set Severity with Event Rules
@@ -420,10 +284,9 @@ To set priority, under **Alert Behavior**, check the **Set Priority** checkbox a
 {
   "type": "info",
   "title": "Note",
-  "body": "Adding notes via event rules is a feature of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to purchase this product.
-</Callout>
-
-
+  "body": "Adding notes via event rules is a feature of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to purchase this product."
+}
+[/block]
 To add a note with event rules, under **Additional Context**, enter the text of the note that you would like to be added to an incident that meets your rule’s criteria. 
 
 ## Set a Custom Trigger / Resolve Action with Event Rules
@@ -449,21 +312,9 @@ To add or replace the summary field, check **Add or replace the summary field** 
 ##Step 3: At these times 
 
 In this step, select **when** you would like this rule to be active. Once you have made your selection, proceed to Step 4. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/68592bf-rulesets-when-should-rule-active.png",
-        "rulesets-when-should-rule-active.png",
-        1838,
-        548,
-        "#d4def7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/68592bf-rulesets-when-should-rule-active.png)
+
 ###Always
 
 If you select **Always**, this rule will always run (24/7/365) when your conditions are met. Click **Save Rule** to create or update your event rule and proceed to Step 4.
@@ -475,10 +326,9 @@ You can gain a greater degree of control over your event rules by detailing a si
 {
   "type": "info",
   "title": "Note",
-  "body": "Scheduled Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
-</Callout>
-
-
+  "body": "Scheduled Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform."
+}
+[/block]
 If you select **At a Scheduled Time**, you will be prompted to select a **Starting Date and Time** and an **Ending Date and Time**. Click **Save Rule** to create or update your event rule and proceed to Step 4.
 
 ###Recurring Event Rules
@@ -488,10 +338,9 @@ If there are specific hours of the day or day(s) within a week when you would li
 {
   "type": "info",
   "title": "Note",
-  "body": "The Recurring Event Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
-</Callout>
-
-
+  "body": "The Recurring Event Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform."
+}
+[/block]
 To set a recurring schedule for an event rule, select **On a Recurring Schedule** and enter a **Starting Time**, an **Ending Time** and select the **Days of Week** in which you would like the rule to be active. Click **Save Rule** to create or update your event rule and proceed to Step 4.
 
 ##Step 4: Send Test Events 
@@ -517,44 +366,19 @@ Use this information to send events based on your preferred integration method:
 {
   "type": "info",
   "title": "Note",
-  "body": "Integration Keys are case-sensitive.
-</Callout>
-
-
-This will allow you to test how your event rules will modify them and take the actions configured in previous steps. Your event rule is now complete! If you would like to create more event rules, repeat steps 1-4 as needed.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5422079-rulesets-incoming-event-source.png",
-        "rulesets-incoming-event-source.png",
-        2480,
-        940,
-        "#f6f5f5"
-      ]
-    }
-  ]
+  "body": "Integration Keys are case-sensitive."
 }
 [/block]
+This will allow you to test how your event rules will modify them and take the actions configured in previous steps. Your event rule is now complete! If you would like to create more event rules, repeat steps 1-4 as needed.
+
+![](https://files.readme.io/5422079-rulesets-incoming-event-source.png)
+
 ###Send Events to Service Event Rules
 
 Add your preferred [tool integration](https://support.pagerduty.com/docs/services-and-integrations#section-add-integrations-to-an-existing-service) or a [Custom Event Transformer](https://v2.developer.pagerduty.com/docs/cet) integration on the service where you configured the above rule(s). Once you have added the integration to your service, you will be directed to the **Integrations** tab, where you can access its **Integration Key**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c1154f2-copy-integration-key.png",
-        "copy-integration-key.png",
-        811,
-        267,
-        "#f4f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c1154f2-copy-integration-key.png)
+
 Use this Integration Key to complete your integration and send test events to your service. This will allow you to test how your event rules will modify them and take the actions configured in previous steps. Your event rule is now complete! If you would like to create more event rules, repeat steps 1-4 as needed.
 
 #Edit Rulesets and Event Rules
@@ -616,13 +440,13 @@ If you would like to enable the rule again, click the :fa-cog: dropdown and clic
 
 You may also create, update, order and delete rules via our [Rulesets API](https://developer.pagerduty.com/api-reference/reference/REST/openapiv3.json/paths/~1rulesets/post) for Global Event Rules and our [Service Event Rules API](https://developer.pagerduty.com/api-reference/reference/REST/openapiv3.json/paths/~1services~1%7Bid%7D~1rules/post) for Service Event Rules.
 
-
-<Callout type="info" title="Info">
-Our legacy [Global Event Rules API v1](https://developer.pagerduty.com/docs/rest-api-v2/global-event-rules-api) is no longer receiving new features, and it will be fully deprecated at the end of 2020. We recommend replacing any integrations using the Global Event Rules API v1 with new integrations using our new [Rulesets API](https://developer.pagerduty.com/api-reference/reference/REST/openapiv3.json/paths/~1rulesets/post) to prepare for this change and to access new features.",
-  "title": "Global Event Rules API v1 (Legacy)
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "Our legacy [Global Event Rules API v1](https://developer.pagerduty.com/docs/rest-api-v2/global-event-rules-api) is no longer receiving new features, and it will be fully deprecated at the end of 2020. We recommend replacing any integrations using the Global Event Rules API v1 with new integrations using our new [Rulesets API](https://developer.pagerduty.com/api-reference/reference/REST/openapiv3.json/paths/~1rulesets/post) to prepare for this change and to access new features.",
+  "title": "Global Event Rules API v1 (Legacy)"
+}
+[/block]
 #Troubleshooting Event Rules
 
 ###If None of Your Rules Are Working

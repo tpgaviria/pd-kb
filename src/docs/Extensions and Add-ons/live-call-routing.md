@@ -10,10 +10,9 @@ Live Call Routing allows you to expand your customer support by directing incomi
 {
   "type": "warning",
   "body": "**Please note that this guide will only be relevant after a PagerDuty employee has enabled Live Call Routing on your account.** \n\n* Live Call Routing is available as an add-on to customers on Professional, Team (legacy), Business, and included in Digital Operations plans. Please [contact our Sales Team](https://www.pagerduty.com/contact-sales/) if you would like to upgrade to a plan with this feature.\n* All users with the exception of Limited Users can view, add, edit and delete numbers on the Live Call Routing page once enabled.",
-  "title": "Requirements
-</Callout>
-
-
+  "title": "Requirements"
+}
+[/block]
 ##Add a Live Call Routing Number
 
 1. Navigate to **Apps & Add-Ons :fa-th-large: :fa-arrow-right: Live Call Routing**.
@@ -53,10 +52,9 @@ To add additional Live Call Routing lines, or to request a toll free Live Call R
 {
   "type": "info",
   "title": "Note",
-  "body": "Numbers in all countries are subject to availability and the list of supported countries is subject to change.
-</Callout>
-
-
+  "body": "Numbers in all countries are subject to availability and the list of supported countries is subject to change."
+}
+[/block]
 - Canada
 - Israel
 - South Africa 
@@ -71,13 +69,13 @@ A *toll-free* Live Call Routing number can be configured for the following count
 - United States
 
 If you would like to set up a Live Call Routing number in a country that is not listed here, please reach out to your Customer Success Manager or [PagerDuty Support](https://www.pagerduty.com/support/) to confirm current availability.
-
-<Callout type="info" title="Info">
-While the list above represents countries where we can currently create an inbound Live Call Routing number, responders can *receive* Live Call Routing-generated calls in any [supported country](doc:supported-countries).",
-  "title": "
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "While the list above represents countries where we can currently create an inbound Live Call Routing number, responders can *receive* Live Call Routing-generated calls in any [supported country](doc:supported-countries).",
+  "title": ""
+}
+[/block]
 ##Choose a Connection Type
 You can configure Live Call Routing to either:
 
@@ -114,46 +112,21 @@ For calls that connect directly with responders, you can select an option to sho
 [block:callout]
 {
   "type": "warning",
-  "body": "This feature is currently only available for US- and Canada-based Live Call Routing numbers. The number that appears on the call display of responders' phones is not configurable for Live Call Routing numbers outside of Canada and U.S.A. due to restrictions in these countries. It will usually be shown as the number of the original caller (rather than the Live Call Routing number).
-</Callout>
-
-
+  "body": "This feature is currently only available for US- and Canada-based Live Call Routing numbers. The number that appears on the call display of responders' phones is not configurable for Live Call Routing numbers outside of Canada and U.S.A. due to restrictions in these countries. It will usually be shown as the number of the original caller (rather than the Live Call Routing number)."
+}
+[/block]
 ###Prevent Live Call Routing from Reading Your Services' Names
 If you select **Read a greeting message for me** (Step 7 of [Add a Live Call Routing Number](https://support.pagerduty.com/docs/live-call-routing#section-add-a-live-call-routing-number)) Live Call Routing will, by default, attempt to read your services' names to the caller so they can be connected to the correct escalation policy. If your services reference internal jargon, this information may not make sense to the caller.
 
 You can configure Live Call Routing to only play the greeting, and not read out services' names. Please note that if you select this option, you'll need to update the greeting with more caller-friendly information.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/0f21fbc-lcr-do-not-play-service-names.png",
-        "lcr-do-not-play-service-names.png",
-        952,
-        312,
-        "#f4f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/0f21fbc-lcr-do-not-play-service-names.png)
+
 ##Upload Your Own Audio Message
 You may choose to upload your own audio file to be played for the caller, instead of an automated message. Select **Upload my own audio file to use as the greeting** and upload an MP3 file. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9d53358-lcr-upload-audio-file.png",
-        "lcr-upload-audio-file.png",
-        950,
-        292,
-        "#f1eded"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9d53358-lcr-upload-audio-file.png)
+
 ##Tie Multiple Services to a Live Call Routing Number
 You can associate up to 9 services with a single Live Call Routing number and set up a phone tree-like structure. When dialing in, an automated voice will announce, "Press 1 for Nagios Critical. Press 2 for Datadog Alerts... etc." Depending on the caller's selection, after a brief moment they'll be connected with the appropriate response team.
 

@@ -10,13 +10,13 @@ updatedAt: "2020-11-13T19:43:36.557Z"
 Amazon CloudWatch provides monitoring for AWS resources and customer-run applications. The service can collect data, gain insight, and alert users to fix problems within applications and organizations. Amazon CloudWatch gives system-wide visibility into resource utilization and notifications can be set for when any metrics cross a specified threshold. These alarms can be automatically sent to PagerDuty, which then reliably alerts the correct on-call person through their preferred contact methods. 
 
 Follow the instructions below to configure Amazon CloudWatch with PagerDuty. Note that this integration expects to find in the `Message` property a nested JSON-encoded object; if this is not received, no alert will trigger. If you have any questions or need any assistance, please [contact our Support team](https://www.pagerduty.com/contact-us/).
-
-<Callout type="info" title="Info">
-This integration is available for Amazon CloudWatch on AWS Cloud or AWS Outpost.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "This integration is available for Amazon CloudWatch on AWS Cloud or AWS Outpost.",
+  "title": "Note"
+}
+[/block]
 # In PagerDuty 
 
 There are two ways that Amazon CloudWatch can be integrated with PagerDuty: via Event Rules or through an integration on a PagerDuty Service.
@@ -29,21 +29,9 @@ Integrating with global or service-level event rules may be beneficial if you wa
 
 1. From the **Services** menu, select **Event Rules** and click your **Default Global Ruleset**. 
 2. On the Event Rules screen, copy your **Integration Key**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ca92bbe-PHD-Global-Event-Rules-Key.png",
-        "PHD-Global-Event-Rules-Key.png",
-        2222,
-        1184,
-        "#f8f8f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ca92bbe-PHD-Global-Event-Rules-Key.png)
+
 3. Once you have your **Integration Key**, the **Integration URL** will be:
 
 `https://events.pagerduty.com/x-ere/[YOUR_INTEGRATION_KEY_HERE]`
@@ -79,21 +67,9 @@ If you are creating a new service for your integration, in General Settings, ent
 # In the AWS Management Console
 
 1. In the **Services** search bar, search and select Simple Notification Service (SNS). On the SNS dashboard, select **Topics** and click **Create Topic**. This will be used to route alerts to PagerDuty from AWS.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c9be2dc-amazon-cloudwatch-create-topic.png",
-        "amazon-cloudwatch-create-topic.png",
-        1780,
-        510,
-        "#f6f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c9be2dc-amazon-cloudwatch-create-topic.png)
+
 2. Enter a **Topic name** (you may want to name your topic after your PagerDuty service’s name) and **Display name**, then click **Create topic**. 
 3. Now that your topic has been created, Select **Subscriptions** in the left hand menu and click **Create Subscription**.
 4. Make sure **HTTPS** is the selected Protocol. Paste your **Integration URL** from step 5 of **Integrating with a PagerDuty Service** (above) into the **Endpoint** field, ensure that the **Enable raw message delivery** checkbox is **unchecked** and click **Create Subscription**.
@@ -101,105 +77,33 @@ If you are creating a new service for your integration, in General Settings, ent
 6. Next, navigate to **Services** and search and select EC2. In your EC2 dashboard, select **Instances**, click your instance's checkbox, click **Actions**, select **CloudWatch Monitoring**, and click **Add/Edit Alarms**.
 7. Click **Create Alarm**.
 8. Select your notification from the dropdown menu, configure the settings that you would like to use for the alarm, and click **Create Alarm**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/aa20086-CloudWatch-Create-Alarm.png",
-        "CloudWatch-Create-Alarm.png",
-        2128,
-        1024,
-        "#f7f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/aa20086-CloudWatch-Create-Alarm.png)
+
 9. At this point, you will receive alerts in PagerDuty for when an alarm has reported a critical alert, but the PagerDuty incident will not be resolved when the alarm clears. To enable automatic resolution in PagerDuty when an alarm clears, select your instance, click the **Actions** button, click **CloudWatch Monitoring**, and select **Add/Edit Alarms** again.
 10. You will see the alarm that you created earlier. Click **view** under **More Options.** 
 11. Select your alarm, click the **Actions** button, then click **Modify**.
 12. On the **Modify Alarm** screen, verify your alarm threshold and settings. Add a new **Action** to Send Notification(s) when the alarm state reaches **ALARM**, by clicking **+ Notification**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/73c534a-CloudWatch-Add-Notification.png",
-        "CloudWatch-Add-Notification.png",
-        1930,
-        1574,
-        "#f9f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/73c534a-CloudWatch-Add-Notification.png)
+
 13. Add a notification for the **OK** state and check that your **ALARM** state notification is correct. Ensure both notifications are being sent to the **Topic** created earlier in the integration. Make sure to click **Save Changes**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cf3bbbd-CloudWatch-Actions.png",
-        "CloudWatch-Actions.png",
-        1918,
-        1014,
-        "#f7f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/cf3bbbd-CloudWatch-Actions.png)
+
 14. You should then see a confirmation dialog that your Alarm was saved successfully.
 15. Congratulations! You have now integrated Amazon CloudWatch with PagerDuty! Now when your alarm threshold is met, an incident will be triggered within PagerDuty.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6604e40-aws-cloudwatch-congrats-step15.png",
-        "aws-cloudwatch-congrats-step15.png",
-        602,
-        383,
-        "#f8f8f9"
-      ]
-    }
-  ]
-}
-[/block]
-16. Once that alarm is back in an OK state, the incident will automatically resolve within PagerDuty.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7c17dc9-aws-cloudwatch-final-step16a.png",
-        "aws-cloudwatch-final-step16a.png",
-        602,
-        381,
-        "#f7f8f9"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/549af62-AWS-CloudWatch-resolved-PD-incident.png",
-        "AWS-CloudWatch-resolved-PD-incident.png",
-        2240,
-        398,
-        "#f0f0f0"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/6604e40-aws-cloudwatch-congrats-step15.png)
+
+16. Once that alarm is back in an OK state, the incident will automatically resolve within PagerDuty.
+
+![](https://files.readme.io/7c17dc9-aws-cloudwatch-final-step16a.png)
+
+
+
+![](https://files.readme.io/549af62-AWS-CloudWatch-resolved-PD-incident.png)
+
 ## FAQ
 
 ### What alarm statuses affect PagerDuty incidents?

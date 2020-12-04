@@ -23,10 +23,9 @@ Configure the following objects in your PagerDuty account so that you can open a
 {
   "type": "warning",
   "title": "Required User Permissions",
-  "body": "* Adding users and creating escalation policies and teams are actions that can only be performed by Admins, Global Admins and Account Owners. If you do not have one of the above roles, please contact an Admin or Account Owner to configure. \n* Users, Managers, Admins, Global Admins and Account Owners can create services.\n\nYou can find which users have these roles by navigating to **People** :fa-arrow-right: **Users**. For more information, check out our articles on [User Roles](https://support.pagerduty.com/docs/user-roles) and [Advanced Permissions](https://support.pagerduty.com/docs/advanced-permissions).
-</Callout>
-
-
+  "body": "* Adding users and creating escalation policies and teams are actions that can only be performed by Admins, Global Admins and Account Owners. If you do not have one of the above roles, please contact an Admin or Account Owner to configure. \n* Users, Managers, Admins, Global Admins and Account Owners can create services.\n\nYou can find which users have these roles by navigating to **People** :fa-arrow-right: **Users**. For more information, check out our articles on [User Roles](https://support.pagerduty.com/docs/user-roles) and [Advanced Permissions](https://support.pagerduty.com/docs/advanced-permissions)."
+}
+[/block]
 :fa-check-square: [Add Users](https://support.pagerduty.com/docs/users)
 :fa-check-square: [Create an On-Call Schedule](https://support.pagerduty.com/docs/schedules#section-create-a-schedule)
 :fa-check-square: [Create an Escalation Policy](https://support.pagerduty.com/docs/escalation-policies#section-create-an-escalation-policy) and add the above schedule to it. 

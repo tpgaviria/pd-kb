@@ -17,39 +17,15 @@ The mobile app is designed with a responder's experience in mind — you can eas
 }
 [/block]
 To browse schedules, navigate to the Menu :fa-bars: and select Schedules. Here you'll be presented with two tabs- one for your teams specifically, the other for all teams. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/03d98f7-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.01.59.png",
-        "Simulator Screen Shot - iPhone XS - 2018-11-07 at 16.01.59.png",
-        1125,
-        2436,
-        "#0c1a28"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/03d98f7-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.01.59.png)
+
 Once you've chosen your schedule, note the calendar view at the top of the screen. You can select a specific day or scroll through the timeline if you're looking for a particular shift. Durations will be listed on the shift itself- even if they span multiple days. 
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5e34238-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.02.24.png",
-        "Simulator Screen Shot - iPhone XS - 2018-11-07 at 16.02.24.png",
-        1125,
-        2436,
-        "#122335"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5e34238-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.02.24.png)
+
 Regular shifts will be shown using a solid color, whereas overrides will have a striped pattern. Gaps in schedules will appear as 'No One On Call'. You can also view shifts and overrides that have already passed by selecting a previous date from the Calendar view. If you go too far back and would like to return to today's date, this can be achieved by selecting the blue calendar icon in the top right corner. 
 
 
@@ -67,53 +43,17 @@ There are two different options you can use to set the duration of the override:
 
 First, select the shift you'd like to override. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fdc0305-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.07.28.png",
-        "Simulator Screen Shot - iPhone XS - 2018-11-07 at 16.07.28.png",
-        1125,
-        2436,
-        "#0c1b2a"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fdc0305-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.07.28.png)
+
 On this screen you can modify the length of your override. You can set a custom duration spanning multiple shifts easily by selecting the start and end dates as shown below.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/19058b3-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.14.51.png",
-        "Simulator Screen Shot - iPhone XS - 2018-11-07 at 16.14.51.png",
-        1125,
-        2436,
-        "#0e1d2b"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/19058b3-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-07_at_16.14.51.png)
+
  Alternatively, if you'd like to use a pre-populated option (for example, until the rotation ends), you can select 'Duration'. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5925142-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-13_at_08.55.01.png",
-        "Simulator Screen Shot - iPhone XS - 2018-11-13 at 08.55.01.png",
-        1125,
-        2436,
-        "#626a72"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5925142-Simulator_Screen_Shot_-_iPhone_XS_-_2018-11-13_at_08.55.01.png)
+
 Once you've chosen the duration of the override, you can finalize your override by confirming the duration you've selected. 
 [block:callout]
 {

@@ -44,21 +44,9 @@ You can review data by the:
 - Mean Time to Resolve High-Urgency Incidents
 - Median Time to Resolve High-Urgency Incidents
 - 90th Percentile time to Resolve High-Urgency Incidents
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b78e056-reporting-system-report-views.png",
-        "reporting-system-report-views.png",
-        2262,
-        1322,
-        "#f2f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b78e056-reporting-system-report-views.png)
+
 You can drill down this report to by clicking on **View Incidents**, or view the escalation policy by clicking **View Policy** under the *Actions* column.
 
 Below the incidents graph you may select which escalation policies or services you would like to view. Services or escalation policies may be selected by checking the boxes to the left of each item.
@@ -84,21 +72,9 @@ Below the incidents graph you may select which escalation policies or services y
 [/block]
 ###Use Case
 Compare Summary Metrics for escalation policies or services to the previous month. These statistics may be viewed in the bottom right hand corner of your system report page.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c03df22-reporting-summary-metrics.png",
-        "reporting-summary-metrics.png",
-        512,
-        802,
-        "#f5f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c03df22-reporting-summary-metrics.png)
+
 ##Team Report
 The team report allows you to compare metrics across teams, see if you’re falling within targets, and understand the impact of incident count on response efficiency. It's a good way for team members and leads to get a holistic sense of their performance and operational load over time.
 
@@ -132,21 +108,9 @@ Set the data rollup period by selecting **Daily**, **Weekly**, or **Monthly**. F
 [/block]
 ### Use Case
 Summary Metrics for escalation policies or services as compared to the previous month are also present. These statistics may be viewed in the bottom right hand corner of your system report page.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/feac680-reporting-team-summary-metrics.png",
-        "reporting-team-summary-metrics.png",
-        508,
-        1180,
-        "#f4f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/feac680-reporting-team-summary-metrics.png)
+
 ##User Report
 User reporting provides detailed information about individual responders in PagerDuty. Only users who have been assigned at least one incident will appear in User reports.
 [block:callout]
@@ -207,21 +171,9 @@ The notifications report allows you to view specific details about all of the no
 
 ###Parameters
 Set the data rollup period by selecting Daily, Weekly, or Monthly. Filter by date range.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1303e74-reporting-notifications-date-range.png",
-        "reporting-notifications-date-range.png",
-        836,
-        578,
-        "#eaecea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1303e74-reporting-notifications-date-range.png)
+
 View incidents report data, by clicking on **View Online** or **Download CSV** under the **Actions** column.
 
 ###Data
@@ -242,41 +194,17 @@ View incidents report data, by clicking on **View Online** or **Download CSV** u
 }
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a897b3d-reporting-notification-report-details.png",
-        "reporting-notification-report-details.png",
-        2166,
-        924,
-        "#f1f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a897b3d-reporting-notification-report-details.png)
+
 ##Incidents Report
 The incidents report gives a detailed view of an incident's service, its duration, and who resolved it as well as whether it escalated. To view this report go to **Analytics** :fa-arrow-right: **Reports** :fa-arrow-right: **Incidents** tab.
 
 ###Parameters
 Set the data rollup period by selecting Daily, Weekly, or Monthly. Filter by date range.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bbbd3eb-reporting-incidents-report-date-range.png",
-        "reporting-incidents-report-date-range.png",
-        846,
-        584,
-        "#ebedeb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/bbbd3eb-reporting-incidents-report-date-range.png)
+
 View incidents report data, by clicking on View Online or Download CSV under the Actions column.
 
 ###Data
@@ -303,21 +231,9 @@ View incidents report data, by clicking on View Online or Download CSV under the
 }
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a91b2d3-reporting-incident-report-details.png",
-        "reporting-incident-report-details.png",
-        2326,
-        972,
-        "#eeeff0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a91b2d3-reporting-incident-report-details.png)
+
 ##Data Export
 All incident reports are exported in the account's time zone. You can use our API to create an incident report under a specified time zone:
 - [Incidents API](https://developer.pagerduty.com/api-reference/reference/REST/openapiv3.json/paths/~1incidents~1%7Bid%7D/get)

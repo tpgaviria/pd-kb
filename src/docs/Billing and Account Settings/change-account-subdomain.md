@@ -56,10 +56,9 @@ When you are ready to change your subdomain, please [contact our support team](m
 [block:api-header]
 {
   "type": "basic",
-  "title": "Sample Email Communication
-</Callout>
-
-
+  "title": "Sample Email Communication"
+}
+[/block]
 ## In preparation for the subdomain change
 
 > Hi Team,

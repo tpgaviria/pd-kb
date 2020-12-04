@@ -40,59 +40,23 @@ View the [Events API v2 Overview](https://developer.pagerduty.com/docs/events-ap
 ## View Change Events on a Service
 
 Navigate to **Services** :fa-arrow-right: **Service Directory** and click the **title** of the integrated service. Under **Recent Activity** you will see change events labeled as **RECENT CHANGE** in grey in the timeline:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e54e4e0-change-events-service-view.png",
-        "change-events-service-view.png",
-        1445,
-        269,
-        "#f3f8f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e54e4e0-change-events-service-view.png)
+
 ## View Most Recent Change Events on an Incident
 
 Navigate to an incident on a service with the above integration configured. Click the incident’s **Title** and you will see a section with the most recent changes in the last 24 hours, with the option to **View All** on the right. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b1d0ea3-change-events-incident-view.png",
-        "change-events-incident-view.png",
-        860,
-        249,
-        "#f7f7f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b1d0ea3-change-events-incident-view.png)
+
 If there have been no recent changes, this section will read **No recent changes on this service in the last 24 hours**.
 
 ## View and Filter All Change Events Across Services 
 
 To view and filter all change events across all services, navigate to **Incidents** :fa-arrow-right: **Recent Changes**. You may filter by **Team**, **Service**, integration **Type** and **Last Changed** time period. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/41b1594-change-events-recent-changes.png",
-        "change-events-recent-changes.png",
-        1228,
-        408,
-        "#f3f4f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/41b1594-change-events-recent-changes.png)
+
 ## View Change Event Details
 
 To view a change event's details, click the change event's **title** and you will see the **Service**, **Type**, **Timestamp**, **Summary**, **Source** and **Links** to view the pull request, the integrated repository and the user's profile.

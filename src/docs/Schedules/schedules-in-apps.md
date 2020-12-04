@@ -13,56 +13,20 @@ PagerDuty schedules in Confluence allow Confluence users access to their on-call
 ##In PagerDuty
 1. Go to the **People** :fa-arrow-right: **Schedules**.
 2. Navigate to the schedule you would like to export to Confluence. Click **Export → iCal feed → Everyone → (right click) Copy Link Address**. Keep that link copied to your clipboard.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a5d50a4-schedules-third-party-confluence-export.png",
-        "schedules-third-party-confluence-export.png",
-        604,
-        590,
-        "#d2d5d9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a5d50a4-schedules-third-party-confluence-export.png)
+
 ##In Confluence
 1. Click **Create** in the top navigation menu.
 2. Select the **Blank page** option, and name the page.
 3. Once you name your page, click the **+** icon from the toolbar, and select **[Team Calendars](https://confluence.atlassian.com/teamcalcloud/team-calendars-for-confluence-cloud-documentation-909903153.html)** from the dropdown menu.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f86200f-selectteamcalendar.png",
-        "selectteamcalendar.png",
-        386,
-        455,
-        "#e4e7e9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f86200f-selectteamcalendar.png)
+
 4. Click **Subscribe by URL**. Then enter the name of the schedule, the iCal URL you copied to your clipboard, and your PagerDuty username and password. Then click **Subscribe**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7f4cc7b-iCal_URL.png",
-        "iCal_URL.png",
-        531,
-        466,
-        "#efefef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7f4cc7b-iCal_URL.png)
+
 
 [block:callout]
 {
@@ -91,39 +55,15 @@ You can integrate your on-call schedule with calendar software (Apple Calendar, 
 You can export **all** of your personal on-call schedules at once on your profile page.
 1. Go to **User Icon** :fa-arrow-right: **My Profile** in the drop-down menu in the top right hand corner of the screen and select the **User Settings** tab.
 2. Under **Calendar** settings, right click **WebCal feed** and copy the link (alternatively, you can download the ".ics" file by clicking on **iCalendar file**).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5c978ca-schedules-third-party-export-all.png",
-        "schedules-third-party-export-all.png",
-        1490,
-        636,
-        "#efeff0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5c978ca-schedules-third-party-export-all.png)
+
 3. Open [Google Calendar](https://calendar.google.com/calendar/render#main_7) or iCal — in this example, we will add the schedules to Google calendars.
 4. Under **Other Calendars**, select **From URL** from the drop-down list.
 5. Paste the URL and click **Add Calendar**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2cf7e1e-GoogleCalendar.png",
-        "GoogleCalendar.png",
-        1670,
-        706,
-        "#f6f8fb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2cf7e1e-GoogleCalendar.png)
+
 ##Export a Single Schedule
 If you do not want to export all your on-call schedules, you can also choose to export schedules individually.
 
@@ -132,55 +72,19 @@ The iCal or WebCal link for a specific schedule can be found by clicking on the 
 ###Export only your on-call shifts 
 1. Go to the **People** :fa-arrow-right: **Schedules**.
 2. Next to a calendar click **Export** :fa-arrow-right: **Just My Calendar** to launch your calendar application. You will be prompted to subscribe to the calendar URL.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/41c19b6-schedules-third-party-i-cal.png",
-        "schedules-third-party-i-cal.png",
-        608,
-        416,
-        "#f3f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/41c19b6-schedules-third-party-i-cal.png)
+
 3. In this example we're using Apple Calendar, and need to click **Subscribe** to finish importing your personal schedule.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e7a27a1-1e37dcd-sing2.png",
-        "1e37dcd-sing2.png",
-        466,
-        167,
-        "#e3e3e3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e7a27a1-1e37dcd-sing2.png)
+
 ###Export the Entire Schedule (everyone's shifts)
 1. Go to the **People** :fa-arrow-right: **Schedules**.
 2. In the On-Call Schedules Tab, select **Export** :fa-arrow-right: **Everyone** to launch your calendar application. You will be prompted to subscribe to the calendar URL.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d3223a3-schedules-third-party-everyone.png",
-        "schedules-third-party-everyone.png",
-        598,
-        418,
-        "#f3f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d3223a3-schedules-third-party-everyone.png)
+
 3. Click **Subscribe** to complete the import of the entire schedule.
 
 ##Making Changes to Schedules
@@ -216,21 +120,9 @@ If you would like to reset the calendar feed URLs, please follow these instructi
 
 1. Log in to your PagerDuty account.
 2. Go to **User Icon** :fa-arrow-right: **My Profile**, select the **User Settings** tab, then click **Regenerate feed URLs**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/59269e5-schedules-third-party-regenerate-feed-urls.png",
-        "schedules-third-party-regenerate-feed-urls.png",
-        1644,
-        642,
-        "#eff0f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/59269e5-schedules-third-party-regenerate-feed-urls.png)
+
 3. Use the links for the WebCal or iCalendar feed to update your calendar application.
 
 ## Delete an Imported Schedule

@@ -25,10 +25,9 @@ updatedAt: "2020-11-05T00:35:23.358Z"
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "Our [Zendesk v2 integration](https://support.pagerduty.com/docs/zendesk-v2-integration-guide) is also available.
-</Callout>
-
-
+  "body": "Our [Zendesk v2 integration](https://support.pagerduty.com/docs/zendesk-v2-integration-guide) is also available."
+}
+[/block]
 # Integration Walkthrough
 
 # Adding the Incident Command Console to Zendesk:
@@ -43,56 +42,20 @@ updatedAt: "2020-11-05T00:35:23.358Z"
 
 5. You will be directed to a new tab for the PagerDuty app in the Zendesk marketplace, click **Install**. 
 6. Select your preferred account from the dropdown and then click **Install**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/488e1f8-zendesk-install-pagerduty-app.png",
-        "zendesk-install-pagerduty-app.png",
-        748,
-        601,
-        "#f4faf9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/488e1f8-zendesk-install-pagerduty-app.png)
+
 7. You will be directed to your Zendesk account. Click **Install** again to complete the installation of the app in the Zendesk marketplace. 
 8. You will then see PagerDuty listed under Enabled Apps (:fa-cog: :fa-arrow-right: **Manage** :fa-arrow-right: **Enabled Apps**).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c17efea-Screen_Shot_2020-11-03_at_4.11.08_PM.png",
-        "Screen Shot 2020-11-03 at 4.11.08 PM.png",
-        376,
-        348,
-        "#d6e7d9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c17efea-Screen_Shot_2020-11-03_at_4.11.08_PM.png)
+
 9. While still in the Zendesk admin settings, navigate to :fa-cog: :fa-arrow-right: **Channels** :fa-arrow-right: **API** to [generate a Zendesk API token](https://support.zendesk.com/hc/en-us/articles/226022787-Generating-a-new-API-token-). **Copy the API token and paste it in a safe place for future use**. **Note**: You will not have access to this key after this screen.
 10. Note: If you have a previous version of the Zendesk app, you can login to Zendesk and click **Manage** from the Admin Settings to view the PagerDuty app. Click the PagerDuty icon, and then click **Update** to update the app.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8c9fcf2-Screen_Shot_2020-11-03_at_3.53.26_PM.png",
-        "Screen Shot 2020-11-03 at 3.53.26 PM.png",
-        648,
-        890,
-        "#f8f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8c9fcf2-Screen_Shot_2020-11-03_at_3.53.26_PM.png)
+
 # Configure Bi-directional Workflows
 
 ## Authorize the Integration
@@ -103,21 +66,9 @@ updatedAt: "2020-11-05T00:35:23.358Z"
 15. Enter a Description (e.g. `Zendesk API Key`) and click **Create Key**.
 16. On the next screen, **copy the API Key and paste it in a safe place for future use**. Note: You will not have access to this key after this screen.
 17. Return to the Zendesk Extension page and enter your **PagerDuty email address** and the **PagerDuty REST API key** you just created. Click **Save Changes** to save the credentials entered.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8f7c478-zendesk-authorization-screen.png",
-        "zendesk-authorization-screen.png",
-        1018,
-        697,
-        "#f5f5f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8f7c478-zendesk-authorization-screen.png)
+
 ## Add Services
 In order to configure workflow rules, or manually create a Zendesk ticket from a PagerDuty incident, you must first map your PagerDuty services to Zendesk. 
 
@@ -140,21 +91,9 @@ Synced attributes allow you to keep PagerDuty incidents and Zendesk tickets in s
 
 * **To edit priority syncing**: Click the dropdown under **PagerDuty priority** and select your preferred priority or delete syncing by clicking the **X** by each priority level and click **Save Changes**. 
 * **To sync notes**: Check the **Sync Notes** checkbox and click **Save Changes**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1d55fa9-zendesk-synced-attributes.png",
-        "zendesk-synced-attributes.png",
-        1600,
-        813,
-        "#f8f9f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1d55fa9-zendesk-synced-attributes.png)
+
 ### PagerDuty to Zendesk Automation (Optional) 
 
 1. From each **Zendesk status** dropdown, select what status the Zendesk ticket should change to when a PagerDuty incident changes status. 
@@ -169,39 +108,15 @@ After installing the PagerDuty app from the Zendesk Marketplace (step 4 of the [
 
 1. To create an incident, a Zendesk agent can navigate to a Zendesk ticket and then display Apps by clicking the **Apps** button on the right side of the screen. 
 2. The PagerDuty app will appear and prompt agents to log in to their PagerDuty account. **Note**: If an agent does not have a PagerDuty account, they can still view any incidents that are linked to this incident, but they cannot take any actions to coordinate a response or communicate with stakeholders.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/55987b8-zendesk-login-incident-command-console.png",
-        "zendesk-login-incident-command-console.png",
-        1408,
-        1128,
-        "#f2f3f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/55987b8-zendesk-login-incident-command-console.png)
+
 3. Once the agent has logged in, they can take the following actions from the Zendesk Incident Command Console:
 
 * **Create Incident** or **Link Incident**: [Create a new incident](https://support.pagerduty.com/docs/incidents#manually-trigger-an-incident) link to an existing open incident. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2173b04-Screen_Shot_2020-11-03_at_4.17.18_PM.png",
-        "Screen Shot 2020-11-03 at 4.17.18 PM.png",
-        560,
-        482,
-        "#f7f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2173b04-Screen_Shot_2020-11-03_at_4.17.18_PM.png)
+
 * **Acknowledge**: [Acknowledge](https://support.pagerduty.com/docs/incidents#incident-states) that you are working on the incident and pause any further escalation.
 * **Resolve**: [Resolve](https://support.pagerduty.com/docs/incidents#incident-states) the incident.
 * **Add Note**: [Add a note](https://support.pagerduty.com/docs/editing-incidents#add-a-note-to-an-incident) about the incident to communicate with internal teams following it.
@@ -225,21 +140,9 @@ There may be circumstances where you want Zendesk to automatically create PagerD
 
 1. In your PagerDuty account, navigate to the **Services** menu and select **Event Rules**.
 2. Select your preferred ruleset, or your **Default Global Ruleset**, and click on the arrow next to **Incoming Event Source** to display the Integration key information. Copy your **Integration Key** and keep it in a safe place for later use. When you have finished setting up the integration, you will return to this interface to specify how to route events from Zendesk to services in PagerDuty. Please continue to the [Configure a Target and Trigger](https://support.pagerduty.com/docs/zendesk-v3#configure-a-target-and-trigger) section of this guide.  
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9261c7a-zendesk-global-event-routing-key.png",
-        "zendesk-global-event-routing-key.png",
-        1600,
-        731,
-        "#f7f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9261c7a-zendesk-global-event-routing-key.png)
+
 ### Integrating With a PagerDuty Service
 
 1. In the **Services** menu, select **Service Directory**.
@@ -250,21 +153,9 @@ There may be circumstances where you want Zendesk to automatically create PagerD
 2. Enter an Integration Name and select **Zendesk API** from the **Integration Type** menu. Click **Add Integration**.
 3. On the next screen, you will see the **Integration Key** for this integration. Copy this key and keep it in a safe place for steps below when you create a JSON body. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/b7f8c97-Screen_Shot_2020-11-04_at_3.13.49_PM.png",
-        "Screen Shot 2020-11-04 at 3.13.49 PM.png",
-        1366,
-        674,
-        "#f4f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/b7f8c97-Screen_Shot_2020-11-04_at_3.13.49_PM.png)
+
 ### Configure a Target and Trigger
 
 1. As a Zendesk admin, navigate to the admin settings and click on the **Extensions** settings.
@@ -277,21 +168,9 @@ There may be circumstances where you want Zendesk to automatically create PagerD
 **Content type**: Select JSON.
 **Basic Authentication**: Leave unchecked.
 Select **Create Target** from the dropdown. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/019e74e-zendesk-http-target.png",
-        "zendesk-http-target.png",
-        1600,
-        973,
-        "#fbfbfb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/019e74e-zendesk-http-target.png)
+
 5. Click the **Submit** button to save the target.
 6. While still in the admin settings, select **Triggers** under Business Rules. Depending on your current configuration, you have the following two options:
 

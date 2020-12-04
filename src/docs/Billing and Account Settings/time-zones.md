@@ -28,21 +28,9 @@ Only the Account Owner can change the account-level time zone.
 2. Click the **Edit icon** next to the time zone under your contact information.
 3. Select the desired time zone from the drop-down list.
 4. Click **Save changes**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5ea6b8d-time-zone-edit.png",
-        "time-zone-edit.png",
-        1472,
-        376,
-        "#efeff0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5ea6b8d-time-zone-edit.png)
+
 #Changing the Schedule-Level Time Zone 
 
 When you create a new schedule, it will be set to the [account-level time zone](https://support.pagerduty.com/docs/time-zones#section-changing-the-account-level-time-zone) by default. You may, however, choose to edit the schedule to be in a different time zone than the account's. If you are changing your schedule's time zone and it has users from varying time zones, please read the following section on how [Daylight Savings Time](https://support.pagerduty.com/docs/time-zones#section-daylight-savings-time) may affect your schedules. 

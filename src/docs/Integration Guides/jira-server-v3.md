@@ -17,39 +17,25 @@ This integration also supports Jira Service Desk.
 {
   "type": "info",
   "title": "Looking For a Different Version?",
-  "body": "This guide is for the Jira Server v3 integration. If you would like to use the latest version, please go to our [Jira Server v4 integration guide](https://support.pagerduty.com/docs/jira-server).
-</Callout>
-
-
+  "body": "This guide is for the Jira Server v3 integration. If you would like to use the latest version, please go to our [Jira Server v4 integration guide](https://support.pagerduty.com/docs/jira-server)."
+}
+[/block]
 # Create PagerDuty Authentication Token
 [block:callout]
 {
   "type": "warning",
   "body": "You will need an Admin or Account Owner user permission in PagerDuty to create the Jira authentication token.",
-  "title": "Required User Permissions
-</Callout>
-
-
+  "title": "Required User Permissions"
+}
+[/block]
 In PagerDuty, you'll need to add the Jira Server extension. A unique authentication token will be created. The token will be used in Jira for the next step.
 
 1. In the top right corner of your screen, click **Apps & Add-Ons** :fa-th-large: :fa-arrow-right: **Extensions**.
 2. Click **+ New Extension** and select **Jira Server**. A screen will appear prompting you to open the Jira Server Extension page, click **Open Jira Server Page**.
 3. From the Jira Server configuration page, copy the **Authentication Token** to be used later on in this guide.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/536852a-jira-server-authentication-token.png",
-        "jira-server-authentication-token.png",
-        2840,
-        1142,
-        "#eff0f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/536852a-jira-server-authentication-token.png)
+
 4. Login to your Jira Server application. **Note:** you can’t connect PagerDuty to Jira Server until you paste the authentication token into the PagerDuty add-on in Jira.
 
 # Add PagerDuty Plugin in Jira
@@ -59,59 +45,22 @@ In Jira, you'll need to download the [PagerDuty for Jira Server plugin](https://
 {
   "type": "warning",
   "body": "At minimum, you must have permission to perform the following actions in Jira: \n* Create, update and comment on issues\n* Run JQL searches\n* Read Projects\n* Read Settings (i.e., globally configured Priorities)",
-  "title": "Required User Permissions
-</Callout>
-
-
+  "title": "Required User Permissions"
+}
+[/block]
 1. From the **Jira Administration** menu in the top right corner, click **Add Ons.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1f71e2a-jira-server-integration-admin.png",
-        "jira-server-integration-admin.png",
-        375,
-        278,
-        "#bfc8dd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1f71e2a-jira-server-integration-admin.png)
+
 2. Click the **Add-ons** tab, then click **Find new add-ons** in the [Atlassian Marketplace](https://marketplace.atlassian.com/apps/1218226/pagerduty-jira-server-extension?hosting=server&tab=overview). Search for    **PagerDuty for Jira Server** and click the **Install** button. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d0b6f82-jira-server-integration-addinginjjira.png",
-        "jira-server-integration-addinginjjira.png",
-        3370,
-        1520,
-        "#e0dbe4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d0b6f82-jira-server-integration-addinginjjira.png)
+
 3. After returning to the **Manage Add On** page, select the **PagerDuty Add On**, and click **Configure**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e32deb8-jira-server-integration-plugin.png",
-        "jira-server-integration-plugin.png",
-        600,
-        642,
-        "#f5f5f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e32deb8-jira-server-integration-plugin.png)
+
 4. Add the **Authentication Token** you copied from the PagerDuty extension configuration and click **Save.**
 
 
@@ -123,38 +72,14 @@ The last step is to connect PagerDuty to Jira and configure the mapping between 
 
 1. Add the URL of your Jira server and click **Connect JIRA Server.**
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/31bd375-jira-server-integration-connect.png",
-        "jira-server-integration-connect.png",
-        450,
-        165,
-        "#edf5ef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/31bd375-jira-server-integration-connect.png)
+
 2. If the connection was successful, you should be able to select a PagerDuty service and corresponding Jira project. After selecting both, click **Connect JIRA Project**. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7a51b56-jira-server-integration-connect2.png",
-        "jira-server-integration-connect2.png",
-        1726,
-        472,
-        "#f3f7f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7a51b56-jira-server-integration-connect2.png)
+
 3. After Connecting, you will be taken to a configuration page where you can: 
    * Select a **Configuration Name**. We recommend to use the name of the Jira project. For example: "Create Bug (Project Name)".
    * Choose a **Jira Issue Type**.
@@ -166,21 +91,9 @@ The last step is to connect PagerDuty to Jira and configure the mapping between 
    * Optionally, sync notes between PagerDuty and Jira. **Note: this option requires you to select a user, and each note appear as coming from this user
    * Optionally, sync PagerDuty incident priority levels with Jira priority levels.
    * Optionally, sync custom fields between a PagerDuty Attribute and Jira Issue Field Name.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e993613-jira-server-integration-config.png",
-        "jira-server-integration-config.png",
-        1854,
-        2152,
-        "#f8f8f8"
-      ],
-      "sizing": "smart"
-    }
-  ]
-}
+
+![](https://files.readme.io/e993613-jira-server-integration-config.png)
+
 [/block]
 4. Click **Create Test Issue** to test the connection between PagerDuty and your JIRA Server. You should see a success message at the top of the modal and the new ticket will be visible in JIRA.
 5. Click **Save**, and you’re done :tada: .
@@ -195,21 +108,9 @@ If you are integrating PagerDuty with Jira Service Desk, you need to ensure that
     c. Click the **Users and roles** tab under the Project settings navigation bar.
     d. Select the **Add users to a role** button. 
     e. Add the **jira-servicedesk-users** group or **PagerDuty** user to the **Service Desk Team** role
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d23f787-Screen_Shot_2018-10-31_at_7.33.35_AM.png",
-        "Screen Shot 2018-10-31 at 7.33.35 AM.png",
-        2292,
-        1088,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d23f787-Screen_Shot_2018-10-31_at_7.33.35_AM.png)
+
  You can learn more about managing users and roles on the [Atlassian website](https://confluence.atlassian.com/adminjiracloud/managing-project-roles-776636382.html). 
 
 ## FAQ
@@ -310,21 +211,9 @@ This can happen for the following reasons:
 * The Jira project's workflow does not permit the transition between the issue states corresponding to the previous and current PagerDuty incident states. For instance, if your Jira workflow does not permit setting a "To-Do" status Jira ticket directly to "Done", and the Triggered status in PagerDuty maps to To-Do while the Resolved status maps to Done, then if a triggered incident is resolved (i.e. without acknowledging it first) then the ticket will not move to the Done state because this modification is not permitted per your Jira project's configured workflow.
 
 One way that you can ensure the workflow configuration does not interfere is by editing the statuses corresponding to acknowledged and/or resolved, and enabling transitions from all other statuses to it.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/418bc7c-Screen_Shot_2019-04-08_at_10.25.45_AM.png",
-        "Screen Shot 2019-04-08 at 10.25.45 AM.png",
-        279,
-        317,
-        "#f4f5f5"
-      ],
-      "caption": "Example: Editing the **Closed** status"
-    }
-  ]
-}
+
+![](https://files.readme.io/418bc7c-Screen_Shot_2019-04-08_at_10.25.45_AM.png)
+
 [/block]
 ### I just updated the  **priority** of a PagerDuty incident, why didn't the **priority** update in the Jira issue?
 

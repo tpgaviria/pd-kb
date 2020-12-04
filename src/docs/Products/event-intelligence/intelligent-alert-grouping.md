@@ -7,50 +7,26 @@ createdAt: "2017-11-10T21:08:38.297Z"
 updatedAt: "2020-10-08T23:25:03.086Z"
 ---
 When enabled on a service, Intelligent Alert Grouping will automatically add incoming alerts to related open incidents on that service to help keep responders focused on the problem at hand. Once enabled, the first new incoming alert will create a new incident on that service. The underlying algorithm will then determine which, if any, subsequent alerts should be grouped into existing incidents.  Once an incident is closed, no new alerts will be added to it. This algorithm includes a real-time, machine-learning-based model that is designed to quickly and accurately process and cluster machine-generated data on each service. The algorithm will adapt over time to understand new types of alerts and react to human response behavior. 
-
-<Callout type="info" title="Info">
-This feature is available as part of the [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) package or on Digital Operations plans. If you would like to sign up for a trial of Intelligent Alert Grouping and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "This feature is available as part of the [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) package or on Digital Operations plans. If you would like to sign up for a trial of Intelligent Alert Grouping and other Event Intelligence features, please [contact our Sales team](https://www.pagerduty.com/contact-us/#contact-sales).",
+  "title": "Note"
+}
+[/block]
 # How to Tell When an Incident is Grouping Alerts
 
 When enabled, you can see Intelligent Alert Grouping actively grouping alerts on the details page of a specific incident. Grouped alerts will appear under the Alerts tab.
 
 The alert grouping labels notify you that the incident is using alert grouping. This could mean either Time-Based Alert Grouping or Intelligent Alert Grouping. In this case, the alert grouping details indicate that this incident is adding alerts via Intelligent Alert Grouping. Beneath the incident title, you can also see the number of grouped alerts, as well as the time the most recent alert was added. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ee93ad7-intelligent-alert-grouping-incident-view.png",
-        "intelligent-alert-grouping-incident-view.png",
-        2622,
-        1524,
-        "#fbfafb"
-      ],
-      "caption": "(1) Triggered incident actively grouping using Intelligent Alert Grouping"
-    }
-  ]
-}
+
+![](https://files.readme.io/ee93ad7-intelligent-alert-grouping-incident-view.png)
+
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/97fbd28-intelligent-alert-grouping-details.png",
-        "intelligent-alert-grouping-details.png",
-        1140,
-        558,
-        "#f2f2f2"
-      ],
-      "caption": "(2) Alert grouping details indicating Intelligent Alert Grouping is enabled"
-    }
-  ]
-}
+
+![](https://files.readme.io/97fbd28-intelligent-alert-grouping-details.png)
+
 [/block]
 # Configure Intelligent Alert Grouping
 
@@ -66,21 +42,9 @@ Intelligent alert grouping is recommended on eligible services, and never groups
 To be recommended for intelligent alert grouping, a service must have alerts and incidents enabled. 
 
 If the service is configured to only create incidents, the Intelligent Alert Grouping option will not be available. You can edit your service on the service configuration page to enable alerts and incidents. Please note that some integrations do not currently support alerts and incidents - you can read more about this [here](https://support.pagerduty.com/docs/alerts#section-bi-directional-integration-limitations). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c0ad19c-iag-select-iag-settings.png",
-        "iag-select-iag-settings.png",
-        1508,
-        748,
-        "#ecedec"
-      ],
-      "caption": "(4) Intelligent Alert Grouping option on a recommended service"
-    }
-  ]
-}
+
+![](https://files.readme.io/c0ad19c-iag-select-iag-settings.png)
+
 [/block]
 ##Influencing the Algorithm
 
@@ -91,10 +55,9 @@ The best way for the algorithm to learn and adapt to new grouping behaviors is t
 {
   "type": "info",
   "title": "Notes",
-  "body": "Merging/unmerging alerts through the API will **not** factor in to the Intelligent Alert Grouping algorithm. Only manual merges and unmerges influence the algorithm.
-</Callout>
-
-
+  "body": "Merging/unmerging alerts through the API will **not** factor in to the Intelligent Alert Grouping algorithm. Only manual merges and unmerges influence the algorithm."
+}
+[/block]
 The algorithm interprets and adjusts to new alert data or behavior on a service quickly. We strongly recommend **against** sending in test data to try and influence the algorithm, as this can result in unpredictable behavior.
 
 # Options
@@ -112,21 +75,9 @@ Groups all alerts for the specified time period while the incident is open. For 
 
 ##Do not group alerts automatically on this service
 Default behavior. Alerts will not be automatically grouped. Inbound events will respect any dedupe keys sent in through the API.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5c050d6-Screen_Shot_2018-03-23_at_11.10.22_AM.png",
-        "Screen Shot 2018-03-23 at 11.10.22 AM.png",
-        899,
-        376,
-        "#879484"
-      ],
-      "caption": "(5) Grouping patterns for alerts without grouping, with Time-based Alert Grouping and Intelligent Alert Grouping"
-    }
-  ]
-}
+
+![](https://files.readme.io/5c050d6-Screen_Shot_2018-03-23_at_11.10.22_AM.png)
+
 [/block]
 # How Does Intelligent Alert Grouping Decide Which Alerts to Group?
 
@@ -134,38 +85,14 @@ The Intelligent Alert Grouping algorithm is designed to make conservative and re
 
 For a walkthrough of how to manually merge alerts together, check out
 [this Knowledge Base article](https://support.pagerduty.com/docs/editing-incidents#section-how-to-merge-incidents).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9f7afd9-time-based-alert-grouping-move-to-new-incident.png",
-        "time-based-alert-grouping-move-to-new-incident.png",
-        2514,
-        1288,
-        "#f8f9fa"
-      ],
-      "caption": "(6) How to manually move alerts to an existing or new incident"
-    }
-  ]
-}
+
+![](https://files.readme.io/9f7afd9-time-based-alert-grouping-move-to-new-incident.png)
+
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ac97f5a-time-based-alert-grouping-move-incident-create-screen.png",
-        "time-based-alert-grouping-move-incident-create-screen.png",
-        1192,
-        1192,
-        "#f5f7f6"
-      ],
-      "caption": "(7) How to manually move alerts to a new incident, continued."
-    }
-  ]
-}
+
+![](https://files.readme.io/ac97f5a-time-based-alert-grouping-move-incident-create-screen.png)
+
 [/block]
 ##How Intelligent Alert Grouping Works 
 

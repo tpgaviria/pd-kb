@@ -16,10 +16,9 @@ PagerDuty can be configured with Single Sign-On (SSO) to external Identity Provi
 {
   "type": "warning",
   "title": "Requirements",
-  "body": "* Customers on our Professional, Business, and Digital Operations pricing plans have access to Single Sign-On.\n\n* Only Account Owners can configure Single Sign-On.
-</Callout>
-
-
+  "body": "* Customers on our Professional, Business, and Digital Operations pricing plans have access to Single Sign-On.\n\n* Only Account Owners can configure Single Sign-On."
+}
+[/block]
 To configure SAML SSO: 
 
 1. Search for your Identity Provider’s [integration guide](https://www.pagerduty.com/integrations/) and follow the instructions in the guide. 
@@ -80,10 +79,9 @@ https://{subdomain}.pagerduty.com
 {
   "type": "warning",
   "body": "There should be no trailing slash. Users will receive an `HTTP 400` error when trying to log in if there is a `/` after your subdomain.",
-  "title": "Important
-</Callout>
-
-
+  "title": "Important"
+}
+[/block]
 3. Name ID is expected to be the user's email address:
 
 ```
@@ -95,32 +93,20 @@ urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
 * User names will be set to the value of the `Name` or `name` attribute we receive in your SAML payload. If there is no `Name` or `name` attribute in your SAML payload then the user's name will default to their email address.
 * User roles will be set to the value of the `Role` or `role` attribute we receive, where the value must match one of our [REST API user role values](https://v2.developer.pagerduty.com/v2/page/api-reference#!/Users/post_users): `admin`, `limited_user`, `user` or `read_only_user` (known as Stakeholder user). Accounts with [Advanced Permissions](https://support.pagerduty.com/v1/docs/advanced-permissions) may also pass an `observer` role. If there is no `Role` or `role` attribute in your SAML payload then the user's role will default to the `user` role. This [User role](doc:user-roles) is linked to the User basic role and Manager advanced permission role.
 * The job title of the user will be derived from the  `jobresponsibilities` attribute in the SAML payload, if present.
-
-<Callout type="info" title="Info">
-These attributes will only be used when a user is initially created. Changing the user's email address, name, or role in your IdP will not change these values in PagerDuty; you will still need to update a user's login email address, name, or role in PagerDuty if you change them in your IdP after the user has already been automatically provisioned in PagerDuty.",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "These attributes will only be used when a user is initially created. Changing the user's email address, name, or role in your IdP will not change these values in PagerDuty; you will still need to update a user's login email address, name, or role in PagerDuty if you change them in your IdP after the user has already been automatically provisioned in PagerDuty.",
+  "title": "Note"
+}
+[/block]
 # Redirect Non-Provisioned Users
 
 Auto-provisioning users can get responders up and running quickly, but it will affect billing. If you do not wish to auto-provision users, the Account Owner can optionally redirect non-provisioned users to a destination link, such as an internal wiki, for more information about getting provisioned in your identity provider.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9ff337d-single-sign-on-redirect-non-provisioned-users.png",
-        "single-sign-on-redirect-non-provisioned-users.png",
-        1388,
-        404,
-        "#faf9f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9ff337d-single-sign-on-redirect-non-provisioned-users.png)
+
 # Configure Google Authentication (OAuth 2.0)
 
 To configure Google Authentication:
@@ -133,19 +119,17 @@ To configure Google Authentication:
 {
   "type": "info",
   "title": "Note",
-  "body": "Revoking a user's access at your SSO provider will prevent the user from logging in via SSO, but will not delete the user in PagerDuty. You must still log in to PagerDuty to delete the user.
-</Callout>
-
-
+  "body": "Revoking a user's access at your SSO provider will prevent the user from logging in via SSO, but will not delete the user in PagerDuty. You must still log in to PagerDuty to delete the user."
+}
+[/block]
 
 [block:callout]
 {
   "type": "danger",
   "title": "GSuite Multiple Domains Limitation",
-  "body": "The PagerDuty Google Auth integration supports a **single domain** and cannot be used for multiple domains available in GSuite.
-</Callout>
-
-
+  "body": "The PagerDuty Google Auth integration supports a **single domain** and cannot be used for multiple domains available in GSuite."
+}
+[/block]
 # User Log In via SSO
 
 ## Initial Log In via Welcome Email
@@ -153,21 +137,9 @@ To configure Google Authentication:
 When SSO has been configured, users will commonly receive an email from your Identity Provider notifying them that they can access their account via SSO. Users can log in for the first time by **clicking the provided link**. 
 
 The following is an example from Okta, and the email will vary based on your Identity Provider:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e4b11df-sso-user-email.png",
-        "sso-user-email.png",
-        1994,
-        736,
-        "#f3f5f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e4b11df-sso-user-email.png)
+
 ## Log In via Web App
 
 To log in using SSO in the Web App:
@@ -177,30 +149,17 @@ To log in using SSO in the Web App:
 3. Click the **Sign In With Your Identity Provider** button.
 
 **Web App SSO Login**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ce38bb2-single-sign-on-signing-in.png",
-        "single-sign-on-signing-in.png",
-        782,
-        1040,
-        "#ecf0ea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ce38bb2-single-sign-on-signing-in.png)
+
 4. Your identity provider will automatically sign you into your PagerDuty account. 
 [block:callout]
 {
   "type": "info",
   "title": "Note",
-  "body": "If you do not see the **Sign In With Your Identity Provider** button, or if you are unable to log in to your account, please contact your Account Owner to [troubleshoot](https://support.pagerduty.com/docs/sso#section-troubleshooting-tips) and ensure that SSO has been properly configured.
-</Callout>
-
-
+  "body": "If you do not see the **Sign In With Your Identity Provider** button, or if you are unable to log in to your account, please contact your Account Owner to [troubleshoot](https://support.pagerduty.com/docs/sso#section-troubleshooting-tips) and ensure that SSO has been properly configured."
+}
+[/block]
 ## Log In via Mobile App
 
 Login via the mobile app is very similar to the web app. To log in via the mobile app:
@@ -211,37 +170,13 @@ Login via the mobile app is very similar to the web app. To log in via the mobil
 * **If you have already logged into the mobile app via password** and would like to log in via SSO, you will need to log out first. Navigate to :fa-bars: :fa-arrow-right: **Accounts** and swipe left on the account that you would like to log out of, tap **Delete** and tap **Remove**. This will log you out of your account. When you open the app again, tap **Sign In With Your Identity Provider** and continue with step 2.
 * **If you are logging in to the mobile app for the first time**, open the mobile app and tap **Sign In With Your Identity Provider**. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/89b1b58-sso-mobile-app-sign-in.PNG",
-        "sso-mobile-app-sign-in.PNG",
-        750,
-        1334,
-        "#e9f0ea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/89b1b58-sso-mobile-app-sign-in.PNG)
+
 2. On the next screen, enter your **PagerDuty subdomain** and tap **Sign In With Your Identity Provider** again. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/669ef43-sso-mobile-subdomain.PNG",
-        "sso-mobile-subdomain.PNG",
-        750,
-        1334,
-        "#f5f7f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/669ef43-sso-mobile-subdomain.PNG)
+
 4. Your identity provider should log you into the PagerDuty mobile app immediately, however this may vary based on provider. If you have not already logged into your identity provider as instructed in step 1, you may see an additional login screen.
 
 ## Log In via Identity Provider
@@ -249,29 +184,16 @@ Login via the mobile app is very similar to the web app. To log in via the mobil
 {
   "type": "warning",
   "body": "Most users will log in via your identity provider, and the UI will vary depending on which service you are using. The steps may be similar to the following, but **please refer to your Identity Provider's documentation for further assistance**.",
-  "title": "Important
-</Callout>
-
-
+  "title": "Important"
+}
+[/block]
 1. Log in to your Identity Provider (e.g. Okta) and search for PagerDuty in your connected apps.
 2. Click PagerDuty and you will be logged into your PagerDuty account automatically. 
 
 **Okta Example**:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/954c3be-sso-okta-login-example.png",
-        "sso-okta-login-example.png",
-        2498,
-        1342,
-        "#ecf0e7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/954c3be-sso-okta-login-example.png)
+
 # Troubleshooting Tips
 
 ## Error "Account saml configuration x509 cert is invalid" in the web app after inserting your x509 cert
@@ -301,10 +223,9 @@ Account Owners retain the ability to log in by email address and password in the
 [block:callout]
 {
   "type": "warning",
-  "body": "If configuring an on-premises identity provider, you should treat its private key with utmost secrecy and take adequate security precautions.
-</Callout>
-
-
+  "body": "If configuring an on-premises identity provider, you should treat its private key with utmost secrecy and take adequate security precautions."
+}
+[/block]
 ## When switching from password login to SSO, are password-using users logged out from their accounts?
 
 Enabling SSO on the account, and then unchecking the option to **Allow username/password login**, does *not* by default log out any users currently logged in.  If you would like all users to be force-logged-out and then required to log back in via SSO, there is a [public API to manage user sessions](https://api-reference.pagerduty.com/#!/Users/delete_users_id_sessions) that an account Admin can use to log out all users after the switch to SSO has occurred.

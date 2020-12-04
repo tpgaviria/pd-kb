@@ -14,21 +14,9 @@ PagerDuty Visibility provides technical responders, business responders and lead
 }
 [/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2f19aff-Visibility_Final.jpg",
-        "Visibility_Final.jpg",
-        7792,
-        4034,
-        "#b6d5b8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2f19aff-Visibility_Final.jpg)
+
 
 ## Product Capabilities
 

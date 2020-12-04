@@ -6,21 +6,9 @@ createdAt: "2019-12-13T17:13:35.191Z"
 updatedAt: "2020-11-03T23:42:36.500Z"
 ---
 The service profile provides a high-level view of current context on a service's details. When collaborating across teams, you can see at-a-glance who owns the service, who’s on-call, or how to contact the Team responsible for the service. To access a service’s profile, navigate to **Services** :fa-arrow-right: **Service Directory** and click the desired service’s **name**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/39b266b-service-profile-overview.png",
-        "service-profile-overview.png",
-        2230,
-        632,
-        "#eff5f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/39b266b-service-profile-overview.png)
+
 #Service Details
 ##Service Name and Description
 The name and description of the PagerDuty service. Managers of a service and Global Admins can edit a service name or description inline by clicking the **Edit** button. For best practices on naming your services, please see our [Service Configuration Guide](https://community.pagerduty.com/t/service-configuration-guide/5110).
@@ -50,10 +38,9 @@ The Communication Channel field allows you to configure a link back to your pref
 {
   "type": "info",
   "title": "Note",
-  "body": "The Communication Channel added here is for your Teams’ internal use, and doesn’t impact any webhooks you may have configured.
-</Callout>
-
-
+  "body": "The Communication Channel added here is for your Teams’ internal use, and doesn’t impact any webhooks you may have configured."
+}
+[/block]
 #Activity Tab
 The Activity tab shows a timeline with current and recent activity for your service. 
 
@@ -61,55 +48,19 @@ The Activity tab shows a timeline with current and recent activity for your serv
 This section will show you current incidents that have been triggered, maintenance windows, and when your service configuration was last edited. 
 
 You can also take actions on incidents such as: **Acknowledge**, **Resolve**, **[Join Response](https://support.pagerduty.com/docs/add-responders)** or **Subscribe** to updates.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/cbe6470-service-profile-recent-activity.png",
-        "service-profile-recent-activity.png",
-        1618,
-        686,
-        "#f7f5f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/cbe6470-service-profile-recent-activity.png)
+
 ##High Priority Incidents
 This section shows incidents on the service with the two highest priority levels in your account (e.g. P1, P2 or SEV1, SEV2).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/974605a-high-priority-incidents.png",
-        "high-priority-incidents.png",
-        1036,
-        255,
-        "#f4f3f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/974605a-high-priority-incidents.png)
+
 ##Suppressed Alerts
 If there are [event rules](https://support.pagerduty.com/docs/event-management#section-suppression-and-event-rules) that suppress specific alerts for this service, you can view some of the most recent alerts here. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7339619-service-profile-suppressed-alerts.png",
-        "service-profile-suppressed-alerts.png",
-        1209,
-        563,
-        "#f7f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7339619-service-profile-suppressed-alerts.png)
+
 ##Maintenance Windows
 If you have maintenance windows on this service, they will be listed here in order of when they are scheduled. 
 
@@ -119,21 +70,9 @@ The Integrations tab includes any integrations and extensions that you connect t
 
 ##Integrations
 In the Integrations section, you can view and configure inbound integrations to send events to the service. You can also copy an integration key by clicking the clipboard icon next to it:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fcf6d6f-service-profile-copy-integration-key.png",
-        "service-profile-copy-integration-key.png",
-        1670,
-        546,
-        "#f6f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fcf6d6f-service-profile-copy-integration-key.png)
+
 ###Add an Integration to a Service
 
 1. Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: click the **name** of your desired service :fa-arrow-right: select the **Integrations** tab :fa-arrow-right: click **Add a new integration**.
@@ -153,21 +92,9 @@ To edit an existing integration:
 3. Click **Save changes**.
 
 ###Edit Alert and Incident Settings
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7232deb-service-profile-alert-incident-settings.png",
-        "service-profile-alert-incident-settings.png",
-        1600,
-        175,
-        "#fbfbfb"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7232deb-service-profile-alert-incident-settings.png)
+
 To edit Alert and Incident Settings:
 
 1. Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: click the **name** of your desired service :fa-arrow-right: select the **Integrations** tab :fa-arrow-right: click **Edit** next to **Alert and Incident Settings**.
@@ -180,39 +107,15 @@ The Response tab includes settings that help your team respond to incidents.
 ##Automate 
 
 Automate incoming alerts and how they are managed with [Event Rules](https://support.pagerduty.com/docs/event-management#section-service-event-rules) and [Alert Grouping](https://support.pagerduty.com/docs/intelligent-alert-grouping).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/43781e6-service-profile-automate.png",
-        "service-profile-automate.png",
-        1288,
-        269,
-        "#fafafa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/43781e6-service-profile-automate.png)
+
 ##Assign and Notify 
 
 Assign and notify your responders when an incident is triggered with custom [escalations](https://support.pagerduty.com/docs/escalation-policies), [notification behaviors, support hours](https://support.pagerduty.com/docs/service-settings#section-enable-urgencies), and actions.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3ed4bb3-service-profile-assign-notify.png",
-        "service-profile-assign-notify.png",
-        1292,
-        346,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3ed4bb3-service-profile-assign-notify.png)
+
 To edit these settings, you can click **Edit** and then change the default settings. There are four options to configure how your team is notified for an incident:
 
 * **High-urgency notifications, escalate as needed**: Any incidents triggered with this setting will notify the on-call responder based on the high-urgency notification settings on their profile and the incident will escalate using escalation policy rules.
@@ -226,60 +129,24 @@ You can learn more in our [Configurable Service Settings](https://support.pagerd
 ##Remediate 
 
 Remediate incidents faster with a link to your team’s runbook for triaging incidents, or a [custom incident action](https://support.pagerduty.com/docs/custom-incident-actions).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d7a57ce-service-profile-remediate.png",
-        "service-profile-remediate.png",
-        814,
-        360,
-        "#f7f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d7a57ce-service-profile-remediate.png)
+
 ##Co-ordinate Responders and Stakeholders 
 
 Coordinate responders and stakeholders by automatically adding a default conference bridge to incidents on this service and immediately [run a response play](https://support.pagerduty.com/docs/response-automation) to engage stakeholders.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3091d0e-service-profile-coordinate-responders.png",
-        "service-profile-coordinate-responders.png",
-        810,
-        273,
-        "#f6f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3091d0e-service-profile-coordinate-responders.png)
+
 #Impact Tab
 
 ##Service Dependencies
 
 Service Dependencies can be used to define other technical or business services that your service uses or is used by your service. If an issue arises on your service or one of the dependencies you have configured, you can use the impact tab to quickly assess the scope of the impact. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8e16314-service-dependencies.png",
-        "service-dependencies.png",
-        940,
-        671,
-        "#f2f4f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/8e16314-service-dependencies.png)
+
 You can expand each technical service to see details such as the associated escalation policy and who is currently on-call. 
 
 ### Add or Remove Service Dependencies via the Web App
@@ -292,21 +159,9 @@ You can expand each technical service to see details such as the associated esca
    * **To remove a service dependency**: Click the :fa-minus: button next to the service name.
 
 4. Click **Save Changes**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/eb7fc84-service-dependencies-add-services-web-app.png",
-        "service-dependencies-add-services-web-app.png",
-        715,
-        568,
-        "#f7f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/eb7fc84-service-dependencies-add-services-web-app.png)
+
 ### Add Service Dependencies via API
 
 You may [add service dependencies using our REST API](https://developer.pagerduty.com/api-reference/reference/REST/openapiv3.json/paths/~1service_dependencies~1associate/post).
@@ -318,40 +173,16 @@ You may view and add Service Dependencies from incidents using our [Technical Se
 ## Suggested Service Dependencies
 
 Suggested Service Dependencies uses machine learning to suggest other services that may depend on your service, or that your service depends on. If incidents on your service tend to be followed by incidents on another service, or vice versa, Suggested Technical Service Dependencies will be provided. This feature ensures that a service’s dependency topography is continually up-to-date as your technical infrastructure evolves and changes. You may view Suggested Service Dependencies on individual services’ Impact tabs or on an active incident, which will have a blue pill with the number of suggested dependencies, if they are available:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e242135-Screen_Shot_2020-11-03_at_3.42.09_PM.png",
-        "Screen Shot 2020-11-03 at 3.42.09 PM.png",
-        194,
-        67,
-        "#c5d8ef"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e242135-Screen_Shot_2020-11-03_at_3.42.09_PM.png)
+
 ### View and Add Suggested Service Dependencies
 
 1. Navigate to **Services** :fa-arrow-right: **Service Directory** :fa-arrow-right: click your desired service’s **name** :fa-arrow-right: **Impact** tab. If your service has suggested dependencies, you will be able to view them by clicking the blue **Suggested Technical Dependencies** dropdown. If the machine learning algorithm has not detected any suggested dependencies, this blue dropdown will not be available.
 2. **To add a Suggested Service Dependency**: Click the :fa-check: next to the service name. **To dismiss a Suggested Service Dependency**: If you do not feel that a Suggested Service Dependency correlates with your service, click the :fa-times: next to the service name to dismiss the suggestion. **Please Note**: Once you dismiss a suggestion, it will never be shown again as a suggestion. If you change your mind, however, you may always [manually add that dependency](https://support.pagerduty.com/docs/service-profile#add-or-remove-service-dependencies-via-the-web-app). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3443904-suggested-service-dependencies-dropdown.png",
-        "suggested-service-dependencies-dropdown.png",
-        580,
-        432,
-        "#d3e0f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3443904-suggested-service-dependencies-dropdown.png)
+
 #FAQ
 
 ##What’s the difference between the service profile and the old service configuration page?

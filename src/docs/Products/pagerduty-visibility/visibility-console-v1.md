@@ -60,21 +60,9 @@ The Infrastructure Health Application aggregates the linear data from the Alerts
 }
 [/block]
 For the best experience with this application, we recommend expanding the Infrastructure Health Application to fill your screen.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/959db89-visibility-console-infrastructure-health.png",
-        "visibility-console-infrastructure-health.png",
-        1656,
-        1010,
-        "#f8f8f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/959db89-visibility-console-infrastructure-health.png)
+
 ##Infrastructure Health Application Features 
 
 ###Click, Drag, Select and Zoom-in
@@ -88,21 +76,9 @@ Get a completely new perspective on your data using the Source and Service Pivot
 
 ###Using Filters
 In the search bar below these pivot points you may also filter which individual sources or services are represented in your data to fine tune what data is on display. Filtering may be done by text or regex. Clicking on individual services or sources in the list below the search bar allows for filtering as well.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/69ff1b9-visibility-console-filter.png",
-        "visibility-console-filter.png",
-        960,
-        1052,
-        "#f6f4f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/69ff1b9-visibility-console-filter.png)
+
 ###Accessing Cluster Details
 Hovering over a cluster of will create a dialog box with details about data in that cluster. Clicking on the cluster will generate a scrollable dialog box with information about the data, including individual events' severity, priority, source, and integration.
 

@@ -15,10 +15,9 @@ You'll want to ensure that each user has multiple notification rules, including 
 {
   "type": "info",
   "title": "Note",
-  "body": "There is a limit of 20 high-urgency and 10-low urgency notification rules per user profile.
-</Callout>
-
-
+  "body": "There is a limit of 20 high-urgency and 10-low urgency notification rules per user profile."
+}
+[/block]
 2. **Multiple escalation rules**
 
 Avoid escalation policies with only one level. You'll want to include multiple people so that if the first person doesn't respond to or resolve the issue, you'll have a fail-safe in place to tackle the problem.
@@ -68,10 +67,9 @@ Don't hesitate to reach out to the [PagerDuty Community](https://community.pager
 {
   "type": "info",
   "title": "Tip",
-  "body": "When contacting support, include as many specific details as possible when creating your request, as this will enable us to move directly into troubleshooting.
-</Callout>
-
-
+  "body": "When contacting support, include as many specific details as possible when creating your request, as this will enable us to move directly into troubleshooting."
+}
+[/block]
 11. **Tell us what you think!**
 
 Contribute your feedback and, in particular, feature requests; these help us to roadmap and improve our service. We often find our beta testers through these requests, for instance, if you'd like an early sneak peek into upcoming features. If you'd like to file a feature request, email our support team.

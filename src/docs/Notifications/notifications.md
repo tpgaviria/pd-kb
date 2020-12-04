@@ -45,37 +45,13 @@ Each of the above PagerDuty actions and channels will have notifications that di
 Yes. For each email address you have configured within your Contact Information, you can choose to receive HTML emails. If this option is unselected, basic text email notifications will be sent. To change this email setting, click your **User Icon** :fa-arrow-right: **My Profile** :fa-arrow-right: **Contact Information** :fa-arrow-right: :fa-edit: next to your email address :fa-arrow-right: edit checkboxes based on your preferences. 
 
 Here is an example of a PagerDuty text-only email notification:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c4f9e73-notification-content-bx-text-email.png",
-        "notification-content-bx-text-email.png",
-        1750,
-        1124,
-        "#f9f9fa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c4f9e73-notification-content-bx-text-email.png)
+
 Here is an example of a PagerDuty HTML email notification:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/96098c8-notification-content-bx-html-email.png",
-        "notification-content-bx-html-email.png",
-        1254,
-        1244,
-        "#f8f6f6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/96098c8-notification-content-bx-html-email.png)
+
 When you receive a PagerDuty email notification, the **Details** section of each incident will be truncated to 500 characters. You can include clickable links in this truncated message. The rest of the email body can be accessed in PagerDuty within the incident logs and details or via the [mobile app](/docs/mobile-app#section-mobile-app-walkthrough).
 
 Attachments are stripped from PagerDuty email notifications and also from the incident logs. To view the original attachment, you will want to refer to the system that sent out the original attachment.
@@ -104,21 +80,9 @@ Attachments are stripped from PagerDuty email notifications and also from the in
 All PagerDuty SMS notifications are truncated to meet the 160 character limit for text messages.
 
 Here is an example of a PagerDuty SMS notification:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7aa72ab-notification-content-sms.jpg",
-        "notification-content-sms.jpg",
-        552,
-        186,
-        "#dedee2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7aa72ab-notification-content-sms.jpg)
+
 If multiple incidents are assigned to you, then PagerDuty will bundle all notifications into 1 SMS notification, listing out the incident numbers and giving you the option to only ack all or resolve all incidents at once.
 
 ##Phone Notifications
@@ -162,21 +126,9 @@ Please read our article on [Live Call Routing](https://support.pagerduty.com/doc
 }
 [/block]
 Here is an example of a PagerDuty push notification:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ed35fae-communicating-w-stake-push-notification.jpg",
-        "communicating-w-stake-push-notification.jpg",
-        750,
-        213,
-        "#777c78"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ed35fae-communicating-w-stake-push-notification.jpg)
+
 
 ## Notification Bundling
 
@@ -208,21 +160,9 @@ Another way to minimize the number of notifications that you receive is to adjus
 ##Responding to an SMS Notification
 
 To reply to an SMS notification you will reply with the unique code that is provided. Here is an example:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2e67196-ack_screenshot.jpg",
-        "ack_screenshot.jpg",
-        750,
-        1334,
-        "#e9e7ed"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2e67196-ack_screenshot.jpg)
+
 ##Responding to a Phone Notification
 Please respond to a phone notification by pressing:
 4. Acknowledge

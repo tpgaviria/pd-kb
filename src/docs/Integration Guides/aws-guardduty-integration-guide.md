@@ -24,21 +24,9 @@ Integrating with global or service-level event rules may be beneficial if you wa
 
 1. From the **Services** menu, select **Event Rules** and click your **Default Global Ruleset**. 
 2. On the Event Rules screen, copy your **Integration Key**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/85a2b6c-cloudwatch-copy-key.png",
-        "cloudwatch-copy-key.png",
-        2146,
-        980,
-        "#f7f6f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/85a2b6c-cloudwatch-copy-key.png)
+
 3. Once you have your **Integration Key**, the **Integration URL** will be:
 
 `https://events.pagerduty.com/x-ere/[YOUR_INTEGRATION_KEY_HERE]`
@@ -74,21 +62,9 @@ If you are creating a new service for your integration, in General Settings, ent
 # In the AWS Management Console
 
 1. In the **Services** search bar, search and select Simple Notification Service (SNS). On the SNS dashboard, select **Topics** and click **Create Topic**. This will be used to route alerts to PagerDuty from AWS.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bec2dcd-amazon-cloudwatch-create-topic.png",
-        "amazon-cloudwatch-create-topic.png",
-        1780,
-        510,
-        "#f6f5f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/bec2dcd-amazon-cloudwatch-create-topic.png)
+
 2. Enter a **Topic name** (you may want to name your topic after your PagerDuty service’s name) and **Display name**, then click **Create topic**. 
 3. Now that your topic has been created, Select **Subscriptions** in the left hand menu and click **Create Subscription**.
 4. Make sure **HTTPS** is the selected Protocol. Paste your **Integration URL** from step 5 (above) into the **Endpoint** field, ensure that the **Enable raw message delivery** checkbox is **unchecked** and click **Create Subscription**.
@@ -97,56 +73,20 @@ If you are creating a new service for your integration, in General Settings, ent
 7. Once you have enabled GuardDuty, you can begin building CloudWatch Event Rules to send alerts to PagerDuty. Navigate to the CloudWatch console.
 8. Select **Events**, then click **Get Started** to create a rule. One or more rules can be created to send specific alerts to PagerDuty when a GuardDuty finding is opened.
 9. Select **GuardDuty** as the **Service Name**, then select **GuardDuty Finding** as the Event Type.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1c619e7-GuardDuty-Create-Rule.png",
-        "GuardDuty-Create-Rule.png",
-        1158,
-        1216,
-        "#f2f1f0"
-      ],
-      "sizing": "full"
-    }
-  ]
-}
+
+![](https://files.readme.io/1c619e7-GuardDuty-Create-Rule.png)
+
 [/block]
 10. Click **Add a target** and select **SNS topic**, then select **Your Topic Name** (the SNS topic you created above in step 1) and then click **Configure Details**.
 11. Assign a Name like *GuardDuty-to-PD-Findings* and click **Create Rule**.
 12. To ensure configuration was successful, navigate back to the Amazon GuardDuty console to generate sample findings, which should trigger sample events in PagerDuty. Select **Settings**, then select **Generate Sample Findings** and then click **Findings** in the left navigation bar. You will see the sample findings that have been generated. In PagerDuty, you will see the correlating sample alert. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/390393a-GuardDuty-Sample-Findings.png",
-        "GuardDuty-Sample-Findings.png",
-        2396,
-        1244,
-        "#f6f6f6"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3488e87-GuardDuty-Findings.png",
-        "GuardDuty-Findings.png",
-        2282,
-        730,
-        "#f0ede7"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/390393a-GuardDuty-Sample-Findings.png)
+
+
+
+![](https://files.readme.io/3488e87-GuardDuty-Findings.png)
+
 Congratulations, you have now integrated Amazon GuardDuty with PagerDuty! For more information on how to adjust settings to deduplicate events within PagerDuty, please visit our article on [Event Management](https://support.pagerduty.com/docs/event-management).
 
 ## FAQ

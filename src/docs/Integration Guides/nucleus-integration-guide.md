@@ -23,207 +23,63 @@ updatedAt: "2019-06-06T11:35:43.626Z"
 ## In PagerDuty
 1. From the **Configuration** menu, select **Services**.
 2. **If you are adding your integration to an existing service**, click the name of the service you want to add the integration to. Then select the **Integrations** tab and click the **New Extension** button.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/dd6985f-nucleus-ig-new-extension.png",
-        "nucleus-ig-new-extension.png",
-        1058,
-        804,
-        "#f1f4f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/dd6985f-nucleus-ig-new-extension.png)
+
 **If you are creating a new service** for your integration, please read our documentation in section [Configuring Services and Integrations](https://support.pagerduty.com/docs/services-and-integrations#section-configuring-services-and-integrations) and follow the steps outlined in the [Create a New Service](https://support.pagerduty.com/docs/services-and-integrations#section-create-a-new-service) section, selecting **Don't Use an integration** as the **Integration Type** in step 4. Continue with step 3 (below) once you have finished these steps.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fa885e0-setup-integration-nucleus.png",
-        "setup-integration-nucleus.png",
-        512,
-        323,
-        "#fafafa"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fa885e0-setup-integration-nucleus.png)
+
 3. On the newly created service, select the **Integrations** tab and click **+ New Extension**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/a078ba4-nucleus-ig-new-extension.png",
-        "nucleus-ig-new-extension.png",
-        1058,
-        804,
-        "#f1f4f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/a078ba4-nucleus-ig-new-extension.png)
+
 4. Select **Generic V2 Webhook** as the **Extension Type** and enter a **Name** for the extension. In the **Details** field, you will enter the URL to your Nucleus instance with /public/index.php/webhook/pagerduty appended. (Example: `https://Nucleus-trial1.nucleussec.com/nucleus/public/index.php/webhook/pagerduty`) .Click **Save**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/832d53d-extension-type-nucleus.png",
-        "extension-type-nucleus.png",
-        971,
-        112,
-        "#f3e8e5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/832d53d-extension-type-nucleus.png)
+
 5.  Once you have added the extension, navigate to the **Configuration** menu, select **API Access**, then click **+ Create New API Key**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/37c192d-api-access.png",
-        "api-access.png",
-        512,
-        292,
-        "#c0c2c6"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/37c192d-api-access.png)
+
 6. Enter a description for the key, and click **Create Key**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/2c07244-create-key.png",
-        "create-key.png",
-        512,
-        230,
-        "#eef0ee"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/2c07244-create-key.png)
+
 7. Copy and paste the **API key** into a safe place before closing the dialogue box.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fea17f8-nucleus-key.png",
-        "nucleus-key.png",
-        512,
-        402,
-        "#f1efed"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fea17f8-nucleus-key.png)
+
 ##In Nucleus
 1. Navigate to **Project Administration** and click **Connectors**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/75f49e1-connectors.png",
-        "connectors.png",
-        244,
-        583,
-        "#303b48"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/75f49e1-connectors.png)
+
 2. In the **Issue Trackers** section, click the **PagerDuty** icon.
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f552124-issue-trackers.png",
-        "issue-trackers.png",
-        715,
-        274,
-        "#f1f0f3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f552124-issue-trackers.png)
+
  3. On the **Setup PagerDuty Connector** pop-up screen, enter the **API Key** and click **Save Changes** at the bottom of the screen. If a success message appears, click **Retrieve Data**. If you do not receive a success message, please ensure you have entered the API Key correctly and try again.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/743cc6d-setup-connector.png",
-        "setup-connector.png",
-        512,
-        151,
-        "#cacbce"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/743cc6d-setup-connector.png)
+
 4. Select the **PagerDuty Service** and **Default Requester** from their respective dropdowns and click **Save Changes**.
 **Optional**: Select the **Default Escalation Policy** or **Default Assignee**.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/bbbd05b-connector-service-requester.png",
-        "connector-service-requester.png",
-        512,
-        347,
-        "#edeef0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/bbbd05b-connector-service-requester.png)
+
 5. Once saved, click **Verify Connection** to ensure everything is working properly. Once the connection is verified, a 'Success!" status will appear at the top of the pop-up screen. If you do not receive a success message, please ensure you have entered the API Key correctly, make sure your service is enabled, and try again.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9adc590-necleus-success.png",
-        "necleus-success.png",
-        512,
-        104,
-        "#a5a4a8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9adc590-necleus-success.png)
+
 #FAQ
 **Can I create a PagerDuty incident within Nucleus?**
 

@@ -30,21 +30,9 @@ To create a rule:
       * **Do not route alert to a service**: If you choose not to route events to a service, the events will be suppressed, and no incident will be opened.
     * **Change the severity of the alert** *(optional)*: [Severity](https://support.pagerduty.com/docs/dynamic-notifications) defines the estimated impact of an event, and can be used to automate the notification urgency of the related incident. Notification settings are defined on a service’s settings page. If you do not set the severity, PagerDuty will apply the severity level within the event data, if it exists.
 2. Click **Save**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1de7f83-global-event-rules-overview.png",
-        "global-event-rules-overview.png",
-        1734,
-        1360,
-        "#f2f2f2"
-      ],
-      "sizing": "smart"
-    }
-  ]
-}
+
+![](https://files.readme.io/1de7f83-global-event-rules-overview.png)
+
 [/block]
 You can either configure these settings in the UI, or use the [global event rules API](https://v2.developer.pagerduty.com/v2/docs/global-event-rules-api).
 
@@ -66,21 +54,9 @@ If your monitoring tool sends emails with **custom headers**, you can create rul
 
 ###Field Selector
 You can view and choose relevant fields from your most recent event by using our JSON field selector:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5b5a65b-event-management-field-extractor.png",
-        "event-management-field-extractor.png",
-        2718,
-        1320,
-        "#cbcccf"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/5b5a65b-event-management-field-extractor.png)
+
 The JSON field selector will appear when you select **View a recent API event...** in the dropdown that appears when you click **Enter field name** while writing your rules.
 
 ##Field Extraction
@@ -88,21 +64,9 @@ The JSON field selector will appear when you select **View a recent API event...
 Field extraction allows you to copy important data from one event field to another. Some fields can be used by PagerDuty for automation.
 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6f511de-event-management-extract-dedup-key.png",
-        "event-management-extract-dedup-key.png",
-        1740,
-        810,
-        "#f0f0f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/6f511de-event-management-extract-dedup-key.png)
+
 The `description` field is used to create the incident title. Titles should be descriptive and tell responders what is happening.
 
 The `dedup_key` field is used to merge events into a single alert. Events with the same dedup_key can update the status of the alert they are automatically merged into.
@@ -194,21 +158,9 @@ For nested fields, format the field name with periods separating each level of t
 Notes via global event rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
 
 Notes are added to incidents via the global event rules engine workflows. Users first set specific criteria in which notes information will be added. Users can then detail which information or links they want to include in the note. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ae21f9d-event-intelligence-add-notes.png",
-        "event-intelligence-add-notes.png",
-        1236,
-        468,
-        "#f7f7f7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ae21f9d-event-intelligence-add-notes.png)
+
 If the event is added to an incident, notes can be seen on that incident's details page. Notes added by event rules will list the first account user as the author.
 
 
@@ -225,21 +177,9 @@ To configure an event rule to set incident priority:
 1. When creating or editing a rule, under Alert Behavior, ensure that you have selected **Route alert to a service** and that you've assigned the **service** they should be routed to. 
 2. You should now see the Adding Context to Incidents section below. Set the rule to **Change the priority of the incident** and select your desired **priority**. The priority of an incident will be based on the conditions defined above in **Which events should this rule apply to?** section. 
 3. Click **Save**.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ce319ee-ger-change-priority.png",
-        "ger-change-priority.png",
-        934,
-        332,
-        "#cbcece"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ce319ee-ger-change-priority.png)
+
 
 ## Scheduled Event Rules
 
@@ -248,37 +188,13 @@ You can gain a greater degree of control over your event rules by detailing a si
 Scheduled Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
 
 Scheduled Rules are set within global event rules engine workflows. Users first set a single specific time window in which the rules they have created will apply. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f7911fe-event-intelligence-scheduled-event-rules.png",
-        "event-intelligence-scheduled-event-rules.png",
-        916,
-        478,
-        "#f1f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f7911fe-event-intelligence-scheduled-event-rules.png)
+
 Users can then specify what actions are to be performed within this time window. For instance, users might want to suppress notifications.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d0e6d05-event-intelligence-threshold-alerts.png",
-        "event-intelligence-threshold-alerts.png",
-        1798,
-        306,
-        "#f1f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d0e6d05-event-intelligence-threshold-alerts.png)
+
 In the above example, alerts will be suppressed unless 6+ alerts come in within a 10 minute window. If alerts surpass that threshold, then an incident will be triggered. 
 ## Recurring Event Rules
 
@@ -287,21 +203,9 @@ If there are specific hours of the day or day(s) within a week when you would li
 The Recurring Event Rules functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
 
 To set a recurring schedule for an event rule, go to **Configuration** :fa-arrow-right: **Event Rules**, select the :fa-cog: dropdown next to the rule and then click **Edit Rule**. In the **When should this rule be active?** section, select **On a recurring schedule**, specify the hours and day(s) when you would like the rule to be active, and then click **Save**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3236cbb-event-intelligence-recurring-rules.png",
-        "event-intelligence-recurring-rules.png",
-        1712,
-        484,
-        "#f9f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3236cbb-event-intelligence-recurring-rules.png)
+
 
 ## Disable Event Rules
 
@@ -312,53 +216,17 @@ The Disable Rules functionality is part of our [Event Intelligence](https://supp
 To temporarily disable a rule, go to **Configuration** :fa-arrow-right: **Event Rules**, then click the :fa-cog: dropdown next to the rule and click **Disable Rule**. While the rule is disabled, you will see a 
 <span style="border: 1px solid #484848 !important; border-radius: 25px; padding: 4px 10px;">:fa-pause: <strong>Disabled</strong></span> pill marker in the **Matching conditions** section of the rule. 
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6e0c730-event-intelligence-disable-event-rule.png",
-        "event-intelligence-disable-event-rule.png",
-        558,
-        798,
-        "#f5f6f6"
-      ]
-    }
-  ]
-}
-[/block]
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/84c8978-ger-disabled-pill.png",
-        "ger-disabled-pill.png",
-        398,
-        414,
-        "#eceaeb"
-      ]
-    }
-  ]
-}
-[/block]
+![](https://files.readme.io/6e0c730-event-intelligence-disable-event-rule.png)
+
+
+
+![](https://files.readme.io/84c8978-ger-disabled-pill.png)
+
 If you would like to enable the rule again, click the :fa-cog: dropdown and click **Enable Rule**. 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f178465-ger-enable-rule.png",
-        "ger-enable-rule.png",
-        510,
-        726,
-        "#f7f7f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f178465-ger-enable-rule.png)
+
 
 ## Threshold Alerts
 
@@ -367,53 +235,17 @@ Receive PagerDuty notifications only when your customized alert conditions breac
 The Threshold Alerts functionality is part of our [Event Intelligence](https://support.pagerduty.com/v1/docs/event-intelligence) product, which is purchased separately from the core PagerDuty platform.
 
 Thresholds are set within global event rules engine workflows. Users first set specific rule criteria, which, if met, will be included in their threshold count.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d3822b7-event-management-create-condition.png",
-        "event-management-create-condition.png",
-        2294,
-        372,
-        "#f0f0f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d3822b7-event-management-create-condition.png)
+
 Users can then select a service to route it to in the **Alert Behavior** section.  
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/6a79f9d-ger-route-to-service.png",
-        "ger-route-to-service.png",
-        814,
-        268,
-        "#f0f0f0"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/6a79f9d-ger-route-to-service.png)
+
 Once the service is selected, you will see an **Incident Behavior** section appear below. Here you can configure threshold alerting.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1e0c8ad-event-intelligence-threshold-alerts.png",
-        "event-intelligence-threshold-alerts.png",
-        1798,
-        306,
-        "#f1f1f1"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1e0c8ad-event-intelligence-threshold-alerts.png)
+
 In this example, if 6+ alerts come in in a 10 minute time window, the threshold will be exceeded and a PagerDuty incident will be created. 
 
 ##Thresholds and Alert Grouping
@@ -421,21 +253,9 @@ In this example, if 6+ alerts come in in a 10 minute time window, the threshold 
 PagerDuty’s Alert Grouping feature can be used in combination with Threshold Alerting in order to reduce the number of incidents created, minimize noise, and keep the responder focused on the issue. While Threshold Alerting determines how many alerts are required to create an incident and notify the on-call user, Alert Grouping can take this a step further by then grouping any alerts that exceed this threshold into a single, open incident. 
 
 The current alert grouping options that are included with the Event Intelligence package are [Time-Based Alert Grouping](https://support.pagerduty.com/docs/time-based-alert-grouping) and [Intelligent Alert Grouping](https://support.pagerduty.com/v1/docs/intelligent-alert-grouping). 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/f0d913d-ger-iag.png",
-        "ger-iag.png",
-        1774,
-        1134,
-        "#edeeed"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/f0d913d-ger-iag.png)
+
 Users can view all alerts, including those that do not breach the set thresholds, in the Alerts table. Alerts not breaching the thresholds will appear in the table with a status of `Triggered (Suppressed)`. When the threshold is breached, the alert that exceeded the threshold will appear with a `Triggered` status. 
 
 This alert will also create an incident, which can be viewed in the Incidents Table.

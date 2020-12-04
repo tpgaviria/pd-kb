@@ -9,10 +9,9 @@ updatedAt: "2020-10-09T23:16:29.880Z"
 [block:callout]
 {
   "type": "danger",
-  "body": "The following article illustrates ways you may choose to customize workflows in the ServiceNow integration. Please note, however, that any customizations which alter the integration’s out-of-the-box behavior will not be supported by the PagerDuty Support team.
-</Callout>
-
-
+  "body": "The following article illustrates ways you may choose to customize workflows in the ServiceNow integration. Please note, however, that any customizations which alter the integration’s out-of-the-box behavior will not be supported by the PagerDuty Support team."
+}
+[/block]
 ServiceNow is a complex enterprise integration that allows for versatile configurations with your PagerDuty account to meet the specific criteria of your unique business. Below are some guidelines for customizing your ServiceNow integration with advanced configurations.
 
 # Best Practices for Automation
@@ -33,21 +32,9 @@ Two example rules, which are disabled by default but available for reference and
 
 * *Configuration item - set from payload on trigger*
 * *Configuration Item - set default on trigger**
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/4e9dddf-inbound_field_rules.png",
-        "inbound_field_rules.png",
-        3190,
-        554,
-        "#353f4e"
-      ],
-      "caption": "The Inbound Field Rules menu"
-    }
-  ]
-}
+
+![](https://files.readme.io/4e9dddf-inbound_field_rules.png)
+
 [/block]
 ## Basic Setup
 
@@ -57,21 +44,9 @@ Two example rules, which are disabled by default but available for reference and
 * **Set Default Value:** use a fixed value to populate the field.
 * **Set From PagerDuty Webhook Payload:** Using dot notation, specify the namespace path to the property of the PagerDuty webhook to be used.
 4. When setting a default value, a freeform text field will appear in which you can specify the value to set for the field.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/75fae27-inbound_field_rules2.png",
-        "inbound_field_rules2.png",
-        3188,
-        894,
-        "#dee5e7"
-      ],
-      "caption": "Inbound Field Rule definition form"
-    }
-  ]
-}
+
+![](https://files.readme.io/75fae27-inbound_field_rules2.png)
+
 [/block]
 ## Setting Based on the Payload
 
@@ -111,10 +86,9 @@ When changing the priority on a PagerDuty incident, the change will be reflected
 {
   "type": "success",
   "title": "Best Practices",
-  "body": "Should the priority of an incident need to change, it is best practice to leave a text note as soon as it has been changed to inform all of the relevant stakeholders.
-</Callout>
-
-
+  "body": "Should the priority of an incident need to change, it is best practice to leave a text note as soon as it has been changed to inform all of the relevant stakeholders."
+}
+[/block]
 ## Importing PagerDuty Priorities
 
 The first step is to define some incident priorities in your PagerDuty account, by going to **User Icon** :fa-arrow-right: **Account Settings** :fa-arrow-right: **Incident Priorities.**
@@ -124,38 +98,14 @@ Once that is complete, navigate in ServiceNow to **PagerDuty** &rarr; **Configur
 ## Defining the Priority Mapping 
 
 Once you have imported your PagerDuty priorities, go in ServiceNow to **PagerDuty** &rarr; **Configuration** &rarr; **Priorities**. You will find there a predefined list of your PagerDuty Priorities, which can then be mapped to ServiceNow Urgency and Impact value pairs. The computed ServiceNow priority value will also be shown in the table.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3302c89-define_priority.png",
-        "define_priority.png",
-        1476,
-        548,
-        "#373f48"
-      ],
-      "caption": "The Priority Data Lookup list"
-    }
-  ]
-}
+
+![](https://files.readme.io/3302c89-define_priority.png)
+
 [/block]
 To edit how incident priorities in PagerDuty map to priorities in ServiceNow, click on the **PagerDuty priority** field in the mapping in question to edit the record and set a value for its corresponding **ServiceNow Impact** and **ServiceNow Urgency**. On save, the ServiceNow Priority will be computed and shown in the table.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/550f9d3-define_priority2.png",
-        "define_priority2.png",
-        1478,
-        545,
-        "#373f48"
-      ],
-      "caption": "The priority mapping form"
-    }
-  ]
-}
+
+![](https://files.readme.io/550f9d3-define_priority2.png)
+
 [/block]
 # Customized Automation
 

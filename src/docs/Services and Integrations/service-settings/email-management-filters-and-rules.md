@@ -9,30 +9,17 @@ updatedAt: "2020-10-09T21:11:13.581Z"
 # Advanced Email Management: Extracting Information with Regular Expressions
 
 When using the **regular expression** (also called regex) option to create an incident key for email management rules, you will need to use a capture group, which in regex is defined as anything between a set of parentheses "( )".
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/860a907-ebbf611-Screen_Shot_2017-01-20_at_9.56.55_AM.png",
-        "ebbf611-Screen_Shot_2017-01-20_at_9.56.55_AM.png",
-        892,
-        112,
-        "#e3eaea"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/860a907-ebbf611-Screen_Shot_2017-01-20_at_9.56.55_AM.png)
+
 
 [block:callout]
 {
   "type": "warning",
   "title": "Important note regarding HTML emails and content encoding",
-  "body": "Email management regular expressions are compared on the text of the email _after decoding_ per the encoding specified by `Content-Transfer-Encoding`. However, `Content-Type` is ignored, i.e. if after base64-decoding (if the encoding is base64) the underlying message is HTML, and there is no plain text copy of the email included, then *the regular expression will be run on the HTML code,* not on the text that would result after rendering the HTML or stripping out HTML tags.\n\nThus, if the emails are sent only as HTML (`Content-Type: text/html`), note that any regex written to match the text content alone may not work. HTML tags and hidden linebreaks / whitespace can potentially interfere with your regular expressions matching the input as expected.\n\nSee [Troubleshooting](#section-a-regular-expression-that-should-match-the-body-is-not-matching) for further details.
-</Callout>
-
-
+  "body": "Email management regular expressions are compared on the text of the email _after decoding_ per the encoding specified by `Content-Transfer-Encoding`. However, `Content-Type` is ignored, i.e. if after base64-decoding (if the encoding is base64) the underlying message is HTML, and there is no plain text copy of the email included, then *the regular expression will be run on the HTML code,* not on the text that would result after rendering the HTML or stripping out HTML tags.\n\nThus, if the emails are sent only as HTML (`Content-Type: text/html`), note that any regex written to match the text content alone may not work. HTML tags and hidden linebreaks / whitespace can potentially interfere with your regular expressions matching the input as expected.\n\nSee [Troubleshooting](#section-a-regular-expression-that-should-match-the-body-is-not-matching) for further details."
+}
+[/block]
 ##Capture Group
 A capture group will tell PagerDuty to create an incident key from the text contained within the parentheses. If the unique identifier within the capture group changes (i.e. a ticket ID # or host ID #) you can use `\d+`, which tells PagerDuty to capture all subsequent digits.
 
@@ -40,37 +27,13 @@ Similarly, if you want to capture a specific number of digits you could use `\d`
 
 ##What if my Unique Identifier Already has Parentheses?
 In some instances your unique identifier may already have parentheses around it. For example, let’s say you want to create an incident key based on the ticket numbers contained within the parentheses of this Zendesk email:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/7536a64-32fe6b0-zendesk.jpg",
-        "32fe6b0-zendesk.jpg",
-        606,
-        106,
-        "#494f5d"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/7536a64-32fe6b0-zendesk.jpg)
+
 In this case you would use a backslash (`\`) at the beginning; the backslash is an escape character that tells PagerDuty "the following character should be treated as text."
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c6cfe85-6dc7e56-incident_key_zendesk.jpg",
-        "6dc7e56-incident_key_zendesk.jpg",
-        765,
-        116,
-        "#e4e4e3"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c6cfe85-6dc7e56-incident_key_zendesk.jpg)
+
 ##Specifics of PagerDuty's Capture Group Implementation
 PagerDuty's email management rules use Google's [RE2](https://github.com/google/re2) for regular expression handling, and additionally adds some custom behavior. Some specific things to be aware of:
 - You are not allowed to use nested groups, so if you try and use this regular expression, you will get an error while saving the service `(([0-9])[0-9])`.
@@ -86,21 +49,9 @@ PagerDuty's email management rules use Google's [RE2](https://github.com/google/
 
 ##Other Options
 One thing to note — it is not necessary to always use regex when building an incident key. Using the "all text between" drop down option is a quick and easy way to tell PagerDuty to create an incident key between A and B. Or if your incident key never changes you could use the "everything" drop-down.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/c3a9f65-56de3fe-Screen_Shot_2017-01-20_at_9.58.33_AM.png",
-        "56de3fe-Screen_Shot_2017-01-20_at_9.58.33_AM.png",
-        869,
-        152,
-        "#4770b5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/c3a9f65-56de3fe-Screen_Shot_2017-01-20_at_9.58.33_AM.png)
+
 # Limit Noise with Email Integration Filters
 
 Email filters in PagerDuty [email integrations](https://www.pagerduty.com/docs/guides/email-integration-guide/) allow you to disregard certain messages arriving at the integration email address. An email's subject, body, and from address can be checked against either a safelist or blocklist [regular expression](https://support.google.com/analytics/answer/1034324?hl=en) (regex) filter. Messages that don’t pass the filter will be silently discarded. 
@@ -120,13 +71,13 @@ To set up a regex filter:
 4. Configure your rules — whether the email subject, body, and from address should match or not match the regex.
 5. In the edit fields, enter the value to match or not match (this field will not be available if **is anything** was selected).
 6. Click **Save**.
-
-<Callout type="info" title="Info">
-Regular expressions are case sensitive. We suggest using a pipe (`|`) to capture different upper/lowercase strings. i.e. `(Down|DOWN|down)`",
-  "title": "Note
-</Callout>
-
-
+[block:callout]
+{
+  "type": "info",
+  "body": "Regular expressions are case sensitive. We suggest using a pipe (`|`) to capture different upper/lowercase strings. i.e. `(Down|DOWN|down)`",
+  "title": "Note"
+}
+[/block]
 Below is an example of how to use email filters to filter events based on their critical/noncritical status. In this example, you send emails with the subjects CRITICAL and NONCRITICAL to PagerDuty, but you only want those with CRITICAL in the subject to trigger incidents.
 1.  Go to **Services** :fa-arrow-right: **Service Directory** and select the service with the email integration.
 2. Go to the **Integrations** tab and click the email integration you want to edit, then click **Edit Integration**.
@@ -134,21 +85,9 @@ Below is an example of how to use email filters to filter events based on their 
 4. Add two filter rules:
     1. The first rule should be **The email subject matches the regex** `CRITICAL`.
     2. The second rule should be **The email subject does not match the regex** `NONCRITICAL`.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/1b16a53-86365ce-Screen_Shot_2017-02-07_at_1.45.09_PM.png",
-        "86365ce-Screen_Shot_2017-02-07_at_1.45.09_PM.png",
-        1004,
-        466,
-        "#f2f2f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/1b16a53-86365ce-Screen_Shot_2017-02-07_at_1.45.09_PM.png)
+
 The **Accept email only if it matches ALL of the rules below** option ensures that both rules will be applied to incoming events. The reason you need both filter rules is because NONCRITICAL contains the word CRITICAL, so the second rule prevents messages with the subject NONCRITICAL from being accepted, even though it contains the word CRITICAL. 
 
 It's also important to note that regex filters are case sensitive, so if your email subject contains **Critical**, **critical**, or any other variation that is not **CRITICAL**, the message will not be accepted using this example. Email filters cannot be made case insensitive using `(?i)` like email management rules can. We suggest using a pipe (`|`) to capture different upper/lowercase strings if you do not use one case everywhere, for example: `(Critical|critical|CRITICAL)`.
@@ -170,46 +109,22 @@ The `^` means the subject line starts with this, and `(CRITICAL|SEVERE)` means t
 Regular expression rules are case sensitive, so "DOWN", "down", and "Down" are all considered different strings and will not both match against the same regex. You can make your email management rules case insensitive by adding `(?i)` to the beginning of the line, for example: `(?i)(critical)`
 
 This will capture all cases: "critical", "CRITICAL", "cRiTicAL", etc.
-[block:image]
+
+![](https://files.readme.io/3b50b74-Screen_Shot_2018-06-12_at_3.08.18_PM.png)
+
+
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3b50b74-Screen_Shot_2018-06-12_at_3.08.18_PM.png",
-        "Screen Shot 2018-06-12 at 3.08.18 PM.png",
-        1924,
-        318,
-        "#f6f6f6"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "The case insensitivity modifier `(?i)` will only work with email management rules, it will **not work** with email filters. Due to this issue, we suggest using a pipe (`|`) to capture different upper/lowercase strings for email filters, for example: `(Down|DOWN|down)`",
+  "title": "Note"
 }
 [/block]
-
-
-<Callout type="info" title="Info">
-The case insensitivity modifier `(?i)` will only work with email management rules, it will **not work** with email filters. Due to this issue, we suggest using a pipe (`|`) to capture different upper/lowercase strings for email filters, for example: `(Down|DOWN|down)`",
-  "title": "Note
-</Callout>
-
-
 ##Testing
 Writing regular expressions can be difficult, but [Regex101](https://regex101.com/) is a very helpful tool for editing regular expressions and making sure that the expression is correct.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/068e122-Screen_Shot_2020-09-24_at_12.39.39_PM.png",
-        "Screen Shot 2020-09-24 at 12.39.39 PM.png",
-        2380,
-        894,
-        "#f2f3f2"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/068e122-Screen_Shot_2020-09-24_at_12.39.39_PM.png)
+
 To test an expression in Regex101, enter your test string (in this example, the body from which you want to extract the node for use as the alert key for grouping purposes) and then make sure that your entered regular expression shows a *Group 1* **match** within the test string.
 
 ##Examples
@@ -245,29 +160,17 @@ To set up the email management rule:
     2. The email **subject matches the regular expression:** `.*`
     3. For the incident key, have the rule state: **In the email subject, match this regular expression:** `(?:(?i)re: |fwd: )?(.*)`
 4. Click **Save changes** at the bottom of the page.
-
-<Callout type="info" title="Info">
-This regular expression is case insensitive, so any version of \"RE:\" or \"FWD:\" will de-duplicate the email trigger to the open incident.",
-  "title": "Note
-</Callout>
-
-
-
-[block:image]
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/8291ef1-2b2ad20-RE_-_Email_Parse_-_PagerDuty.jpg",
-        "2b2ad20-RE_-_Email_Parse_-_PagerDuty.jpg",
-        1152,
-        799,
-        "#ece9ec"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "This regular expression is case insensitive, so any version of \"RE:\" or \"FWD:\" will de-duplicate the email trigger to the open incident.",
+  "title": "Note"
 }
 [/block]
+
+
+![](https://files.readme.io/8291ef1-2b2ad20-RE_-_Email_Parse_-_PagerDuty.jpg)
+
 Replies and forwards will now be appended to the existing incident as additional triggers.
 
 # Trigger and Resolve Alerts with Email Management Rules
@@ -298,21 +201,9 @@ The following settings are available, stating either incident *or* alert dependi
 - **Open and resolve incident/alerts based on custom rules**: This option will be explored in-depth in the next section of this article.
 
 The last two options above will append incoming emails matching the criteria to existing alerts/incidents, as shown below:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/db9101e-89bd320-Screen_Shot_2017-01-27_at_5.08.49_PM.png",
-        "89bd320-Screen_Shot_2017-01-27_at_5.08.49_PM.png",
-        903,
-        480,
-        "#f5f7f5"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/db9101e-89bd320-Screen_Shot_2017-01-27_at_5.08.49_PM.png)
+
 ##Auto-Resolve Existing Events with Alert/Incident Keys
 Selecting the last option in your email management rules -- **create and resolve incidents based on custom rules** -- allows you to automatically resolve incidents from email integrations by parsing message content.
 
@@ -320,77 +211,40 @@ Email management uses a set of rules that is applied to any incoming email. Each
 1. A **condition** that tells PagerDuty if the email should create an event
 2. A **condition** that tells PagerDuty if the email should resolve an event
 2. An **alert** or **incident key** that tells PagerDuty how to match one email with another email.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/ec16b93-64bdf9d-Screen_Shot_2017-01-31_at_4_00_31_PM.png",
-        "64bdf9d-Screen_Shot_2017-01-31_at_4_00_31_PM.png",
-        927,
-        216,
-        "#e0e5de"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/ec16b93-64bdf9d-Screen_Shot_2017-01-31_at_4_00_31_PM.png)
+
 In the example above, the **alert/incident** key has been highlighted in green. The **conditions** are in caps: DOWN for trigger, UP for resolve.
 [block:callout]
 {
   "type": "info",
   "title": "Auto-Resolving with an Alert Key",
-  "body": "For a pair of trigger and resolve email management rules to work together, the alert key in both rules **must be a perfect match.** The alert key is what allows your service to pair events and apply resolve rules to existing events.
-</Callout>
-
-
+  "body": "For a pair of trigger and resolve email management rules to work together, the alert key in both rules **must be a perfect match.** The alert key is what allows your service to pair events and apply resolve rules to existing events."
+}
+[/block]
 ##Creating your Rules
 1. Specify if PagerDuty should trigger or resolve an incident and the criteria of the email.
 2. Specify the alert/incident key — the alert/incident key de-duplicates emails that have the same identifiers, and will append the email to an existing alert or incident.
 3. Optional — you can add additional criteria in the Custom Field if you'd like to extract additional data from the email. This can be useful with certain integrations, like Zendesk. This allows you to bring the most pertinent information from your emails to the foreground. As an example, here is an incident where a rule was written pulling all text from the body of the email after the word **hello** into Custom Details:
-[block:image]
+
+![](https://files.readme.io/5a96370-email-management-custom-details-example.png)
+
+
+[block:callout]
 {
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/5a96370-email-management-custom-details-example.png",
-        "email-management-custom-details-example.png",
-        719,
-        535,
-        "#f2f2f3"
-      ]
-    }
-  ]
+  "type": "info",
+  "body": "If an email matches your \"resolve\" rule but there is no open incident for that email to resolve **OR** the email's incident key does not match an existing open incident, then this rule will not be applied.",
+  "title": "Note"
 }
 [/block]
-
-
-<Callout type="info" title="Info">
-If an email matches your \"resolve\" rule but there is no open incident for that email to resolve **OR** the email's incident key does not match an existing open incident, then this rule will not be applied.",
-  "title": "Note
-</Callout>
-
-
 Just as with email filters, you can use regular expressions to create complex management rules - however regular expression are not mandatory. You can review how to create a regular expression in [Regular Expression Tips & Examples](#section-regular-expression-tips-examples).
 
 In some cases, you may want to create an additional rule by clicking **Add Another Rule**. When you create multiple rules, PagerDuty will apply the first rule to the incoming email, and if it doesn't match it will attempt to apply the second rule. The hierarchy continues in this order until it reaches your last rule. There is a limit of ten rules per service. Rules may be re-arranged by clicking the **Move up** and **Move down** buttons on each rule.
 
 Finally, if an email doesn't match any of the rules, PagerDuty will either create a generic incident or discard the email. Use the drop down menu to specify your preference — you can either **create a generic incident** or **discard it** (the email).
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/fa6f368-35cdbdf-Screen_Shot_2017-01-31_at_5.59.17_PM.png",
-        "35cdbdf-Screen_Shot_2017-01-31_at_5.59.17_PM.png",
-        1005,
-        301,
-        "#4472bd"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/fa6f368-35cdbdf-Screen_Shot_2017-01-31_at_5.59.17_PM.png)
+
 # Troubleshooting Email Management Rules
 
 Email management is a powerful tool for giving responders an accurate state of your system, but it can sometimes be tricky.
@@ -409,21 +263,9 @@ If you think the filters might be dropping email, try resetting them to "Accept 
 If you are using filters, double-check your regular expressions to ensure that you are actually letting your desired emails through.
 
 If you're still not seeing emails you expect, scroll to the bottom of your email management rules, and make sure "Create a generic incident" is selected. This is the default setting for handling emails that don't match your rules, but if another user changed it, any unmatched emails will be discarded.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/d6dd5c9-e407d40-email_management.png",
-        "e407d40-email_management.png",
-        1219,
-        591,
-        "#e8e9e7"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/d6dd5c9-e407d40-email_management.png)
+
 ##Resolve Emails are not Resolving Incidents
 Three things are required to successfully resolve an incident:
 1. A rule that tells PagerDuty when an email should be considered a trigger notice
@@ -431,21 +273,9 @@ Three things are required to successfully resolve an incident:
 3. A shared incident key between the two emails
 
 Verify that you have the correct rules set. PagerDuty will display the extracted incident key on the incident page, so you can verify it is the same between your trigger and resolve emails.
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/9543e47-0e9dd37-email_management_2_.png",
-        "0e9dd37-email_management_2_.png",
-        1002,
-        225,
-        "#e3ede4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/9543e47-0e9dd37-email_management_2_.png)
+
 Specific reasons a resolve email might not be successfully resolving:
 1. You are extracting an incident key with a regular expression, and it is not extracting the key correctly.
 2. The email body was poorly encoded in some way (for example, if it was UTF-8 encoded, but contained the byte \xFF).
@@ -463,10 +293,9 @@ If the email also includes a plain text version, then the rule will still be abl
 {
   "type": "info",
   "title": "To view the source code of the email sent to the integration",
-  "body": "Go to **View Message** in the incident detail view. This should take you to a page displaying the full details of the original event sent in. The URL should be formatted as follows:\n\n```\nhttps://{subdomain}.pagerduty.com/incidents/{incident_id}/log_entries/{log_entry_id}\n```\n\nNext, click \"View Raw Message\" and you will see the source code of the email including headers.
-</Callout>
-
-
+  "body": "Go to **View Message** in the incident detail view. This should take you to a page displaying the full details of the original event sent in. The URL should be formatted as follows:\n\n```\nhttps://{subdomain}.pagerduty.com/incidents/{incident_id}/log_entries/{log_entry_id}\n```\n\nNext, click \"View Raw Message\" and you will see the source code of the email including headers."
+}
+[/block]
 While viewing the source code, note that email management rules that operate on the body of the email use the raw body as input, after decoding (i.e. if the `Content-Transfer-Encoding` of the body is `base64`, it will be decoded from base 64, or if it's `quoted-printable`, then QP escape sequences will be replaced with the actual characters to represent the underlying content of the message). Thus, to view the true source of the email that the regular expressions are compared against, one must decode the text.
 
 ### Base64-encoded Text
@@ -480,10 +309,9 @@ Base64-encoded messages are not humanly readable, but are easily decoded into a 
 {
   "type": "info",
   "title": "Example of base64-encoded text",
-  "body": "**Decoded** (Regex runs on this text):\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\n```\n\n**Encoded** (Regex does not run on this text):\n```\nQWxsIHdvcmsgYW5kIG5vIHBsYXkgbWFrZXMgSmFjayBhIGR1bGwgYm95LiBBbGwgd29yayBhbmQg\nbm8gcGxheSBtYWtlcyBKYWNrIGEgZHVsbCBib3kuClRoZSBxdWljayBmb3gganVtcHMgb3ZlciB0\naGUgbGF6eSBicm93biBkb2cuCg=\n```\n\nDecoding with `base64`:\n```\nbase64 -D < file-containing-base64-message.txt\n# or this:\ncat file-containing-base64-message.txt | base64 -D\n```
-</Callout>
-
-
+  "body": "**Decoded** (Regex runs on this text):\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\n```\n\n**Encoded** (Regex does not run on this text):\n```\nQWxsIHdvcmsgYW5kIG5vIHBsYXkgbWFrZXMgSmFjayBhIGR1bGwgYm95LiBBbGwgd29yayBhbmQg\nbm8gcGxheSBtYWtlcyBKYWNrIGEgZHVsbCBib3kuClRoZSBxdWljayBmb3gganVtcHMgb3ZlciB0\naGUgbGF6eSBicm93biBkb2cuCg=\n```\n\nDecoding with `base64`:\n```\nbase64 -D < file-containing-base64-message.txt\n# or this:\ncat file-containing-base64-message.txt | base64 -D\n```"
+}
+[/block]
 ### Quoted-Printable Text 
 
 ```
@@ -499,6 +327,6 @@ Furthermore, lines are limited to 76 characters, and if need be to limit line le
 {
   "type": "info",
   "title": "Example of quoted-printable encoding",
-  "body": "**Decoded** (Regex runs on this text):\n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE = mc^2\n```\n\n**Encoded** (Regex does not run on this text): \n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack=\n a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE =3D mc^2\n```
-</Callout>
-
+  "body": "**Decoded** (Regex runs on this text):\n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE = mc^2\n```\n\n**Encoded** (Regex does not run on this text): \n\n```\nAll work and no play makes Jack a dull boy. All work and no play makes Jack=\n a dull boy.\nThe quick fox jumps over the lazy brown dog.\nE =3D mc^2\n```"
+}
+[/block]

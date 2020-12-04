@@ -33,21 +33,9 @@ To begin, navigate to System Clone :fa-arrow-right: Preserve Data, and select Ne
 
 Once you've created a new record for the Clone Data Preserver, select the **sys_properties** table, as shown in the below screenshot. Try to make the name of the Clone Data Preserver as descriptive as possible for your own reference later.
 
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/903b701-Clone_Data_Preserver.png",
-        "Clone_Data_Preserver.png",
-        2162,
-        632,
-        "#f3f3f4"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/903b701-Clone_Data_Preserver.png)
+
  From here, we're going to be creating **OR** conditions for the following Names. 
 
 - **Name Is** x_pd_integration.default_user OR
@@ -63,51 +51,15 @@ Once you've created a new record for the Clone Data Preserver, select the **sys_
 Go ahead and save your changes. Once this Clone Data Preserver is created, we'll **create another for the `sys_user` table.** 
 
 Navigate to **System Clone :fa-arrow-right: Preserve Data**, and select **New**.  Select `sys_user` as your table, and add the following condition and save your changes:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/22badca-CDP-User-Mapping.png",
-        "CDP-User-Mapping.png",
-        2802,
-        760,
-        "#f7f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/22badca-CDP-User-Mapping.png)
+
 Create a new Clone Data Preserver for the `sys_user_group` table with the following conditions:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/3939763-CDP-AG-Mappings.png",
-        "CDP-AG-Mappings.png",
-        2800,
-        1106,
-        "#f9f9f9"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/3939763-CDP-AG-Mappings.png)
+
 Lastly, create a new Clone Data Preserver for the `cmdb_ci ` table with the following conditions:
-[block:image]
-{
-  "images": [
-    {
-      "image": [
-        "https://files.readme.io/e3eac54-CDP-CI-Mappings.png",
-        "CDP-CI-Mappings.png",
-        2806,
-        848,
-        "#f8f8f8"
-      ]
-    }
-  ]
-}
-[/block]
+
+![](https://files.readme.io/e3eac54-CDP-CI-Mappings.png)
+
 Note that for the Users, Assignment Groups, and Configuration Items preservers above, it will preserve the entire record in the target instance, not just the PagerDuty ID values within that record. Additionally, these conditions are tailored for the out-of-box integration. Customers who have implemented customizations to the PagerDuty ID Fields may need to alter their queries for each Clone Data Preserver.
